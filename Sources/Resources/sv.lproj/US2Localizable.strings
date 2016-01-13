@@ -1,0 +1,18 @@
+/* 
+  localizable.strings
+  FormValidatorSwift
+
+  Created by Aaron McTavish on 12/01/2016.
+  Copyright © 2016 ustwo. All rights reserved.
+*/
+
+"US2KeyConditionViolationRange"             = "Fyll i mellan %d och %d tecken";
+"US2KeyConditionViolationNumeric"           = "Fyll endast i nummer";
+"US2KeyConditionViolationAlphanumeric"      = "Fyll endast i nummer och bokstäver";
+"US2KeyConditionViolationAlphabetic"        = "Fyll endast i bokstäver";
+"US2KeyConditionViolationEmail"             = "Fyll i en giltig emailadress med formatet example@example.com";
+"US2KeyConditionViolationURL"               = "Fyll i en giltig URL med formatet http(s)://www.example.com";
+"US2KeyConditionViolationShorthandURL"      = "Fyll i en giltig URL med formatet www.example.com ";
+"US2KeyConditionViolationPasswordStrength"  = "Fyll i ett säkrare lösenord";
+"US2KeyConditionViolationPostcodeUK"        = "Fyll i en postkod giltig i UK";
+"US2KeyConditionViolationPresent"           = "Fyll i text";

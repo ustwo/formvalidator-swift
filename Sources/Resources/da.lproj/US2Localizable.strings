@@ -1,0 +1,18 @@
+/* 
+  localizable.strings
+  FormValidatorSwift
+
+  Created by Aaron McTavish on 12/01/2016.
+  Copyright © 2016 ustwo. All rights reserved.
+*/
+
+"US2KeyConditionViolationRange"             = "Brug mindst %d, max %d tegn";
+"US2KeyConditionViolationNumeric"           = "Brug kun tal";
+"US2KeyConditionViolationAlphanumeric"      = "Brug kun tal og bogstaver";
+"US2KeyConditionViolationAlphabetic"        = "Brug kun bogstaver";
+"US2KeyConditionViolationEmail"             = "Skriv en gyldig email-adresse i dette format: example@example.com";
+"US2KeyConditionViolationURL"               = "Skriv en gyldig URL i dette format: http(s)://www.example.com";
+"US2KeyConditionViolationShorthandURL"      = "Skriv en gyldig URL i dette format: www.example.com";
+"US2KeyConditionViolationPasswordStrength"  = "Brug et sikrere password";
+"US2KeyConditionViolationPostcodeUK"        = "Skriv et gyldigt UK postnummer";
+"US2KeyConditionViolationPresent"           = "Skriv tekst";

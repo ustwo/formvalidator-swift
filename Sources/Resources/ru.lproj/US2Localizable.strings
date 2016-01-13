@@ -1,0 +1,18 @@
+/* 
+  localizable.strings
+  FormValidatorSwift
+
+  Created by Aaron McTavish on 12/01/2016.
+  Copyright © 2016 ustwo. All rights reserved.
+*/
+
+"US2KeyConditionViolationRange"             = "Введите минимум %d, максимум %d символов";
+"US2KeyConditionViolationNumeric"           = "Введите только цифры";
+"US2KeyConditionViolationAlphanumeric"      = "Введите цифры и буквы";
+"US2KeyConditionViolationAlphabetic"        = "Введите только буквы";
+"US2KeyConditionViolationEmail"             = "Введите действующий адрес электронной почты в формате example@example.com";
+"US2KeyConditionViolationURL"               = "Введите действующую ссылку в формате http(s)://www.example.com";
+"US2KeyConditionViolationShorthandURL"      = "Введите действующую ссылку в формате www.example.com";
+"US2KeyConditionViolationPasswordStrength"  = "Задайте более сложный пароль";
+"US2KeyConditionViolationPostcodeUK"        = "Введите действующий почтовый индекс UK";
+"US2KeyConditionViolationPresent"           = "Введите текст";

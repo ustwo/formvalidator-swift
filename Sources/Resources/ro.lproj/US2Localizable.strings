@@ -1,0 +1,18 @@
+/* 
+  localizable.strings
+  FormValidatorSwift
+
+  Created by Aaron McTavish on 12/01/2016.
+  Copyright © 2016 ustwo. All rights reserved.
+*/
+
+"US2KeyConditionViolationRange"             = "Introduceți minimum %d, maximum %d caractere";
+"US2KeyConditionViolationNumeric"           = "Introduceți numai cifre";
+"US2KeyConditionViolationAlphanumeric"      = "Introduceți cifre si litere";
+"US2KeyConditionViolationAlphabetic"        = "Introduceți numai litere";
+"US2KeyConditionViolationEmail"             = "Introduceți adresa dvs. de email validă în formatul example@example.com";
+"US2KeyConditionViolationURL"               = "Introduceți o adresă URL validă în formatul http(s)://www.example.com";
+"US2KeyConditionViolationShorthandURL"      = "Introduceți o adresă URL validă în formatul www.example.com";
+"US2KeyConditionViolationPasswordStrength"  = "Alegeți o parolă mai puternică";
+"US2KeyConditionViolationPostcodeUK"        = "Introduceți un cod poștal valid din UK ";
+"US2KeyConditionViolationPresent"           = "Introduceți textul";

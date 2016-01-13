@@ -1,0 +1,18 @@
+/* 
+  localizable.strings
+  FormValidatorSwift
+
+  Created by Aaron McTavish on 12/01/2016.
+  Copyright © 2016 ustwo. All rights reserved.
+*/
+
+"US2KeyConditionViolationRange"             = "Por favor escreva no mínimo %d e no máximo %d caracteres";
+"US2KeyConditionViolationNumeric"           = "Por favor escreva apenas números";
+"US2KeyConditionViolationAlphanumeric"      = "Por favor escreva apenas letras e números";
+"US2KeyConditionViolationAlphabetic"        = "Por favor escreva apenas letras";
+"US2KeyConditionViolationEmail"             = "Por favor escreva um endereço de email válido no formato de exemplo@exemplo.com";
+"US2KeyConditionViolationURL"               = "Por favor escreva um endereço de web (URL) válido no formato de http(s)://www.exemplo.com";
+"US2KeyConditionViolationShorthandURL"      = "Por favor escreva um endereço de web (URL) válido no formato de www.exemplo.com";
+"US2KeyConditionViolationPasswordStrength"  = "Por favor escreva uma palavra-passe mais segura";
+"US2KeyConditionViolationPostcodeUK"        = "Por favor escreva um código postal válido";
+"US2KeyConditionViolationPresent"           = "Por favor escreva texto";
