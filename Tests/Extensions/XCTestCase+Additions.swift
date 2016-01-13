@@ -14,7 +14,7 @@ import XCTest
 
 extension XCTestCase {
 
-    func AssertCondition(condition: Condition, testInput: String?,  expectedResult: Bool, file: String = __FILE__, line: UInt = __LINE__) {
+    func AssertCondition(condition: Condition, testInput: String?, expectedResult: Bool, file: String = __FILE__, line: UInt = __LINE__) {
         // When
         let actualResult = condition.check(testInput)
         

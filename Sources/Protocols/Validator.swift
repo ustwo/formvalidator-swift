@@ -9,8 +9,6 @@
 import Foundation
 
 
-// FIXME: There are some Swift compiler issues that I need to sort out right now with regard to validators.
-
 /**
  *  `Validator` is a holder for conditions of type `Condition`.
  *  The validator checks for violation of each condition. Returned will be a collection of
@@ -25,7 +23,7 @@ public protocol Validator {
      Add a condition to the validator.
      - parameter condition: Condition to add.
      */
-    func addCondition(condition: Condition)
+    mutating func addCondition(condition: Condition)
     
     /**
      Checks `text` for violation of each condition.
@@ -38,7 +36,7 @@ public protocol Validator {
      Removes all conditions of `conditionClass` type.
      - parameter conditionClass: `Type` of condition to remove.
      */
-    func removeConditionOfClass<T: Condition>(conditionClass: T.Type)
+    mutating func removeConditionOfClass<T: Condition>(conditionClass: T.Type)
     
 }
 
@@ -59,5 +57,4 @@ public extension Validator {
     mutating func removeConditionOfClass<T: Condition>(conditionClass: T.Type) {
         conditions = conditions.filter { !($0 is T) }
     }
-    
 }

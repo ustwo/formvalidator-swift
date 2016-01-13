@@ -9,16 +9,18 @@
 import Foundation
 
 
-// FIXME: There are some Swift compiler issues that I need to sort out right now with regard to validators.
-/*
 public struct AlphabeticValidator: Validator {
     
+    
+    // MARK: - Properties
+    
     public var conditions: [Condition]
+    
+    
+    // MARK: - Initializers
 
-
-    init(allowsWhitespace: Bool) {
+    public init(allowsWhitespace: Bool) {
         conditions = [AlphabeticCondition(allowsWhiteSpace: allowsWhitespace)]
     }
     
 }
-*/
