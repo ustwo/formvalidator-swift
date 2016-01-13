@@ -29,6 +29,10 @@
 		0094D6861C469C2A00145F5C /* URLShorthandCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */; };
 		0094D6881C469C8D00145F5C /* URLConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6871C469C8D00145F5C /* URLConditionTests.swift */; };
 		0094D68A1C469D5200145F5C /* URLShorthandConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6891C469D5200145F5C /* URLShorthandConditionTests.swift */; };
+		0094D6991C46B37900145F5C /* RangeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6981C46B37900145F5C /* RangeCondition.swift */; };
+		0094D69B1C46B38200145F5C /* OrCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69A1C46B38200145F5C /* OrCondition.swift */; };
+		0094D69D1C46B38E00145F5C /* RangeConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */; };
+		0094D69F1C46B39800145F5C /* OrConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69E1C46B39800145F5C /* OrConditionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLShorthandCondition.swift; sourceTree = "<group>"; };
 		0094D6871C469C8D00145F5C /* URLConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConditionTests.swift; sourceTree = "<group>"; };
 		0094D6891C469D5200145F5C /* URLShorthandConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLShorthandConditionTests.swift; sourceTree = "<group>"; };
+		0094D6981C46B37900145F5C /* RangeCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeCondition.swift; sourceTree = "<group>"; };
+		0094D69A1C46B38200145F5C /* OrCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrCondition.swift; path = Logic/OrCondition.swift; sourceTree = "<group>"; };
+		0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeConditionTests.swift; sourceTree = "<group>"; };
+		0094D69E1C46B39800145F5C /* OrConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrConditionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,7 @@
 				0094D6751C4696F400145F5C /* EmailCondition.swift */,
 				0094D67A1C4698CE00145F5C /* NumericCondition.swift */,
 				0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */,
+				0094D6981C46B37900145F5C /* RangeCondition.swift */,
 				0094D6831C469BA500145F5C /* URLCondition.swift */,
 				0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */,
 			);
@@ -188,6 +197,7 @@
 				003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */,
 				0094D6771C46976500145F5C /* EmailConditionTests.swift */,
 				0094D67C1C46992C00145F5C /* NumericConditionTests.swift */,
+				0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */,
 				0094D6801C469A7900145F5C /* PostcodeUKConditionTests.swift */,
 				0094D6871C469C8D00145F5C /* URLConditionTests.swift */,
 				0094D6891C469D5200145F5C /* URLShorthandConditionTests.swift */,
@@ -224,6 +234,7 @@
 		0094D6961C46B23D00145F5C /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0094D69A1C46B38200145F5C /* OrCondition.swift */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -231,6 +242,7 @@
 		0094D6971C46B25300145F5C /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0094D69E1C46B39800145F5C /* OrConditionTests.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -373,9 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0094D69B1C46B38200145F5C /* OrCondition.swift in Sources */,
 				0094D67F1C469A0E00145F5C /* PostcodeUKCondition.swift in Sources */,
 				0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */,
 				003E06271C46413C008D47F2 /* Validator.swift in Sources */,
+				0094D6991C46B37900145F5C /* RangeCondition.swift in Sources */,
 				003E061F1C463CEB008D47F2 /* AlphanumericCondition.swift in Sources */,
 				0094D67B1C4698CE00145F5C /* NumericCondition.swift in Sources */,
 				0094D6861C469C2A00145F5C /* URLShorthandCondition.swift in Sources */,
@@ -395,7 +409,9 @@
 				003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */,
 				003E06251C463E84008D47F2 /* XCTestCase+Additions.swift in Sources */,
 				0094D67D1C46992C00145F5C /* NumericConditionTests.swift in Sources */,
+				0094D69D1C46B38E00145F5C /* RangeConditionTests.swift in Sources */,
 				0094D6881C469C8D00145F5C /* URLConditionTests.swift in Sources */,
+				0094D69F1C46B39800145F5C /* OrConditionTests.swift in Sources */,
 				0094D6791C46979300145F5C /* EmailConditionTests.swift in Sources */,
 				0094D68A1C469D5200145F5C /* URLShorthandConditionTests.swift in Sources */,
 				0032C10D1C45594E0023DB19 /* AlphabeticConditionTests.swift in Sources */,

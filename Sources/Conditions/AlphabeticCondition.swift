@@ -17,7 +17,7 @@ public struct AlphabeticCondition: Condition {
     
     // MARK: - Properties
     
-    public static let localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationAlphabetic", comment: "")
+    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationAlphabetic", comment: "")
     
     public let regex: String
     

@@ -17,7 +17,7 @@ public struct NumericCondition: Condition {
     
     // MARK: - Properties
     
-    public static let localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationNumeric", comment: "")
+    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationNumeric", comment: "")
     
     public let regex = "^\\d+$"
     

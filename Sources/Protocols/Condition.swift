@@ -24,7 +24,7 @@ import Foundation
 public protocol Condition: CustomStringConvertible {
     
     /// Localized string which described the kind of violation.
-    static var localizedViolationString: String { get }
+    var localizedViolationString: String { get set }
     
     /// A regular expression string which the validated string is matched against.
     var regex: String { get }
@@ -49,7 +49,7 @@ public extension Condition {
     func check(text: String?) -> Bool {
         guard let sourceText = text,
             let regExpression = try? NSRegularExpression(pattern: regex, options: .CaseInsensitive) else {
-            return false
+                return false
         }
         
         return regExpression.firstMatchInString(sourceText, options: [], range: NSRange(location: 0, length: sourceText.utf16.count)) != nil
@@ -64,7 +64,7 @@ public extension Condition {
         var result = "<"
         
         result += "\(self.dynamicType)"
-        result += "\n <localizedViolationString: \(self.dynamicType.localizedViolationString)>"
+        result += "\n <localizedViolationString: \(localizedViolationString)>"
         result += "\n <shouldAllowViolation: \(shouldAllowViolation)>"
         
         result += ">"

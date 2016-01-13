@@ -17,7 +17,7 @@ public struct AlphanumericCondition: Condition {
     
     // MARK: - Properties
     
-    public static let localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationAlphanumeric", comment: "")
+    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationAlphanumeric", comment: "")
     
     public let regex = "[a-zA-Z0-9]"
     

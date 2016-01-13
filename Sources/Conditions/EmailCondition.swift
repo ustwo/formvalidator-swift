@@ -17,7 +17,7 @@ public struct EmailCondition: Condition {
     
     // MARK: - Properties
     
-    public static let localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationEmail", comment: "")
+    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationEmail", comment: "")
     
     public let regex = "^[+\\w\\.\\-']+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*(\\.[a-zA-Z]{2,})+$"
     
