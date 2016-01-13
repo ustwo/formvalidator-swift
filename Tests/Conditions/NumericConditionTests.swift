@@ -14,12 +14,16 @@ import XCTest
 final class NumericConditionTests: XCTestCase {
     
     
+    // MARK: - Properties
+    
+    let condition       = NumericCondition()
+    
+    
     // MARK: - Test Success
     
     func testNumericCondition_Success() {
         // Given
         let testInput       = "1234567890"
-        let condition       = NumericCondition()
         let expectedResult  = true
         
         // Test
@@ -32,7 +36,6 @@ final class NumericConditionTests: XCTestCase {
     func testNumericCondition_Failure() {
         // Given
         let testInput       = "123a"
-        let condition       = NumericCondition()
         let expectedResult  = false
         
         // Test
@@ -42,11 +45,10 @@ final class NumericConditionTests: XCTestCase {
     func testNumericCondition_Nil_Failure() {
         // Given
         let testInput: String?  = nil
-        let condition           = NumericCondition()
         let expectedResult      = false
         
         // Test
         AssertCondition(condition, testInput: testInput, expectedResult: expectedResult)
     }
-
+    
 }

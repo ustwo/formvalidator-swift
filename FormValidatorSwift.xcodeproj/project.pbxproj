@@ -160,6 +160,7 @@
 		0032C1041C454EDF0023DB19 /* Conditions */ = {
 			isa = PBXGroup;
 			children = (
+				0094D6961C46B23D00145F5C /* Logic */,
 				0032C1091C4555200023DB19 /* AlphabeticCondition.swift */,
 				003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */,
 				0094D6751C4696F400145F5C /* EmailCondition.swift */,
@@ -182,6 +183,7 @@
 		0032C10B1C4559260023DB19 /* Conditions */ = {
 			isa = PBXGroup;
 			children = (
+				0094D6971C46B25300145F5C /* Logic */,
 				0032C10C1C45594E0023DB19 /* AlphabeticConditionTests.swift */,
 				003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */,
 				0094D6771C46976500145F5C /* EmailConditionTests.swift */,
@@ -217,6 +219,20 @@
 				0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0094D6961C46B23D00145F5C /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		0094D6971C46B25300145F5C /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

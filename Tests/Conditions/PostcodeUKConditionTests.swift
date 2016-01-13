@@ -14,25 +14,28 @@ import XCTest
 final class PostcodeUKConditionTests: XCTestCase {
     
     
+    // MARK: - Properties
+    
+    let condition       = PostcodeUKCondition()
+    
+    
     // MARK: - Test Success
     
     func testPostcodeUKCondition_Success() {
         // Given
         let testInput       = "M1 1BA"
-        let condition       = PostcodeUKCondition()
         let expectedResult  = true
         
         // Test
         AssertCondition(condition, testInput: testInput, expectedResult: expectedResult)
     }
-
-
+    
+    
     // MARK: - Test Failure
     
     func testPostcodeUKCondition_OutwardCode_Failure() {
         // Given
         let testInput       = "M1AA 1BA"
-        let condition       = PostcodeUKCondition()
         let expectedResult  = false
         
         // Test
@@ -42,7 +45,6 @@ final class PostcodeUKConditionTests: XCTestCase {
     func testPostcodeUKCondition_InwardCode_Failure() {
         // Given
         let testInput       = "M1 1BAA"
-        let condition       = PostcodeUKCondition()
         let expectedResult  = false
         
         // Test
@@ -52,11 +54,10 @@ final class PostcodeUKConditionTests: XCTestCase {
     func testPostcodeUKCondition_Nil_Failure() {
         // Given
         let testInput: String?  = nil
-        let condition           = PostcodeUKCondition()
         let expectedResult      = false
         
         // Test
         AssertCondition(condition, testInput: testInput, expectedResult: expectedResult)
     }
-
+    
 }

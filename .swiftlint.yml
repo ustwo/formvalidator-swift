@@ -1,0 +1,25 @@
+disabled_rules: # rule identifiers to exclude from running
+  - function_body_length
+  - line_length
+  - nesting
+  - operator_whitespace
+  - trailing_whitespace
+  - type_body_length
+  - variable_name
+excluded: # paths to ignore during linting. overridden by `included`.
+  - Pods
+  - 'Wayfindr EustonTests'
+# parameterized rules can be customized from this configuration file
+line_length: 110
+# parameterized rules are first parameterized as a warning level, then error level.
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# parameterized rules are first parameterized as a warning level, then error level.
+variable_name_max_length:
+  - 40 # warning
+  - 60 # error
+# parameterized rules are first parameterized as a warning level, then error level.
+variable_name_min_length:
+  - 3 # warning
+  - 2 # error
