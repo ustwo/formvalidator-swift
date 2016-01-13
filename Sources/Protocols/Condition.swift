@@ -52,7 +52,7 @@ public extension Condition {
                 return false
         }
         
-        return regExpression.firstMatchInString(sourceText, options: [], range: NSRange(location: 0, length: sourceText.utf16.count)) != nil
+        return regExpression.firstMatchInString(sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) != nil
     }
     
 }

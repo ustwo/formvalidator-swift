@@ -37,6 +37,10 @@
 		00F2E2D81C46C47700FE0B66 /* AndConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D71C46C47700FE0B66 /* AndConditionTests.swift */; };
 		00F2E2DA1C46C53500FE0B66 /* NotCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D91C46C53500FE0B66 /* NotCondition.swift */; };
 		00F2E2DC1C46C57800FE0B66 /* NotConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DB1C46C57800FE0B66 /* NotConditionTests.swift */; };
+		00F2E2DE1C46C69D00FE0B66 /* PresentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */; };
+		00F2E2E01C46C6F400FE0B66 /* PresentConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */; };
+		00F2E2E21C46C7B500FE0B66 /* PasswordStrengthCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */; };
+		00F2E2E41C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		00F2E2D71C46C47700FE0B66 /* AndConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndConditionTests.swift; sourceTree = "<group>"; };
 		00F2E2D91C46C53500FE0B66 /* NotCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotCondition.swift; sourceTree = "<group>"; };
 		00F2E2DB1C46C57800FE0B66 /* NotConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotConditionTests.swift; sourceTree = "<group>"; };
+		00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCondition.swift; sourceTree = "<group>"; };
+		00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentConditionTests.swift; sourceTree = "<group>"; };
+		00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthCondition.swift; sourceTree = "<group>"; };
+		00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthConditionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +190,8 @@
 				0094D6751C4696F400145F5C /* EmailCondition.swift */,
 				0094D67A1C4698CE00145F5C /* NumericCondition.swift */,
 				0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */,
+				00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */,
+				00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */,
 				0094D6981C46B37900145F5C /* RangeCondition.swift */,
 				0094D6831C469BA500145F5C /* URLCondition.swift */,
 				0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */,
@@ -206,6 +216,8 @@
 				0094D6771C46976500145F5C /* EmailConditionTests.swift */,
 				0094D67C1C46992C00145F5C /* NumericConditionTests.swift */,
 				0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */,
+				00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */,
+				00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */,
 				0094D6801C469A7900145F5C /* PostcodeUKConditionTests.swift */,
 				0094D6871C469C8D00145F5C /* URLConditionTests.swift */,
 				0094D6891C469D5200145F5C /* URLShorthandConditionTests.swift */,
@@ -406,11 +418,13 @@
 				0094D67B1C4698CE00145F5C /* NumericCondition.swift in Sources */,
 				00F2E2DA1C46C53500FE0B66 /* NotCondition.swift in Sources */,
 				0094D6861C469C2A00145F5C /* URLShorthandCondition.swift in Sources */,
+				00F2E2DE1C46C69D00FE0B66 /* PresentCondition.swift in Sources */,
 				0094D6741C46931800145F5C /* Localization.swift in Sources */,
 				003E06291C4648E5008D47F2 /* AlphabeticValidator.swift in Sources */,
 				0032C10A1C4555200023DB19 /* AlphabeticCondition.swift in Sources */,
 				0032C1071C454F4E0023DB19 /* Condition.swift in Sources */,
 				0094D6841C469BA500145F5C /* URLCondition.swift in Sources */,
+				00F2E2E21C46C7B500FE0B66 /* PasswordStrengthCondition.swift in Sources */,
 				00F2E2D61C46C42F00FE0B66 /* AndCondition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,11 +436,13 @@
 				0094D6821C469A9700145F5C /* PostcodeUKConditionTests.swift in Sources */,
 				00F2E2DC1C46C57800FE0B66 /* NotConditionTests.swift in Sources */,
 				003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */,
+				00F2E2E01C46C6F400FE0B66 /* PresentConditionTests.swift in Sources */,
 				003E06251C463E84008D47F2 /* XCTestCase+Additions.swift in Sources */,
 				0094D67D1C46992C00145F5C /* NumericConditionTests.swift in Sources */,
 				0094D69D1C46B38E00145F5C /* RangeConditionTests.swift in Sources */,
 				0094D6881C469C8D00145F5C /* URLConditionTests.swift in Sources */,
 				0094D69F1C46B39800145F5C /* OrConditionTests.swift in Sources */,
+				00F2E2E41C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift in Sources */,
 				0094D6791C46979300145F5C /* EmailConditionTests.swift in Sources */,
 				0094D68A1C469D5200145F5C /* URLShorthandConditionTests.swift in Sources */,
 				00F2E2D81C46C47700FE0B66 /* AndConditionTests.swift in Sources */,

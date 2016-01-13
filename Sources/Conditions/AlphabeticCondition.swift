@@ -54,7 +54,7 @@ public struct AlphabeticCondition: Condition {
                 return false
         }
         
-        return regExpression.numberOfMatchesInString(sourceText, options: [], range: NSRange(location: 0, length: sourceText.utf16.count)) == sourceText.utf16.count
+        return regExpression.numberOfMatchesInString(sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) == sourceText.characters.count
     }
     
 }
