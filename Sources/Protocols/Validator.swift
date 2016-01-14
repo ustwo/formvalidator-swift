@@ -18,12 +18,6 @@ public protocol Validator {
     
     /// Conditions to use when validating text.
     var conditions: [Condition] { get set }
- 
-    /**
-     Add a condition to the validator.
-     - parameter condition: Condition to add.
-     */
-    mutating func addCondition(condition: Condition)
     
     /**
      Checks `text` for violation of each condition.
@@ -43,10 +37,6 @@ public protocol Validator {
 
 // Default implementation for `addCondition`, `checkConditions`, and `removeConditionOfClass`.
 public extension Validator {
-    
-    mutating func addCondition(condition: Condition) {
-        conditions.append(condition)
-    }
     
     func checkConditions(text: String?) -> [Condition]? {
         let violations = conditions.filter { !($0.check(text)) }
