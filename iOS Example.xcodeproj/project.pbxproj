@@ -11,9 +11,10 @@
 		0036986B1C478957004D1692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003698661C478957004D1692 /* Assets.xcassets */; };
 		003698711C478988004D1692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0036986F1C478988004D1692 /* LaunchScreen.storyboard */; };
 		003698781C478A27004D1692 /* iOS_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698751C4789DD004D1692 /* iOS_ExampleUITests.swift */; };
-		0036987A1C478A3A004D1692 /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003698791C478A3A004D1692 /* FormValidatorSwift.framework */; };
 		0036987E1C478B31004D1692 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036987D1C478B31004D1692 /* FormView.swift */; };
 		0036987F1C478BA4004D1692 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698691C478957004D1692 /* FormViewController.swift */; };
+		004913901C479B1900471F53 /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0049138D1C479B1000471F53 /* FormValidatorSwift.framework */; };
+		004913911C479B1900471F53 /* FormValidatorSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0049138D1C479B1000471F53 /* FormValidatorSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,42 @@
 			remoteGlobalIDString = 003698401C4788B1004D1692;
 			remoteInfo = "iOS Example";
 		};
+		0049138C1C479B1000471F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0062E9D01C45493E00021C0A;
+			remoteInfo = FormValidatorSwift;
+		};
+		0049138E1C479B1000471F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0062E9DA1C45493E00021C0A;
+			remoteInfo = FormValidatorSwiftTests;
+		};
+		004913921C479B1900471F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0062E9CF1C45493E00021C0A;
+			remoteInfo = FormValidatorSwift;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		004913941C479B1900471F53 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				004913911C479B1900471F53 /* FormValidatorSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		003698411C4788B1004D1692 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,8 +72,8 @@
 		0036986F1C478988004D1692 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003698741C4789DD004D1692 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003698751C4789DD004D1692 /* iOS_ExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS_ExampleUITests.swift; sourceTree = "<group>"; };
-		003698791C478A3A004D1692 /* FormValidatorSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FormValidatorSwift.framework; path = "build/Debug-iphoneos/FormValidatorSwift.framework"; sourceTree = "<group>"; };
 		0036987D1C478B31004D1692 /* FormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FormValidatorSwift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0036987A1C478A3A004D1692 /* FormValidatorSwift.framework in Frameworks */,
+				004913901C479B1900471F53 /* FormValidatorSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +100,8 @@
 			children = (
 				003698641C478942004D1692 /* Sources */,
 				003698731C47898D004D1692 /* Tests */,
-				0036987B1C478A41004D1692 /* Frameworks */,
 				003698421C4788B1004D1692 /* Products */,
+				004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +137,6 @@
 			path = "Tests/UI Tests";
 			sourceTree = "<group>";
 		};
-		0036987B1C478A41004D1692 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				003698791C478A3A004D1692 /* FormValidatorSwift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0036987C1C478ABF004D1692 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +144,15 @@
 				003698681C478957004D1692 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		004913881C479B1000471F53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0049138D1C479B1000471F53 /* FormValidatorSwift.framework */,
+				0049138F1C479B1000471F53 /* FormValidatorSwiftTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +165,12 @@
 				0036983D1C4788B1004D1692 /* Sources */,
 				0036983E1C4788B1004D1692 /* Frameworks */,
 				0036983F1C4788B1004D1692 /* Resources */,
+				004913941C479B1900471F53 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				004913931C479B1900471F53 /* PBXTargetDependency */,
 			);
 			name = "iOS Example";
 			productName = "iOS Example";
@@ -186,6 +225,12 @@
 			mainGroup = 003698381C4788B1004D1692;
 			productRefGroup = 003698421C4788B1004D1692 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 004913881C479B1000471F53 /* Products */;
+					ProjectRef = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				003698401C4788B1004D1692 /* iOS Example */,
@@ -193,6 +238,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0049138D1C479B1000471F53 /* FormValidatorSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FormValidatorSwift.framework;
+			remoteRef = 0049138C1C479B1000471F53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0049138F1C479B1000471F53 /* FormValidatorSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FormValidatorSwiftTests.xctest;
+			remoteRef = 0049138E1C479B1000471F53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0036983F1C4788B1004D1692 /* Resources */ = {
@@ -239,6 +301,11 @@
 			isa = PBXTargetDependency;
 			target = 003698401C4788B1004D1692 /* iOS Example */;
 			targetProxy = 003698561C4788B1004D1692 /* PBXContainerItemProxy */;
+		};
+		004913931C479B1900471F53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FormValidatorSwift;
+			targetProxy = 004913921C479B1900471F53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,10 +398,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-Example";
@@ -348,10 +413,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-Example";

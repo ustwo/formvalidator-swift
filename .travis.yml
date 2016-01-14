@@ -10,7 +10,7 @@ env:
   - IOS_SDK=iphonesimulator9.2
   - EXAMPLE_SCHEME="iOS Example"
   matrix:
-    - DESTINATION="OS=8.3,name=iPhone 4S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES"
+    - DESTINATION="OS=8.3,name=iPhone 4S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="NO"
     - DESTINATION="OS=9.2,name=iPhone 6S Plus"     SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES"
 script:
   - set -o pipefail
@@ -22,6 +22,11 @@ script:
       xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug -enableCodeCoverage YES ONLY_ACTIVE_ARCH=YES test | xcpretty -c;
     else
       xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+    fi
+
+# Build Example in Debug if specified
+  - if [ $BUILD_EXAMPLE == "YES" ]; then
+      xcodebuild -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
     fi
 
 after_success:
