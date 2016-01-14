@@ -45,6 +45,43 @@
 		005675551C47DD48005A43F0 /* CompositeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675541C47DD48005A43F0 /* CompositeValidatorTests.swift */; };
 		005675571C47E05E005A43F0 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675561C47E05E005A43F0 /* Form.swift */; };
 		005675591C47E493005A43F0 /* ControlForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675581C47E493005A43F0 /* ControlForm.swift */; };
+		005675691C47ED32005A43F0 /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0056755F1C47ED32005A43F0 /* FormValidatorSwift.framework */; };
+		005675771C47EDB9005A43F0 /* AndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D51C46C42F00FE0B66 /* AndCondition.swift */; };
+		005675781C47EDB9005A43F0 /* NotCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D91C46C53500FE0B66 /* NotCondition.swift */; };
+		005675791C47EDB9005A43F0 /* OrCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69A1C46B38200145F5C /* OrCondition.swift */; };
+		0056757A1C47EDB9005A43F0 /* AlphabeticCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1091C4555200023DB19 /* AlphabeticCondition.swift */; };
+		0056757B1C47EDB9005A43F0 /* AlphanumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */; };
+		0056757C1C47EDB9005A43F0 /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
+		0056757D1C47EDB9005A43F0 /* NumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67A1C4698CE00145F5C /* NumericCondition.swift */; };
+		0056757E1C47EDB9005A43F0 /* PasswordStrengthCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */; };
+		0056757F1C47EDB9005A43F0 /* PostcodeUKCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */; };
+		005675801C47EDB9005A43F0 /* PresentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */; };
+		005675811C47EDB9005A43F0 /* RangeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6981C46B37900145F5C /* RangeCondition.swift */; };
+		005675821C47EDB9005A43F0 /* URLCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6831C469BA500145F5C /* URLCondition.swift */; };
+		005675831C47EDB9005A43F0 /* URLShorthandCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */; };
+		005675841C47EDC0005A43F0 /* ValidatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698361C46E3BE004D1692 /* ValidatorTextField.swift */; };
+		005675851C47EDC0005A43F0 /* ValidatorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B81C47BEEC00471F53 /* ValidatorTextView.swift */; };
+		005675861C47EDC7005A43F0 /* ControlForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675581C47E493005A43F0 /* ControlForm.swift */; };
+		005675871C47EDC7005A43F0 /* FormEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B61C47BB9800471F53 /* FormEntry.swift */; };
+		005675881C47EDCC005A43F0 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1061C454F4E0023DB19 /* Condition.swift */; };
+		005675891C47EDCC005A43F0 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675561C47E05E005A43F0 /* Form.swift */; };
+		0056758A1C47EDCC005A43F0 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B31C47B3EA00471F53 /* Validatable.swift */; };
+		0056758B1C47EDCC005A43F0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06261C46413C008D47F2 /* Validator.swift */; };
+		0056758C1C47EDCC005A43F0 /* ValidatorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698341C46E24C004D1692 /* ValidatorControl.swift */; };
+		0056758D1C47EDD1005A43F0 /* AlphabeticValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06281C4648E5008D47F2 /* AlphabeticValidator.swift */; };
+		0056758E1C47EDD1005A43F0 /* AlphanumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139B1C47AC8200471F53 /* AlphanumericValidator.swift */; };
+		0056758F1C47EDD1005A43F0 /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AF1C47B1B400471F53 /* CompositeValidator.swift */; };
+		005675901C47EDD1005A43F0 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139D1C47ADCA00471F53 /* EmailValidator.swift */; };
+		005675911C47EDD1005A43F0 /* NumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139F1C47AE0700471F53 /* NumericValidator.swift */; };
+		005675921C47EDD1005A43F0 /* PostcodeUKValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A11C47AE5D00471F53 /* PostcodeUKValidator.swift */; };
+		005675931C47EDD1005A43F0 /* PasswordStrengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A71C47B08C00471F53 /* PasswordStrengthValidator.swift */; };
+		005675941C47EDD1005A43F0 /* PresentValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A31C47AE9F00471F53 /* PresentValidator.swift */; };
+		005675951C47EDD1005A43F0 /* RangeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A91C47B0F200471F53 /* RangeValidator.swift */; };
+		005675961C47EDD1005A43F0 /* URLValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AB1C47B13000471F53 /* URLValidator.swift */; };
+		005675971C47EDD1005A43F0 /* URLShorthandValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AD1C47B15D00471F53 /* URLShorthandValidator.swift */; };
+		005675981C47EDD9005A43F0 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
+		005675991C47EDDE005A43F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0032C0F51C454D8F0023DB19 /* Localizable.strings */; };
+		0056759A1C47EDE5005A43F0 /* FormValidatorSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 002C04241C454AAB005CC374 /* FormValidatorSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0062E9DB1C45493E00021C0A /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */; };
 		0094D6741C46931800145F5C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
 		0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
@@ -72,6 +109,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0056756A1C47ED32005A43F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0062E9C71C45493E00021C0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0056755E1C47ED32005A43F0;
+			remoteInfo = FormValidatorSwift;
+		};
 		0062E9DC1C45493E00021C0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0062E9C71C45493E00021C0A /* Project object */;
@@ -134,8 +178,10 @@
 		005675541C47DD48005A43F0 /* CompositeValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeValidatorTests.swift; sourceTree = "<group>"; };
 		005675561C47E05E005A43F0 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		005675581C47E493005A43F0 /* ControlForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlForm.swift; sourceTree = "<group>"; };
+		0056755F1C47ED32005A43F0 /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		005675681C47ED32005A43F0 /* FormValidatorSwiftTests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormValidatorSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0094D6731C46931800145F5C /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		0094D6751C4696F400145F5C /* EmailCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCondition.swift; sourceTree = "<group>"; };
 		0094D6771C46976500145F5C /* EmailConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailConditionTests.swift; sourceTree = "<group>"; };
@@ -162,6 +208,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0056755B1C47ED32005A43F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005675651C47ED32005A43F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005675691C47ED32005A43F0 /* FormValidatorSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0062E9CC1C45493E00021C0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,7 +408,9 @@
 			isa = PBXGroup;
 			children = (
 				0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */,
-				0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests.xctest */,
+				0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */,
+				0056755F1C47ED32005A43F0 /* FormValidatorSwift.framework */,
+				005675681C47ED32005A43F0 /* FormValidatorSwiftTests tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,6 +438,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0056755C1C47ED32005A43F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0056759A1C47EDE5005A43F0 /* FormValidatorSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0062E9CD1C45493E00021C0A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,9 +457,45 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0062E9CF1C45493E00021C0A /* FormValidatorSwift */ = {
+		0056755E1C47ED32005A43F0 /* FormValidatorSwift tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0062E9E41C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwift" */;
+			buildConfigurationList = 005675701C47ED32005A43F0 /* Build configuration list for PBXNativeTarget "FormValidatorSwift tvOS" */;
+			buildPhases = (
+				0056755A1C47ED32005A43F0 /* Sources */,
+				0056755B1C47ED32005A43F0 /* Frameworks */,
+				0056755C1C47ED32005A43F0 /* Headers */,
+				0056755D1C47ED32005A43F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FormValidatorSwift tvOS";
+			productName = FormValidatorSwift;
+			productReference = 0056755F1C47ED32005A43F0 /* FormValidatorSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		005675671C47ED32005A43F0 /* FormValidatorSwiftTests tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005675731C47ED32005A43F0 /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests tvOS" */;
+			buildPhases = (
+				005675641C47ED32005A43F0 /* Sources */,
+				005675651C47ED32005A43F0 /* Frameworks */,
+				005675661C47ED32005A43F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0056756B1C47ED32005A43F0 /* PBXTargetDependency */,
+			);
+			name = "FormValidatorSwiftTests tvOS";
+			productName = FormValidatorSwiftTests;
+			productReference = 005675681C47ED32005A43F0 /* FormValidatorSwiftTests tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0062E9CF1C45493E00021C0A /* FormValidatorSwift iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0062E9E41C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwift iOS" */;
 			buildPhases = (
 				0062E9CB1C45493E00021C0A /* Sources */,
 				0062E9CC1C45493E00021C0A /* Frameworks */,
@@ -400,14 +507,14 @@
 			);
 			dependencies = (
 			);
-			name = FormValidatorSwift;
+			name = "FormValidatorSwift iOS";
 			productName = FormValidatorSwift;
 			productReference = 0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0062E9D91C45493E00021C0A /* FormValidatorSwiftTests */ = {
+		0062E9D91C45493E00021C0A /* FormValidatorSwiftTests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0062E9E71C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests" */;
+			buildConfigurationList = 0062E9E71C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests iOS" */;
 			buildPhases = (
 				0062E9D61C45493E00021C0A /* Sources */,
 				0062E9D71C45493E00021C0A /* Frameworks */,
@@ -418,9 +525,9 @@
 			dependencies = (
 				0062E9DD1C45493E00021C0A /* PBXTargetDependency */,
 			);
-			name = FormValidatorSwiftTests;
+			name = "FormValidatorSwiftTests iOS";
 			productName = FormValidatorSwiftTests;
-			productReference = 0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests.xctest */;
+			productReference = 0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -433,6 +540,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ustwo;
 				TargetAttributes = {
+					0056755E1C47ED32005A43F0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					005675671C47ED32005A43F0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					0062E9CF1C45493E00021C0A = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -465,13 +578,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0062E9CF1C45493E00021C0A /* FormValidatorSwift */,
-				0062E9D91C45493E00021C0A /* FormValidatorSwiftTests */,
+				0062E9CF1C45493E00021C0A /* FormValidatorSwift iOS */,
+				0062E9D91C45493E00021C0A /* FormValidatorSwiftTests iOS */,
+				0056755E1C47ED32005A43F0 /* FormValidatorSwift tvOS */,
+				005675671C47ED32005A43F0 /* FormValidatorSwiftTests tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0056755D1C47ED32005A43F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005675991C47EDDE005A43F0 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005675661C47ED32005A43F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0062E9CE1C45493E00021C0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,6 +636,54 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0056755A1C47ED32005A43F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005675831C47EDB9005A43F0 /* URLShorthandCondition.swift in Sources */,
+				005675881C47EDCC005A43F0 /* Condition.swift in Sources */,
+				005675861C47EDC7005A43F0 /* ControlForm.swift in Sources */,
+				005675811C47EDB9005A43F0 /* RangeCondition.swift in Sources */,
+				005675971C47EDD1005A43F0 /* URLShorthandValidator.swift in Sources */,
+				0056758B1C47EDCC005A43F0 /* Validator.swift in Sources */,
+				005675901C47EDD1005A43F0 /* EmailValidator.swift in Sources */,
+				005675961C47EDD1005A43F0 /* URLValidator.swift in Sources */,
+				005675891C47EDCC005A43F0 /* Form.swift in Sources */,
+				0056758A1C47EDCC005A43F0 /* Validatable.swift in Sources */,
+				005675951C47EDD1005A43F0 /* RangeValidator.swift in Sources */,
+				0056757F1C47EDB9005A43F0 /* PostcodeUKCondition.swift in Sources */,
+				0056758C1C47EDCC005A43F0 /* ValidatorControl.swift in Sources */,
+				0056757A1C47EDB9005A43F0 /* AlphabeticCondition.swift in Sources */,
+				005675931C47EDD1005A43F0 /* PasswordStrengthValidator.swift in Sources */,
+				0056758F1C47EDD1005A43F0 /* CompositeValidator.swift in Sources */,
+				005675821C47EDB9005A43F0 /* URLCondition.swift in Sources */,
+				0056758D1C47EDD1005A43F0 /* AlphabeticValidator.swift in Sources */,
+				005675981C47EDD9005A43F0 /* Localization.swift in Sources */,
+				005675851C47EDC0005A43F0 /* ValidatorTextView.swift in Sources */,
+				005675911C47EDD1005A43F0 /* NumericValidator.swift in Sources */,
+				005675871C47EDC7005A43F0 /* FormEntry.swift in Sources */,
+				005675941C47EDD1005A43F0 /* PresentValidator.swift in Sources */,
+				005675771C47EDB9005A43F0 /* AndCondition.swift in Sources */,
+				005675801C47EDB9005A43F0 /* PresentCondition.swift in Sources */,
+				0056757D1C47EDB9005A43F0 /* NumericCondition.swift in Sources */,
+				005675841C47EDC0005A43F0 /* ValidatorTextField.swift in Sources */,
+				0056757E1C47EDB9005A43F0 /* PasswordStrengthCondition.swift in Sources */,
+				0056757C1C47EDB9005A43F0 /* EmailCondition.swift in Sources */,
+				005675921C47EDD1005A43F0 /* PostcodeUKValidator.swift in Sources */,
+				0056757B1C47EDB9005A43F0 /* AlphanumericCondition.swift in Sources */,
+				0056758E1C47EDD1005A43F0 /* AlphanumericValidator.swift in Sources */,
+				005675781C47EDB9005A43F0 /* NotCondition.swift in Sources */,
+				005675791C47EDB9005A43F0 /* OrCondition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005675641C47ED32005A43F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0062E9CB1C45493E00021C0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,9 +760,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0056756B1C47ED32005A43F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0056755E1C47ED32005A43F0 /* FormValidatorSwift tvOS */;
+			targetProxy = 0056756A1C47ED32005A43F0 /* PBXContainerItemProxy */;
+		};
 		0062E9DD1C45493E00021C0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0062E9CF1C45493E00021C0A /* FormValidatorSwift */;
+			target = 0062E9CF1C45493E00021C0A /* FormValidatorSwift iOS */;
 			targetProxy = 0062E9DC1C45493E00021C0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -613,6 +796,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		005675711C47ED32005A43F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwift;
+				PRODUCT_NAME = FormValidatorSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		005675721C47ED32005A43F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwift;
+				PRODUCT_NAME = FormValidatorSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		005675741C47ED32005A43F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		005675751C47ED32005A43F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 		0062E9E21C45493E00021C0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -714,7 +959,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FormValidatorSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -732,7 +977,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FormValidatorSwift;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -760,6 +1005,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		005675701C47ED32005A43F0 /* Build configuration list for PBXNativeTarget "FormValidatorSwift tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005675711C47ED32005A43F0 /* Debug */,
+				005675721C47ED32005A43F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		005675731C47ED32005A43F0 /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005675741C47ED32005A43F0 /* Debug */,
+				005675751C47ED32005A43F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0062E9CA1C45493E00021C0A /* Build configuration list for PBXProject "FormValidatorSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -769,7 +1032,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0062E9E41C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwift" */ = {
+		0062E9E41C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwift iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0062E9E51C45493E00021C0A /* Debug */,
@@ -778,7 +1041,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0062E9E71C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests" */ = {
+		0062E9E71C45493E00021C0A /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0062E9E81C45493E00021C0A /* Debug */,
