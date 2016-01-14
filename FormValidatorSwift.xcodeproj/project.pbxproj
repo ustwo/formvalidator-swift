@@ -632,7 +632,7 @@
 		0062E9E81C45493E00021C0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -642,7 +642,7 @@
 		0062E9E91C45493E00021C0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
