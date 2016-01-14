@@ -17,7 +17,7 @@ final class FormView: UIView, ValidatorControlDelegate {
     // MARK: - Properties
     
     let nameLabel       = UILabel()
-    let nameTextField   = ValidatorTextField()
+    let nameTextField   = ValidatorTextField(validator: AlphabeticValidator(allowsWhitespace: false))
     
     let errorLabel      = UILabel()
     
@@ -51,7 +51,6 @@ final class FormView: UIView, ValidatorControlDelegate {
         
         nameTextField.borderStyle = .Line
         nameTextField.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-        nameTextField.validator = AlphabeticValidator(allowsWhitespace: false)
         stackView.addArrangedSubview(nameTextField)
         
         errorLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)

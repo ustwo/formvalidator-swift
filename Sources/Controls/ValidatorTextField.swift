@@ -16,7 +16,7 @@ public class ValidatorTextField: UITextField, ValidatorControl {
     
     public var shouldAllowViolation = true
     public var validateOnFocusLossOnly = false
-    public var validator: Validator?
+    public let validator: Validator
     public weak var validatorDelegate: ValidatorControlDelegate?
     
     public var validatableText: String? {
@@ -28,18 +28,20 @@ public class ValidatorTextField: UITextField, ValidatorControl {
     
     // MARK: - Initializers
     
-    public convenience init() {
-        self.init(frame: CGRect.zero)
+    public convenience init(validator: Validator) {
+        self.init(frame: CGRect.zero, validator: validator)
     }
     
-    public override init(frame: CGRect) {
+    public init(frame: CGRect, validator: Validator) {
+        self.validator = validator
+        
         super.init(frame: frame)
         
         setup()
     }
     
     public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("Not implemented.")
     }
     
     deinit {
@@ -103,7 +105,7 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
         let originalString = NSString(string: sourceText)
         
         let futureString = originalString.stringByReplacingCharactersInRange(range, withString: string)
-        let conditions = validatorTextField.validator?.checkConditions(futureString)
+        let conditions = validatorTextField.validator.checkConditions(futureString)
         
         if let conditions = conditions {
             validatorTextField.validatorTextFieldViolatedConditions(conditions)
@@ -137,7 +139,7 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
             return
         }
         
-        let conditions = validatorTextField.validator?.checkConditions(validatorTextField.text)
+        let conditions = validatorTextField.validator.checkConditions(validatorTextField.text)
         let isValid = conditions == nil
         if lastIsValid != isValid {
             lastIsValid = isValid

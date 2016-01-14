@@ -18,13 +18,11 @@ public protocol ValidatorControlDelegate: class {
 }
 
 
-public protocol ValidatorControl: class {
+public protocol ValidatorControl: class, Validatable {
     
     var isValid: Bool { get }
     var shouldAllowViolation: Bool { get set }
-    var validatableText: String? { get }
     var validateOnFocusLossOnly: Bool { get set }
-    var validator: Validator? { get set }
     var validatorDelegate: ValidatorControlDelegate? { get set }
     
 }
@@ -33,9 +31,11 @@ public protocol ValidatorControl: class {
 public extension ValidatorControl {
     
     var isValid: Bool {
+        /*
         guard let validator = validator else {
             return false
         }
+        */
         
         return validator.checkConditions(validatableText) == nil
     }
