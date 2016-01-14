@@ -44,6 +44,7 @@
 		004913CB1C47C85400471F53 /* NumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913CA1C47C85400471F53 /* NumericValidatorTests.swift */; };
 		005675551C47DD48005A43F0 /* CompositeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675541C47DD48005A43F0 /* CompositeValidatorTests.swift */; };
 		005675571C47E05E005A43F0 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675561C47E05E005A43F0 /* Form.swift */; };
+		005675591C47E493005A43F0 /* ControlForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675581C47E493005A43F0 /* ControlForm.swift */; };
 		0062E9DB1C45493E00021C0A /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */; };
 		0094D6741C46931800145F5C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
 		0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
@@ -132,6 +133,7 @@
 		004913CA1C47C85400471F53 /* NumericValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericValidatorTests.swift; sourceTree = "<group>"; };
 		005675541C47DD48005A43F0 /* CompositeValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeValidatorTests.swift; sourceTree = "<group>"; };
 		005675561C47E05E005A43F0 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		005675581C47E493005A43F0 /* ControlForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlForm.swift; sourceTree = "<group>"; };
 		0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormValidatorSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0094D6731C46931800145F5C /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 		004913B51C47BB6200471F53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				005675581C47E493005A43F0 /* ControlForm.swift */,
 				004913B61C47BB9800471F53 /* FormEntry.swift */,
 			);
 			path = Models;
@@ -536,6 +539,7 @@
 				004913AE1C47B15D00471F53 /* URLShorthandValidator.swift in Sources */,
 				0094D6841C469BA500145F5C /* URLCondition.swift in Sources */,
 				004913AA1C47B0F200471F53 /* RangeValidator.swift in Sources */,
+				005675591C47E493005A43F0 /* ControlForm.swift in Sources */,
 				0049139C1C47AC8200471F53 /* AlphanumericValidator.swift in Sources */,
 				00F2E2E21C46C7B500FE0B66 /* PasswordStrengthCondition.swift in Sources */,
 				00F2E2D61C46C42F00FE0B66 /* AndCondition.swift in Sources */,

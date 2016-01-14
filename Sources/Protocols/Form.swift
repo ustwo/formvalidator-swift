@@ -20,6 +20,9 @@ public protocol Form {
     /// Entries in the form.
     var entries: [FormEntry] { get set }
     
+    /// Whether or not the entire form is valid.
+    var isValid: Bool { get }
+    
     
     // MARK: - Initializers
     
@@ -54,8 +57,15 @@ public protocol Form {
 }
 
 
-// Default implementation for `init(validatables:)`, `init?(validatables:validators:)`, and `checkConditions`.
+// Default implementation for `isValid`, `init(validatables:)`, `init?(validatables:validators:)`, and `checkConditions`.
 public extension Form {
+    
+    
+    // MARK: - Properties
+    
+    var isValid: Bool {
+        return checkConditions() == nil
+    }
 
     
     // MARK: - Initializers

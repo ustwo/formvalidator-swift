@@ -31,12 +31,6 @@ public protocol ValidatorControl: class, Validatable {
 public extension ValidatorControl {
     
     var isValid: Bool {
-        /*
-        guard let validator = validator else {
-            return false
-        }
-        */
-        
         return validator.checkConditions(validatableText) == nil
     }
     
