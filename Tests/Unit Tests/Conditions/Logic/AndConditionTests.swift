@@ -13,6 +13,9 @@ import XCTest
 
 final class AndConditionTests: XCTestCase {
     
+    
+    // MARK: - Properties
+    
     let firstCondition  = RangeCondition(range: 0..<4)
     let secondCondition = AlphanumericCondition()
     
