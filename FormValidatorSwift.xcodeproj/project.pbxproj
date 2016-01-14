@@ -33,6 +33,15 @@
 		004913B41C47B3EA00471F53 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B31C47B3EA00471F53 /* Validatable.swift */; };
 		004913B71C47BB9800471F53 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B61C47BB9800471F53 /* Form.swift */; };
 		004913B91C47BEEC00471F53 /* ValidatorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B81C47BEEC00471F53 /* ValidatorTextView.swift */; };
+		004913BB1C47C4A600471F53 /* AlphanumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */; };
+		004913BD1C47C56900471F53 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BC1C47C56900471F53 /* EmailValidatorTests.swift */; };
+		004913BF1C47C62200471F53 /* PostcodeUKValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BE1C47C62200471F53 /* PostcodeUKValidatorTests.swift */; };
+		004913C11C47C68400471F53 /* RangeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C01C47C68400471F53 /* RangeValidatorTests.swift */; };
+		004913C31C47C6F900471F53 /* PasswordStrengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */; };
+		004913C51C47C74400471F53 /* PresentValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C41C47C74400471F53 /* PresentValidatorTests.swift */; };
+		004913C71C47C7A700471F53 /* URLValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C61C47C7A700471F53 /* URLValidatorTests.swift */; };
+		004913C91C47C7E500471F53 /* URLShorthandValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C81C47C7E500471F53 /* URLShorthandValidatorTests.swift */; };
+		004913CB1C47C85400471F53 /* NumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913CA1C47C85400471F53 /* NumericValidatorTests.swift */; };
 		0062E9DB1C45493E00021C0A /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */; };
 		0094D6741C46931800145F5C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
 		0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
@@ -110,6 +119,15 @@
 		004913B31C47B3EA00471F53 /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		004913B61C47BB9800471F53 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		004913B81C47BEEC00471F53 /* ValidatorTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorTextView.swift; sourceTree = "<group>"; };
+		004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericValidatorTests.swift; sourceTree = "<group>"; };
+		004913BC1C47C56900471F53 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
+		004913BE1C47C62200471F53 /* PostcodeUKValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeUKValidatorTests.swift; sourceTree = "<group>"; };
+		004913C01C47C68400471F53 /* RangeValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeValidatorTests.swift; sourceTree = "<group>"; };
+		004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthValidatorTests.swift; sourceTree = "<group>"; };
+		004913C41C47C74400471F53 /* PresentValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentValidatorTests.swift; sourceTree = "<group>"; };
+		004913C61C47C7A700471F53 /* URLValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLValidatorTests.swift; sourceTree = "<group>"; };
+		004913C81C47C7E500471F53 /* URLShorthandValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLShorthandValidatorTests.swift; sourceTree = "<group>"; };
+		004913CA1C47C85400471F53 /* NumericValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericValidatorTests.swift; sourceTree = "<group>"; };
 		0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormValidatorSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0094D6731C46931800145F5C /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
@@ -219,8 +237,8 @@
 				003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */,
 				0094D6751C4696F400145F5C /* EmailCondition.swift */,
 				0094D67A1C4698CE00145F5C /* NumericCondition.swift */,
-				0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */,
 				00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */,
+				0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */,
 				00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */,
 				0094D6981C46B37900145F5C /* RangeCondition.swift */,
 				0094D6831C469BA500145F5C /* URLCondition.swift */,
@@ -255,10 +273,10 @@
 				003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */,
 				0094D6771C46976500145F5C /* EmailConditionTests.swift */,
 				0094D67C1C46992C00145F5C /* NumericConditionTests.swift */,
-				0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */,
 				00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */,
-				00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */,
 				0094D6801C469A7900145F5C /* PostcodeUKConditionTests.swift */,
+				00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */,
+				0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */,
 				0094D6871C469C8D00145F5C /* URLConditionTests.swift */,
 				0094D6891C469D5200145F5C /* URLShorthandConditionTests.swift */,
 			);
@@ -269,6 +287,15 @@
 			isa = PBXGroup;
 			children = (
 				003698311C46DE1E004D1692 /* AlphabeticValidatorTests.swift */,
+				004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */,
+				004913BC1C47C56900471F53 /* EmailValidatorTests.swift */,
+				004913CA1C47C85400471F53 /* NumericValidatorTests.swift */,
+				004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */,
+				004913BE1C47C62200471F53 /* PostcodeUKValidatorTests.swift */,
+				004913C41C47C74400471F53 /* PresentValidatorTests.swift */,
+				004913C01C47C68400471F53 /* RangeValidatorTests.swift */,
+				004913C61C47C7A700471F53 /* URLValidatorTests.swift */,
+				004913C81C47C7E500471F53 /* URLShorthandValidatorTests.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -514,20 +541,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				003698321C46DE1E004D1692 /* AlphabeticValidatorTests.swift in Sources */,
+				004913BF1C47C62200471F53 /* PostcodeUKValidatorTests.swift in Sources */,
 				0094D6821C469A9700145F5C /* PostcodeUKConditionTests.swift in Sources */,
 				00F2E2DC1C46C57800FE0B66 /* NotConditionTests.swift in Sources */,
 				003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */,
 				00F2E2E01C46C6F400FE0B66 /* PresentConditionTests.swift in Sources */,
+				004913C51C47C74400471F53 /* PresentValidatorTests.swift in Sources */,
 				003E06251C463E84008D47F2 /* XCTestCase+Additions.swift in Sources */,
 				0094D67D1C46992C00145F5C /* NumericConditionTests.swift in Sources */,
+				004913BD1C47C56900471F53 /* EmailValidatorTests.swift in Sources */,
+				004913CB1C47C85400471F53 /* NumericValidatorTests.swift in Sources */,
 				0094D69D1C46B38E00145F5C /* RangeConditionTests.swift in Sources */,
 				0094D6881C469C8D00145F5C /* URLConditionTests.swift in Sources */,
 				0094D69F1C46B39800145F5C /* OrConditionTests.swift in Sources */,
+				004913BB1C47C4A600471F53 /* AlphanumericValidatorTests.swift in Sources */,
 				00F2E2E41C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift in Sources */,
+				004913C11C47C68400471F53 /* RangeValidatorTests.swift in Sources */,
 				0094D6791C46979300145F5C /* EmailConditionTests.swift in Sources */,
 				0094D68A1C469D5200145F5C /* URLShorthandConditionTests.swift in Sources */,
+				004913C71C47C7A700471F53 /* URLValidatorTests.swift in Sources */,
 				00F2E2D81C46C47700FE0B66 /* AndConditionTests.swift in Sources */,
+				004913C31C47C6F900471F53 /* PasswordStrengthValidatorTests.swift in Sources */,
 				0032C10D1C45594E0023DB19 /* AlphabeticConditionTests.swift in Sources */,
+				004913C91C47C7E500471F53 /* URLShorthandValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

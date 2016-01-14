@@ -49,7 +49,7 @@ final class AlphabeticValidatorTests: XCTestCase {
         // Given
         let testInput       = "abc def gh"
         let validator       = AlphabeticValidator(allowsWhitespace: false)
-        let expectedResult  = [AlphabeticCondition(allowsWhiteSpace: false)]
+        let expectedResult  = validator.conditions
         
         // When
         let actualResult = validator.checkConditions(testInput)
@@ -62,7 +62,7 @@ final class AlphabeticValidatorTests: XCTestCase {
         // Given
         let testInput       = "abc def gh1"
         let validator       = AlphabeticValidator(allowsWhitespace: true)
-        let expectedResult  = [AlphabeticCondition(allowsWhiteSpace: true)]
+        let expectedResult  = validator.conditions
         
         // When
         let actualResult = validator.checkConditions(testInput)
