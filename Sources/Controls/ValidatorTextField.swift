@@ -28,6 +28,19 @@ public class ValidatorTextField: UITextField, ValidatorControl {
     
     // MARK: - Initializers
     
+    public convenience init() {
+        self.init(frame: CGRect.zero)
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setup()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     deinit {
         guard let responder = validatorControlResponder else {
@@ -41,7 +54,7 @@ public class ValidatorTextField: UITextField, ValidatorControl {
     
     // MARK: - Setup
     
-    func setup() {
+    private func setup() {
         let responder = ValidatorTextFieldResponder(validatorTextField: self)
         validatorControlResponder = responder
         super.delegate = responder
