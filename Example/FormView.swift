@@ -51,8 +51,6 @@ final class FormView: UIView, ValidatorControlDelegate {
         
         nameTextField.borderStyle = .Line
         nameTextField.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-        nameTextField.shouldAllowViolation = true
-        nameTextField.validateOnFocusLossOnly = true
         nameTextField.validator = AlphabeticValidator(allowsWhitespace: false)
         stackView.addArrangedSubview(nameTextField)
         
@@ -63,6 +61,13 @@ final class FormView: UIView, ValidatorControlDelegate {
         bottomBufferView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, forAxis: stackView.axis)
         bottomBufferView.setContentHuggingPriority(UILayoutPriorityDefaultLow, forAxis: stackView.axis)
         stackView.addArrangedSubview(bottomBufferView)
+        
+        
+        // Accessibility
+        
+        nameLabel.accessibilityIdentifier = FormAccessibility.Identifiers.NameLabel
+        nameTextField.accessibilityIdentifier = FormAccessibility.Identifiers.NameTextField
+        errorLabel.accessibilityIdentifier = FormAccessibility.Identifiers.ErrorLabel
         
         
         // Layout

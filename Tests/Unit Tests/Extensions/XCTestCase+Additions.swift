@@ -20,7 +20,7 @@ extension XCTestCase {
         
         // Test
         if expectedResult != actualResult {
-            let message = "The `\(condition.dynamicType)` should respond with \(expectedResult) and but received \(actualResult)."
+            let message = "The `\(condition.dynamicType)` should respond with \(expectedResult) but received \(actualResult)."
             self.recordFailureWithDescription(message, inFile: file, atLine: line, expected: true)
         }
     }
