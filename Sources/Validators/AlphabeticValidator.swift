@@ -9,6 +9,10 @@
 import Foundation
 
 
+/**
+ *  The `AlphabeticValidator` contains an `AlphabeticCondition`. A valid string only contains letters.
+ *  - seealso: `AlphabeticCondition`
+ */
 public struct AlphabeticValidator: Validator {
     
     
