@@ -151,7 +151,8 @@
 				003698301C46DE00004D1692 /* Validators */,
 				002C042A1C454AD9005CC374 /* Info.plist */,
 			);
-			path = Tests;
+			name = Tests;
+			path = "Tests/Unit Tests";
 			sourceTree = "<group>";
 		};
 		0032C0D91C454BB80023DB19 /* Resources */ = {

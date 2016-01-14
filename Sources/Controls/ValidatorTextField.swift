@@ -73,7 +73,7 @@ public class ValidatorTextField: UITextField, ValidatorControl {
 }
 
 
-private class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
+internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     
     
     // MARK: - Properties
@@ -124,7 +124,7 @@ private class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
         return true
     }
     
-    func textFieldDidChange(notification: NSNotification?) {
+    func textFieldDidChange(notification: NSNotification) {
         defer {
             // Inform delegate about changes
             delegate?.validatorControlDidChange(validatorTextField)
@@ -182,7 +182,7 @@ private class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     @objc func textFieldDidEndEditing(textField: UITextField) {
         didEndEditing = true
         
-        textFieldDidChange(nil)
+        textFieldDidChange(NSNotification())
         
         delegate?.textFieldDidEndEditing?(validatorTextField)
     }
