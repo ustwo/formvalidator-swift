@@ -13,6 +13,8 @@
 		0032C10A1C4555200023DB19 /* AlphabeticCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1091C4555200023DB19 /* AlphabeticCondition.swift */; };
 		0032C10D1C45594E0023DB19 /* AlphabeticConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C10C1C45594E0023DB19 /* AlphabeticConditionTests.swift */; };
 		003698321C46DE1E004D1692 /* AlphabeticValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698311C46DE1E004D1692 /* AlphabeticValidatorTests.swift */; };
+		003698351C46E24C004D1692 /* ValidatorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698341C46E24C004D1692 /* ValidatorControl.swift */; };
+		003698371C46E3BE004D1692 /* ValidatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698361C46E3BE004D1692 /* ValidatorTextField.swift */; };
 		003E061F1C463CEB008D47F2 /* AlphanumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */; };
 		003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */; };
 		003E06251C463E84008D47F2 /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06241C463E84008D47F2 /* XCTestCase+Additions.swift */; };
@@ -75,6 +77,8 @@
 		0032C1091C4555200023DB19 /* AlphabeticCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticCondition.swift; sourceTree = "<group>"; };
 		0032C10C1C45594E0023DB19 /* AlphabeticConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticConditionTests.swift; sourceTree = "<group>"; };
 		003698311C46DE1E004D1692 /* AlphabeticValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticValidatorTests.swift; sourceTree = "<group>"; };
+		003698341C46E24C004D1692 /* ValidatorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorControl.swift; sourceTree = "<group>"; };
+		003698361C46E3BE004D1692 /* ValidatorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorTextField.swift; sourceTree = "<group>"; };
 		003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericCondition.swift; sourceTree = "<group>"; };
 		003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericConditionTests.swift; sourceTree = "<group>"; };
 		003E06241C463E84008D47F2 /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
@@ -130,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				0032C1041C454EDF0023DB19 /* Conditions */,
-				0032C1021C454E750023DB19 /* Models */,
+				003698331C46E200004D1692 /* Controls */,
 				0032C1031C454ED90023DB19 /* Protocols */,
 				0032C1051C454EEA0023DB19 /* Validators */,
 				0032C0D91C454BB80023DB19 /* Resources */,
@@ -168,18 +172,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0032C1021C454E750023DB19 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		0032C1031C454ED90023DB19 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				0032C1061C454F4E0023DB19 /* Condition.swift */,
 				003E06261C46413C008D47F2 /* Validator.swift */,
+				003698341C46E24C004D1692 /* ValidatorControl.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -234,6 +232,14 @@
 				003698311C46DE1E004D1692 /* AlphabeticValidatorTests.swift */,
 			);
 			path = Validators;
+			sourceTree = "<group>";
+		};
+		003698331C46E200004D1692 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				003698361C46E3BE004D1692 /* ValidatorTextField.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		003E06231C463E5B008D47F2 /* Extensions */ = {
@@ -425,11 +431,13 @@
 				0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */,
 				003E06271C46413C008D47F2 /* Validator.swift in Sources */,
 				0094D6991C46B37900145F5C /* RangeCondition.swift in Sources */,
+				003698371C46E3BE004D1692 /* ValidatorTextField.swift in Sources */,
 				003E061F1C463CEB008D47F2 /* AlphanumericCondition.swift in Sources */,
 				0094D67B1C4698CE00145F5C /* NumericCondition.swift in Sources */,
 				00F2E2DA1C46C53500FE0B66 /* NotCondition.swift in Sources */,
 				0094D6861C469C2A00145F5C /* URLShorthandCondition.swift in Sources */,
 				00F2E2DE1C46C69D00FE0B66 /* PresentCondition.swift in Sources */,
+				003698351C46E24C004D1692 /* ValidatorControl.swift in Sources */,
 				0094D6741C46931800145F5C /* Localization.swift in Sources */,
 				003E06291C4648E5008D47F2 /* AlphabeticValidator.swift in Sources */,
 				0032C10A1C4555200023DB19 /* AlphabeticCondition.swift in Sources */,
