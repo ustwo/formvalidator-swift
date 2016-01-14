@@ -16,13 +16,13 @@ internal struct StringLocalization {
 
     
     /**
-     Localizes a string based on the `US2Localizeable.strings` file within the framework.
+     Localizes a string based on the `Localizeable.strings` file within the framework.
      - parameter key:     Lookup value for the strings table.
      - parameter comment: Comment value for the strings table.
      - returns: Localized string.
      */
     static func localizedString(key: String, comment: String) -> String {
-        return NSLocalizedString(key, tableName: "US2Localizable", bundle: NSBundle(forClass: DummyClass.self), comment: comment)
+        return NSLocalizedString(key, tableName: "Localizable", bundle: NSBundle(forClass: DummyClass.self), comment: comment)
     }
 
 }
