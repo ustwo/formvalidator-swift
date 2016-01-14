@@ -48,5 +48,15 @@ final class PasswordStrengthConditionTests: XCTestCase {
         // Test
         AssertCondition(condition, testInput: testInput, expectedResult: expectedResult)
     }
+    
+    func testPasswordStrengthCondition_Nil_Failure() {
+        // Given
+        let testInput: String?  = nil
+        let condition           = PasswordStrengthCondition(requiredStrength: .VeryStrong)
+        let expectedResult      = false
+        
+        // Test
+        AssertCondition(condition, testInput: testInput, expectedResult: expectedResult)
+    }
 
 }
