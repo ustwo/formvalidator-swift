@@ -28,6 +28,10 @@ public struct AndCondition: Condition {
     
     // MARK: - Initializers
     
+    public init() {
+        self.init(conditions: [AlphanumericCondition()])
+    }
+    
     public init(conditions: [Condition]) {
         self.conditions = conditions
     }

@@ -23,6 +23,11 @@ public struct PresentCondition: Condition {
     public var shouldAllowViolation = true
     
     
+    // MARK: - Initializers
+    
+    public init() { }
+    
+    
     // MARK: - Check
     
     public func check(text: String?) -> Bool {

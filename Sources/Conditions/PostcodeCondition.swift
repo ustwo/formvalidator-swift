@@ -53,6 +53,13 @@ public struct PostcodeCondition: Condition {
     // MARK: - Initializer
     
     /**
+    Initializes a `PostcodeCondition` with a `UnitedKingdom` country.
+    */
+    public init() {
+        self.init(country: .UnitedKingdom)
+    }
+    
+    /**
     Initializes a `PostcodeCondition`.
     - parameter country: Country to use for postcode validation.
     */

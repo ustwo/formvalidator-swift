@@ -24,6 +24,13 @@ public struct PasswordStrengthValidator: Validator {
     // MARK: - Initializers
     
     /**
+    Initializes a `PasswordStrengthValidator` that requires a `VeryStrong` password.
+    */
+    public init() {
+        self.init(requiredStrength: .VeryStrong)
+    }
+    
+    /**
     Initializes a `PasswordStrengthValidator`.
     - parameter requiredStrength: Minimum strength required to be considered valid.
     */

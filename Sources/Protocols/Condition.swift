@@ -32,6 +32,9 @@ public protocol Condition: CustomStringConvertible {
     /// If set to `false` the user is not able to enter characters which would break the condition.
     var shouldAllowViolation: Bool { get set }
     
+    /// Initializer that creates a condition based on default values.
+    init()
+    
     /**
      Check the custom condition.
      - parameter text: `String` to check.

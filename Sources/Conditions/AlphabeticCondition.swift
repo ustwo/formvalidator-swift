@@ -30,6 +30,13 @@ public struct AlphabeticCondition: Condition {
     // MARK: - Initializers
     
     /**
+    Initializes a `AlphabeticCondition` that does not allow whitespace.
+    */
+    public init() {
+        self.init(allowsWhitespace: false)
+    }
+    
+    /**
     Initializes a `AlphabeticCondition`.
     - parameter allowsWhitespace: Whether or not to allow whitespace.
     */

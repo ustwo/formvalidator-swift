@@ -26,6 +26,16 @@ public struct RangeCondition: Condition {
     public let range: Range<Int>
     
     
+    // MARK: - Initializers
+    
+    /**
+    Initializes a `RangeCondition` with a `0..<1` range.
+    */
+    public init() {
+        self.init(range: 0..<1)
+    }
+    
+    
     public init(range: Range<Int>) {
         self.range = range
     }

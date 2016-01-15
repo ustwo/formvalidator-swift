@@ -44,6 +44,13 @@ public struct PasswordStrengthCondition: Condition {
     // MARK: - Initializers
     
     /**
+    Initializes a `PasswordStrengthCondition` that requires a `VeryStrong` password.
+    */
+    public init() {
+        self.init(requiredStrength: .VeryStrong)
+    }
+    
+    /**
     Initializes a `PasswordStrengthCondition`.
     - parameter requiredStrength: Minimum strength required to be considered valid.
     */

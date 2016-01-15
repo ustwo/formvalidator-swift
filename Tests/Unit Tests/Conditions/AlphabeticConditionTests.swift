@@ -19,7 +19,7 @@ final class AlphabeticConditionTests: XCTestCase {
     func testAlphabeticCondition_NoWhitespace_Success() {
         // Given
         let testInput       = "abcdefgh"
-        let condition       = AlphabeticCondition(allowsWhiteSpace: false)
+        let condition       = AlphabeticCondition(allowsWhitespace: false)
         let expectedResult  = true
         
         // Test
@@ -29,7 +29,7 @@ final class AlphabeticConditionTests: XCTestCase {
     func testAlphabeticCondition_Whitespace_Success() {
         // Given
         let testInput       = "abcd efg h"
-        let condition       = AlphabeticCondition(allowsWhiteSpace: true)
+        let condition       = AlphabeticCondition(allowsWhitespace: true)
         let expectedResult  = true
         
         // Test
@@ -42,7 +42,7 @@ final class AlphabeticConditionTests: XCTestCase {
     func testAlphabeticCondition_NoWhitespace_Failure() {
         // Given
         let testInput       = "abcd efg h"
-        let condition       = AlphabeticCondition(allowsWhiteSpace: false)
+        let condition       = AlphabeticCondition(allowsWhitespace: false)
         let expectedResult  = false
         
         // Test
@@ -52,7 +52,7 @@ final class AlphabeticConditionTests: XCTestCase {
     func testAlphabeticCondition_Whitespace_Failure() {
         // Given
         let testInput       = "12345678"
-        let condition       = AlphabeticCondition(allowsWhiteSpace: true)
+        let condition       = AlphabeticCondition(allowsWhitespace: true)
         let expectedResult  = false
         
         // Test
@@ -62,7 +62,7 @@ final class AlphabeticConditionTests: XCTestCase {
     func testAlphabeticCondition_Nil() {
         // Given
         let testInput: String?  = nil
-        let condition           = AlphabeticCondition(allowsWhiteSpace: false)
+        let condition           = AlphabeticCondition(allowsWhitespace: false)
         let expectedResult      = false
         
         // Test

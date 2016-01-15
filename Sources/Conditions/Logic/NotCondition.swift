@@ -28,6 +28,10 @@ public struct NotCondition: Condition {
     
     // MARK: - Initializers
     
+    public init() {
+        self.init(condition: AlphanumericCondition())
+    }
+    
     public init(condition: Condition) {
         self.condition = condition
     }

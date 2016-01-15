@@ -28,6 +28,10 @@ public struct OrCondition: Condition {
     
     // MARK: - Initializers
     
+    public init() {
+        self.init(conditions: [AlphanumericCondition()])
+    }
+    
     public init(conditions: [Condition]) {
         self.conditions = conditions
     }

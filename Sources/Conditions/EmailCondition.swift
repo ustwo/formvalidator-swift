@@ -23,4 +23,9 @@ public struct EmailCondition: Condition {
     
     public var shouldAllowViolation = true
     
+    
+    // MARK: - Initializers
+    
+    public init() { }
+    
 }

@@ -22,6 +22,13 @@ public struct AlphabeticValidator: Validator {
     
     
     // MARK: - Initializers
+    
+    /**
+    Initializes a `AlphabeticValidator` that does not allow whitespace.
+    */
+    public init() {
+        self.init(allowsWhitespace: false)
+    }
 
     /**
     Initializes a `AlphabeticValidator`.

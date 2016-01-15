@@ -24,6 +24,10 @@ public struct CompositeValidator: Validator {
     
     // MARK: - Initializers
     
+    public init() {
+        self.init(validators: [PresentValidator()])
+    }
+    
     /**
     Initializes a `CompositeValidator`.
     - parameter validators: Validators which are used for validation.

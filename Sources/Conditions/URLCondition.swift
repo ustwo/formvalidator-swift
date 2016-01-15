@@ -24,4 +24,9 @@ public struct URLCondition: Condition {
     
     public var shouldAllowViolation = true
     
+    
+    // MARK: - Initializers
+    
+    public init() { }
+    
 }

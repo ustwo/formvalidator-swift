@@ -23,6 +23,13 @@ public struct RangeValidator: Validator {
     
     // MARK: - Initializers
     
+    /**
+    Initializes a `RangeValidator` with a `0..<1` range.
+    */
+    public init() {
+        self.init(range: 0..<1)
+    }
+    
     public init(range: Range<Int>) {
         conditions = [RangeCondition(range: range)]
     }

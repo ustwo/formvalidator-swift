@@ -16,6 +16,9 @@ import Foundation
  */
 public protocol Validator {
     
+    /// Initializer that creates a condition based on default values.
+    init()
+    
     /// Conditions to use when validating text.
     var conditions: [Condition] { get set }
     

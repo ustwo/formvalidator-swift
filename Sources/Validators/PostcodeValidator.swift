@@ -24,6 +24,13 @@ public struct PostcodeValidator: Validator {
     // MARK: - Initializers
     
     /**
+    Initializes a `PostcodeValidator` with a `UnitedKingdom` country.
+    */
+    public init() {
+        self.init(country: .UnitedKingdom)
+    }
+    
+    /**
     Initializes a `PostcodeValidator`.
     - parameter country: Country to use for postcode validation.
     */
