@@ -1,10 +1,11 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/ustwo/formvalidator-swift/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/ustwo/formvalidator-swift.svg?branch=master)](https://travis-ci.org/ustwo/formvalidator-swift)
 [![codecov.io](https://codecov.io/github/ustwo/formvalidator-swift/coverage.svg?branch=master)](https://codecov.io/github/ustwo/formvalidator-swift?branch=master)
+![Swift](https://img.shields.io/badge/Swift-2.1-orange.svg)
 
 # FormValidatorSwift
 
-The FormValidatorSwift framework allows you to validate inputs of text fields and text views in a convenient way.
+The FormValidatorSwift framework allows you to validate inputs of text fields and text views in a convenient way. It has been developed and used by iOS developers at [ustwo](ustwo.com).
 
 ## Features
 
