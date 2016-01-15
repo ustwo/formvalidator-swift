@@ -23,7 +23,7 @@
 		0049139C1C47AC8200471F53 /* AlphanumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139B1C47AC8200471F53 /* AlphanumericValidator.swift */; };
 		0049139E1C47ADCA00471F53 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139D1C47ADCA00471F53 /* EmailValidator.swift */; };
 		004913A01C47AE0700471F53 /* NumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139F1C47AE0700471F53 /* NumericValidator.swift */; };
-		004913A21C47AE5D00471F53 /* PostcodeUKValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A11C47AE5D00471F53 /* PostcodeUKValidator.swift */; };
+		004913A21C47AE5D00471F53 /* PostcodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A11C47AE5D00471F53 /* PostcodeValidator.swift */; };
 		004913A41C47AE9F00471F53 /* PresentValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A31C47AE9F00471F53 /* PresentValidator.swift */; };
 		004913A81C47B08C00471F53 /* PasswordStrengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A71C47B08C00471F53 /* PasswordStrengthValidator.swift */; };
 		004913AA1C47B0F200471F53 /* RangeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A91C47B0F200471F53 /* RangeValidator.swift */; };
@@ -35,7 +35,7 @@
 		004913B91C47BEEC00471F53 /* ValidatorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B81C47BEEC00471F53 /* ValidatorTextView.swift */; };
 		004913BB1C47C4A600471F53 /* AlphanumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */; };
 		004913BD1C47C56900471F53 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BC1C47C56900471F53 /* EmailValidatorTests.swift */; };
-		004913BF1C47C62200471F53 /* PostcodeUKValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BE1C47C62200471F53 /* PostcodeUKValidatorTests.swift */; };
+		004913BF1C47C62200471F53 /* PostcodeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BE1C47C62200471F53 /* PostcodeValidatorTests.swift */; };
 		004913C11C47C68400471F53 /* RangeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C01C47C68400471F53 /* RangeValidatorTests.swift */; };
 		004913C31C47C6F900471F53 /* PasswordStrengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */; };
 		004913C51C47C74400471F53 /* PresentValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C41C47C74400471F53 /* PresentValidatorTests.swift */; };
@@ -54,7 +54,7 @@
 		0056757C1C47EDB9005A43F0 /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
 		0056757D1C47EDB9005A43F0 /* NumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67A1C4698CE00145F5C /* NumericCondition.swift */; };
 		0056757E1C47EDB9005A43F0 /* PasswordStrengthCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */; };
-		0056757F1C47EDB9005A43F0 /* PostcodeUKCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */; };
+		0056757F1C47EDB9005A43F0 /* PostcodeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67E1C469A0E00145F5C /* PostcodeCondition.swift */; };
 		005675801C47EDB9005A43F0 /* PresentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */; };
 		005675811C47EDB9005A43F0 /* RangeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6981C46B37900145F5C /* RangeCondition.swift */; };
 		005675821C47EDB9005A43F0 /* URLCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6831C469BA500145F5C /* URLCondition.swift */; };
@@ -73,7 +73,7 @@
 		0056758F1C47EDD1005A43F0 /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AF1C47B1B400471F53 /* CompositeValidator.swift */; };
 		005675901C47EDD1005A43F0 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139D1C47ADCA00471F53 /* EmailValidator.swift */; };
 		005675911C47EDD1005A43F0 /* NumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139F1C47AE0700471F53 /* NumericValidator.swift */; };
-		005675921C47EDD1005A43F0 /* PostcodeUKValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A11C47AE5D00471F53 /* PostcodeUKValidator.swift */; };
+		005675921C47EDD1005A43F0 /* PostcodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A11C47AE5D00471F53 /* PostcodeValidator.swift */; };
 		005675931C47EDD1005A43F0 /* PasswordStrengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A71C47B08C00471F53 /* PasswordStrengthValidator.swift */; };
 		005675941C47EDD1005A43F0 /* PresentValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A31C47AE9F00471F53 /* PresentValidator.swift */; };
 		005675951C47EDD1005A43F0 /* RangeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A91C47B0F200471F53 /* RangeValidator.swift */; };
@@ -88,8 +88,8 @@
 		0094D6791C46979300145F5C /* EmailConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6771C46976500145F5C /* EmailConditionTests.swift */; };
 		0094D67B1C4698CE00145F5C /* NumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67A1C4698CE00145F5C /* NumericCondition.swift */; };
 		0094D67D1C46992C00145F5C /* NumericConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67C1C46992C00145F5C /* NumericConditionTests.swift */; };
-		0094D67F1C469A0E00145F5C /* PostcodeUKCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */; };
-		0094D6821C469A9700145F5C /* PostcodeUKConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6801C469A7900145F5C /* PostcodeUKConditionTests.swift */; };
+		0094D67F1C469A0E00145F5C /* PostcodeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67E1C469A0E00145F5C /* PostcodeCondition.swift */; };
+		0094D6821C469A9700145F5C /* PostcodeConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6801C469A7900145F5C /* PostcodeConditionTests.swift */; };
 		0094D6841C469BA500145F5C /* URLCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6831C469BA500145F5C /* URLCondition.swift */; };
 		0094D6861C469C2A00145F5C /* URLShorthandCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */; };
 		0094D6881C469C8D00145F5C /* URLConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6871C469C8D00145F5C /* URLConditionTests.swift */; };
@@ -106,7 +106,7 @@
 		00BB68391C47FDC400714F34 /* EmailConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6771C46976500145F5C /* EmailConditionTests.swift */; };
 		00BB683A1C47FDC400714F34 /* NumericConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67C1C46992C00145F5C /* NumericConditionTests.swift */; };
 		00BB683B1C47FDC400714F34 /* PasswordStrengthConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */; };
-		00BB683C1C47FDC400714F34 /* PostcodeUKConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6801C469A7900145F5C /* PostcodeUKConditionTests.swift */; };
+		00BB683C1C47FDC400714F34 /* PostcodeConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6801C469A7900145F5C /* PostcodeConditionTests.swift */; };
 		00BB683D1C47FDC400714F34 /* PresentConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */; };
 		00BB683E1C47FDC400714F34 /* RangeConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */; };
 		00BB683F1C47FDC400714F34 /* URLConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6871C469C8D00145F5C /* URLConditionTests.swift */; };
@@ -118,7 +118,7 @@
 		00BB68451C47FDCE00714F34 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BC1C47C56900471F53 /* EmailValidatorTests.swift */; };
 		00BB68461C47FDCE00714F34 /* NumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913CA1C47C85400471F53 /* NumericValidatorTests.swift */; };
 		00BB68471C47FDCE00714F34 /* PasswordStrengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */; };
-		00BB68481C47FDCE00714F34 /* PostcodeUKValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BE1C47C62200471F53 /* PostcodeUKValidatorTests.swift */; };
+		00BB68481C47FDCE00714F34 /* PostcodeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BE1C47C62200471F53 /* PostcodeValidatorTests.swift */; };
 		00BB68491C47FDCE00714F34 /* PresentValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C41C47C74400471F53 /* PresentValidatorTests.swift */; };
 		00BB684A1C47FDCE00714F34 /* RangeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C01C47C68400471F53 /* RangeValidatorTests.swift */; };
 		00BB684B1C47FDCE00714F34 /* URLValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C61C47C7A700471F53 /* URLValidatorTests.swift */; };
@@ -181,7 +181,7 @@
 		0049139B1C47AC8200471F53 /* AlphanumericValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericValidator.swift; sourceTree = "<group>"; };
 		0049139D1C47ADCA00471F53 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		0049139F1C47AE0700471F53 /* NumericValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericValidator.swift; sourceTree = "<group>"; };
-		004913A11C47AE5D00471F53 /* PostcodeUKValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeUKValidator.swift; sourceTree = "<group>"; };
+		004913A11C47AE5D00471F53 /* PostcodeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeValidator.swift; sourceTree = "<group>"; };
 		004913A31C47AE9F00471F53 /* PresentValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentValidator.swift; sourceTree = "<group>"; };
 		004913A71C47B08C00471F53 /* PasswordStrengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthValidator.swift; sourceTree = "<group>"; };
 		004913A91C47B0F200471F53 /* RangeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeValidator.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		004913B81C47BEEC00471F53 /* ValidatorTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorTextView.swift; sourceTree = "<group>"; };
 		004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericValidatorTests.swift; sourceTree = "<group>"; };
 		004913BC1C47C56900471F53 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
-		004913BE1C47C62200471F53 /* PostcodeUKValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeUKValidatorTests.swift; sourceTree = "<group>"; };
+		004913BE1C47C62200471F53 /* PostcodeValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeValidatorTests.swift; sourceTree = "<group>"; };
 		004913C01C47C68400471F53 /* RangeValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeValidatorTests.swift; sourceTree = "<group>"; };
 		004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthValidatorTests.swift; sourceTree = "<group>"; };
 		004913C41C47C74400471F53 /* PresentValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentValidatorTests.swift; sourceTree = "<group>"; };
@@ -212,8 +212,8 @@
 		0094D6771C46976500145F5C /* EmailConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailConditionTests.swift; sourceTree = "<group>"; };
 		0094D67A1C4698CE00145F5C /* NumericCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericCondition.swift; sourceTree = "<group>"; };
 		0094D67C1C46992C00145F5C /* NumericConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericConditionTests.swift; sourceTree = "<group>"; };
-		0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeUKCondition.swift; sourceTree = "<group>"; };
-		0094D6801C469A7900145F5C /* PostcodeUKConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeUKConditionTests.swift; sourceTree = "<group>"; };
+		0094D67E1C469A0E00145F5C /* PostcodeCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeCondition.swift; sourceTree = "<group>"; };
+		0094D6801C469A7900145F5C /* PostcodeConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeConditionTests.swift; sourceTree = "<group>"; };
 		0094D6831C469BA500145F5C /* URLCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLCondition.swift; sourceTree = "<group>"; };
 		0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLShorthandCondition.swift; sourceTree = "<group>"; };
 		0094D6871C469C8D00145F5C /* URLConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConditionTests.swift; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 				0094D6751C4696F400145F5C /* EmailCondition.swift */,
 				0094D67A1C4698CE00145F5C /* NumericCondition.swift */,
 				00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */,
-				0094D67E1C469A0E00145F5C /* PostcodeUKCondition.swift */,
+				0094D67E1C469A0E00145F5C /* PostcodeCondition.swift */,
 				00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */,
 				0094D6981C46B37900145F5C /* RangeCondition.swift */,
 				0094D6831C469BA500145F5C /* URLCondition.swift */,
@@ -348,7 +348,7 @@
 				004913AF1C47B1B400471F53 /* CompositeValidator.swift */,
 				0049139D1C47ADCA00471F53 /* EmailValidator.swift */,
 				0049139F1C47AE0700471F53 /* NumericValidator.swift */,
-				004913A11C47AE5D00471F53 /* PostcodeUKValidator.swift */,
+				004913A11C47AE5D00471F53 /* PostcodeValidator.swift */,
 				004913A71C47B08C00471F53 /* PasswordStrengthValidator.swift */,
 				004913A31C47AE9F00471F53 /* PresentValidator.swift */,
 				004913A91C47B0F200471F53 /* RangeValidator.swift */,
@@ -367,7 +367,7 @@
 				0094D6771C46976500145F5C /* EmailConditionTests.swift */,
 				0094D67C1C46992C00145F5C /* NumericConditionTests.swift */,
 				00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */,
-				0094D6801C469A7900145F5C /* PostcodeUKConditionTests.swift */,
+				0094D6801C469A7900145F5C /* PostcodeConditionTests.swift */,
 				00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */,
 				0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */,
 				0094D6871C469C8D00145F5C /* URLConditionTests.swift */,
@@ -385,7 +385,7 @@
 				004913BC1C47C56900471F53 /* EmailValidatorTests.swift */,
 				004913CA1C47C85400471F53 /* NumericValidatorTests.swift */,
 				004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */,
-				004913BE1C47C62200471F53 /* PostcodeUKValidatorTests.swift */,
+				004913BE1C47C62200471F53 /* PostcodeValidatorTests.swift */,
 				004913C41C47C74400471F53 /* PresentValidatorTests.swift */,
 				004913C01C47C68400471F53 /* RangeValidatorTests.swift */,
 				004913C61C47C7A700471F53 /* URLValidatorTests.swift */,
@@ -676,7 +676,7 @@
 				005675891C47EDCC005A43F0 /* Form.swift in Sources */,
 				0056758A1C47EDCC005A43F0 /* Validatable.swift in Sources */,
 				005675951C47EDD1005A43F0 /* RangeValidator.swift in Sources */,
-				0056757F1C47EDB9005A43F0 /* PostcodeUKCondition.swift in Sources */,
+				0056757F1C47EDB9005A43F0 /* PostcodeCondition.swift in Sources */,
 				0056758C1C47EDCC005A43F0 /* ValidatorControl.swift in Sources */,
 				0056757A1C47EDB9005A43F0 /* AlphabeticCondition.swift in Sources */,
 				005675931C47EDD1005A43F0 /* PasswordStrengthValidator.swift in Sources */,
@@ -694,7 +694,7 @@
 				005675841C47EDC0005A43F0 /* ValidatorTextField.swift in Sources */,
 				0056757E1C47EDB9005A43F0 /* PasswordStrengthCondition.swift in Sources */,
 				0056757C1C47EDB9005A43F0 /* EmailCondition.swift in Sources */,
-				005675921C47EDD1005A43F0 /* PostcodeUKValidator.swift in Sources */,
+				005675921C47EDD1005A43F0 /* PostcodeValidator.swift in Sources */,
 				0056757B1C47EDB9005A43F0 /* AlphanumericCondition.swift in Sources */,
 				0056758E1C47EDD1005A43F0 /* AlphanumericValidator.swift in Sources */,
 				005675781C47EDB9005A43F0 /* NotCondition.swift in Sources */,
@@ -707,11 +707,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				00BB68421C47FDCE00714F34 /* AlphabeticValidatorTests.swift in Sources */,
-				00BB683C1C47FDC400714F34 /* PostcodeUKConditionTests.swift in Sources */,
+				00BB683C1C47FDC400714F34 /* PostcodeConditionTests.swift in Sources */,
 				00BB68491C47FDCE00714F34 /* PresentValidatorTests.swift in Sources */,
 				00BB68441C47FDCE00714F34 /* CompositeValidatorTests.swift in Sources */,
 				00BB68451C47FDCE00714F34 /* EmailValidatorTests.swift in Sources */,
-				00BB68481C47FDCE00714F34 /* PostcodeUKValidatorTests.swift in Sources */,
+				00BB68481C47FDCE00714F34 /* PostcodeValidatorTests.swift in Sources */,
 				00BB684B1C47FDCE00714F34 /* URLValidatorTests.swift in Sources */,
 				00BB68401C47FDC400714F34 /* URLShorthandConditionTests.swift in Sources */,
 				00BB68371C47FDC400714F34 /* AlphabeticConditionTests.swift in Sources */,
@@ -741,7 +741,7 @@
 				004913A41C47AE9F00471F53 /* PresentValidator.swift in Sources */,
 				004913A01C47AE0700471F53 /* NumericValidator.swift in Sources */,
 				0094D69B1C46B38200145F5C /* OrCondition.swift in Sources */,
-				0094D67F1C469A0E00145F5C /* PostcodeUKCondition.swift in Sources */,
+				0094D67F1C469A0E00145F5C /* PostcodeCondition.swift in Sources */,
 				004913B41C47B3EA00471F53 /* Validatable.swift in Sources */,
 				0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */,
 				003E06271C46413C008D47F2 /* Validator.swift in Sources */,
@@ -760,7 +760,7 @@
 				003698351C46E24C004D1692 /* ValidatorControl.swift in Sources */,
 				0094D6741C46931800145F5C /* Localization.swift in Sources */,
 				003E06291C4648E5008D47F2 /* AlphabeticValidator.swift in Sources */,
-				004913A21C47AE5D00471F53 /* PostcodeUKValidator.swift in Sources */,
+				004913A21C47AE5D00471F53 /* PostcodeValidator.swift in Sources */,
 				0032C10A1C4555200023DB19 /* AlphabeticCondition.swift in Sources */,
 				004913B91C47BEEC00471F53 /* ValidatorTextView.swift in Sources */,
 				0032C1071C454F4E0023DB19 /* Condition.swift in Sources */,
@@ -781,8 +781,8 @@
 			files = (
 				003698321C46DE1E004D1692 /* AlphabeticValidatorTests.swift in Sources */,
 				005675551C47DD48005A43F0 /* CompositeValidatorTests.swift in Sources */,
-				004913BF1C47C62200471F53 /* PostcodeUKValidatorTests.swift in Sources */,
-				0094D6821C469A9700145F5C /* PostcodeUKConditionTests.swift in Sources */,
+				004913BF1C47C62200471F53 /* PostcodeValidatorTests.swift in Sources */,
+				0094D6821C469A9700145F5C /* PostcodeConditionTests.swift in Sources */,
 				00F2E2DC1C46C57800FE0B66 /* NotConditionTests.swift in Sources */,
 				003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */,
 				00F2E2E01C46C6F400FE0B66 /* PresentConditionTests.swift in Sources */,

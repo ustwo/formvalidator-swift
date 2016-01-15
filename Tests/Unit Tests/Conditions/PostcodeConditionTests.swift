@@ -1,5 +1,5 @@
 //
-//  PostcodeUKConditionTests.swift
+//  PostcodeConditionTests.swift
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 13/01/2016.
@@ -11,17 +11,17 @@ import XCTest
 @testable import FormValidatorSwift
 
 
-final class PostcodeUKConditionTests: XCTestCase {
+final class PostcodeConditionTests: XCTestCase {
     
     
     // MARK: - Properties
     
-    let condition       = PostcodeUKCondition()
+    let condition       = PostcodeCondition(country: .UnitedKingdom)
     
     
     // MARK: - Test Success
     
-    func testPostcodeUKCondition_Success() {
+    func testPostcodeCondition_Success() {
         // Given
         let testInput       = "M1 1BA"
         let expectedResult  = true
@@ -33,7 +33,7 @@ final class PostcodeUKConditionTests: XCTestCase {
     
     // MARK: - Test Failure
     
-    func testPostcodeUKCondition_OutwardCode_Failure() {
+    func testPostcodeCondition_OutwardCode_Failure() {
         // Given
         let testInput       = "M1AA 1BA"
         let expectedResult  = false
@@ -42,7 +42,7 @@ final class PostcodeUKConditionTests: XCTestCase {
         AssertCondition(condition, testInput: testInput, expectedResult: expectedResult)
     }
     
-    func testPostcodeUKCondition_InwardCode_Failure() {
+    func testPostcodeCondition_InwardCode_Failure() {
         // Given
         let testInput       = "M1 1BAA"
         let expectedResult  = false
@@ -51,7 +51,7 @@ final class PostcodeUKConditionTests: XCTestCase {
         AssertCondition(condition, testInput: testInput, expectedResult: expectedResult)
     }
     
-    func testPostcodeUKCondition_Nil_Failure() {
+    func testPostcodeCondition_Nil_Failure() {
         // Given
         let testInput: String?  = nil
         let expectedResult      = false

@@ -1,5 +1,5 @@
 //
-//  PostcodeUKValidatorTests.swift
+//  PostcodeValidatorTests.swift
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 14/01/2016.
@@ -11,17 +11,17 @@ import XCTest
 @testable import FormValidatorSwift
 
 
-final class PostcodeUKValidatorTests: XCTestCase {
+final class PostcodeValidatorTests: XCTestCase {
     
     
     // MARK: - Properties
     
-    let validator   = PostcodeUKValidator()
+    let validator   = PostcodeValidator(country: .UnitedKingdom)
     
     
     // MARK: - Test Success
     
-    func testPostcodeUKValidator_Success() {
+    func testPostcodeValidator_Success() {
         // Given
         let testInput                       = "M1 1BA"
         let expectedResult: [Condition]?    = nil
@@ -36,7 +36,7 @@ final class PostcodeUKValidatorTests: XCTestCase {
     
     // MARK: - Test Failure
     
-    func testPostcodeUKValidator_Failure() {
+    func testPostcodeValidator_Failure() {
         // Given
         let testInput                       = "M1AA 1BA"
         let expectedResult: [Condition]?    = validator.conditions
