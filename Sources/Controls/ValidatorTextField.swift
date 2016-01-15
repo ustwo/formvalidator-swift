@@ -126,7 +126,7 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
         return true
     }
     
-    func textFieldDidChange(notification: NSNotification) {
+    func textFieldDidChange(notification: NSNotification?) {
         defer {
             // Inform delegate about changes
             delegate?.validatorControlDidChange(validatorTextField)
@@ -184,7 +184,7 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     @objc func textFieldDidEndEditing(textField: UITextField) {
         didEndEditing = true
         
-        textFieldDidChange(NSNotification())
+        textFieldDidChange(nil)
         
         delegate?.textFieldDidEndEditing?(validatorTextField)
     }
