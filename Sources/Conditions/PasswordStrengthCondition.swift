@@ -43,6 +43,10 @@ public struct PasswordStrengthCondition: Condition {
     
     // MARK: - Initializers
     
+    /**
+    Initializes a `PasswordStrengthCondition`.
+    - parameter requiredStrength: Minimum strength required to be considered valid.
+    */
     init(requiredStrength: PasswordStrength) {
         self.requiredStrength = requiredStrength
     }

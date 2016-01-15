@@ -24,6 +24,10 @@ public struct CompositeValidator: Validator {
     
     // MARK: - Initializers
     
+    /**
+    Initializes a `CompositeValidator`.
+    - parameter validators: Validators which are used for validation.
+    */
     public init(validators: [Validator]) {
         self.conditions = validators.map { $0.conditions }.flatMap { $0 }
         self.validators = validators

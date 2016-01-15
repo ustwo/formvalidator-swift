@@ -23,6 +23,10 @@ public struct AlphabeticValidator: Validator {
     
     // MARK: - Initializers
 
+    /**
+    Initializes a `AlphabeticValidator`.
+    - parameter allowsWhiteSpace: Whether or not to allow whitespace.
+    */
     public init(allowsWhitespace: Bool) {
         conditions = [AlphabeticCondition(allowsWhiteSpace: allowsWhitespace)]
     }

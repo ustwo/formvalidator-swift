@@ -23,6 +23,10 @@ public struct PasswordStrengthValidator: Validator {
     
     // MARK: - Initializers
     
+    /**
+    Initializes a `PasswordStrengthValidator`.
+    - parameter requiredStrength: Minimum strength required to be considered valid.
+    */
     public init(requiredStrength: PasswordStrength) {
         conditions = [PasswordStrengthCondition(requiredStrength: requiredStrength)]
     }

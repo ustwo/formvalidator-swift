@@ -42,6 +42,7 @@ public struct PostcodeCondition: Condition {
     
     public var shouldAllowViolation = true
     
+    /// Country to use for postcode validation.
     public var country: PostcodeCountries {
         didSet {
             regex = country.regex
@@ -51,6 +52,10 @@ public struct PostcodeCondition: Condition {
     
     // MARK: - Initializer
     
+    /**
+    Initializes a `PostcodeCondition`.
+    - parameter country: Country to use for postcode validation.
+    */
     init(country: PostcodeCountries) {
         self.country = country
         regex = country.regex
