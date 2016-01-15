@@ -11,15 +11,15 @@ import UIKit
 import FormValidatorSwift
 
 
-final class FormView: UIView, ValidatorControlDelegate {
+final class FormView: UIView {
     
     
     // MARK: - Properties
     
-    let nameLabel       = UILabel()
-    let nameTextField   = ValidatorTextField(validator: AlphabeticValidator(allowsWhitespace: false))
+    let nameEntry       = FormEntryView<AlphabeticValidator>()
+    let emailEntry      = FormEntryView<EmailValidator>()
     
-    let errorLabel      = UILabel()
+    let submitButton    = UIButton(type: .System)
     
     private let bottomBufferView    = UIView()
     private let stackView           = UIStackView()
@@ -44,18 +44,17 @@ final class FormView: UIView, ValidatorControlDelegate {
         stackView.alignment = .Fill
         addSubview(stackView)
         
-        nameLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
-        nameLabel.text = NSLocalizedString("Surname", comment: "")
-        nameLabel.textAlignment = .Center
-        stackView.addArrangedSubview(nameLabel)
+        nameEntry.textLabel.text = NSLocalizedString("Surname", comment: "")
+        stackView.addArrangedSubview(nameEntry)
         
-        nameTextField.borderStyle = .Line
-        nameTextField.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-        stackView.addArrangedSubview(nameTextField)
+        emailEntry.textLabel.text = NSLocalizedString("Email", comment: "")
+        emailEntry.textField.shouldAllowViolation = true
+        emailEntry.textField.validateOnFocusLossOnly = true
+        stackView.addArrangedSubview(emailEntry)
         
-        errorLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
-        errorLabel.hidden = true
-        stackView.addArrangedSubview(errorLabel)
+        submitButton.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+        submitButton.setTitle(NSLocalizedString("Submit", comment: ""), forState: .Normal)
+        stackView.addArrangedSubview(submitButton)
         
         bottomBufferView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, forAxis: stackView.axis)
         bottomBufferView.setContentHuggingPriority(UILayoutPriorityDefaultLow, forAxis: stackView.axis)
@@ -64,9 +63,13 @@ final class FormView: UIView, ValidatorControlDelegate {
         
         // Accessibility
         
-        nameLabel.accessibilityIdentifier = FormAccessibility.Identifiers.NameLabel
-        nameTextField.accessibilityIdentifier = FormAccessibility.Identifiers.NameTextField
-        errorLabel.accessibilityIdentifier = FormAccessibility.Identifiers.ErrorLabel
+        nameEntry.textLabel.accessibilityIdentifier = FormAccessibility.Identifiers.NameLabel
+        nameEntry.textField.accessibilityIdentifier = FormAccessibility.Identifiers.NameTextField
+        
+        emailEntry.textLabel.accessibilityIdentifier = FormAccessibility.Identifiers.EmailLabel
+        emailEntry.textField.accessibilityIdentifier = FormAccessibility.Identifiers.EmailTextField
+        
+        submitButton.accessibilityIdentifier = FormAccessibility.Identifiers.SubmitButton
         
         
         // Layout
@@ -77,42 +80,12 @@ final class FormView: UIView, ValidatorControlDelegate {
         addConstraint(NSLayoutConstraint(item: stackView, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1.0, constant: stackViewMargin))
         addConstraint(NSLayoutConstraint(item: stackView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: -stackViewMargin))
         addConstraint(NSLayoutConstraint(item: stackView, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1.0, constant: -stackViewMargin))
+        
+        stackView.spacing = stackViewMargin
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    
-    // MARK: - ValidatorControlDelegate
-    
-    func validatorControl(validatorControl: ValidatorControl, changedValidState validState: Bool) {
-        guard let controlView = validatorControl as? UIView else {
-            return
-        }
-        
-        if validState {
-            controlView.layer.borderColor = nil
-            controlView.layer.borderWidth = 0.0
-            errorLabel.hidden = true
-        } else {
-            controlView.layer.borderColor = UIColor.redColor().CGColor
-            controlView.layer.borderWidth = 2.0
-        }
-    }
-    
-    func validatorControl(validatorControl: ValidatorControl, violatedConditions conditions: [Condition]) {
-        var errorText = ""
-        for condition in conditions {
-            errorText += condition.localizedViolationString
-        }
-        errorLabel.text = errorText
-        
-        errorLabel.hidden = false
-    }
-    
-    func validatorControlDidChange(validatorControl: ValidatorControl) {
-        // Not used in this example yet
     }
     
 }

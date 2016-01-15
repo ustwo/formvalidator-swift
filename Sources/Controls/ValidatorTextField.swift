@@ -17,7 +17,11 @@ public class ValidatorTextField: UITextField, ValidatorControl {
     public var shouldAllowViolation = true
     public var validateOnFocusLossOnly = false
     public let validator: Validator
-    public weak var validatorDelegate: ValidatorControlDelegate?
+    public weak var validatorDelegate: ValidatorControlDelegate? {
+        get {
+            return validatorControlResponder?.delegate
+        }
+    }
     
     public var validatableText: String? {
         return text
@@ -66,6 +70,13 @@ public class ValidatorTextField: UITextField, ValidatorControl {
     }
     
     
+    // MARK: - Custom Setters
+    
+    public func setValidatorDelegate(newDelegate: protocol<ValidatorControlDelegate, UITextFieldDelegate>?) {
+        validatorControlResponder?.delegate = newDelegate
+    }
+    
+    
     // MARK: - Callbacks on state change
     
     public func validatorTextFieldSuccededConditions() { }
@@ -84,8 +95,8 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     
     weak var delegate: protocol<ValidatorControlDelegate, UITextFieldDelegate>?
     
-    private var didEndEditing   = false
-    private var lastIsValid     = false
+    private var didEndEditing       = false
+    private var lastIsValid: Bool?  = nil
     
     
     // MARK: - Initializers

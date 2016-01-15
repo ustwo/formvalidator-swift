@@ -17,7 +17,11 @@ public class ValidatorTextView: UITextView, ValidatorControl {
     public var shouldAllowViolation = true
     public var validateOnFocusLossOnly = false
     public let validator: Validator
-    public weak var validatorDelegate: ValidatorControlDelegate?
+    public weak var validatorDelegate: ValidatorControlDelegate? {
+        get {
+            return validatorControlResponder?.delegate
+        }
+    }
     
     public var validatableText: String? {
         return text
@@ -68,6 +72,13 @@ public class ValidatorTextView: UITextView, ValidatorControl {
     }
     
     
+    // MARK: - Custom Setters
+    
+    public func setValidatorDelegate(newDelegate: protocol<ValidatorControlDelegate, UITextViewDelegate>?) {
+        validatorControlResponder?.delegate = newDelegate
+    }
+    
+    
     // MARK: - Callbacks on state change
     
     public func validatorTextViewSuccededConditions() { }
@@ -86,8 +97,8 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
     
     weak var delegate: protocol<ValidatorControlDelegate, UITextViewDelegate>?
     
-    private var didEndEditing   = false
-    private var lastIsValid     = false
+    private var didEndEditing       = false
+    private var lastIsValid: Bool?  = nil
     
     
     // MARK: - Initializers

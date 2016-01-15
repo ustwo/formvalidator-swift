@@ -17,6 +17,7 @@
 		004913961C47A7F000471F53 /* FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913951C47A7F000471F53 /* FormTests.swift */; };
 		004913981C47A84C00471F53 /* FormAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913971C47A84C00471F53 /* FormAccessibility.swift */; };
 		004913991C47A84C00471F53 /* FormAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913971C47A84C00471F53 /* FormAccessibility.swift */; };
+		009BFD651C48FA9B00B1E370 /* FormEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BFD641C48FA9B00B1E370 /* FormEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,20 @@
 			remoteGlobalIDString = 0062E9CF1C45493E00021C0A;
 			remoteInfo = FormValidatorSwift;
 		};
+		009BFD601C48FA9000B1E370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0056755F1C47ED32005A43F0;
+			remoteInfo = "FormValidatorSwift tvOS";
+		};
+		009BFD621C48FA9000B1E370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 005675681C47ED32005A43F0;
+			remoteInfo = "FormValidatorSwiftTests tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +92,7 @@
 		004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FormValidatorSwift.xcodeproj; sourceTree = "<group>"; };
 		004913951C47A7F000471F53 /* FormTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTests.swift; sourceTree = "<group>"; };
 		004913971C47A84C00471F53 /* FormAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormAccessibility.swift; sourceTree = "<group>"; };
+		009BFD641C48FA9B00B1E370 /* FormEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +142,7 @@
 				004913971C47A84C00471F53 /* FormAccessibility.swift */,
 				003698691C478957004D1692 /* FormViewController.swift */,
 				0036987D1C478B31004D1692 /* FormView.swift */,
+				009BFD641C48FA9B00B1E370 /* FormEntryView.swift */,
 			);
 			name = Sources;
 			path = Example;
@@ -154,7 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				0049138D1C479B1000471F53 /* FormValidatorSwift.framework */,
-				0049138F1C479B1000471F53 /* FormValidatorSwiftTests.xctest */,
+				0049138F1C479B1000471F53 /* FormValidatorSwiftTests iOS.xctest */,
+				009BFD611C48FA9000B1E370 /* FormValidatorSwift.framework */,
+				009BFD631C48FA9000B1E370 /* FormValidatorSwiftTests tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,11 +271,25 @@
 			remoteRef = 0049138C1C479B1000471F53 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0049138F1C479B1000471F53 /* FormValidatorSwiftTests.xctest */ = {
+		0049138F1C479B1000471F53 /* FormValidatorSwiftTests iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = FormValidatorSwiftTests.xctest;
+			path = "FormValidatorSwiftTests iOS.xctest";
 			remoteRef = 0049138E1C479B1000471F53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		009BFD611C48FA9000B1E370 /* FormValidatorSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FormValidatorSwift.framework;
+			remoteRef = 009BFD601C48FA9000B1E370 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		009BFD631C48FA9000B1E370 /* FormValidatorSwiftTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FormValidatorSwiftTests tvOS.xctest";
+			remoteRef = 009BFD621C48FA9000B1E370 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -302,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0036987F1C478BA4004D1692 /* FormViewController.swift in Sources */,
+				009BFD651C48FA9B00B1E370 /* FormEntryView.swift in Sources */,
 				0036987E1C478B31004D1692 /* FormView.swift in Sources */,
 				004913981C47A84C00471F53 /* FormAccessibility.swift in Sources */,
 				0036986A1C478957004D1692 /* AppDelegate.swift in Sources */,
