@@ -24,19 +24,19 @@ public struct AlphabeticCondition: Condition {
     public var shouldAllowViolation = true
     
     /// Whether or not to allow whitespace.
-    public let allowsWhiteSpace: Bool
+    public let allowsWhitespace: Bool
     
     
     // MARK: - Initializers
     
     /**
     Initializes a `AlphabeticCondition`.
-    - parameter allowsWhiteSpace: Whether or not to allow whitespace.
+    - parameter allowsWhitespace: Whether or not to allow whitespace.
     */
-    public init(allowsWhiteSpace: Bool) {
-        self.allowsWhiteSpace = allowsWhiteSpace
+    public init(allowsWhitespace: Bool) {
+        self.allowsWhitespace = allowsWhitespace
         
-        if allowsWhiteSpace {
+        if allowsWhitespace {
             regex = "[a-zA-Z\\s]"
         } else {
             regex = "[a-zA-Z]"
