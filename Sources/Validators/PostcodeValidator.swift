@@ -34,7 +34,7 @@ public struct PostcodeValidator: Validator {
     Initializes a `PostcodeValidator`.
     - parameter country: Country to use for postcode validation.
     */
-    public init(country: PostcodeCondition.PostcodeCountries) {
+    public init(country: PostcodeCountries) {
         conditions = [PostcodeCondition(country: country)]
     }
     
