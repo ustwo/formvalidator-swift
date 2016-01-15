@@ -28,7 +28,7 @@ final class FormView: UIView, ValidatorControlDelegate {
     // MARK: - Initializers
     
     convenience init() {
-        self.init(frame: CGRectZero)
+        self.init(frame: CGRect.zero)
     }
     
     override init(frame: CGRect) {
