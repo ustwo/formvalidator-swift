@@ -10,11 +10,9 @@ import Foundation
 
 
 /**
- *  A form to assist in validating `Validatable` objects' current states.
+ *  A form to assist in validating `ValidatorControl` objects' current states.
  */
 public protocol Form {
-    
-    
     // MARK: - Properties
     
     /// Entries in the form.
@@ -35,7 +33,7 @@ public protocol Form {
      Creates a `Form` where each `Validatable` uses its own `Validator` for validation.
      - parameter validatables: Array of `Validatable`.
      */
-    init(validatables: [Validatable])
+    init(validatables: [ValidatorControl])
     
     /**
      Creates a `Form` where each `Validatable` uses a custom `Validator` for validation. If `validatables` and `validators` have a different number of elements then returns `nil`.
@@ -43,7 +41,14 @@ public protocol Form {
      - parameter validatables: Array of `Validatable`.
      - parameter validators:   Array of `Validator`.
      */
-    init?(validatables: [Validatable], validators: [Validator])
+    init?(validatables: [ValidatorControl], validators: [Validator])
+    
+    
+    // MARK: - Manipulate Entry
+    
+    mutating func addEntry(control: ValidatorControl)
+    
+    mutating func removeControlAtIndex(index: Int) -> ValidatorControl?
     
     
     // MARK: - Check
@@ -70,12 +75,12 @@ public extension Form {
     
     // MARK: - Initializers
     
-    init(validatables: [Validatable]) {
+    init(validatables: [ValidatorControl]) {
         self.init()
         entries = validatables.map { FormEntry(validatable: $0, validator: $0.validator) }
     }
     
-    init?(validatables: [Validatable], validators: [Validator]) {
+    init?(validatables: [ValidatorControl], validators: [Validator]) {
         guard validatables.count == validators.count else {
             return nil
         }
@@ -87,6 +92,18 @@ public extension Form {
             entries.append(FormEntry(validatable: validatables[index], validator: validators[index]))
         }
         self.entries = entries
+    }
+    
+    
+    // MARK: - Manipulate Entry
+    
+    mutating func addEntry(control: ValidatorControl) {
+        entries.append(FormEntry(validatable: control, validator: control.validator))
+    }
+    
+    mutating func removeControlAtIndex(index: Int) -> ValidatorControl? {
+        let entry = entries.removeAtIndex(index)
+        return entry.validatable
     }
     
     

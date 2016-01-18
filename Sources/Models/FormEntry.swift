@@ -18,7 +18,7 @@ public struct FormEntry {
     // MARK: - Properties
     
     /// A `Validatable` that contains text to be validated.
-    public let validatable: Validatable
+    public let validatable: ValidatorControl
     /// A `Validator` to use to validate text from `validatable`.
     public let validator: Validator
     

@@ -39,8 +39,8 @@ final class FormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form.addControl(underlyingView.nameEntry.textField)
-        form.addControl(underlyingView.emailEntry.textField)
+        form.addEntry(underlyingView.nameEntry.textField)
+        form.addEntry(underlyingView.emailEntry.textField)
         
         underlyingView.submitButton.addTarget(self, action: Selector("submitButtonPressed:"), forControlEvents: .TouchUpInside)
     }
