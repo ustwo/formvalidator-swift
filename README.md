@@ -87,6 +87,106 @@ $ git submodule add https://github.com/ustwo/formvalidator-swift.git
 
 ## Usage
 
+The two core components of FormValidatorSwift are `Condition` and `Validator`. These are both protocols, with many common implementations provided by the framework.
+
+A `Condition` defines a specific requirement for a `String` to be considered valid and defined a way to check the `String`. A `Validator` defines a way to check whether a `String` is valid based on a set of `Condition`.
+
+### Condition
+
+A `Condition` is typically defined by a regular expression. This is used in the default implementation to check the string. However, you can provide your own implementation of the `check(text:)` function to do a more complicated validation.
+
+Here is an example using one of the built-in conditions. Note that calling `check(text:)` simply returns a `Bool` as to whether the text is valid or not.
+
+```swift
+let condition = AlphanumericCondition()
+
+let validResult = condition.check("Foo123")
+let invalidResult = condition.check("Foo?!@")
+```
+
+### Validator
+
+A `Validator` takes an array of `Condition` and checks each condition to validate a string. If the validation fails, then `checkConditions(text:)` will return an array of the violated conditions.
+
+Here is an example using one of the built-in validators. In this example, `validResult` will be `nil` and `invalidResult` will be `[AlphanumericCondtion]`.
+
+```swift
+let validator = AlphanumericValidator()
+
+let validResult = validator.checkConditions("Foo123")
+let invalidResult = validator.checkConditions("Foo?!@")
+```
+
+### ValidatorTextField
+
+To provide a user interface, you can use `ValidatorTextField` or `ValidatorTextView`. These are subclasses of `UITextField` and `UITextView` respectively. They both conform to the `ValidatorControl` protocol, which has the additional capability of using a `Validator` to check the text.
+
+Here is an example of a text field that would only allow alphanumeric text.
+
+```swift
+let nameTextField = ValidatorTextField(validator: AlphanumericValidator())
+```
+
+This does not work well for more complicated text fields. For example, you would not want an email address validated until the user is finished typing. To postpone validation, we need to set `shouldAllowViolation` and `validateOnFocusLossOnly` both to be `true`. Example:
+
+```swift
+let emailTextField = ValidatorTextField(validator: EmailValidator())
+emailTextField.shouldAllowViolation = true
+emailTextField.validateOnFocusLossOnly = true
+```
+
+We can respond to changes in the validity of `ValidatorTextField` by implementing the `ValidatorControlDelegate` and setting ourselves as the validator delegate. Below is an example implementation. In the example we highlight the text field with a red border if it is invalid. We also list the error in a label called `errorLabel` and present it to the user.
+
+```swift
+func validatorControl(validatorControl: ValidatorControl, changedValidState validState: Bool) {
+    guard let controlView = validatorControl as? UIView else {
+        return
+    }
+
+    if validState {
+        controlView.layer.borderColor = nil
+        controlView.layer.borderWidth = 0.0
+        errorLabel.hidden = true
+    } else {
+        controlView.layer.borderColor = UIColor.redColor().CGColor
+        controlView.layer.borderWidth = 2.0
+    }
+}
+
+func validatorControl(validatorControl: ValidatorControl, violatedConditions conditions: [Condition]) {
+    var errorText = ""
+    for condition in conditions {
+        errorText += condition.localizedViolationString
+    }
+    errorLabel.text = errorText
+
+    errorLabel.hidden = false
+}
+
+func validatorControlDidChange(validatorControl: ValidatorControl) {
+    // Not used in this example
+}
+```
+
+### Form
+
+We can combine a series of `ValidatorControl` into a `Form`. We have a convenience implementation call `ControlForm`. We can then combine our alphanumeric textfield and our email textfield from our previous examples into a form. This provides an easy method for checking if the entire form is valid (say, before submission of the form data to a server). Below is an example:
+
+```swift
+var form = ControlForm()
+
+form.addEntry(nameTextField)
+form.addEntry(emailTextField)
+
+if form.isValid {
+  // Hooray! Our form is valid. Submit the data!
+  ...
+} else {
+  // Sad day, we need to have the user fix the data.
+  ...
+}
+```
+
 ## Contributors
 
 * [Shagun Madhikarmi](mailto:shagun@ustwo.com)
