@@ -187,6 +187,10 @@ if form.isValid {
 }
 ```
 
+### Example
+
+A more detailed example can be found in the `iOS Example` app in this repository.
+
 ## Contributors
 
 * [Shagun Madhikarmi](mailto:shagun@ustwo.com)
