@@ -89,7 +89,9 @@ $ git submodule add https://github.com/ustwo/formvalidator-swift.git
 
 The two core components of FormValidatorSwift are `Condition` and `Validator`. These are both protocols, with many common implementations provided by the framework.
 
-A `Condition` defines a specific requirement for a `String` to be considered valid and defined a way to check the `String`. A `Validator` defines a way to check whether a `String` is valid based on a set of `Condition`.
+A `Condition` defines a specific requirement for a `String` to be considered valid and defined a way to check the `String`. A `Validator` defines a way to check whether a `String` is valid based on a set of `Condition`. These provide the building blocks upon which the other elements of FormValidatorSwift are built.
+
+`ValidatorTextField` and `ValidatorTextView` provide common UI implementations for a validatable text input method. These controls can then be combined into a `Form` for quick validation of all text input.
 
 ### Condition
 
