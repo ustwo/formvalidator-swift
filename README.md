@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/ustwo/formvalidator-swift/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/ustwo/formvalidator-swift.svg?branch=master)](https://travis-ci.org/ustwo/formvalidator-swift)
 [![codecov.io](https://codecov.io/github/ustwo/formvalidator-swift/coverage.svg?branch=master)](https://codecov.io/github/ustwo/formvalidator-swift?branch=master)
-![Swift](https://img.shields.io/badge/Swift-2.1-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
 
 # FormValidatorSwift
 
@@ -195,9 +195,9 @@ A more detailed example can be found in the `iOS Example` app in this repository
 
 ## Contributors
 
+* [ustwo Open Source](open.source@ustwo.com)
 * [Shagun Madhikarmi](mailto:shagun@ustwo.com)
 * [Aaron McTavish](mailto:aamct@ustwo.com)
-* [Martin Stolz](mailto:martin@ustwo.com)
 
 ## License
 
