@@ -21,7 +21,7 @@ final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITex
     
     let errorLabel          = UILabel()
     
-    private let stackView   = UIStackView()
+    fileprivate let stackView   = UIStackView()
     
     
     // MARK: - Initializers
@@ -36,23 +36,23 @@ final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITex
         
         // Setup
         
-        stackView.axis = .Vertical
-        stackView.distribution = .Fill
-        stackView.alignment = .Fill
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
         addSubview(stackView)
         
-        textLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
-        textLabel.textAlignment = .Center
+        textLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        textLabel.textAlignment = .center
         stackView.addArrangedSubview(textLabel)
         
-        textField.borderStyle = .Line
-        textField.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+        textField.borderStyle = .line
+        textField.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         textField.setValidatorDelegate(self)
         stackView.addArrangedSubview(textField)
         
-        errorLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
-        errorLabel.hidden = true
-        errorLabel.lineBreakMode = .ByWordWrapping
+        errorLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        errorLabel.isHidden = true
+        errorLabel.lineBreakMode = .byWordWrapping
         errorLabel.numberOfLines = 0
         stackView.addArrangedSubview(errorLabel)
         
@@ -66,10 +66,10 @@ final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITex
         
         let stackViewMargin: CGFloat = 0.0
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: stackViewMargin))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1.0, constant: stackViewMargin))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: -stackViewMargin))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1.0, constant: -stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: -stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -stackViewMargin))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -79,7 +79,7 @@ final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITex
     
     // MARK: - ValidatorControlDelegate
     
-    func validatorControl(validatorControl: ValidatorControl, changedValidState validState: Bool) {
+    func validatorControl(_ validatorControl: ValidatorControl, changedValidState validState: Bool) {
         guard let controlView = validatorControl as? UIView else {
             return
         }
@@ -87,24 +87,24 @@ final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITex
         if validState {
             controlView.layer.borderColor = nil
             controlView.layer.borderWidth = 0.0
-            errorLabel.hidden = true
+            errorLabel.isHidden = true
         } else {
-            controlView.layer.borderColor = UIColor.redColor().CGColor
+            controlView.layer.borderColor = UIColor.red.cgColor
             controlView.layer.borderWidth = 2.0
         }
     }
     
-    func validatorControl(validatorControl: ValidatorControl, violatedConditions conditions: [Condition]) {
+    func validatorControl(_ validatorControl: ValidatorControl, violatedConditions conditions: [Condition]) {
         var errorText = ""
         for condition in conditions {
             errorText += condition.localizedViolationString
         }
         errorLabel.text = errorText
         
-        errorLabel.hidden = false
+        errorLabel.isHidden = false
     }
     
-    func validatorControlDidChange(validatorControl: ValidatorControl) {
+    func validatorControlDidChange(_ validatorControl: ValidatorControl) {
         // Not used in this example yet
     }
     
