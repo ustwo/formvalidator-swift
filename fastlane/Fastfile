@@ -1,0 +1,42 @@
+desc "Runs tests on the primary platforms and configurations"
+lane :test do
+    verify(
+        scheme: "FormValidatorSwift iOS",
+        destination: "OS=10.0,name=iPhone 7 Plus",
+        sdk: "iphonesimulator10.0"
+    )
+    verify(
+        scheme: "FormValidatorSwift tvOS",
+        destination: "OS=10.0,name=Apple TV 1080p",
+        sdk: "appletvsimulator10.0"
+    )
+    verify_demo
+end
+
+desc "Runs unit tests"
+lane :verify do |options|
+    scheme = options[:scheme]
+    destination = options[:destination]
+    sdk = options[:sdk]
+    opts = {
+        :workspace => 'FormValidatorSwift.xcworkspace',
+        :scheme => scheme,
+        :destination => destination,
+        :sdk => sdk,
+        :xcargs => "ONLY_ACTIVE_ARCH=YES",
+        :clean => true
+    }
+    scan(opts)
+end
+
+desc "Runs UI tests"
+lane :verify_demo do
+    scan(
+        workspace: "FormValidatorSwift.xcworkspace",
+        scheme: "iOS Example",
+        destination: "OS=10.0,name=iPhone 7 Plus",
+        sdk: "iphonesimulator10.0",
+        xcargs: "ONLY_ACTIVE_ARCH=YES",
+        clean: true
+    )
+end
