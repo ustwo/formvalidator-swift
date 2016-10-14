@@ -195,7 +195,7 @@ A more detailed example can be found in the `iOS Example` app in this repository
 
 ## Contributors
 
-* [ustwo Open Source](open.source@ustwo.com)
+* [ustwo Open Source](mailto:open.source@ustwo.com)
 * [Shagun Madhikarmi](mailto:shagun@ustwo.com)
 * [Aaron McTavish](mailto:aamct@ustwo.com)
 
