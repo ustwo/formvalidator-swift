@@ -5,7 +5,7 @@
 
 # FormValidatorSwift
 
-The FormValidatorSwift framework allows you to validate inputs of text fields and text views in a convenient way. It has been developed and used by iOS developers at [ustwo](ustwo.com).
+The FormValidatorSwift framework allows you to validate inputs of text fields and text views in a convenient way. It has been developed and used by iOS developers at [ustwo](https://ustwo.com/).
 
 ## Features
 
