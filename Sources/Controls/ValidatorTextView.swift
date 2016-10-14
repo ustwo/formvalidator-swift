@@ -9,25 +9,25 @@
 import UIKit
 
 
-public class ValidatorTextView: UITextView, ValidatorControl {
+open class ValidatorTextView: UITextView, ValidatorControl {
     
     
     // MARK: - Properties
     
-    public var shouldAllowViolation = true
-    public var validateOnFocusLossOnly = false
-    public let validator: Validator
-    public weak var validatorDelegate: ValidatorControlDelegate? {
+    open var shouldAllowViolation = true
+    open var validateOnFocusLossOnly = false
+    open let validator: Validator
+    open weak var validatorDelegate: ValidatorControlDelegate? {
         get {
             return validatorControlResponder?.delegate
         }
     }
     
-    public var validatableText: String? {
+    open var validatableText: String? {
         return text
     }
     
-    private var validatorControlResponder: ValidatorTextViewResponder?
+    fileprivate var validatorControlResponder: ValidatorTextViewResponder?
     
     
     // MARK: - Initializers
@@ -57,33 +57,33 @@ public class ValidatorTextView: UITextView, ValidatorControl {
             return
         }
         
-        NSNotificationCenter.defaultCenter().removeObserver(responder, name: UITextViewTextDidEndEditingNotification, object: self)
+        NotificationCenter.default.removeObserver(responder, name: NSNotification.Name.UITextViewTextDidEndEditing, object: self)
     }
     
     
     // MARK: - Setup
     
-    private func setup() {
+    fileprivate func setup() {
         let responder = ValidatorTextViewResponder(validatorTextView: self)
         validatorControlResponder = responder
         super.delegate = responder
         
-        NSNotificationCenter.defaultCenter().addObserver(responder, selector: Selector("textViewDidEndEditing:"), name: UITextViewTextDidEndEditingNotification, object: self)
+        NotificationCenter.default.addObserver(responder, selector: #selector(UITextViewDelegate.textViewDidEndEditing(_:)), name: NSNotification.Name.UITextViewTextDidEndEditing, object: self)
     }
     
     
     // MARK: - Custom Setters
     
-    public func setValidatorDelegate(newDelegate: protocol<ValidatorControlDelegate, UITextViewDelegate>?) {
+    open func setValidatorDelegate(_ newDelegate: ValidatorControlDelegate & UITextViewDelegate) {
         validatorControlResponder?.delegate = newDelegate
     }
     
     
     // MARK: - Callbacks on state change
     
-    public func validatorTextViewSuccededConditions() { }
+    open func validatorTextViewSuccededConditions() { }
     
-    public func validatorTextViewViolatedConditions(conditions: [Condition]) { }
+    open func validatorTextViewViolatedConditions(_ conditions: [Condition]) { }
     
 }
 
@@ -95,10 +95,10 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
     
     var validatorTextView: ValidatorTextView
     
-    weak var delegate: protocol<ValidatorControlDelegate, UITextViewDelegate>?
+    weak var delegate: (ValidatorControlDelegate & UITextViewDelegate)?
     
-    private var didEndEditing       = false
-    private var lastIsValid: Bool?  = nil
+    fileprivate var didEndEditing       = false
+    fileprivate var lastIsValid: Bool?  = nil
     
     
     // MARK: - Initializers
@@ -110,12 +110,12 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
     
     // MARK: - UITextViewDelegate
     
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         let sourceText = textView.text
         
-        let originalString = NSString(string: sourceText)
+        let originalString = NSString(string: sourceText!)
         
-        let futureString = originalString.stringByReplacingCharactersInRange(range, withString: text)
+        let futureString = originalString.replacingCharacters(in: range, with: text)
         let conditions = validatorTextView.validator.checkConditions(futureString)
         
         if let conditions = conditions {
@@ -125,19 +125,19 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
         }
         
         if !validatorTextView.validateOnFocusLossOnly && range.location != 0,
-            let conditions = conditions
-            where (!validatorTextView.shouldAllowViolation || conditions[0].shouldAllowViolation) {
+            let conditions = conditions,
+            (!validatorTextView.shouldAllowViolation || conditions[0].shouldAllowViolation) {
                 return false
         }
         
-        if let result = delegate?.textView?(validatorTextView, shouldChangeTextInRange: range, replacementText: text) {
+        if let result = delegate?.textView?(validatorTextView, shouldChangeTextIn: range, replacementText: text) {
             return result
         }
         
         return true
     }
     
-    func textViewDidChange(textView: UITextView) {
+    func textViewDidChange(_ textView: UITextView) {
         defer {
             // Inform delegate about changes
             delegate?.validatorControlDidChange(validatorTextView)
@@ -172,7 +172,7 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
         }
     }
     
-    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         if let result = delegate?.textViewShouldBeginEditing?(validatorTextView) {
             return result
         }
@@ -180,11 +180,11 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
         return true
     }
     
-    func textViewDidBeginEditing(textView: UITextView) {
+    func textViewDidBeginEditing(_ textView: UITextView) {
         delegate?.textViewDidBeginEditing?(validatorTextView)
     }
     
-    func textViewShouldEndEditing(textView: UITextView) -> Bool {
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
         if let result = delegate?.textViewShouldEndEditing?(validatorTextView) {
             return result
         }
@@ -192,7 +192,7 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
         return true
     }
     
-    func textViewDidEndEditing(textView: UITextView) {
+    func textViewDidEndEditing(_ textView: UITextView) {
         didEndEditing = true
         
         textViewDidChange(textView)
@@ -200,7 +200,7 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
         delegate?.textViewDidEndEditing?(validatorTextView)
     }
     
-    func textViewDidChangeSelection(textView: UITextView) {
+    func textViewDidChangeSelection(_ textView: UITextView) {
         delegate?.textViewDidChangeSelection?(validatorTextView)
     }
     

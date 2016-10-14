@@ -53,15 +53,15 @@ public struct AlphabeticCondition: Condition {
     
     // MARK: - Check
     
-    public func check(text: String?) -> Bool {
-        guard let sourceText = text
-            where !sourceText.isEmpty,
-            let regExpression = try? NSRegularExpression(pattern: regex, options: .CaseInsensitive) else {
+    public func check(_ text: String?) -> Bool {
+        guard let sourceText = text,
+            !sourceText.isEmpty,
+            let regExpression = try? NSRegularExpression(pattern: regex, options: .caseInsensitive) else {
                 
                 return false
         }
         
-        return regExpression.numberOfMatchesInString(sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) == sourceText.characters.count
+        return regExpression.numberOfMatches(in: sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) == sourceText.characters.count
     }
     
 }

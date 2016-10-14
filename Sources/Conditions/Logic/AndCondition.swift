@@ -39,8 +39,8 @@ public struct AndCondition: Condition {
     
     // MARK: - Check
     
-    public func check(text: String?) -> Bool {
-        return conditions.reduce(true, combine: { $0 && $1.check(text) })
+    public func check(_ text: String?) -> Bool {
+        return conditions.reduce(true, { $0 && $1.check(text) })
     }
     
 }

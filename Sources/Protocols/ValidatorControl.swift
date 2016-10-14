@@ -11,9 +11,9 @@ import Foundation
 
 public protocol ValidatorControlDelegate: class {
     
-    func validatorControlDidChange(validatorControl: ValidatorControl)
-    func validatorControl(validatorControl: ValidatorControl, changedValidState validState: Bool)
-    func validatorControl(validatorControl: ValidatorControl, violatedConditions conditions: [Condition])
+    func validatorControlDidChange(_ validatorControl: ValidatorControl)
+    func validatorControl(_ validatorControl: ValidatorControl, changedValidState validState: Bool)
+    func validatorControl(_ validatorControl: ValidatorControl, violatedConditions conditions: [Condition])
     
 }
 

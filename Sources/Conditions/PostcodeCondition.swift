@@ -36,7 +36,7 @@ public struct PostcodeCondition: Condition {
     
     public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationPostcodeUK", comment: "")
     
-    public private(set) var regex = ""
+    public fileprivate(set) var regex = ""
     
     public var shouldAllowViolation = true
     

@@ -46,9 +46,9 @@ public protocol Form {
     
     // MARK: - Manipulate Entry
     
-    mutating func addEntry(control: ValidatorControl)
+    mutating func addEntry(_ control: ValidatorControl)
     
-    mutating func removeControlAtIndex(index: Int) -> ValidatorControl?
+    mutating func removeControlAtIndex(_ index: Int) -> ValidatorControl?
     
     
     // MARK: - Check
@@ -97,12 +97,12 @@ public extension Form {
     
     // MARK: - Manipulate Entry
     
-    mutating func addEntry(control: ValidatorControl) {
+    mutating func addEntry(_ control: ValidatorControl) {
         entries.append(FormEntry(validatable: control, validator: control.validator))
     }
     
-    mutating func removeControlAtIndex(index: Int) -> ValidatorControl? {
-        let entry = entries.removeAtIndex(index)
+    mutating func removeControlAtIndex(_ index: Int) -> ValidatorControl? {
+        let entry = entries.remove(at: index)
         return entry.validatable
     }
     
