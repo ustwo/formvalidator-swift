@@ -11,6 +11,7 @@ lane :test do
         sdk: "appletvsimulator10.0"
     )
     verify_demo
+    pod_lib_lint
 end
 
 desc "Runs unit tests"
