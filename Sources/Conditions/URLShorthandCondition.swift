@@ -18,7 +18,7 @@ public struct URLShorthandCondition: Condition {
     
     // MARK: - Properties
     
-    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationShorthandURL", comment: "")
+    public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationShorthandURL", comment: "")
     
     public let regex = "^((https?)://)?[a-z0-9-]+(\\.[a-z0-9-]+)+([/?].*)?$"
     

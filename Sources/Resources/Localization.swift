@@ -13,6 +13,26 @@ import Foundation
  *  Convenience handler for localizating built in conditions.
  */
 internal struct StringLocalization {
+    
+    
+    static let sharedInstance = StringLocalization()
+    
+    
+    private let resourceBundle: Bundle
+    
+    init() {
+        let frameworkBundle = Bundle(for: DummyClass.self)
+        
+        if let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("FormValidatorSwift.bundle"),
+            let resourceBundle = Bundle(url: bundleURL) {
+            
+            // Installed using CocoaPods
+            self.resourceBundle = resourceBundle
+            
+        } else {
+            self.resourceBundle = frameworkBundle
+        }
+    }
 
     
     /**
@@ -21,8 +41,9 @@ internal struct StringLocalization {
      - parameter comment: Comment value for the strings table.
      - returns: Localized string.
      */
-    static func localizedString(_ key: String, comment: String) -> String {
-        return NSLocalizedString(key, tableName: "Localizable", bundle: Bundle(for: DummyClass.self), comment: comment)
+    func localizedString(_ key: String, comment: String) -> String {
+        
+        return NSLocalizedString(key, tableName: "Localizable", bundle: resourceBundle, comment: comment)
     }
 
 }
