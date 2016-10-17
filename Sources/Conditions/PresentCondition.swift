@@ -16,7 +16,7 @@ public struct PresentCondition: Condition {
     
     // MARK: - Properties
     
-    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationPresent", comment: "")
+    public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationPresent", comment: "")
     
     public let regex = ""
     

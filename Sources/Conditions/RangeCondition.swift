@@ -17,7 +17,7 @@ public struct RangeCondition: Condition {
     
     // MARK: - Properties
     
-    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationRange", comment: "")
+    public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationRange", comment: "")
     
     public let regex = ""
     

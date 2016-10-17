@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Sources/**/*.swift'
 
+  s.resource_bundles = { 'FormValidatorSwift' => 'Sources/Resources/**/*.strings' }
+
   s.frameworks = 'Foundation', 'UIKit'
 
   s.requires_arc = true

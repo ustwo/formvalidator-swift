@@ -32,7 +32,7 @@ public struct PasswordStrengthCondition: Condition {
     
     // MARK: - Properties
     
-    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationPasswordStrength", comment: "")
+    public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationPasswordStrength", comment: "")
     
     public let regex = ""
     

@@ -34,7 +34,7 @@ public struct PostcodeCondition: Condition {
     
     // MARK: - Properties
     
-    public var localizedViolationString = StringLocalization.localizedString("US2KeyConditionViolationPostcodeUK", comment: "")
+    public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationPostcodeUK", comment: "")
     
     public fileprivate(set) var regex = ""
     
