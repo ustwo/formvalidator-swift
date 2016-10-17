@@ -41,7 +41,7 @@ public protocol Condition: CustomStringConvertible {
      - returns: Whether the condition check passed or failed.
      - note: Checking a `nil` value should always return `false`.
      */
-    func check(text: String?) -> Bool
+    func check(_ text: String?) -> Bool
     
 }
 
@@ -49,13 +49,13 @@ public protocol Condition: CustomStringConvertible {
 // Default implementation of `Condition.check(text:)` returns `true` if the `regex` is valid and there is at least one match in `text`.
 public extension Condition {
     
-    func check(text: String?) -> Bool {
+    func check(_ text: String?) -> Bool {
         guard let sourceText = text,
-            let regExpression = try? NSRegularExpression(pattern: regex, options: .CaseInsensitive) else {
+            let regExpression = try? NSRegularExpression(pattern: regex, options: .caseInsensitive) else {
                 return false
         }
         
-        return regExpression.firstMatchInString(sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) != nil
+        return regExpression.firstMatch(in: sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) != nil
     }
     
 }
@@ -66,7 +66,7 @@ public extension Condition {
     var description: String {
         var result = "<"
         
-        result += "\(self.dynamicType)"
+        result += "\(type(of: self))"
         result += "\n <localizedViolationString: \(localizedViolationString)>"
         result += "\n <shouldAllowViolation: \(shouldAllowViolation)>"
         

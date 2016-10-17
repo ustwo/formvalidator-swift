@@ -39,8 +39,8 @@ public struct OrCondition: Condition {
     
     // MARK: - Check
     
-    public func check(text: String?) -> Bool {
-        return conditions.reduce(false, combine: { $0 || $1.check(text) })
+    public func check(_ text: String?) -> Bool {
+        return conditions.reduce(false, { $0 || $1.check(text) })
     }
     
 }

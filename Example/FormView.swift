@@ -19,10 +19,10 @@ final class FormView: UIView {
     let nameEntry       = FormEntryView<AlphabeticValidator>()
     let emailEntry      = FormEntryView<EmailValidator>()
     
-    let submitButton    = UIButton(type: .System)
+    let submitButton    = UIButton(type: .system)
     
-    private let bottomBufferView    = UIView()
-    private let stackView           = UIStackView()
+    fileprivate let bottomBufferView    = UIView()
+    fileprivate let stackView           = UIStackView()
     
     
     // MARK: - Initializers
@@ -34,14 +34,14 @@ final class FormView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = UIColor.whiteColor()
+        backgroundColor = UIColor.white
         
         
         // Setup
         
-        stackView.axis = .Vertical
-        stackView.distribution = .Fill
-        stackView.alignment = .Fill
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
         addSubview(stackView)
         
         nameEntry.textLabel.text = NSLocalizedString("Surname", comment: "")
@@ -52,12 +52,12 @@ final class FormView: UIView {
         emailEntry.textField.validateOnFocusLossOnly = true
         stackView.addArrangedSubview(emailEntry)
         
-        submitButton.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-        submitButton.setTitle(NSLocalizedString("Submit", comment: ""), forState: .Normal)
+        submitButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+        submitButton.setTitle(NSLocalizedString("Submit", comment: ""), for: UIControlState())
         stackView.addArrangedSubview(submitButton)
         
-        bottomBufferView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, forAxis: stackView.axis)
-        bottomBufferView.setContentHuggingPriority(UILayoutPriorityDefaultLow, forAxis: stackView.axis)
+        bottomBufferView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, for: stackView.axis)
+        bottomBufferView.setContentHuggingPriority(UILayoutPriorityDefaultLow, for: stackView.axis)
         stackView.addArrangedSubview(bottomBufferView)
         
         
@@ -76,10 +76,10 @@ final class FormView: UIView {
         
         let stackViewMargin: CGFloat = 20.0
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: stackViewMargin))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1.0, constant: stackViewMargin))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: -stackViewMargin))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1.0, constant: -stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: -stackViewMargin))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -stackViewMargin))
         
         stackView.spacing = stackViewMargin
     }

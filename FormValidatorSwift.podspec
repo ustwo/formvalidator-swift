@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'FormValidatorSwift'
   s.version = '1.0.0'
-  s.license = 'MIT'
+  s.license = { :type => "MIT", :file => "License.md" }
   s.summary = 'An organizational tool for writing custom view controllers using UIKit.'
   s.homepage = 'https://github.com/ustwo/formvalidator-swift'
   s.authors = { 'Shagun Madhikarmi' => 'shagun@ustwo.com',
@@ -13,6 +13,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Sources/**/*.swift'
+
+  s.frameworks = 'Foundation', 'UIKit'
 
   s.requires_arc = true
 end

@@ -27,7 +27,7 @@ public struct PasswordStrengthValidator: Validator {
     Initializes a `PasswordStrengthValidator` that requires a `VeryStrong` password.
     */
     public init() {
-        self.init(requiredStrength: .VeryStrong)
+        self.init(requiredStrength: .veryStrong)
     }
     
     /**

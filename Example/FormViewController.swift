@@ -19,7 +19,7 @@ final class FormViewController: UIViewController {
     
     var form = ControlForm()
     
-    private var underlyingView: FormView {
+    fileprivate var underlyingView: FormView {
         if let myView = view as? FormView {
             return myView
         }
@@ -42,13 +42,13 @@ final class FormViewController: UIViewController {
         form.addEntry(underlyingView.nameEntry.textField)
         form.addEntry(underlyingView.emailEntry.textField)
         
-        underlyingView.submitButton.addTarget(self, action: Selector("submitButtonPressed:"), forControlEvents: .TouchUpInside)
+        underlyingView.submitButton.addTarget(self, action: #selector(FormViewController.submitButtonPressed(_:)), for: .touchUpInside)
     }
     
     
     // MARK: - Control Actions
     
-    func submitButtonPressed(sender: UIButton) {
+    func submitButtonPressed(_ sender: UIButton) {
         let alertTitle: String
         let alertMessage: String
         if form.isValid {
@@ -59,13 +59,13 @@ final class FormViewController: UIViewController {
             alertMessage = NSLocalizedString("Please correct your entries in the form.", comment: "")
         }
         
-        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .Alert)
+        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
         alertController.popoverPresentationController?.sourceView = sender
         
-        let doneAction = UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .Default, handler: nil)
+        let doneAction = UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .default, handler: nil)
         alertController.addAction(doneAction)
         
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
 }

@@ -14,14 +14,14 @@ import XCTest
 
 extension XCTestCase {
 
-    func AssertCondition(condition: Condition, testInput: String?, expectedResult: Bool, file: String = __FILE__, line: UInt = __LINE__) {
+    func AssertCondition(_ condition: Condition, testInput: String?, expectedResult: Bool, file: String = #file, line: UInt = #line) {
         // When
         let actualResult = condition.check(testInput)
         
         // Test
         if expectedResult != actualResult {
-            let message = "The `\(condition.dynamicType)` should respond with \(expectedResult) but received \(actualResult)."
-            self.recordFailureWithDescription(message, inFile: file, atLine: line, expected: true)
+            let message = "The `\(type(of: condition))` should respond with \(expectedResult) but received \(actualResult)."
+            self.recordFailure(withDescription: message, inFile: file, atLine: line, expected: true)
         }
     }
     

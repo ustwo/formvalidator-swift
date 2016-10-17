@@ -27,13 +27,13 @@ public protocol Validator {
      - parameter text: `String` to check.
      - returns: An array of conditions that were violated by `text`. If no conditions were violated then `nil` is returned.
      */
-    func checkConditions(text: String?) -> [Condition]?
+    func checkConditions(_ text: String?) -> [Condition]?
     
     /**
      Removes all conditions of `conditionClass` type.
      - parameter conditionClass: `Type` of condition to remove.
      */
-    mutating func removeConditionOfClass<T: Condition>(conditionClass: T.Type)
+    mutating func removeConditionOfClass<T: Condition>(_ conditionClass: T.Type)
     
 }
 
@@ -41,13 +41,13 @@ public protocol Validator {
 // Default implementation for `addCondition`, `checkConditions`, and `removeConditionOfClass`.
 public extension Validator {
     
-    func checkConditions(text: String?) -> [Condition]? {
+    func checkConditions(_ text: String?) -> [Condition]? {
         let violations = conditions.filter { !($0.check(text)) }
         
         return violations.isEmpty ? nil : violations
     }
     
-    mutating func removeConditionOfClass<T: Condition>(conditionClass: T.Type) {
+    mutating func removeConditionOfClass<T: Condition>(_ conditionClass: T.Type) {
         conditions = conditions.filter { !($0 is T) }
     }
 }

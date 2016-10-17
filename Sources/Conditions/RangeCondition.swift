@@ -23,7 +23,7 @@ public struct RangeCondition: Condition {
     
     public var shouldAllowViolation = true
     
-    public let range: Range<Int>
+    public let range: CountableRange<Int>
     
     
     // MARK: - Initializers
@@ -36,16 +36,16 @@ public struct RangeCondition: Condition {
     }
     
     
-    public init(range: Range<Int>) {
+    public init(range: CountableRange<Int>) {
         self.range = range
     }
     
-    public func check(text: String?) -> Bool {
+    public func check(_ text: String?) -> Bool {
         guard let sourceText = text else {
             return false
         }
         
-        return sourceText.characters.count >= range.startIndex && sourceText.characters.count <= range.startIndex.distanceTo(range.endIndex)
+        return sourceText.characters.count >= range.lowerBound && sourceText.characters.count <= range.lowerBound.distance(to: range.upperBound)
     }
     
 }

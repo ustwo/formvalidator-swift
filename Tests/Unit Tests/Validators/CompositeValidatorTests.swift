@@ -36,7 +36,7 @@ final class CompositeValidatorTests: XCTestCase {
         XCTAssertNil(secondValidator.checkConditions(testInput))
         
         // Test
-        XCTAssertNil(actualResult, "The `\(validator.dynamicType)` should respond with \(expectedResult) and but received \(actualResult).")
+        XCTAssertNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
     }
     
     
@@ -56,7 +56,7 @@ final class CompositeValidatorTests: XCTestCase {
         XCTAssertNil(secondValidator.checkConditions(testInput))
         
         // Test
-        XCTAssertNotNil(actualResult, "The `\(validator.dynamicType)` should respond with \(expectedResult) and but received \(actualResult).")
+        XCTAssertNotNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
     }
     
 }

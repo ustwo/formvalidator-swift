@@ -19,7 +19,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_VeryWeak_Success() {
         // Given
         let testInput       = "Foo"
-        let condition       = PasswordStrengthCondition(requiredStrength: .VeryWeak)
+        let condition       = PasswordStrengthCondition(requiredStrength: .veryWeak)
         let expectedResult  = true
         
         // Test
@@ -29,7 +29,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_VeryStrong_Success() {
         // Given
         let testInput       = "F1@b9a_c12983y"
-        let condition       = PasswordStrengthCondition(requiredStrength: .VeryStrong)
+        let condition       = PasswordStrengthCondition(requiredStrength: .veryStrong)
         let expectedResult  = true
         
         // Test
@@ -42,7 +42,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_VeryStrong_Failure() {
         // Given
         let testInput       = "Foo"
-        let condition       = PasswordStrengthCondition(requiredStrength: .VeryStrong)
+        let condition       = PasswordStrengthCondition(requiredStrength: .veryStrong)
         let expectedResult  = false
         
         // Test
@@ -52,7 +52,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_Nil_Failure() {
         // Given
         let testInput: String?  = nil
-        let condition           = PasswordStrengthCondition(requiredStrength: .VeryStrong)
+        let condition           = PasswordStrengthCondition(requiredStrength: .veryStrong)
         let expectedResult      = false
         
         // Test

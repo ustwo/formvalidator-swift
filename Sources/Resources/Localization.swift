@@ -21,8 +21,8 @@ internal struct StringLocalization {
      - parameter comment: Comment value for the strings table.
      - returns: Localized string.
      */
-    static func localizedString(key: String, comment: String) -> String {
-        return NSLocalizedString(key, tableName: "Localizable", bundle: NSBundle(forClass: DummyClass.self), comment: comment)
+    static func localizedString(_ key: String, comment: String) -> String {
+        return NSLocalizedString(key, tableName: "Localizable", bundle: Bundle(for: DummyClass.self), comment: comment)
     }
 
 }

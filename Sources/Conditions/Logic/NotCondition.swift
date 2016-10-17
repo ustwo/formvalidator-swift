@@ -39,7 +39,7 @@ public struct NotCondition: Condition {
     
     // MARK: - Check
     
-    public func check(text: String?) -> Bool {
+    public func check(_ text: String?) -> Bool {
         return !condition.check(text)
     }
     

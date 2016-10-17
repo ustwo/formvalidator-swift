@@ -10,7 +10,7 @@ import Foundation
 
 
 public enum PasswordStrength: Int {
-    case VeryWeak, Weak, Medium, Strong, VeryStrong
+    case veryWeak, weak, medium, strong, veryStrong
 }
 
 
@@ -47,7 +47,7 @@ public struct PasswordStrengthCondition: Condition {
     Initializes a `PasswordStrengthCondition` that requires a `VeryStrong` password.
     */
     public init() {
-        self.init(requiredStrength: .VeryStrong)
+        self.init(requiredStrength: .veryStrong)
     }
     
     /**
@@ -61,14 +61,14 @@ public struct PasswordStrengthCondition: Condition {
     
     // MARK: - Check
     
-    public func check(text: String?) -> Bool {
+    public func check(_ text: String?) -> Bool {
         guard let sourceText = text else {
             return false
         }
         
         let matches = [numberOfMatchesWithPattern("\\d", text: sourceText), numberOfMatchesWithPattern("[a-z]", text: sourceText), numberOfMatchesWithPattern("[A-Z]", text: sourceText), numberOfMatchesWithPattern("[^a-zA-Z\\d]", text: sourceText)]
         
-        var strength = matches.reduce(0, combine: { $0 + ($1 > 0 ? 1 : 0)})
+        var strength = matches.reduce(0, { $0 + ($1 > 0 ? 1 : 0)})
         
         if sourceText.characters.count > 8 {
             strength += 1
@@ -79,12 +79,12 @@ public struct PasswordStrengthCondition: Condition {
         return strength >= requiredStrength.rawValue
     }
     
-    private func numberOfMatchesWithPattern(pattern: String, text: String) -> Int {
+    fileprivate func numberOfMatchesWithPattern(_ pattern: String, text: String) -> Int {
         guard let regExpression = try? NSRegularExpression(pattern: pattern, options: []) else {
             return 0
         }
         
-        return regExpression.numberOfMatchesInString(text, options: [], range: NSRange(location: 0, length: text.characters.count))
+        return regExpression.numberOfMatches(in: text, options: [], range: NSRange(location: 0, length: text.characters.count))
     }
     
 }

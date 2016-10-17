@@ -30,7 +30,7 @@ public struct PresentCondition: Condition {
     
     // MARK: - Check
     
-    public func check(text: String?) -> Bool {
+    public func check(_ text: String?) -> Bool {
         guard let sourceText = text else {
             return false
         }

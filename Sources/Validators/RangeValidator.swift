@@ -30,7 +30,7 @@ public struct RangeValidator: Validator {
         self.init(range: 0..<1)
     }
     
-    public init(range: Range<Int>) {
+    public init(range: CountableRange<Int>) {
         conditions = [RangeCondition(range: range)]
     }
     

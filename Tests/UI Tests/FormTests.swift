@@ -68,11 +68,11 @@ class FormTests: XCTestCase {
         
         let successAlert = app.staticTexts[NSLocalizedString("Success", comment: "")]
         let exists = NSPredicate(format: "exists == true")
-        expectationForPredicate(exists, evaluatedWithObject: successAlert, handler: nil)
+        expectation(for: exists, evaluatedWith: successAlert, handler: nil)
         
         submitButton.tap()
         
-        waitForExpectationsWithTimeout(5.0, handler: nil)
+        waitForExpectations(timeout: 5.0, handler: nil)
     }
     
     func testForm_Invalid() {
@@ -93,11 +93,11 @@ class FormTests: XCTestCase {
         
         let successAlert = app.staticTexts[NSLocalizedString("Error", comment: "")]
         let exists = NSPredicate(format: "exists == true")
-        expectationForPredicate(exists, evaluatedWithObject: successAlert, handler: nil)
+        expectation(for: exists, evaluatedWith: successAlert, handler: nil)
         
         submitButton.tap()
         
-        waitForExpectationsWithTimeout(5.0, handler: nil)
+        waitForExpectations(timeout: 5.0, handler: nil)
     }
     
 }
