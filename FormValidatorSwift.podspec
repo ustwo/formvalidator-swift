@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'FormValidatorSwift'
-  s.version = '1.0.0'
+  s.version = 'v1.0.0'
   s.license = { :type => "MIT", :file => "License.md" }
   s.summary = 'An organizational tool for writing custom view controllers using UIKit.'
   s.homepage = 'https://github.com/ustwo/formvalidator-swift'
