@@ -193,11 +193,14 @@ if form.isValid {
 
 A more detailed example can be found in the `iOS Example` app in this repository.
 
-## Contributors
+## Maintainers
 
-* [ustwo Open Source](mailto:open.source@ustwo.com)
-* [Shagun Madhikarmi](mailto:shagun@ustwo.com)
-* [Aaron McTavish](mailto:aamct@ustwo.com)
+* Shagun Madhikarmi (@madhikarma)
+* Aaron McTavish (@aamctustwo)
+
+## Contact
+
+* [open.source@ustwo.com](mailto:open.source@ustwo.com)
 
 ## License
 
