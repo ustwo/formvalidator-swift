@@ -23,6 +23,7 @@ lane :verify do |options|
         :scheme => scheme,
         :destination => destination,
         :sdk => sdk,
+        :code_coverage => true,
         :xcargs => "ONLY_ACTIVE_ARCH=YES",
         :clean => true
     }
@@ -36,6 +37,7 @@ lane :verify_demo do
         scheme: "iOS Example",
         destination: "OS=10.0,name=iPhone 7 Plus",
         sdk: "iphonesimulator10.0",
+        code_coverage: true,
         xcargs: "ONLY_ACTIVE_ARCH=YES",
         clean: true
     )
