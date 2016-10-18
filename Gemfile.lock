@@ -71,6 +71,8 @@ GEM
       kramdown (~> 1.5)
       octokit (~> 4.2)
       terminal-table (~> 1)
+    danger-swiftlint (0.2.1)
+      danger
     deliver (1.14.2)
       credentials_manager (>= 0.16.1, < 1.0.0)
       fastimage (~> 1.6)
@@ -310,6 +312,7 @@ PLATFORMS
 DEPENDENCIES
   cocoapods (~> 1.1.0.rc.3)
   danger
+  danger-swiftlint
   fastlane
 
 BUNDLED WITH
