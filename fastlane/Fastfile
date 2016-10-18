@@ -12,6 +12,10 @@ lane :test do
     )
     verify_demo
     pod_lib_lint
+    danger(
+        github_api_token: ENV["GITHUB_API_TOKEN"],
+        use_bundle_exec: true
+    )
 end
 
 desc "Runs unit tests"
