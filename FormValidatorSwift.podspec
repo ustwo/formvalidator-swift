@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name = 'FormValidatorSwift'
   s.version = '1.0.0'
   s.license = { :type => "MIT", :file => "License.md" }
-  s.summary = 'An organizational tool for writing custom view controllers using UIKit.'
+  s.summary = 'A framework to validate inputs of text fields and text views in a convenient way.'
   s.homepage = 'https://github.com/ustwo/formvalidator-swift'
   s.authors = { 'Shagun Madhikarmi' => 'shagun@ustwo.com',
                 'Aaron McTavish' => 'aamct@ustwo.com' }
