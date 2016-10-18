@@ -6,6 +6,8 @@ disabled_rules: # rule identifiers to exclude from running
   - trailing_whitespace
   - type_body_length
   - variable_name
+included: # paths to include during linting. `--path` is ignored if present.
+  - Sources
 excluded: # paths to ignore during linting. overridden by `included`.
   - Pods
   - Tests
