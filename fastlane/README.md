@@ -20,6 +20,11 @@ Runs unit tests
 fastlane verify_demo
 ```
 Runs UI tests
+### upload_cov
+```
+fastlane upload_cov
+```
+Upload code coverage reports (if running on CI)
 
 ----
 

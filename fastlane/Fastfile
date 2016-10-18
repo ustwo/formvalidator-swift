@@ -31,6 +31,7 @@ lane :verify do |options|
         :clean => true
     }
     scan(opts)
+    upload_cov
 end
 
 desc "Runs UI tests"
@@ -47,4 +48,14 @@ lane :verify_demo do
         output_directory: output_directory,
         clean: true
     )
+    upload_cov
+end
+
+desc "Upload code coverage reports (if running on CI)"
+lane :upload_cov do
+    if is_ci?
+        sh "bash ./codecov.sh"
+    else
+        say "No need to upload code coverage. Not running from CI."
+    end
 end
