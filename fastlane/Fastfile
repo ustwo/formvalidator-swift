@@ -54,8 +54,7 @@ end
 desc "Upload code coverage reports (if running on CI)"
 lane :upload_cov do
     if is_ci?
-        sh "bash <(curl -s https://codecov.io/bash)"
-        sh "sleep 5"
+        sh "./codecov.sh"
     else
         say "No need to upload code coverage. Not running from CI."
     end
