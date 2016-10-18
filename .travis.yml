@@ -9,7 +9,3 @@ env:
 # Test using Fastlane
 script:
   - ./fastlane/travis.sh
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-  - sleep 5
