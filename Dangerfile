@@ -23,3 +23,6 @@ end
 
 # Run SwiftLint
 swiftlint.lint_files
+
+# This Dangerfile is based heavily on Moya (https://github.com/Moya/Moya)
+# and CocoaPods (https://github.com/CocoaPods/CocoaPods).
