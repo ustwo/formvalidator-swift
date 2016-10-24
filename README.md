@@ -193,6 +193,10 @@ if form.isValid {
 
 A more detailed example can be found in the `iOS Example` app in this repository.
 
+## Collaborate
+
+We welcome contributors! Whether you're fixing a typo, squashing a bug, or adding new functionality please join us in making this project better. Read our [contributing guidelines][contributing] to find out how to add your support.
+
 ## Maintainers
 
 * Shagun Madhikarmi (@madhikarma)
@@ -205,3 +209,7 @@ A more detailed example can be found in the `iOS Example` app in this repository
 ## License
 
 BaseView is released under the MIT License. See the LICENSE file.
+
+<!-- Links -->
+
+[contributing]: .github/CONTRIBUTING.md
