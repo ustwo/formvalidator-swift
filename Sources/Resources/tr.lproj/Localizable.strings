@@ -1,0 +1,19 @@
+/* 
+  localizable.strings
+  FormValidatorSwift
+
+  Created by Aaron McTavish on 12/01/2016.
+  Copyright © 2016 ustwo. All rights reserved.
+*/
+
+
+"US2KeyConditionViolationRange"             = "En az %d, en çok %d karakter girin";
+"US2KeyConditionViolationNumeric"           = "Sadece rakam girin";
+"US2KeyConditionViolationAlphanumeric"      = "Sadece rakam ve harf girin";
+"US2KeyConditionViolationAlphabetic"        = "Sadece harf girin";
+"US2KeyConditionViolationEmail"             = "ornek@ornek.com formatında geçerli bir e-posta adresi girin";
+"US2KeyConditionViolationURL"               = "http(s)://www.ornek.com formatında geçerli bir adres girin";
+"US2KeyConditionViolationShorthandURL"      = "www.ornek.com formatında geçerli bir adres girin";
+"US2KeyConditionViolationPasswordStrength"  = "Daha güvenli bir parola girin";
+"US2KeyConditionViolationPostcodeUK"        = "Geçerli bir İngiliz posta kodu girin";
+"US2KeyConditionViolationPresent"           = "Bu alanı doldurmak zorunludur";
