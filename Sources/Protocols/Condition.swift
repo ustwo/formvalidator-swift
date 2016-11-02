@@ -42,7 +42,6 @@ public protocol Condition: CustomStringConvertible {
      - note: Checking a `nil` value should always return `false`.
      */
     func check(_ text: String?) -> Bool
-    
 }
 
 

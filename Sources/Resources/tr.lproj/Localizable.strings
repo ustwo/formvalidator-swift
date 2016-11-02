@@ -17,3 +17,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Daha güvenli bir parola girin";
 "US2KeyConditionViolationPostcodeUK"        = "Geçerli bir İngiliz posta kodu girin";
 "US2KeyConditionViolationPresent"           = "Bu alanı doldurmak zorunludur";
+"US2KeyConditionViolationCreditCard"        = "Geçerli bir kredi kartı numarası girin";
