@@ -16,3 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Brug et sikrere password";
 "US2KeyConditionViolationPostcodeUK"        = "Skriv et gyldigt UK postnummer";
 "US2KeyConditionViolationPresent"           = "Skriv tekst";
+"US2KeyConditionViolationCreditCard"        = "CREDIT_CARD_WARNING_DANISH";

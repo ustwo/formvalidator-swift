@@ -16,3 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Alegeți o parolă mai puternică";
 "US2KeyConditionViolationPostcodeUK"        = "Introduceți un cod poștal valid din UK ";
 "US2KeyConditionViolationPresent"           = "Introduceți textul";
+"US2KeyConditionViolationCreditCard"        = "CREDIT_CARD_WARNING_ROMANIAN";

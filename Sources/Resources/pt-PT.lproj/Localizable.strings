@@ -16,3 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Por favor escreva uma palavra-passe mais segura";
 "US2KeyConditionViolationPostcodeUK"        = "Por favor escreva um código postal válido";
 "US2KeyConditionViolationPresent"           = "Por favor escreva texto";
+"US2KeyConditionViolationCreditCard"        = "CREDIT_CARD_WARNING_PORTUGESE";
