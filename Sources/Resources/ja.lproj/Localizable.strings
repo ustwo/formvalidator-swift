@@ -16,3 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "もっと強いパスワードを入力して下さい。";
 "US2KeyConditionViolationPostcodeUK"        = "正式なUKの郵便番号を入力して下さい。";
 "US2KeyConditionViolationPresent"           = "テキストを入力して下さい。";
+"US2KeyConditionViolationCreditCard"        = "CREDIT_CARD_WARNING_JAPANESE";

@@ -16,3 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Задайте более сложный пароль";
 "US2KeyConditionViolationPostcodeUK"        = "Введите действующий почтовый индекс UK";
 "US2KeyConditionViolationPresent"           = "Введите текст";
+"US2KeyConditionViolationCreditCard"        = "CREDIT_CARD_WARNING_RUSSIAN";
