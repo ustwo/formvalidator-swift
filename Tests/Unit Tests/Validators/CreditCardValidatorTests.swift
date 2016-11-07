@@ -33,6 +33,16 @@ final class CreditCardValidatorTests: XCTestCase {
         XCTAssertNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
     }
     
+    func testCreditCardValidator_GetCardType_Success() {
+        // Given
+        let testInput                           = "5300000000000000"
+        let expectedResult: [CreditCardType]    = [.dinersClub, .mastercard]
+        
+        let actualResult = validator.cardTypeOf(creditCardNumber : testInput)
+        
+        XCTAssertEqual(actualResult, expectedResult, "Card type of \(testInput) should be \(expectedResult), but returned \(actualResult).")
+    }
+    
     
     // MARK: - Test Failure
     

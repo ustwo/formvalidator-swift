@@ -93,6 +93,10 @@ public struct CreditCardCondition : Condition {
         }
         
         let trimmedText = String(sourceText.characters.filter{ $0 != " " })
+        return check(trimmedText, withRegex: regExp)
+    }
+    
+    public func check(_ trimmedText: String, withRegex regExp: NSRegularExpression) -> Bool {
         return regExp.firstMatch(in: trimmedText, options: [], range: NSMakeRange(0, trimmedText.characters.count)) != nil
     }
 }
