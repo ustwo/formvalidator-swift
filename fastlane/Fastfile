@@ -2,8 +2,8 @@ desc "Runs tests on the primary platforms and configurations"
 lane :test do
     verify(
         scheme: "FormValidatorSwift iOS",
-        destination: "OS=10.0,name=iPhone 7 Plus",
-        sdk: "iphonesimulator10.0"
+        destination: "OS=10.1,name=iPhone 7 Plus",
+        sdk: "iphonesimulator10.1"
     )
     verify(
         scheme: "FormValidatorSwift tvOS",
@@ -41,8 +41,8 @@ lane :verify_demo do
     scan(
         workspace: "FormValidatorSwift.xcworkspace",
         scheme: scheme,
-        destination: "OS=10.0,name=iPhone 7 Plus",
-        sdk: "iphonesimulator10.0",
+        destination: "OS=10.1,name=iPhone 7 Plus",
+        sdk: "iphonesimulator10.1",
         code_coverage: true,
         xcargs: "ONLY_ACTIVE_ARCH=YES",
         output_directory: output_directory,
