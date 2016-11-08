@@ -38,9 +38,17 @@ final class CreditCardValidatorTests: XCTestCase {
         let testInput                           = "5300000000000000"
         let expectedResult: [CreditCardType]    = [.dinersClub, .mastercard]
         
-        let actualResult = validator.cardTypeOf(creditCardNumber : testInput)
+        let exp = self.expectation(description: "Card types should be valid")
         
-        XCTAssertEqual(actualResult, expectedResult, "Card type of \(testInput) should be \(expectedResult), but returned \(actualResult).")
+        validator.cardTypeOf(creditCardNumber: testInput) { (validCardTypes) in
+            XCTAssertEqual(validCardTypes, expectedResult, "Card type of \(testInput) should be \(expectedResult), but returned \(validCardTypes).")
+            exp.fulfill()
+            
+        }
+        
+        self.waitForExpectations(timeout: 3, handler: nil)
+        
+        
     }
     
     
