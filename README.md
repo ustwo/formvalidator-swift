@@ -137,7 +137,7 @@ emailTextField.shouldAllowViolation = true
 emailTextField.validateOnFocusLossOnly = true
 ```
 
-We can respond to changes in the validity of `ValidatorTextField` by implementing the `ValidatorControlDelegate` and setting ourselves as the validator delegate. Below is an example implementation. In the example we highlight the text field with a red border if it is invalid. We also list the error in a label called `errorLabel` and present it to the user.
+We can respond to changes in the validity of `ValidatorTextField` by implementing the `ValidatorControlDelegate` and setting ourselves as the validator delegate (using the `setValidatorDelegate(_:)` method). Below is an example implementation. In the example we highlight the text field with a red border if it is invalid. We also list the error in a label called `errorLabel` and present it to the user.
 
 ```swift
 func validatorControl(validatorControl: ValidatorControl, changedValidState validState: Bool) {
