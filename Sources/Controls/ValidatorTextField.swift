@@ -17,6 +17,9 @@ open class ValidatorTextField: UITextField, ValidatorControl {
     open var shouldAllowViolation = true
     open var validateOnFocusLossOnly = false
     open let validator: Validator
+    /// Validator delegate for the text field.
+    ///
+    /// - SeeAlso: `setValidatorDelegate(_:)` to set the validator delegate.
     open weak var validatorDelegate: ValidatorControlDelegate? {
         get {
             return validatorControlResponder?.delegate
@@ -72,6 +75,9 @@ open class ValidatorTextField: UITextField, ValidatorControl {
     
     // MARK: - Custom Setters
     
+    /// Sets the `validatorDelegate` for the text field. This allows custom responses to both `UITextFieldDelegate` callbacks as well as those from `ValidatorControlDelegate`.
+    ///
+    /// - Parameter newDelegate: The delegate for `ValidatorTextField` callbacks.
     open func setValidatorDelegate(_ newDelegate: ValidatorControlDelegate & UITextFieldDelegate) {
         validatorControlResponder?.delegate = newDelegate
     }
