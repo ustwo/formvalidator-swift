@@ -1,11 +1,13 @@
 osx_image: xcode8
 language: objective-c
-
 env:
   global:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
-
-# Test using Fastlane
+  matrix:
+    secure: nLqnRhXeCf7TOj8vSybogI8p2jSstGCzXZUKhoHJjbFaUxlbjVKw9yQz75NMdjRL/jcpZYIT6meYKYkxyB4VKfGsxDKjviA0+JJydvGUr4LNnvbXaH1MspFTyYF7kkVfy5BzeBeet1YJYb31Ypm2y9L9KDJ2Fg0lNXjThhYsmCFzXl+pWi47v+jNzILs5Zg/LuPnzria4x0P2q/k/yg8HXsKslruXlEeVB2v2emoLqtrSy1daQbw0rZYI5ljJh63+SGSnJwCrMdkZolbVenKlSTyYVdq5ILhwHFwifHHLpo05/PTRD64fMkiYUrEr1QDdmD08/7UNYCVb0UKOcaZ6q2XOawhDS3pXNaIW9LXUMaH1ul3CcagzPTyVYOVp52V+bPea3K/DO1r95htq1u1BZigo1TBJxIsM52Jb9w5/0OvIzPdvV4zvL95Buo+NqU3ltV0F2cyCFKyhXhlCc9QuQSAtmHCAgr3BemQR7NxI4VbahlTMHR5uB9CzjfbryPhRgHawCU9y+jnDU5Oz/Tapq+IgP/QMOO8/fsppRh76KtsJb2iZYweK+TpdJfrUFsV3KjFxXI1Ish5anzoErIZjLDcL/bhBuOHSYU5NjKMC0M0twMu9+hU/TLMqThFpmBHKxD755rQx7Jz31sWDJHmT5xmv4t/ouq8jvBecijony0=
+before_install:
+  - brew update
+  - brew outdated swiftlint || brew upgrade swiftlint
 script:
-  - ./fastlane/travis.sh
+- "./fastlane/travis.sh"

@@ -19,7 +19,7 @@ Runs unit tests
 ```
 fastlane verify_demo
 ```
-Runs UI tests
+Build demo app
 ### upload_cov
 ```
 fastlane upload_cov

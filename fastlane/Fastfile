@@ -12,6 +12,10 @@ lane :test do
     )
     verify_demo
     pod_lib_lint
+    danger(
+        github_api_token: ENV["GITHUB_API_TOKEN"],
+        use_bundle_exec: true
+    )
 end
 
 desc "Runs unit tests"
@@ -34,21 +38,20 @@ lane :verify do |options|
     upload_cov
 end
 
-desc "Runs UI tests"
+desc "Build demo app"
 lane :verify_demo do
     scheme = "iOS Example"
     output_directory = "fastlane/test_output/" + scheme + "/"
-    scan(
+    xcodebuild(
         workspace: "FormValidatorSwift.xcworkspace",
         scheme: scheme,
         destination: "OS=10.0,name=iPhone 7 Plus",
         sdk: "iphonesimulator10.0",
-        code_coverage: true,
-        xcargs: "ONLY_ACTIVE_ARCH=YES",
+        xcargs: "ONLY_ACTIVE_ARCH=NO",
         output_directory: output_directory,
-        clean: true
+        clean: true,
+        build: true
     )
-    upload_cov
 end
 
 desc "Upload code coverage reports (if running on CI)"
