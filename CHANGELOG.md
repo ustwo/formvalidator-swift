@@ -4,11 +4,12 @@ All notable changes to this project will be documented in this file.
 `FormValidatorSwift` adheres to [Semantic Versioning](http://semver.org/).
 
 #### 1.x Releases
+- `1.1.x` Releases - [1.1.0](#110)
 - `1.0.x` Releases - [1.0.0](#100)
 
 ---
 
-## Upcoming
+## [1.1.0](https://github.com/ustwo/formvalidator-swift/releases/tag/v1.1.0)
 
 #### Added
 - Add postcode validation for Sweden and Turkey.
