@@ -21,9 +21,7 @@ open class ValidatorTextView: UITextView, ValidatorControl {
     ///
     /// - SeeAlso: setValidatorDelegate(_:) to set the validator delegate.
     open weak var validatorDelegate: ValidatorControlDelegate? {
-        get {
-            return validatorControlResponder?.delegate
-        }
+        return validatorControlResponder?.delegate
     }
     
     open var validatableText: String? {
