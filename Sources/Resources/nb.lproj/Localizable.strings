@@ -16,4 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Skriv inn et mer sikkert passord";
 "US2KeyConditionViolationPostcodeUK"        = "Skriv inn et gyldig UK postnummer";
 "US2KeyConditionViolationPresent"           = "Skriv inn tekst";
-"US2KeyConditionViolationCreditCard"        = "CREDIT_CARD_WARNING_NORWEGIAN";
+"US2KeyConditionViolationCreditCard"        = "Enter a valid credit card number";

@@ -16,4 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Entrez un mot de passe plus fort";
 "US2KeyConditionViolationPostcodeUK"        = "Entrez un code postal valide pour le Royaume Uni";
 "US2KeyConditionViolationPresent"           = "Entrez le texte";
-"US2KeyConditionViolationCreditCard"        = "CREDIT_CARD_WARNING_FRENCH";
+"US2KeyConditionViolationCreditCard"        = "Enter a valid credit card number";
