@@ -36,7 +36,7 @@ final class CreditCardValidatorTests: XCTestCase {
     func testCreditCardValidator_GetCardType_Success() {
         // Given
         let testInput                           = "5300000000000000"
-        let expectedResult: [CreditCardType]    = [.dinersClub, .mastercard]
+        let expectedResult: CreditCardType    = [.mastercard]
         
         let exp = self.expectation(description: "Card types should be valid")
         
