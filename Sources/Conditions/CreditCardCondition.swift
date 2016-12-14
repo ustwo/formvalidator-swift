@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Credit card types that are supported by `CreditCardCondition`. There is a `regex` property that returns the regex for validating that credit card number.
-public struct CreditCardType: OptionSet {
+public struct CreditCardType: OptionSet, CustomStringConvertible {
     public var rawValue: Int
     
     public init(rawValue: Int) {
@@ -26,31 +26,55 @@ public struct CreditCardType: OptionSet {
     static let visa               = CreditCardType(rawValue: 1 << 6)
     
     static let all: CreditCardType = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
+    static let allArray: [CreditCardType] = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
     
+    /**
+     Literal description for set of credit cards, separated with commas and single space.
+     */
+    public var description: String {
+        
+        var result = ""
+        
+        add(description: "American Express", forCardType: CreditCardType.americanExpress, toResultString: &result)
+        add(description: "Diners Club", forCardType: CreditCardType.dinersClub, toResultString: &result)
+        add(description: "Discover", forCardType: CreditCardType.discover, toResultString: &result)
+        add(description: "JCB", forCardType: CreditCardType.jcb, toResultString: &result)
+        add(description: "Maestro", forCardType: CreditCardType.maestro, toResultString: &result)
+        add(description: "Master Card", forCardType: CreditCardType.mastercard, toResultString: &result)
+        add(description: "VISA", forCardType: CreditCardType.visa, toResultString: &result)
+        
+        return result
+    }
     
+    /**
+     Combined regular expression string for set of credit cards.
+     */
+    public var regex: String {
+        var result = ""
+        self.insertCard(regexString: &result, cardType: .americanExpress)
+        self.insertCard(regexString: &result, cardType: .dinersClub)
+        self.insertCard(regexString: &result, cardType: .discover)
+        self.insertCard(regexString: &result, cardType: .jcb)
+        self.insertCard(regexString: &result, cardType: .maestro)
+        self.insertCard(regexString: &result, cardType: .mastercard)
+        self.insertCard(regexString: &result, cardType: .visa)
+        
+        return result
+    }
     
-    var description: String {
-        switch self.rawValue {
-        case CreditCardType.americanExpress.rawValue:
-            return "American Express"
-        case CreditCardType.dinersClub.rawValue:
-            return "Diners Club"
-        case CreditCardType.discover.rawValue:
-            return "Discover"
-        case CreditCardType.jcb.rawValue:
-            return "JCB"
-        case CreditCardType.maestro.rawValue:
-            return "Maestro"
-        case CreditCardType.mastercard.rawValue:
-            return "Master Card"
-        case CreditCardType.visa.rawValue:
-            return "VISA"
-        case CreditCardType.all.rawValue:
-            return "All"
-        default: return ""
+    /**
+     Adds commas and spaces between credit card descriptions.
+     */
+    private func add(description descriptionString: String, forCardType cardType: CreditCardType, toResultString resultString: inout String) {
+        if self.contains(cardType) {
+            resultString += ((!resultString.isEmpty) ? ", " : "")
+            resultString += descriptionString
         }
     }
     
+    /**
+     Regular expression values for credit card types.
+     */
     private var cardRegex: String? {
         switch self {
         case CreditCardType.americanExpress:
@@ -71,29 +95,17 @@ public struct CreditCardType: OptionSet {
         }
     }
     
+    /**
+     Inserts or operator between regular expressions.
+     */
     private func insertCard(regexString: inout String, cardType: CreditCardType) {
-        guard let cardTypeRegex = cardType.cardRegex else { return }
+        guard let cardTypeRegex = cardType.cardRegex, self.contains(cardType) else { return }
         
-        if self.contains(cardType) {
-            if !regexString.isEmpty {
-                regexString.append("|")
-            }
-            
-            regexString.append(cardTypeRegex)
+        if !regexString.isEmpty {
+            regexString.append("|")
         }
-    }
-    
-    var regex: String {
-        var str = ""
-        self.insertCard(regexString: &str, cardType: .americanExpress)
-        self.insertCard(regexString: &str, cardType: .dinersClub)
-        self.insertCard(regexString: &str, cardType: .discover)
-        self.insertCard(regexString: &str, cardType: .jcb)
-        self.insertCard(regexString: &str, cardType: .maestro)
-        self.insertCard(regexString: &str, cardType: .mastercard)
-        self.insertCard(regexString: &str, cardType: .visa)
         
-        return str
+        regexString.append(cardTypeRegex)
     }
 }
 
@@ -146,7 +158,9 @@ public struct CreditCardCondition: Condition {
             return false
         }
         
-        let trimmedText = String(sourceText.characters.filter { $0 != " " })
+        let sourceTextNs = sourceText as NSString
+        let trimmedText = sourceTextNs.replacingOccurrences(of: "\\D", with: "", options: .regularExpression, range: NSRange(location:0, length:sourceTextNs.length)) as String
+        
         return check(trimmedText, withRegex: regExp)
     }
     
