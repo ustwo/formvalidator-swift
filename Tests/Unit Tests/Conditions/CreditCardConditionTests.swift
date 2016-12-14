@@ -20,6 +20,8 @@ final class CreditCardConditionTests: XCTestCase {
     let conditionAll                = CreditCardCondition()
     
     let cardNumberWhitespace        = "3760 3171  0126       369"
+    let cardNumberDashes            = "3760-3171-0126-369"
+    let cardNumberDigitsAndChars    = "3760Das3171Uyn0126‘[Æº369"
     
     // Invalid Card Numbers
     let cardNumberInvalid_1         = "0000000000000000"
@@ -59,7 +61,11 @@ final class CreditCardConditionTests: XCTestCase {
             }
         }
         
+        
+        
         AssertCondition(conditionAll, testInput: cardNumberWhitespace, expectedResult: expectedResult)
+        AssertCondition(conditionAll, testInput: cardNumberDashes, expectedResult: expectedResult)
+        AssertCondition(conditionAll, testInput: cardNumberDigitsAndChars, expectedResult: expectedResult)
     }
     
     

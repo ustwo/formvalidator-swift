@@ -40,10 +40,9 @@ final class CreditCardValidatorTests: XCTestCase {
         
         let exp = self.expectation(description: "Card types should be valid")
         
-        validator.cardTypeOf(creditCardNumber: testInput) { (validCardTypes) in
+        validator.validCardTypes(for: testInput) { (validCardTypes) in
             XCTAssertEqual(validCardTypes, expectedResult, "Card type of \(testInput) should be \(expectedResult), but returned \(validCardTypes).")
             exp.fulfill()
-            
         }
         
         self.waitForExpectations(timeout: 3, handler: nil)

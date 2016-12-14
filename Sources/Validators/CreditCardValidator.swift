@@ -39,32 +39,30 @@ public struct CreditCardValidator: Validator {
     
     
     /**
-     Returns card types which are valid with given number.
+     Returns valid card types for a credit card number asynchronously.
     
      - Parameters:
       - creditCardNumber: Credit card number.
       - completion: Completion callback, returns valid card types for given number.
      */
-    public func cardTypeOf (creditCardNumber: String, completion : @escaping (CreditCardType) -> Void) {
-        
+    public func validCardTypes(`for` creditCardNumber: String, completion : @escaping (CreditCardType) -> Void) {
         
         DispatchQueue.global().async {
             
-            var types: CreditCardType = []
+            var validCardTypes: CreditCardType = []
             defer {
                 DispatchQueue.main.async {
-                    completion(types)
+                    completion(validCardTypes)
                 }
             }
             
             let creditCardCondition = CreditCardCondition(cardType: .all)
             let trimmedCardNumber = String(creditCardNumber.characters.filter { $0 != " " })
             
-            let cardTypes: [CreditCardType] = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
-            for type in cardTypes {
-                if let regex = try? NSRegularExpression(pattern: type.regex, options: .caseInsensitive),
+            for cardType in CreditCardType.allArray {
+                if let regex = try? NSRegularExpression(pattern: cardType.regex, options: .caseInsensitive),
                     creditCardCondition.check(trimmedCardNumber, withRegex: regex) {
-                    types.insert(type)
+                    validCardTypes.insert(cardType)
                 }
             }
             
