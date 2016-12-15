@@ -16,3 +16,4 @@
 "US2KeyConditionViolationPasswordStrength"  = "Podaj bardziej bezpieczne hasło";
 "US2KeyConditionViolationPostcodeUK"        = "Podaj poprawny kod pocztowy, ważny w Wielkiej Brytanii.";
 "US2KeyConditionViolationPresent"           = "Podaj tekst";
+"US2KeyConditionViolationCreditCard"        = "Enter a valid credit card number";
