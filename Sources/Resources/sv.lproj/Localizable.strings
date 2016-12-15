@@ -6,14 +6,14 @@
   Copyright © 2016 ustwo. All rights reserved.
 */
 
-"US2KeyConditionViolationRange"             = "Fyll i mellan %d och %d tecken";
-"US2KeyConditionViolationNumeric"           = "Fyll endast i nummer";
-"US2KeyConditionViolationAlphanumeric"      = "Fyll endast i nummer och bokstäver";
-"US2KeyConditionViolationAlphabetic"        = "Fyll endast i bokstäver";
-"US2KeyConditionViolationEmail"             = "Fyll i en giltig emailadress med formatet example@example.com";
-"US2KeyConditionViolationURL"               = "Fyll i en giltig URL med formatet http(s)://www.example.com";
-"US2KeyConditionViolationShorthandURL"      = "Fyll i en giltig URL med formatet www.example.com ";
-"US2KeyConditionViolationPasswordStrength"  = "Fyll i ett säkrare lösenord";
-"US2KeyConditionViolationPostcodeUK"        = "Fyll i en postkod giltig i UK";
-"US2KeyConditionViolationPresent"           = "Fyll i text";
-"US2KeyConditionViolationCreditCard"        = "Enter a valid credit card number";
+"US2KeyConditionViolationRange"             = "Ange ett värde mellan %d och %d tecken långt";
+"US2KeyConditionViolationNumeric"           = "Vänligen ange endast siffror";
+"US2KeyConditionViolationAlphanumeric"      = "Vänligen ange endast siffror och bokstäver";
+"US2KeyConditionViolationAlphabetic"        = "Vänligen ange endast bokstäver";
+"US2KeyConditionViolationEmail"             = "Vänligen ange en giltig emailadress med formatet example@example.com";
+"US2KeyConditionViolationURL"               = "Vänligen ange en giltig URL med formatet http(s)://www.example.com";
+"US2KeyConditionViolationShorthandURL"      = "Vänligen ange en giltig URL med formatet www.example.com ";
+"US2KeyConditionViolationPasswordStrength"  = "Vänligen ange ett säkrare lösenord";
+"US2KeyConditionViolationPostcodeUK"        = "Vänligen ange en postkod giltig i UK";
+"US2KeyConditionViolationPresent"           = "Vänligen ange text";
+"US2KeyConditionViolationCreditCard"        = "Vänligen ange ett giltigt kreditkortsnummer";
