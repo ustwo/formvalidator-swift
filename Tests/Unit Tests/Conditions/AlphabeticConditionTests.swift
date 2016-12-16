@@ -16,12 +16,12 @@ final class AlphabeticConditionTests: XCTestCase {
     
     // MARK: - Constants
     
-    private struct Constants {
-        static let asciiLetters = "abcDefgh"
-        static let unicodeLetters = "abÅÄcdefÖgh"
+    internal struct Constants {
+        static let ascii = "abcDefgh"
+        static let unicode = "abÅÄcdefÖgh"
         
-        static let asciiLettersSpaces = "abc Def gh"
-        static let unicodeLettersSpaces = "abÅ Äcdef Ögh"
+        static let asciiSpaces = "abc Def gh"
+        static let unicodeSpaces = "abÅ Äcdef Ögh"
         
         static let numbers = "12345678"
     }
@@ -31,7 +31,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_NoUnicode_NoWhitespace_Success() {
         // Given
-        let testInput       = Constants.asciiLetters
+        let testInput       = Constants.ascii
         let condition       = AlphabeticCondition(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult  = true
         
@@ -41,7 +41,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_NoUnicode_Whitespace_Success() {
         // Given
-        let testInput       = Constants.asciiLettersSpaces
+        let testInput       = Constants.asciiSpaces
         let condition       = AlphabeticCondition(allowsUnicode: false, allowsWhitespace: true)
         let expectedResult  = true
         
@@ -51,7 +51,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_Unicode_NoWhitespace_Success() {
         // Given
-        let testInput       = Constants.unicodeLetters
+        let testInput       = Constants.unicode
         let condition       = AlphabeticCondition(allowsUnicode: true, allowsWhitespace: false)
         let expectedResult  = true
         
@@ -61,7 +61,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_Unicode_Whitespace_Success() {
         // Given
-        let testInput       = Constants.unicodeLettersSpaces
+        let testInput       = Constants.unicodeSpaces
         let condition       = AlphabeticCondition(allowsUnicode: true, allowsWhitespace: true)
         let expectedResult  = true
         
@@ -74,7 +74,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_NoUnicode_NoWhitespace_Failure_Spaces() {
         // Given
-        let testInput       = Constants.asciiLettersSpaces
+        let testInput       = Constants.asciiSpaces
         let condition       = AlphabeticCondition(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult  = false
         
@@ -84,7 +84,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_NoUnicode_NoWhitespace_Failure_Unicode() {
         // Given
-        let testInput       = Constants.unicodeLetters
+        let testInput       = Constants.unicode
         let condition       = AlphabeticCondition(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult  = false
         
@@ -104,7 +104,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_NoUnicode_Whitespace_Failure_Unicode() {
         // Given
-        let testInput       = Constants.unicodeLettersSpaces
+        let testInput       = Constants.unicodeSpaces
         let condition       = AlphabeticCondition(allowsUnicode: false, allowsWhitespace: true)
         let expectedResult  = false
         
@@ -114,7 +114,7 @@ final class AlphabeticConditionTests: XCTestCase {
     
     func testAlphabeticCondition_Unicode_NoWhitespace_Failure() {
         // Given
-        let testInput       = Constants.unicodeLettersSpaces
+        let testInput       = Constants.unicodeSpaces
         let condition       = AlphabeticCondition(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult  = false
         

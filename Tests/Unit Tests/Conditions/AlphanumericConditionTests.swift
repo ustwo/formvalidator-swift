@@ -16,7 +16,7 @@ final class AlphanumericConditionTests: XCTestCase {
     
     // MARK: - Constants
     
-    private struct Constants {
+    internal struct Constants {
         static let ascii = "abcDefgh1234567890"
         static let unicode = "abÅÄcdefÖgh1234567890"
         

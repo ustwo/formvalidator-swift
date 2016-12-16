@@ -14,22 +14,11 @@ import XCTest
 final class AlphabeticValidatorTests: XCTestCase {
     
     
-    // MARK: - Constants
-    
-    private struct Constants {
-        static let asciiLetters = "abcDefgh"
-        static let unicodeLetters = "abÅÄcdefÖgh"
-        
-        static let asciiLettersSpaces = "abc Def gh"
-        static let unicodeLettersSpaces = "abÅ Äcdef Ögh"
-    }
-    
-    
     // MARK: - Test Success
     
     func testAlphabeticValidator_NoUnicode_NoWhitespace_Success() {
         // Given
-        let testInput                       = Constants.asciiLetters
+        let testInput                       = AlphabeticConditionTests.Constants.ascii
         let validator                       = AlphabeticValidator(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult: [Condition]?    = nil
         
@@ -39,7 +28,7 @@ final class AlphabeticValidatorTests: XCTestCase {
     
     func testAlphabeticValidator_NoUnicode_Whitespace_Success() {
         // Given
-        let testInput                       = Constants.asciiLettersSpaces
+        let testInput                       = AlphabeticConditionTests.Constants.asciiSpaces
         let validator                       = AlphabeticValidator(allowsUnicode: false, allowsWhitespace: true)
         let expectedResult: [Condition]?    = nil
         
@@ -49,7 +38,7 @@ final class AlphabeticValidatorTests: XCTestCase {
     
     func testAlphabeticValidator_Unicode_NoWhitespace_Success() {
         // Given
-        let testInput                       = Constants.unicodeLetters
+        let testInput                       = AlphabeticConditionTests.Constants.unicode
         let validator                       = AlphabeticValidator(allowsUnicode: true, allowsWhitespace: false)
         let expectedResult: [Condition]?    = nil
         
@@ -59,7 +48,7 @@ final class AlphabeticValidatorTests: XCTestCase {
     
     func testAlphabeticValidator_Unicode_Whitespace_Success() {
         // Given
-        let testInput                       = Constants.unicodeLettersSpaces
+        let testInput                       = AlphabeticConditionTests.Constants.unicodeSpaces
         let validator                       = AlphabeticValidator(allowsUnicode: true, allowsWhitespace: true)
         let expectedResult: [Condition]?    = nil
         
@@ -72,7 +61,7 @@ final class AlphabeticValidatorTests: XCTestCase {
     
     func testAlphabeticValidator_NoUnicode_NoWhitespace_Failure() {
         // Given
-        let testInput       = Constants.asciiLettersSpaces
+        let testInput       = AlphabeticConditionTests.Constants.asciiSpaces
         let validator       = AlphabeticValidator(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult  = validator.conditions
         
@@ -82,7 +71,7 @@ final class AlphabeticValidatorTests: XCTestCase {
     
     func testAlphabeticValidator_NoUnicode_Whitespace_Failure() {
         // Given
-        let testInput       = Constants.asciiLettersSpaces + "1"
+        let testInput       = AlphabeticConditionTests.Constants.asciiSpaces + "1"
         let validator       = AlphabeticValidator(allowsUnicode: false, allowsWhitespace: true)
         let expectedResult  = validator.conditions
         
@@ -92,7 +81,7 @@ final class AlphabeticValidatorTests: XCTestCase {
     
     func testAlphabeticValidator_Unicode_NoWhitespace_Failure() {
         // Given
-        let testInput       = Constants.unicodeLettersSpaces
+        let testInput       = AlphabeticConditionTests.Constants.unicodeSpaces
         let validator       = AlphabeticValidator(allowsUnicode: true, allowsWhitespace: false)
         let expectedResult  = validator.conditions
         
@@ -102,7 +91,7 @@ final class AlphabeticValidatorTests: XCTestCase {
     
     func testAlphabeticValidator_Unicode_Whitespace_Failure() {
         // Given
-        let testInput       = Constants.unicodeLettersSpaces + "1"
+        let testInput       = AlphabeticConditionTests.Constants.unicodeSpaces + "1"
         let validator       = AlphabeticValidator(allowsUnicode: true, allowsWhitespace: true)
         let expectedResult  = validator.conditions
         

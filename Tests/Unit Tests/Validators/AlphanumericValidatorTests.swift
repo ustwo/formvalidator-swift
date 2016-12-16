@@ -14,24 +14,11 @@ import XCTest
 final class AlphanumericValidatorTests: XCTestCase {
     
     
-    // MARK: - Constants
-    
-    private struct Constants {
-        static let ascii = "abcDefgh1234567890"
-        static let unicode = "abÅÄcdefÖgh1234567890"
-        
-        static let asciiSpaces = "abc Def gh1234 567890"
-        static let unicodeSpaces = "abÅ Äcdef Ögh1234 567890"
-        
-        static let symbols = "a?!1"
-    }
-    
-    
     // MARK: - Test Success
     
     func testAlphanumericValidator_NoUnicode_NoWhitespace_Success() {
         // Given
-        let testInput                       = Constants.ascii
+        let testInput                       = AlphanumericConditionTests.Constants.ascii
         let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult: [Condition]?    = nil
         
@@ -41,7 +28,7 @@ final class AlphanumericValidatorTests: XCTestCase {
     
     func testAlphanumericValidator_NoUnicode_Whitespace_Success() {
         // Given
-        let testInput                       = Constants.asciiSpaces
+        let testInput                       = AlphanumericConditionTests.Constants.asciiSpaces
         let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: true)
         let expectedResult: [Condition]?    = nil
         
@@ -51,7 +38,7 @@ final class AlphanumericValidatorTests: XCTestCase {
     
     func testAlphanumericValidator_Unicode_NoWhitespace_Success() {
         // Given
-        let testInput                       = Constants.unicode
+        let testInput                       = AlphanumericConditionTests.Constants.unicode
         let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: false)
         let expectedResult: [Condition]?    = nil
         
@@ -61,7 +48,7 @@ final class AlphanumericValidatorTests: XCTestCase {
     
     func testAlphanumericValidator_Unicode_Whitespace_Success() {
         // Given
-        let testInput                       = Constants.unicodeSpaces
+        let testInput                       = AlphanumericConditionTests.Constants.unicodeSpaces
         let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: true)
         let expectedResult: [Condition]?    = nil
         
@@ -74,7 +61,7 @@ final class AlphanumericValidatorTests: XCTestCase {
     
     func testAlphanumericValidator_NoUnicode_NoWhitespace_Failure() {
         // Given
-        let testInput                       = Constants.asciiSpaces
+        let testInput                       = AlphanumericConditionTests.Constants.asciiSpaces
         let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult: [Condition]?    = validator.conditions
         
@@ -84,7 +71,7 @@ final class AlphanumericValidatorTests: XCTestCase {
     
     func testAlphanumericValidator_NoUnicode_Whitespace_Failure() {
         // Given
-        let testInput                       = Constants.asciiSpaces + "?"
+        let testInput                       = AlphanumericConditionTests.Constants.asciiSpaces + "?"
         let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: true)
         let expectedResult: [Condition]?    = validator.conditions
         
@@ -94,7 +81,7 @@ final class AlphanumericValidatorTests: XCTestCase {
     
     func testAlphanumericValidator_Unicode_NoWhitespace_Failure() {
         // Given
-        let testInput                       = Constants.unicodeSpaces
+        let testInput                       = AlphanumericConditionTests.Constants.unicodeSpaces
         let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: false)
         let expectedResult: [Condition]?    = validator.conditions
         
@@ -104,7 +91,7 @@ final class AlphanumericValidatorTests: XCTestCase {
     
     func testAlphanumericValidator_Unicode_Whitespace_Failure() {
         // Given
-        let testInput                       = Constants.unicodeSpaces + "?"
+        let testInput                       = AlphanumericConditionTests.Constants.unicodeSpaces + "?"
         let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: false)
         let expectedResult: [Condition]?    = validator.conditions
         
