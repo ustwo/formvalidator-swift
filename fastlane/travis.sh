@@ -1,3 +1,3 @@
 #!/bin/sh
 
-fastlane test
+bundle exec fastlane test
