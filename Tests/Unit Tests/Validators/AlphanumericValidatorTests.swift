@@ -14,38 +14,102 @@ import XCTest
 final class AlphanumericValidatorTests: XCTestCase {
     
     
-    // MARK: - Properties
+    // MARK: - Constants
     
-    let validator   = AlphanumericValidator()
+    private struct Constants {
+        static let ascii = "abcDefgh1234567890"
+        static let unicode = "abÅÄcdefÖgh1234567890"
+        
+        static let asciiSpaces = "abc Def gh1234 567890"
+        static let unicodeSpaces = "abÅ Äcdef Ögh1234 567890"
+        
+        static let symbols = "a?!1"
+    }
     
     
     // MARK: - Test Success
     
-    func testAlphanumericValidator_Success() {
+    func testAlphanumericValidator_NoUnicode_NoWhitespace_Success() {
         // Given
-        let testInput                       = "abcdefgh1234567890"
+        let testInput                       = Constants.ascii
+        let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult: [Condition]?    = nil
         
         // When
-        let actualResult = validator.checkConditions(testInput)
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
+    }
+    
+    func testAlphanumericValidator_NoUnicode_Whitespace_Success() {
+        // Given
+        let testInput                       = Constants.asciiSpaces
+        let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: true)
+        let expectedResult: [Condition]?    = nil
         
-        // Test
-        XCTAssertNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
+        // When
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
+    }
+    
+    func testAlphanumericValidator_Unicode_NoWhitespace_Success() {
+        // Given
+        let testInput                       = Constants.unicode
+        let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: false)
+        let expectedResult: [Condition]?    = nil
+        
+        // When
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
+    }
+    
+    func testAlphanumericValidator_Unicode_Whitespace_Success() {
+        // Given
+        let testInput                       = Constants.unicodeSpaces
+        let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: true)
+        let expectedResult: [Condition]?    = nil
+        
+        // When
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
     }
     
     
     // MARK: - Test Failure
     
-    func testAlphanumericValidator_Failure() {
+    func testAlphanumericValidator_NoUnicode_NoWhitespace_Failure() {
         // Given
-        let testInput                       = "a?1"
+        let testInput                       = Constants.asciiSpaces
+        let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: false)
         let expectedResult: [Condition]?    = validator.conditions
         
         // When
-        let actualResult = validator.checkConditions(testInput)
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
+    }
+    
+    func testAlphanumericValidator_NoUnicode_Whitespace_Failure() {
+        // Given
+        let testInput                       = Constants.asciiSpaces + "?"
+        let validator                       = AlphanumericValidator(allowsUnicode: false, allowsWhitespace: true)
+        let expectedResult: [Condition]?    = validator.conditions
         
-        // Test
-        XCTAssertNotNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
+        // When
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
+    }
+    
+    func testAlphanumericValidator_Unicode_NoWhitespace_Failure() {
+        // Given
+        let testInput                       = Constants.unicodeSpaces
+        let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: false)
+        let expectedResult: [Condition]?    = validator.conditions
+        
+        // When
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
+    }
+    
+    func testAlphanumericValidator_Unicode_Whitespace_Failure() {
+        // Given
+        let testInput                       = Constants.unicodeSpaces + "?"
+        let validator                       = AlphanumericValidator(allowsUnicode: true, allowsWhitespace: false)
+        let expectedResult: [Condition]?    = validator.conditions
+        
+        // When
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
     }
     
 }

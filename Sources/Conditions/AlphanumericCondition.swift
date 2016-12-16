@@ -19,14 +19,36 @@ public struct AlphanumericCondition: Condition {
     
     public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationAlphanumeric", comment: "")
     
-    public let regex = "[a-zA-Z0-9]"
+    public let regex: String
     
     public var shouldAllowViolation = true
+    
+    /// Whether or not to allow Unicode letters and numbers. If `false` then only ASCII letters (A-Z, a-z, 0-9) are allowed.
+    public let allowsUnicode: Bool
+    /// Whether or not to allow whitespace.
+    public let allowsWhitespace: Bool
     
     
     // MARK: - Initializers
     
-    public init() { }
+    public init() {
+        self.init(allowsUnicode: false, allowsWhitespace: false)
+    }
+    
+    /// Initializes an `AlphanumericCondition`.
+    ///
+    /// - Parameters:
+    ///   - allowsUnicode: Whether or not to allow Unicode letters and numbers. If `false` then only ASCII letters (A-Z, a-z, 0-9) are allowed. Default is `false`.
+    ///   - allowsWhitespace: Whether or not to allow whitespace. Default is false.
+    public init(allowsUnicode: Bool = false, allowsWhitespace: Bool = false) {
+        self.allowsWhitespace = allowsWhitespace
+        self.allowsUnicode = allowsUnicode
+        
+        let regexLettersNumbers = allowsUnicode ? "\\p{L}\\p{N}" : "a-zA-Z0-9"
+        let regexWhiteSpace = allowsWhitespace ? "\\s" : ""
+        
+        regex = "[\(regexLettersNumbers)\(regexWhiteSpace)]"
+    }
     
     
     // MARK: - Check

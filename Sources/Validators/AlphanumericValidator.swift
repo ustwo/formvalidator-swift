@@ -23,8 +23,18 @@ public struct AlphanumericValidator: Validator {
     
     // MARK: - Initializers
     
+    /// Initializes an `AlphanumericValidator` that does not allow Unicode letters and numbers nor whitespace.
     public init() {
-        conditions = [AlphanumericCondition()]
+        self.init(allowsUnicode: false, allowsWhitespace: false)
+    }
+    
+    /// Initializes an `AlphanumericValidator`.
+    ///
+    /// - Parameters:
+    ///   - allowsUnicode: Whether or not to allow Unicode letters and numbers. If `false` then only ASCII letters (A-Z, a-z, 0-9) are allowed. Default is `false`.
+    ///   - allowsWhitespace: Whether or not to allow whitespace. Default is false.
+    public init(allowsUnicode: Bool = false, allowsWhitespace: Bool = false) {
+        conditions = [AlphanumericCondition(allowsUnicode: allowsUnicode, allowsWhitespace: allowsWhitespace)]
     }
     
 }
