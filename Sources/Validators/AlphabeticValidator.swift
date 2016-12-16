@@ -24,10 +24,10 @@ public struct AlphabeticValidator: Validator {
     // MARK: - Initializers
     
     /**
-    Initializes a `AlphabeticValidator` that allows Unicode letters but does not allow whitespace.
+    Initializes a `AlphabeticValidator` that allows but does not allow Unicode letters or whitespace.
     */
     public init() {
-        self.init(allowsUnicode: true, allowsWhitespace: false)
+        self.init(allowsUnicode: false, allowsWhitespace: false)
     }
 
     /**

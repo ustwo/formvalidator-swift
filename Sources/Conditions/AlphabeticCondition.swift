@@ -32,7 +32,7 @@ public struct AlphabeticCondition: Condition {
     // MARK: - Initializers
     
     /**
-    Initializes a `AlphabeticCondition` that does not allow Unicode or whitespace.
+    Initializes a `AlphabeticCondition` that does not allow Unicode letters or whitespace.
     */
     public init() {
         self.init(allowsUnicode: false, allowsWhitespace: false)
