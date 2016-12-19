@@ -24,18 +24,19 @@ public struct AlphabeticValidator: Validator {
     // MARK: - Initializers
     
     /**
-    Initializes a `AlphabeticValidator` that does not allow whitespace.
+    Initializes a `AlphabeticValidator` that allows but does not allow Unicode letters or whitespace.
     */
     public init() {
-        self.init(allowsWhitespace: false)
+        self.init(allowsUnicode: false, allowsWhitespace: false)
     }
 
     /**
     Initializes a `AlphabeticValidator`.
+    - parameter allowsUnicode: Whether or not to allow Unicode letters. If `false` then only ASCII letters (A-Z, a-z) are allowed.
     - parameter allowsWhitespace: Whether or not to allow whitespace.
     */
-    public init(allowsWhitespace: Bool) {
-        conditions = [AlphabeticCondition(allowsWhitespace: allowsWhitespace)]
+    public init(allowsUnicode: Bool, allowsWhitespace: Bool) {
+        conditions = [AlphabeticCondition(allowsUnicode: allowsUnicode, allowsWhitespace: allowsWhitespace)]
     }
     
 }

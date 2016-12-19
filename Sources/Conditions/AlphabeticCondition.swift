@@ -23,6 +23,8 @@ public struct AlphabeticCondition: Condition {
     
     public var shouldAllowViolation = true
     
+    /// Whether or not to allow Unicode letters. If `false` then only ASCII letters (A-Z, a-z) are allowed.
+    public let allowsUnicode: Bool
     /// Whether or not to allow whitespace.
     public let allowsWhitespace: Bool
     
@@ -30,24 +32,25 @@ public struct AlphabeticCondition: Condition {
     // MARK: - Initializers
     
     /**
-    Initializes a `AlphabeticCondition` that does not allow whitespace.
+    Initializes a `AlphabeticCondition` that does not allow Unicode letters or whitespace.
     */
     public init() {
-        self.init(allowsWhitespace: false)
+        self.init(allowsUnicode: false, allowsWhitespace: false)
     }
     
     /**
     Initializes a `AlphabeticCondition`.
-    - parameter allowsWhitespace: Whether or not to allow whitespace.
+    - parameter allowsUnicode: Whether or not to allow Unicode letters. If `false` then only ASCII letters (A-Z, a-z) are allowed. Default is `false`.
+    - parameter allowsWhitespace: Whether or not to allow whitespace. Default is `false`.
     */
-    public init(allowsWhitespace: Bool) {
+    public init(allowsUnicode: Bool = false, allowsWhitespace: Bool = false) {
         self.allowsWhitespace = allowsWhitespace
+        self.allowsUnicode = allowsUnicode
         
-        if allowsWhitespace {
-            regex = "[a-zA-Z\\s]"
-        } else {
-            regex = "[a-zA-Z]"
-        }
+        let regexLetters = allowsUnicode ? "\\p{L}" : "a-zA-Z"
+        let regexWhiteSpace = allowsWhitespace ? "\\s" : ""
+        
+        regex = "[\(regexLetters)\(regexWhiteSpace)]"
     }
     
     

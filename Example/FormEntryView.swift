@@ -45,6 +45,7 @@ final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITex
         textLabel.textAlignment = .center
         stackView.addArrangedSubview(textLabel)
         
+        textField.autocorrectionType = .no
         textField.borderStyle = .line
         textField.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         textField.setValidatorDelegate(self)

@@ -26,11 +26,8 @@ final class URLShorthandValidatorTests: XCTestCase {
         let testInput                       = "example.com"
         let expectedResult: [Condition]?    = nil
         
-        // When
-        let actualResult = validator.checkConditions(testInput)
-        
         // Test
-        XCTAssertNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
     }
     
     
@@ -41,11 +38,8 @@ final class URLShorthandValidatorTests: XCTestCase {
         let testInput                       = "http://example"
         let expectedResult: [Condition]?    = validator.conditions
         
-        // When
-        let actualResult = validator.checkConditions(testInput)
-        
         // Test
-        XCTAssertNotNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
     }
     
 }

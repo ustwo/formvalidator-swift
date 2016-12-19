@@ -26,11 +26,8 @@ final class CreditCardValidatorTests: XCTestCase {
         let testInput                       = "376031710126369"
         let expectedResult: [Condition]?    = nil
         
-        // When
-        let actualResult = validator.checkConditions(testInput)
-        
         // Test
-        XCTAssertNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
     }
     
     func testCreditCardValidator_GetCardType_Success() {
@@ -46,8 +43,6 @@ final class CreditCardValidatorTests: XCTestCase {
         }
         
         self.waitForExpectations(timeout: 3, handler: nil)
-        
-        
     }
     
     
@@ -58,11 +53,8 @@ final class CreditCardValidatorTests: XCTestCase {
         let testInput                       = "3760  a317"
         let expectedResult: [Condition]?    = validator.conditions
         
-        // When
-        let actualResult = validator.checkConditions(testInput)
-        
         // Test
-        XCTAssertNotNil(actualResult, "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult).")
+        AssertValidator(validator, testInput: testInput, expectedResult: expectedResult)
     }
     
 }
