@@ -14,189 +14,96 @@ import XCTest
 final class PostcodeConditionTests: XCTestCase {
     
     
-    // MARK: - Properties
+    // MARK: - Configuration
     
-    let conditionGBR        = PostcodeCondition(country: .UnitedKingdom)
-    let conditionSWE        = PostcodeCondition(country: .Sweden)
-    let conditionTUR        = PostcodeCondition(country: .Turkey)
-    
-    
-    // MARK: - GBR - Test Success
-    
-    func testPostcodeCondition_GBR_Success() {
-        // Given
-        let testInput       = "M1 1BA"
-        let expectedResult  = true
+    private struct TestableCondition {
         
-        // Test
-        AssertCondition(conditionGBR, testInput: testInput, expectedResult: expectedResult)
+        let country: PostcodeCountries
+        let condition: PostcodeCondition
+        
+        var successInputs: [String] {
+            switch country {
+            case .Sweden:
+                return ["112 50",
+                        "11434",
+                        "SE-111 21",
+                        "SE-11637",
+                        "se-11637"]
+            case .Turkey:
+                return ["34345"]
+            case .UnitedKingdom:
+                return ["M1 1BA"]
+            case .UnitedStates:
+                return ["20500",
+                        "95014-2083"]
+            }
+        }
+        
+        var failureInputs: [String?] {
+            switch country {
+            case .Sweden:
+                return ["113 4",
+                        "116233",
+                        "us-125 41",
+                        "us-125e1",
+                        nil]
+            case .Turkey:
+                return ["3411",
+                        "347001",
+                        "34 700",
+                        "3470a",
+                        nil]
+            case .UnitedKingdom:
+                return ["M1AA 1BA",
+                        "M1 1BAA",
+                        nil]
+            case .UnitedStates:
+                return ["1234",
+                        "12345-1",
+                        nil]
+            }
+        }
+        
+        init(country: PostcodeCountries) {
+            self.country = country
+            condition = PostcodeCondition(country: country)
+        }
+        
     }
     
     
-    // MARK: - GBR - Test Failure
+    // MARK: - Tests
     
-    func testPostcodeCondition_GBR_OutwardCode_Failure() {
-        // Given
-        let testInput       = "M1AA 1BA"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionGBR, testInput: testInput, expectedResult: expectedResult)
+    func testPostcodeCondition_Success() {
+        for country in PostcodeCountries.allValues {
+            let testCondition = TestableCondition(country: country)
+            
+            for input in testCondition.successInputs {
+                AssertCondition(testCondition.condition, testInput: input, expectedResult: true)
+            }
+        }
     }
     
-    func testPostcodeCondition_GBR_InwardCode_Failure() {
-        // Given
-        let testInput       = "M1 1BAA"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionGBR, testInput: testInput, expectedResult: expectedResult)
+    func testPostcodeCondition_Failure() {
+        for country in PostcodeCountries.allValues {
+            let testCondition = TestableCondition(country: country)
+            
+            for input in testCondition.failureInputs {
+                AssertCondition(testCondition.condition, testInput: input, expectedResult: false)
+            }
+        }
     }
     
-    func testPostcodeCondition_GBR_Nil_Failure() {
+    func testPostCondition_ChangeCountry() {
         // Given
-        let testInput: String?  = nil
-        let expectedResult      = false
+        var condition = PostcodeCondition()
         
-        // Test
-        AssertCondition(conditionGBR, testInput: testInput, expectedResult: expectedResult)
+        // When
+        condition.country = .Sweden
+        
+        // Then
+        XCTAssertEqual(condition.country, PostcodeCountries.Sweden)
+        XCTAssertEqual(condition.regex, PostcodeCountries.Sweden.regex)
     }
     
-    
-    // MARK: - SWE - Test Success
-    
-    func testPostcodeCondition_SWE_Default_Success() {
-        // Given
-        let testInput       = "112 50"
-        let expectedResult  = true
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_SWE_WithoutGap_Success() {
-        // Given
-        let testInput       = "11434"
-        let expectedResult  = true
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_SWE_International_Default_Success() {
-        // Given
-        let testInput       = "SE-111 21"
-        let expectedResult  = true
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_SWE_International_WithoutGap_Success() {
-        // Given
-        let testInput       = "SE-11637"
-        let expectedResult  = true
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_SWE_International_LowerCase_Success() {
-        // Given
-        let testInput       = "se-11637"
-        let expectedResult  = true
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    
-    // MARK: - SWE - Test Failure
-    
-    func testPostcodeCondition_SWE_LessDigits_Failure() {
-        // Given
-        let testInput       = "113 4"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_SWE_MoreDigits_Failure() {
-        // Given
-        let testInput       = "116233"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_SWE_International_DifferentCode_Failure() {
-        // Given
-        let testInput       = "us-125 41"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_SWE_International_NonDigit_Failure() {
-        // Given
-        let testInput       = "us-125e1"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionSWE, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    
-    // MARK: - TUR - Test Success
-    
-    func testPostcodeCondition_TUR_Success() {
-        // Given
-        let testInput       = "34345"
-        let expectedResult  = true
-        
-        // Test
-        AssertCondition(conditionTUR, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    
-    // MARK: - TUR - Test Failure
-    
-    func testPostcodeCondition_TUR_LessDigits_Failure() {
-        // Given
-        let testInput       = "3411"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionTUR, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_TUR_MoreDigits_Failure() {
-        // Given
-        let testInput       = "347001"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionTUR, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_TUR_WhiteSpace_Failure() {
-        // Given
-        let testInput       = "34 700"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionTUR, testInput: testInput, expectedResult: expectedResult)
-    }
-    
-    func testPostcodeCondition_TUR_NonDigit_Failure() {
-        // Given
-        let testInput       = "3470a"
-        let expectedResult  = false
-        
-        // Test
-        AssertCondition(conditionTUR, testInput: testInput, expectedResult: expectedResult)
-    }
 }
