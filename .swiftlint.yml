@@ -1,26 +1,38 @@
-disabled_rules: # rule identifiers to exclude from running
-  - function_body_length
+disabled_rules:
   - line_length
   - nesting
-  - operator_whitespace
   - trailing_whitespace
-  - type_body_length
-  - variable_name
   - vertical_whitespace
-excluded: # paths to ignore during linting. overridden by `included`.
+opt_in_rules:
+  - attributes
+  - closure_spacing
+  - conditional_returns_on_newline
+  - empty_count
+  - explicit_init
+  - number_separator
+  - overridden_super_call
+  - private_outlet
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - switch_case_on_newline
+
+excluded:
   - Pods
   - Tests
-# parameterized rules can be customized from this configuration file
+
+attributes:
+  always_on_same_line:
+    - '@IBAction'
+    - '@NSManaged'
+    - '@nonobjc'
+    - '@objc'
 line_length: 110
-# parameterized rules are first parameterized as a warning level, then error level.
 type_body_length:
   - 300 # warning
   - 400 # error
-# parameterized rules are first parameterized as a warning level, then error level.
 variable_name_max_length:
   - 40 # warning
   - 60 # error
-# parameterized rules are first parameterized as a warning level, then error level.
 variable_name_min_length:
   - 3 # warning
   - 2 # error
