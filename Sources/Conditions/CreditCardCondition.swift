@@ -91,7 +91,8 @@ public struct CreditCardType: OptionSet, CustomStringConvertible {
             return "^(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}$"
         case CreditCardType.visa:
             return "^4[0-9]{12}(?:[0-9]{3})?$"
-        default: return nil
+        default:
+            return nil
         }
     }
     
@@ -99,7 +100,9 @@ public struct CreditCardType: OptionSet, CustomStringConvertible {
      Inserts or operator between regular expressions.
      */
     private func insertCard(regexString: inout String, cardType: CreditCardType) {
-        guard let cardTypeRegex = cardType.cardRegex, self.contains(cardType) else { return }
+        guard let cardTypeRegex = cardType.cardRegex, self.contains(cardType) else {
+            return
+        }
         
         if !regexString.isEmpty {
             regexString.append("|")

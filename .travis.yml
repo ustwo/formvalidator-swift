@@ -6,6 +6,10 @@ env:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
 
+before_install:
+  - brew update
+  - brew outdated swiftlint || brew upgrade swiftlint
+
 # Test using Fastlane
 script:
   - ./fastlane/travis.sh

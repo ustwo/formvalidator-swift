@@ -68,7 +68,7 @@ public struct PasswordStrengthCondition: Condition {
         
         let matches = [numberOfMatchesWithPattern("\\d", text: sourceText), numberOfMatchesWithPattern("[a-z]", text: sourceText), numberOfMatchesWithPattern("[A-Z]", text: sourceText), numberOfMatchesWithPattern("[^a-zA-Z\\d]", text: sourceText)]
         
-        var strength = matches.reduce(0, { $0 + ($1 > 0 ? 1 : 0)})
+        var strength = matches.reduce(0, { $0 + ($1 > 0 ? 1 : 0) })
         
         if sourceText.characters.count > 8 {
             strength += 1
