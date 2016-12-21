@@ -19,6 +19,23 @@ final class RangeConditionTests: XCTestCase {
     let condition       = RangeCondition(range: 3..<13)
     
     
+    // MARK: - Test Initializers
+    
+    func testRangeCondition_DefaultInit() {
+        // Given
+        let condition = RangeCondition()
+        let expectedRange = 0..<1
+        
+        // When
+        let actualRange = condition.range
+        
+        // Test
+        XCTAssertEqual(actualRange,
+                       expectedRange,
+                       "Expected range to be: \(expectedRange) but found: \(actualRange)")
+    }
+    
+    
     // MARK: - Test Success
     
     func testRangeCondition_Success() {

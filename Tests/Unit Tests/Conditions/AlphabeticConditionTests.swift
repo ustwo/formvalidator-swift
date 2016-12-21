@@ -27,6 +27,28 @@ final class AlphabeticConditionTests: XCTestCase {
     }
     
     
+    // MARK: - Test Initializers
+    
+    func testAlphabeticCondition_DefaultInit() {
+        // Given
+        let condition = AlphabeticCondition()
+        let expectedAllowsUnicode = false
+        let expectedAllowsWhitespace = false
+        
+        // When
+        let actualAllowsUnicode = condition.allowsUnicode
+        let actualAllowsWhitespace = condition.allowsWhitespace
+        
+        // Test
+        XCTAssertEqual(actualAllowsUnicode,
+                       expectedAllowsUnicode,
+                       "Expected allowsUnicode to be: \(expectedAllowsUnicode) but found: \(actualAllowsUnicode)")
+        XCTAssertEqual(actualAllowsWhitespace,
+                       expectedAllowsWhitespace,
+                       "Expected allowsWhitespace to be: \(expectedAllowsWhitespace) but found: \(actualAllowsWhitespace)")
+    }
+    
+    
     // MARK: - Test Success
     
     func testAlphabeticCondition_NoUnicode_NoWhitespace_Success() {

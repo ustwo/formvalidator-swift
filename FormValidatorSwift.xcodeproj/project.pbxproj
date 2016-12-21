@@ -123,6 +123,8 @@
 		00BB684A1C47FDCE00714F34 /* RangeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C01C47C68400471F53 /* RangeValidatorTests.swift */; };
 		00BB684B1C47FDCE00714F34 /* URLValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C61C47C7A700471F53 /* URLValidatorTests.swift */; };
 		00BB684C1C47FDCE00714F34 /* URLShorthandValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C81C47C7E500471F53 /* URLShorthandValidatorTests.swift */; };
+		00D174731E0A8F0700EE8BEF /* CreditCardTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D174701E0A8EE400EE8BEF /* CreditCardTypeTests.swift */; };
+		00D174741E0A8F0800EE8BEF /* CreditCardTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D174701E0A8EE400EE8BEF /* CreditCardTypeTests.swift */; };
 		00F2E2D61C46C42F00FE0B66 /* AndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D51C46C42F00FE0B66 /* AndCondition.swift */; };
 		00F2E2D81C46C47700FE0B66 /* AndConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D71C46C47700FE0B66 /* AndConditionTests.swift */; };
 		00F2E2DA1C46C53500FE0B66 /* NotCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D91C46C53500FE0B66 /* NotCondition.swift */; };
@@ -230,6 +232,7 @@
 		0094D69A1C46B38200145F5C /* OrCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrCondition.swift; sourceTree = "<group>"; };
 		0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeConditionTests.swift; sourceTree = "<group>"; };
 		0094D69E1C46B39800145F5C /* OrConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrConditionTests.swift; sourceTree = "<group>"; };
+		00D174701E0A8EE400EE8BEF /* CreditCardTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardTypeTests.swift; sourceTree = "<group>"; };
 		00F2E2D51C46C42F00FE0B66 /* AndCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndCondition.swift; sourceTree = "<group>"; };
 		00F2E2D71C46C47700FE0B66 /* AndConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndConditionTests.swift; sourceTree = "<group>"; };
 		00F2E2D91C46C53500FE0B66 /* NotCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotCondition.swift; sourceTree = "<group>"; };
@@ -341,6 +344,7 @@
 				0094D6961C46B23D00145F5C /* Logic */,
 				0032C1091C4555200023DB19 /* AlphabeticCondition.swift */,
 				003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */,
+				BAF88F1F1DCA3BFF001845D1 /* CreditCardCondition.swift */,
 				0094D6751C4696F400145F5C /* EmailCondition.swift */,
 				0094D67A1C4698CE00145F5C /* NumericCondition.swift */,
 				00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */,
@@ -349,7 +353,6 @@
 				0094D6981C46B37900145F5C /* RangeCondition.swift */,
 				0094D6831C469BA500145F5C /* URLCondition.swift */,
 				0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */,
-				BAF88F1F1DCA3BFF001845D1 /* CreditCardCondition.swift */,
 			);
 			path = Conditions;
 			sourceTree = "<group>";
@@ -379,6 +382,8 @@
 				0094D6971C46B25300145F5C /* Logic */,
 				0032C10C1C45594E0023DB19 /* AlphabeticConditionTests.swift */,
 				003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */,
+				00D174701E0A8EE400EE8BEF /* CreditCardTypeTests.swift */,
+				BAF88F2A1DCA4201001845D1 /* CreditCardConditionTests.swift */,
 				0094D6771C46976500145F5C /* EmailConditionTests.swift */,
 				0094D67C1C46992C00145F5C /* NumericConditionTests.swift */,
 				00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */,
@@ -387,7 +392,6 @@
 				0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */,
 				0094D6871C469C8D00145F5C /* URLConditionTests.swift */,
 				0094D6891C469D5200145F5C /* URLShorthandConditionTests.swift */,
-				BAF88F2A1DCA4201001845D1 /* CreditCardConditionTests.swift */,
 			);
 			path = Conditions;
 			sourceTree = "<group>";
@@ -736,6 +740,7 @@
 				00BB68491C47FDCE00714F34 /* PresentValidatorTests.swift in Sources */,
 				00BB68441C47FDCE00714F34 /* CompositeValidatorTests.swift in Sources */,
 				00BB68451C47FDCE00714F34 /* EmailValidatorTests.swift in Sources */,
+				00D174741E0A8F0800EE8BEF /* CreditCardTypeTests.swift in Sources */,
 				00BB68481C47FDCE00714F34 /* PostcodeValidatorTests.swift in Sources */,
 				00BB684B1C47FDCE00714F34 /* URLValidatorTests.swift in Sources */,
 				00BB68401C47FDC400714F34 /* URLShorthandConditionTests.swift in Sources */,
@@ -813,6 +818,7 @@
 				004913BF1C47C62200471F53 /* PostcodeValidatorTests.swift in Sources */,
 				0094D6821C469A9700145F5C /* PostcodeConditionTests.swift in Sources */,
 				00F2E2DC1C46C57800FE0B66 /* NotConditionTests.swift in Sources */,
+				00D174731E0A8F0700EE8BEF /* CreditCardTypeTests.swift in Sources */,
 				003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */,
 				00F2E2E01C46C6F400FE0B66 /* PresentConditionTests.swift in Sources */,
 				004913C51C47C74400471F53 /* PresentValidatorTests.swift in Sources */,

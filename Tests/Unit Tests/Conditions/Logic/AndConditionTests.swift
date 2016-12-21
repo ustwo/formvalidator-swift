@@ -20,6 +20,23 @@ final class AndConditionTests: XCTestCase {
     let secondCondition = AlphanumericCondition()
     
     
+    // MARK: - Test Initializers
+    
+    func testAndCondition_DefaultInit() {
+        // Given
+        let condition = AndCondition()
+        let expectedCount = 1
+        
+        // When
+        let actualCount = condition.conditions.count
+        
+        // Test
+        XCTAssertEqual(actualCount,
+                       expectedCount,
+                       "Expected number of conditions to be: \(expectedCount) but found: \(actualCount)")
+    }
+    
+    
     // MARK: - Test Success
     
     func testAndCondition_Success() {
