@@ -14,6 +14,23 @@ import XCTest
 final class PasswordStrengthConditionTests: XCTestCase {
     
     
+    // MARK: - Test Initializers
+    
+    func testPasswordStrengthCondition_DefaultInit() {
+        // Given
+        let condition = PasswordStrengthCondition()
+        let expectedStrength = PasswordStrength.veryStrong
+        
+        // When
+        let actualStrength = condition.requiredStrength
+        
+        // Test
+        XCTAssertEqual(actualStrength,
+                       expectedStrength,
+                       "Expected required strength to be: \(expectedStrength) but found: \(actualStrength)")
+    }
+    
+    
     // MARK: - Test Success
     
     func testPasswordStrengthCondition_VeryWeak_Success() {

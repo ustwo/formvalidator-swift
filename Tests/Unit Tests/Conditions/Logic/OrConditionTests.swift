@@ -17,6 +17,23 @@ final class OrConditionTests: XCTestCase {
     let secondCondition = AlphanumericCondition()
     
     
+    // MARK: - Test Initializers
+    
+    func testOrCondition_DefaultInit() {
+        // Given
+        let condition = OrCondition()
+        let expectedCount = 1
+        
+        // When
+        let actualCount = condition.conditions.count
+        
+        // Test
+        XCTAssertEqual(actualCount,
+                       expectedCount,
+                       "Expected number of conditions to be: \(expectedCount) but found: \(actualCount)")
+    }
+    
+    
     // MARK: - Test Success
     
     func testOrCondition_Success() {
