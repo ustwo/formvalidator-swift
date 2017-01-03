@@ -12,7 +12,7 @@ import Foundation
 /**
  *  The `AlphabeticCondition` checks a string for occurrences of letters.
  */
-public struct AlphabeticCondition: Condition {
+public struct AlphabeticCondition: ConfigurableCondition {
     
     
     // MARK: - Properties
@@ -23,32 +23,16 @@ public struct AlphabeticCondition: Condition {
     
     public var shouldAllowViolation = true
     
-    /// Whether or not to allow Unicode letters. If `false` then only ASCII letters (A-Z, a-z) are allowed.
-    public let allowsUnicode: Bool
-    /// Whether or not to allow whitespace.
-    public let allowsWhitespace: Bool
+    public let configuration: AlphabeticConfiguration
     
     
     // MARK: - Initializers
     
-    /**
-    Initializes a `AlphabeticCondition` that does not allow Unicode letters or whitespace.
-    */
-    public init() {
-        self.init(allowsUnicode: false, allowsWhitespace: false)
-    }
-    
-    /**
-    Initializes a `AlphabeticCondition`.
-    - parameter allowsUnicode: Whether or not to allow Unicode letters. If `false` then only ASCII letters (A-Z, a-z) are allowed. Default is `false`.
-    - parameter allowsWhitespace: Whether or not to allow whitespace. Default is `false`.
-    */
-    public init(allowsUnicode: Bool = false, allowsWhitespace: Bool = false) {
-        self.allowsWhitespace = allowsWhitespace
-        self.allowsUnicode = allowsUnicode
+    public init(configuration: AlphabeticConfiguration) {
+        self.configuration = configuration
         
-        let regexLetters = allowsUnicode ? "\\p{L}" : "a-zA-Z"
-        let regexWhiteSpace = allowsWhitespace ? "\\s" : ""
+        let regexLetters = configuration.allowsUnicode ? "\\p{L}" : "a-zA-Z"
+        let regexWhiteSpace = configuration.allowsWhitespace ? "\\s" : ""
         
         regex = "[\(regexLetters)\(regexWhiteSpace)]"
     }

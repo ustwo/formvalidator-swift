@@ -13,7 +13,7 @@ import XCTest
 
 final class OrConditionTests: XCTestCase {
     
-    let firstCondition  = RangeCondition(range: 0..<4)
+    let firstCondition  = RangeCondition(configuration: ConfigurationSeeds.RangeSeeds.zeroToFour)
     let secondCondition = AlphanumericCondition()
     
     

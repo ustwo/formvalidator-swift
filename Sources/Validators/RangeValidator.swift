@@ -13,7 +13,7 @@ import Foundation
  *  The `RangeValidator` contains an `RangeCondition`. A valid string meets the required string length.
  *  - seealso: `RangeCondition`
  */
-public struct RangeValidator: Validator {
+public struct RangeValidator: ConfigurableValidator {
     
     
     // MARK: - Properties
@@ -23,15 +23,8 @@ public struct RangeValidator: Validator {
     
     // MARK: - Initializers
     
-    /**
-    Initializes a `RangeValidator` with a `0..<1` range.
-    */
-    public init() {
-        self.init(range: 0..<1)
-    }
-    
-    public init(range: CountableRange<Int>) {
-        conditions = [RangeCondition(range: range)]
+    public init(configuration: RangeConfiguration) {
+        conditions = [RangeCondition(configuration: configuration)]
     }
     
 }

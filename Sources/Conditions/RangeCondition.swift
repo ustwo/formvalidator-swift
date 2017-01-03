@@ -12,7 +12,7 @@ import Foundation
 /**
  *  The `RangeCondition` validates the length of a string.
  */
-public struct RangeCondition: Condition {
+public struct RangeCondition: ConfigurableCondition {
     
     
     // MARK: - Properties
@@ -23,29 +23,25 @@ public struct RangeCondition: Condition {
     
     public var shouldAllowViolation = true
     
-    public let range: CountableRange<Int>
+    public let configuration: RangeConfiguration
     
     
     // MARK: - Initializers
     
-    /**
-    Initializes a `RangeCondition` with a `0..<1` range.
-    */
-    public init() {
-        self.init(range: 0..<1)
+    public init(configuration: RangeConfiguration) {
+        self.configuration = configuration
     }
     
     
-    public init(range: CountableRange<Int>) {
-        self.range = range
-    }
+    // MARK: - Check
     
     public func check(_ text: String?) -> Bool {
         guard let sourceText = text else {
             return false
         }
         
-        return sourceText.characters.count >= range.lowerBound && sourceText.characters.count <= range.lowerBound.distance(to: range.upperBound)
+        return sourceText.characters.count >= configuration.range.lowerBound &&
+               sourceText.characters.count <= configuration.range.lowerBound.distance(to: configuration.range.upperBound)
     }
     
 }

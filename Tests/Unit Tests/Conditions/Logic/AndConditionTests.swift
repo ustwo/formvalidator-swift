@@ -16,7 +16,7 @@ final class AndConditionTests: XCTestCase {
     
     // MARK: - Properties
     
-    let firstCondition  = RangeCondition(range: 0..<4)
+    let firstCondition  = RangeCondition(configuration: ConfigurationSeeds.RangeSeeds.zeroToFour)
     let secondCondition = AlphanumericCondition()
     
     
