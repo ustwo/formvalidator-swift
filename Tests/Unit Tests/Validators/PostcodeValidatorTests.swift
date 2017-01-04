@@ -16,7 +16,7 @@ final class PostcodeValidatorTests: XCTestCase {
     
     // MARK: - Properties
     
-    let validator   = PostcodeValidator(country: .UnitedKingdom)
+    let validator   = PostcodeValidator()
     
     
     // MARK: - Test Success

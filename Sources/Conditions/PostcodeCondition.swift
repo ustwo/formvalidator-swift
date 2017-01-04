@@ -37,41 +37,26 @@ public enum PostcodeCountries: String {
 /**
  *  The `PostcodeCondition` checks a string for a post code.
  */
-public struct PostcodeCondition: Condition {
+public struct PostcodeCondition: ConfigurableCondition {
     
     
     // MARK: - Properties
     
     public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationPostcodeUK", comment: "")
     
-    public fileprivate(set) var regex = ""
+    public var regex: String {
+        return configuration.country.regex
+    }
     
     public var shouldAllowViolation = true
     
-    /// Country to use for postcode validation.
-    public var country: PostcodeCountries {
-        didSet {
-            regex = country.regex
-        }
-    }
+    public var configuration: PostcodeConfiguration
     
     
     // MARK: - Initializer
     
-    /**
-    Initializes a `PostcodeCondition` with a `UnitedKingdom` country.
-    */
-    public init() {
-        self.init(country: .UnitedKingdom)
-    }
-    
-    /**
-    Initializes a `PostcodeCondition`.
-    - parameter country: Country to use for postcode validation.
-    */
-    init(country: PostcodeCountries) {
-        self.country = country
-        regex = country.regex
+    public init(configuration: PostcodeConfiguration) {
+        self.configuration = configuration
     }
     
 }

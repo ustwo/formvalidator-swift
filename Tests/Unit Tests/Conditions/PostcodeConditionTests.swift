@@ -66,7 +66,7 @@ final class PostcodeConditionTests: XCTestCase {
         
         init(country: PostcodeCountries) {
             self.country = country
-            condition = PostcodeCondition(country: country)
+            condition = PostcodeCondition(configuration: PostcodeConfiguration(country: country))
         }
         
     }
@@ -99,10 +99,10 @@ final class PostcodeConditionTests: XCTestCase {
         var condition = PostcodeCondition()
         
         // When
-        condition.country = .Sweden
+        condition.configuration.country = .Sweden
         
         // Then
-        XCTAssertEqual(condition.country, PostcodeCountries.Sweden)
+        XCTAssertEqual(condition.configuration.country, PostcodeCountries.Sweden)
         XCTAssertEqual(condition.regex, PostcodeCountries.Sweden.regex)
     }
     
