@@ -24,8 +24,8 @@
 		000A5B6D1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
 		000A5B6E1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
 		002C04261C454AAB005CC374 /* FormValidatorSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 002C04241C454AAB005CC374 /* FormValidatorSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		002DDD091E1D2DFB007796C6 /* PostCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostCodeConfiguration.swift */; };
-		002DDD0A1E1D2DFB007796C6 /* PostCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostCodeConfiguration.swift */; };
+		002DDD091E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
+		002DDD0A1E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
 		0032C0F31C454D8F0023DB19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0032C0F51C454D8F0023DB19 /* Localizable.strings */; };
 		0032C1071C454F4E0023DB19 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1061C454F4E0023DB19 /* Condition.swift */; };
 		0032C10A1C4555200023DB19 /* AlphabeticCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1091C4555200023DB19 /* AlphabeticCondition.swift */; };
@@ -192,7 +192,7 @@
 		002C04241C454AAB005CC374 /* FormValidatorSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormValidatorSwift.h; sourceTree = "<group>"; };
 		002C04251C454AAB005CC374 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		002C042A1C454AD9005CC374 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		002DDD081E1D2DFB007796C6 /* PostCodeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCodeConfiguration.swift; sourceTree = "<group>"; };
+		002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeConfiguration.swift; sourceTree = "<group>"; };
 		0032C0F41C454D8F0023DB19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0032C0F61C454D900023DB19 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0032C0F71C454D910023DB19 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 				000A5B531E1B8D67001DC2FF /* AlphanumericConfiguration.swift */,
 				00A6A0A81E1D023100EDB521 /* CreditCardConfiguration.swift */,
 				000A5B5C1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift */,
-				002DDD081E1D2DFB007796C6 /* PostCodeConfiguration.swift */,
+				002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */,
 				000A5B5F1E1B9243001DC2FF /* RangeConfiguration.swift */,
 			);
 			path = Configurations;
@@ -764,7 +764,7 @@
 				000A5B521E1B8ACD001DC2FF /* AlphabeticConfiguration.swift in Sources */,
 				0056757F1C47EDB9005A43F0 /* PostcodeCondition.swift in Sources */,
 				000A5B581E1B8EB4001DC2FF /* ConfigurableCondition.swift in Sources */,
-				002DDD0A1E1D2DFB007796C6 /* PostCodeConfiguration.swift in Sources */,
+				002DDD0A1E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */,
 				0056758C1C47EDCC005A43F0 /* ValidatorControl.swift in Sources */,
 				0056757A1C47EDB9005A43F0 /* AlphabeticCondition.swift in Sources */,
 				005675931C47EDD1005A43F0 /* PasswordStrengthValidator.swift in Sources */,
@@ -852,7 +852,7 @@
 				000A5B511E1B8ACD001DC2FF /* AlphabeticConfiguration.swift in Sources */,
 				0094D67B1C4698CE00145F5C /* NumericCondition.swift in Sources */,
 				000A5B571E1B8EB4001DC2FF /* ConfigurableCondition.swift in Sources */,
-				002DDD091E1D2DFB007796C6 /* PostCodeConfiguration.swift in Sources */,
+				002DDD091E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */,
 				0049139E1C47ADCA00471F53 /* EmailValidator.swift in Sources */,
 				00F2E2DA1C46C53500FE0B66 /* NotCondition.swift in Sources */,
 				0094D6861C469C2A00145F5C /* URLShorthandCondition.swift in Sources */,
