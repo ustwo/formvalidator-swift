@@ -11,6 +11,7 @@ import Foundation
 @testable import FormValidatorSwift
 
 
+/// Seed data for the various configurations. These are preconfigured configurations to use during testing.
 struct ConfigurationSeeds {
     
     struct AlphabeticSeeds {
