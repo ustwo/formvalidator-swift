@@ -32,7 +32,6 @@ public struct CreditCardType: OptionSet, CustomStringConvertible {
      Literal description for set of credit cards, separated with commas and single space.
      */
     public var description: String {
-        
         var result = ""
         
         add(description: "American Express", forCardType: CreditCardType.americanExpress, toResultString: &result)
@@ -51,13 +50,14 @@ public struct CreditCardType: OptionSet, CustomStringConvertible {
      */
     public var regex: String {
         var result = ""
-        self.insertCard(regexString: &result, cardType: .americanExpress)
-        self.insertCard(regexString: &result, cardType: .dinersClub)
-        self.insertCard(regexString: &result, cardType: .discover)
-        self.insertCard(regexString: &result, cardType: .jcb)
-        self.insertCard(regexString: &result, cardType: .maestro)
-        self.insertCard(regexString: &result, cardType: .mastercard)
-        self.insertCard(regexString: &result, cardType: .visa)
+        
+        insertCard(regexString: &result, cardType: .americanExpress)
+        insertCard(regexString: &result, cardType: .dinersClub)
+        insertCard(regexString: &result, cardType: .discover)
+        insertCard(regexString: &result, cardType: .jcb)
+        insertCard(regexString: &result, cardType: .maestro)
+        insertCard(regexString: &result, cardType: .mastercard)
+        insertCard(regexString: &result, cardType: .visa)
         
         return result
     }
@@ -66,7 +66,7 @@ public struct CreditCardType: OptionSet, CustomStringConvertible {
      Adds commas and spaces between credit card descriptions.
      */
     private func add(description descriptionString: String, forCardType cardType: CreditCardType, toResultString resultString: inout String) {
-        if self.contains(cardType) {
+        if contains(cardType) {
             resultString += ((!resultString.isEmpty) ? ", " : "")
             resultString += descriptionString
         }
