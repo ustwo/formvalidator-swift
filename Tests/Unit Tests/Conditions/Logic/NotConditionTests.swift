@@ -13,7 +13,7 @@ import XCTest
 
 final class NotConditionTests: XCTestCase {
     
-    let originalCondition  = RangeCondition(range: 0..<4)
+    let originalCondition  = RangeCondition(configuration: ConfigurationSeeds.RangeSeeds.zeroToFour)
     
     
     // MARK: - Test Success

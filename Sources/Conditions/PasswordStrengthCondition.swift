@@ -9,11 +9,6 @@
 import Foundation
 
 
-public enum PasswordStrength: Int {
-    case veryWeak, weak, medium, strong, veryStrong
-}
-
-
 /**
  *  The `PasswordStrengthCondition` checks for the strength of a password string.
  *  The strength is measured on five simple criteria:
@@ -27,7 +22,7 @@ public enum PasswordStrength: Int {
  *
  *  If the password strength matches or is above the required strength than the condition will pass.
  */
-public struct PasswordStrengthCondition: Condition {
+public struct PasswordStrengthCondition: ConfigurableCondition {
     
     
     // MARK: - Properties
@@ -38,24 +33,13 @@ public struct PasswordStrengthCondition: Condition {
     
     public var shouldAllowViolation = true
     
-    public let requiredStrength: PasswordStrength
+    public let configuration: PasswordStrengthConfiguration
     
     
     // MARK: - Initializers
     
-    /**
-    Initializes a `PasswordStrengthCondition` that requires a `VeryStrong` password.
-    */
-    public init() {
-        self.init(requiredStrength: .veryStrong)
-    }
-    
-    /**
-    Initializes a `PasswordStrengthCondition`.
-    - parameter requiredStrength: Minimum strength required to be considered valid.
-    */
-    init(requiredStrength: PasswordStrength) {
-        self.requiredStrength = requiredStrength
+    public init(configuration: PasswordStrengthConfiguration) {
+        self.configuration = configuration
     }
     
     
@@ -76,7 +60,7 @@ public struct PasswordStrengthCondition: Condition {
             strength -= 1
         }
         
-        return strength >= requiredStrength.rawValue
+        return strength >= configuration.requiredStrength.rawValue
     }
     
     fileprivate func numberOfMatchesWithPattern(_ pattern: String, text: String) -> Int {

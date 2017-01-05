@@ -16,7 +16,7 @@ final class RangeValidatorTests: XCTestCase {
     
     // MARK: - Properties
     
-    let validator   = RangeValidator(range: 3..<13)
+    let validator   = RangeValidator(configuration: ConfigurationSeeds.RangeSeeds.threeToThirteen)
     
     
     // MARK: - Test Success

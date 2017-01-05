@@ -16,7 +16,7 @@ final class CompositeValidatorTests: XCTestCase {
     
     // MARK: - Properties
     
-    let firstValidator  = RangeValidator(range: 0..<4)
+    let firstValidator  = RangeValidator(configuration: ConfigurationSeeds.RangeSeeds.zeroToFour)
     let secondValidator = AlphanumericValidator()
     
     

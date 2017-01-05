@@ -22,7 +22,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
         let expectedStrength = PasswordStrength.veryStrong
         
         // When
-        let actualStrength = condition.requiredStrength
+        let actualStrength = condition.configuration.requiredStrength
         
         // Test
         XCTAssertEqual(actualStrength,
@@ -36,7 +36,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_VeryWeak_Success() {
         // Given
         let testInput       = "Foo"
-        let condition       = PasswordStrengthCondition(requiredStrength: .veryWeak)
+        let condition       = PasswordStrengthCondition(configuration: ConfigurationSeeds.PasswordStrengthSeeds.veryWeak)
         let expectedResult  = true
         
         // Test
@@ -46,7 +46,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_VeryStrong_Success() {
         // Given
         let testInput       = "F1@b9a_c12983y"
-        let condition       = PasswordStrengthCondition(requiredStrength: .veryStrong)
+        let condition       = PasswordStrengthCondition(configuration: ConfigurationSeeds.PasswordStrengthSeeds.veryStrong)
         let expectedResult  = true
         
         // Test
@@ -59,7 +59,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_VeryStrong_Failure() {
         // Given
         let testInput       = "Foo"
-        let condition       = PasswordStrengthCondition(requiredStrength: .veryStrong)
+        let condition       = PasswordStrengthCondition(configuration: ConfigurationSeeds.PasswordStrengthSeeds.veryStrong)
         let expectedResult  = false
         
         // Test
@@ -69,7 +69,7 @@ final class PasswordStrengthConditionTests: XCTestCase {
     func testPasswordStrengthCondition_Nil_Failure() {
         // Given
         let testInput: String?  = nil
-        let condition           = PasswordStrengthCondition(requiredStrength: .veryStrong)
+        let condition           = PasswordStrengthCondition()
         let expectedResult      = false
         
         // Test

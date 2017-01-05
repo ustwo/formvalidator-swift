@@ -32,7 +32,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_NoUnicode_NoWhitespace_Success() {
         // Given
         let testInput       = Constants.ascii
-        let condition       = AlphanumericCondition(allowsUnicode: false, allowsWhitespace: false)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.noUnicode_NoWhitespace)
         let expectedResult  = true
         
         // Test
@@ -42,7 +42,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_NoUnicode_Whitespace_Success() {
         // Given
         let testInput       = Constants.asciiSpaces
-        let condition       = AlphanumericCondition(allowsUnicode: false, allowsWhitespace: true)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.noUnicode_Whitespace)
         let expectedResult  = true
         
         // Test
@@ -52,7 +52,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_Unicode_NoWhitespace_Success() {
         // Given
         let testInput       = Constants.unicode
-        let condition       = AlphanumericCondition(allowsUnicode: true, allowsWhitespace: false)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.unicode_NoWhitespace)
         let expectedResult  = true
         
         // Test
@@ -62,7 +62,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_Unicode_Whitespace_Success() {
         // Given
         let testInput       = Constants.unicodeSpaces
-        let condition       = AlphanumericCondition(allowsUnicode: true, allowsWhitespace: true)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.unicode_Whitespace)
         let expectedResult  = true
         
         // Test
@@ -75,7 +75,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_NoUnicode_NoWhitespace_Failure_Spaces() {
         // Given
         let testInput       = Constants.asciiSpaces
-        let condition       = AlphanumericCondition(allowsUnicode: false, allowsWhitespace: false)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.noUnicode_NoWhitespace)
         let expectedResult  = false
         
         // Test
@@ -85,7 +85,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_NoUnicode_NoWhitespace_Failure_Unicode() {
         // Given
         let testInput       = Constants.unicode
-        let condition       = AlphanumericCondition(allowsUnicode: false, allowsWhitespace: false)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.noUnicode_NoWhitespace)
         let expectedResult  = false
         
         // Test
@@ -95,7 +95,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_NoUnicode_Whitespace_Failure_Symbols() {
         // Given
         let testInput       = Constants.symbols
-        let condition       = AlphanumericCondition(allowsUnicode: false, allowsWhitespace: true)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.noUnicode_Whitespace)
         let expectedResult  = false
         
         // Test
@@ -105,7 +105,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_NoUnicode_Whitespace_Failure_Unicode() {
         // Given
         let testInput       = Constants.unicodeSpaces
-        let condition       = AlphanumericCondition(allowsUnicode: false, allowsWhitespace: true)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.noUnicode_Whitespace)
         let expectedResult  = false
         
         // Test
@@ -115,7 +115,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_Unicode_NoWhitespace_Failure() {
         // Given
         let testInput       = Constants.unicodeSpaces
-        let condition       = AlphanumericCondition(allowsUnicode: true, allowsWhitespace: false)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.unicode_NoWhitespace)
         let expectedResult  = false
         
         // Test
@@ -125,7 +125,7 @@ final class AlphanumericConditionTests: XCTestCase {
     func testAlphanumericCondition_Unicode_Whitespace_Failure() {
         // Given
         let testInput       = Constants.symbols
-        let condition       = AlphanumericCondition(allowsUnicode: true, allowsWhitespace: true)
+        let condition       = AlphanumericCondition(configuration: ConfigurationSeeds.AlphanumericSeeds.unicode_Whitespace)
         let expectedResult  = false
         
         // Test

@@ -13,7 +13,7 @@ import Foundation
  *  The `PasswordStrengthValidator` contains an `PasswordStrengthCondition`. A valid string meets the required strength level.
  *  - seealso: `PasswordStrengthCondition`
  */
-public struct PasswordStrengthValidator: Validator {
+public struct PasswordStrengthValidator: ConfigurableValidator {
     
     
     // MARK: - Properties
@@ -23,19 +23,8 @@ public struct PasswordStrengthValidator: Validator {
     
     // MARK: - Initializers
     
-    /**
-    Initializes a `PasswordStrengthValidator` that requires a `VeryStrong` password.
-    */
-    public init() {
-        self.init(requiredStrength: .veryStrong)
-    }
-    
-    /**
-    Initializes a `PasswordStrengthValidator`.
-    - parameter requiredStrength: Minimum strength required to be considered valid.
-    */
-    public init(requiredStrength: PasswordStrength) {
-        conditions = [PasswordStrengthCondition(requiredStrength: requiredStrength)]
+    public init(configuration: PasswordStrengthConfiguration) {
+        conditions = [PasswordStrengthCondition(configuration: configuration)]
     }
     
 }
