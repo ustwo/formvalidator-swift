@@ -6,6 +6,10 @@ lane :test do
     verify(
         scheme: "FormValidatorSwift tvOS"
     )
+    verify(
+        scheme: "FormValidatorSwift macOS",
+        destination: "platform=macOS"
+    )
     verify_demo
     pod_lib_lint
 end
