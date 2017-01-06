@@ -23,6 +23,8 @@
 		000A5B671E1B986D001DC2FF /* ConfigurableValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B651E1B986D001DC2FF /* ConfigurableValidator.swift */; };
 		000A5B6D1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
 		000A5B6E1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
+		000D64E91E1F91FD0067B14E /* NumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */; };
+		000D64EA1E1F91FD0067B14E /* NumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */; };
 		002C04261C454AAB005CC374 /* FormValidatorSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 002C04241C454AAB005CC374 /* FormValidatorSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		002DDD091E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
 		002DDD0A1E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
@@ -189,6 +191,7 @@
 		000A5B621E1B9522001DC2FF /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		000A5B651E1B986D001DC2FF /* ConfigurableValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableValidator.swift; sourceTree = "<group>"; };
 		000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationSeeds.swift; sourceTree = "<group>"; };
+		000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericConfiguration.swift; sourceTree = "<group>"; };
 		002C04241C454AAB005CC374 /* FormValidatorSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormValidatorSwift.h; sourceTree = "<group>"; };
 		002C04251C454AAB005CC374 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		002C042A1C454AD9005CC374 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -318,6 +321,7 @@
 				000A5B501E1B8ACD001DC2FF /* AlphabeticConfiguration.swift */,
 				000A5B531E1B8D67001DC2FF /* AlphanumericConfiguration.swift */,
 				00A6A0A81E1D023100EDB521 /* CreditCardConfiguration.swift */,
+				000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */,
 				000A5B5C1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift */,
 				002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */,
 				000A5B5F1E1B9243001DC2FF /* RangeConfiguration.swift */,
@@ -747,6 +751,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000D64EA1E1F91FD0067B14E /* NumericConfiguration.swift in Sources */,
 				005675831C47EDB9005A43F0 /* URLShorthandCondition.swift in Sources */,
 				005675881C47EDCC005A43F0 /* Condition.swift in Sources */,
 				005675861C47EDC7005A43F0 /* ControlForm.swift in Sources */,
@@ -835,6 +840,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000D64E91E1F91FD0067B14E /* NumericConfiguration.swift in Sources */,
 				004913A41C47AE9F00471F53 /* PresentValidator.swift in Sources */,
 				004913A01C47AE0700471F53 /* NumericValidator.swift in Sources */,
 				0094D69B1C46B38200145F5C /* OrCondition.swift in Sources */,

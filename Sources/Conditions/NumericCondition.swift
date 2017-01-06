@@ -12,20 +12,43 @@ import Foundation
 /**
  *  The `NumericCondition` checks a string for numbers.
  */
-public struct NumericCondition: Condition {
+public struct NumericCondition: ConfigurableCondition {
     
     
     // MARK: - Properties
     
     public var localizedViolationString = StringLocalization.sharedInstance.localizedString("US2KeyConditionViolationNumeric", comment: "")
     
-    public let regex = "^\\d+$"
+    public let regex: String
     
     public var shouldAllowViolation = true
+    
+    public let configuration: NumericConfiguration
     
     
     // MARK: - Initializers
     
-    public init() { }
+    public init(configuration: NumericConfiguration) {
+        self.configuration = configuration
+        
+        let regexNumbers = configuration.allowsUnicode ? "\\p{Nd}" : "0-9"
+        let regexWhiteSpace = configuration.allowsWhitespace ? "\\s" : ""
+        
+        regex = "[\(regexNumbers)\(regexWhiteSpace)]"
+    }
+    
+    
+    // MARK: - Check
+    
+    public func check(_ text: String?) -> Bool {
+        guard let sourceText = text,
+            !sourceText.isEmpty,
+            let regExpression = try? NSRegularExpression(pattern: regex, options: .caseInsensitive) else {
+                
+                return false
+        }
+        
+        return regExpression.numberOfMatches(in: sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) == sourceText.characters.count
+    }
     
 }
