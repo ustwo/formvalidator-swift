@@ -32,6 +32,15 @@ struct ConfigurationSeeds {
         
     }
     
+    struct NumericSeeds {
+        
+        static let noUnicode_NoWhitespace   = NumericConfiguration(allowsUnicode: false, allowsWhitespace: false)
+        static let noUnicode_Whitespace     = NumericConfiguration(allowsUnicode: false, allowsWhitespace: true)
+        static let unicode_NoWhitespace     = NumericConfiguration(allowsUnicode: true, allowsWhitespace: false)
+        static let unicode_Whitespace       = NumericConfiguration(allowsUnicode: true, allowsWhitespace: true)
+        
+    }
+    
     struct PasswordStrengthSeeds {
         
         static let veryStrong   = PasswordStrengthConfiguration(requiredStrength: .veryStrong)
