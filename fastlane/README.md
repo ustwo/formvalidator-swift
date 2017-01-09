@@ -15,6 +15,11 @@ Runs tests on the primary platforms and configurations
 fastlane verify
 ```
 Runs tests
+### build
+```
+fastlane build
+```
+Builds scheme
 ### upload_cov
 ```
 fastlane upload_cov
