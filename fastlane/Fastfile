@@ -14,7 +14,7 @@ lane :test do
         scheme: "iOS Example"
     )
     if is_ci?
-        say "Unable to run macOS UI Tests on Travis CI. See https://github.com/travis-ci/travis-ci/issues/7075"
+        # Unable to run macOS UI Tests on Travis CI. See https://github.com/travis-ci/travis-ci/issues/7075
         build(
             scheme: "macOS Example",
             destination: "platform=macOS"
