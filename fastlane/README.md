@@ -14,12 +14,7 @@ Runs tests on the primary platforms and configurations
 ```
 fastlane verify
 ```
-Runs unit tests
-### verify_demo
-```
-fastlane verify_demo
-```
-Runs UI tests
+Runs tests
 ### upload_cov
 ```
 fastlane upload_cov

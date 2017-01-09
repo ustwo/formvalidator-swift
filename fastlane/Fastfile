@@ -10,11 +10,17 @@ lane :test do
         scheme: "FormValidatorSwift macOS",
         destination: "platform=macOS"
     )
-    verify_demo
+    verify(
+        scheme: "iOS Example"
+    )
+    verify(
+        scheme: "macOS Example",
+        destination: "platform=macOS"
+    )
     pod_lib_lint
 end
 
-desc "Runs unit tests"
+desc "Runs tests"
 lane :verify do |options|
     scheme = options[:scheme]
     destination = options[:destination]
@@ -31,21 +37,6 @@ lane :verify do |options|
         :clean => true
     }
     scan(opts)
-    upload_cov
-end
-
-desc "Runs UI tests"
-lane :verify_demo do
-    scheme = "iOS Example"
-    output_directory = "fastlane/test_output/" + scheme + "/"
-    scan(
-        workspace: "FormValidatorSwift.xcworkspace",
-        scheme: scheme,
-        code_coverage: true,
-        xcargs: "ONLY_ACTIVE_ARCH=YES",
-        output_directory: output_directory,
-        clean: true
-    )
     upload_cov
 end
 
