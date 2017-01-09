@@ -43,6 +43,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.makeKeyAndOrderFront(self)
     }
 
-
 }
-
