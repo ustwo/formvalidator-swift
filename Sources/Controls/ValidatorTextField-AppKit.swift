@@ -171,7 +171,7 @@ internal class ValidatorTextFieldResponder: NSObject {
 }
 
 
-final class ValidityFormatter: Formatter {
+fileprivate final class ValidityFormatter: Formatter {
     
     
     // MARK: - Properties

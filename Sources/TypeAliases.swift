@@ -10,9 +10,11 @@
 #if os(iOS) || os(tvOS)
     import UIKit
     
-    public typealias TextField = UITextField
+    public typealias TextField  = UITextField
+    public typealias TextView   = UITextView
 #elseif os(macOS)
     import AppKit
     
-    public typealias TextField = NSTextField
+    public typealias TextField  = NSTextField
+    public typealias TextView   = NSTextView
 #endif

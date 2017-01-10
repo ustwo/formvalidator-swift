@@ -103,6 +103,7 @@
 		005675991C47EDDE005A43F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0032C0F51C454D8F0023DB19 /* Localizable.strings */; };
 		0056759A1C47EDE5005A43F0 /* FormValidatorSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 002C04241C454AAB005CC374 /* FormValidatorSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		005F7F211E24F1440062AEB4 /* ValidatorTextField-AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F7F201E24F1440062AEB4 /* ValidatorTextField-AppKit.swift */; };
+		005F7F231E251FC30062AEB4 /* ValidatorTextView-AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F7F221E251FC30062AEB4 /* ValidatorTextView-AppKit.swift */; };
 		0062E9DB1C45493E00021C0A /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */; };
 		0072443F1E1FB9C40050DFE9 /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06241C463E84008D47F2 /* XCTestCase+Additions.swift */; };
 		007244401E1FB9C90050DFE9 /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
@@ -335,6 +336,7 @@
 		0056755F1C47ED32005A43F0 /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		005675681C47ED32005A43F0 /* FormValidatorSwiftTests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005F7F201E24F1440062AEB4 /* ValidatorTextField-AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValidatorTextField-AppKit.swift"; sourceTree = "<group>"; };
+		005F7F221E251FC30062AEB4 /* ValidatorTextView-AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValidatorTextView-AppKit.swift"; sourceTree = "<group>"; };
 		0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		007244651E1FC0010050DFE9 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
@@ -590,6 +592,7 @@
 				003698361C46E3BE004D1692 /* ValidatorTextField-UIKit.swift */,
 				005F7F201E24F1440062AEB4 /* ValidatorTextField-AppKit.swift */,
 				004913B81C47BEEC00471F53 /* ValidatorTextView-UIKit.swift */,
+				005F7F221E251FC30062AEB4 /* ValidatorTextView-AppKit.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -1159,6 +1162,7 @@
 				00AC82001E1FB81200A184BB /* Condition.swift in Sources */,
 				00AC82151E1FB89A00A184BB /* RangeConfiguration.swift in Sources */,
 				00AC820D1E1FB88900A184BB /* ControlForm.swift in Sources */,
+				005F7F231E251FC30062AEB4 /* ValidatorTextView-AppKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
