@@ -145,6 +145,13 @@ internal class ValidatorTextFieldResponder: NSObject, TextFieldDelegate {
     
     init(validatorTextField: ValidatorTextField) {
         self.validatorTextField = validatorTextField
+        
+        #if os(macOS)
+            let formatter = ValidityFormatter()
+            formatter.validatorTextField = validatorTextField
+        
+            validatorTextField.formatter = formatter
+        #endif
     }
     
     
@@ -274,3 +281,55 @@ internal class ValidatorTextFieldResponder: NSObject, TextFieldDelegate {
     #endif
     
 }
+
+
+#if os(macOS)
+
+final class ValidityFormatter: Formatter {
+    
+    
+    // MARK: - Properties
+    
+    weak var validatorTextField: ValidatorTextField?
+    
+    
+    // MARK: - Formatter
+    
+    override func isPartialStringValid(_ partialStringPtr: AutoreleasingUnsafeMutablePointer<NSString>, proposedSelectedRange proposedSelRangePtr: NSRangePointer?, originalString origString: String, originalSelectedRange origSelRange: NSRange, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool {
+        
+        guard let validatorTextField = validatorTextField else {
+            return true
+        }
+        
+        let conditions = validatorTextField.validator.checkConditions(partialStringPtr.pointee as String)
+        
+        if let conditions = conditions {
+            validatorTextField.validatorTextFieldViolatedConditions(conditions)
+        } else {
+            validatorTextField.validatorTextFieldSuccededConditions()
+        }
+        
+        if !validatorTextField.validateOnFocusLossOnly && origSelRange.location != 0,
+            let conditions = conditions,
+            (!validatorTextField.shouldAllowViolation || conditions[0].shouldAllowViolation) {
+            
+            return false
+        }
+        
+        return true
+    }
+    
+    override func string(for obj: Any?) -> String? {
+        return obj as? String
+    }
+    
+    override func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool {
+        
+        obj?.pointee = string as AnyObject
+        
+        return true
+    }
+    
+}
+
+#endif

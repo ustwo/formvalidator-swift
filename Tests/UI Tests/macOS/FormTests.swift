@@ -25,18 +25,18 @@ class FormTests: XCTestCase {
         super.tearDown()
     }
     
-//    func testTextField_NoAllowedViolations() {
-//        let app = XCUIApplication()
-//        let expectedResult = "Foo"
-//        
-//        let nameTextField = app.textFields[FormAccessibility.Identifiers.NameTextField]
-//        nameTextField.click()
-//        nameTextField.typeText(expectedResult + "12 ?")
-//        
-//        let actualResult = nameTextField.value as? String
-//        
-//        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult) but received \(actualResult).")
-//    }
+    func testTextField_NoAllowedViolations() {
+        let app = XCUIApplication()
+        let expectedResult = "Foo"
+        
+        let nameTextField = app.textFields[FormAccessibility.Identifiers.NameTextField]
+        nameTextField.click()
+        nameTextField.typeText(expectedResult + "12 ?")
+        
+        let actualResult = nameTextField.value as? String
+        
+        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult) but received \(actualResult).")
+    }
     
     func testTextField_AllowedViolations() {
         let app = XCUIApplication()
