@@ -11,10 +11,8 @@
     import UIKit
     
     public typealias TextField = UITextField
-    public typealias TextFieldDelegate = UITextFieldDelegate
 #elseif os(macOS)
     import AppKit
     
     public typealias TextField = NSTextField
-    public typealias TextFieldDelegate = NSTextFieldDelegate
 #endif

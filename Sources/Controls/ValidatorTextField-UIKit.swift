@@ -1,16 +1,12 @@
 //
-//  ValidatorTextField.swift
+//  ValidatorTextField-UIKit.swift
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 13/01/2016.
 //  Copyright © 2016 ustwo. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS)
-    import UIKit
-#elseif os(macOS)
-    import AppKit
-#endif
+import UIKit
 
 
 open class ValidatorTextField: TextField, ValidatorControl {
@@ -29,11 +25,7 @@ open class ValidatorTextField: TextField, ValidatorControl {
     }
     
     open var validatableText: String? {
-        #if os(iOS) || os(tvOS)
-            return text
-        #elseif os(macOS)
-            return stringValue
-        #endif
+        return text
     }
     
     fileprivate var validatorControlResponder: ValidatorTextFieldResponder?
@@ -62,21 +54,12 @@ open class ValidatorTextField: TextField, ValidatorControl {
             return
         }
         
-        #if os(iOS) || os(tvOS)
-            NotificationCenter.default.removeObserver(responder,
-                                                      name: NSNotification.Name.UITextFieldTextDidChange,
-                                                      object: self)
-            NotificationCenter.default.removeObserver(responder,
-                                                      name: NSNotification.Name.UITextFieldTextDidEndEditing,
-                                                      object: self)
-        #elseif os(macOS)
-            NotificationCenter.default.removeObserver(responder,
-                                                      name: NSNotification.Name.NSControlTextDidChange,
-                                                      object: self)
-            NotificationCenter.default.removeObserver(responder,
-                                                      name: NSNotification.Name.NSControlTextDidEndEditing,
-                                                      object: self)
-        #endif
+        NotificationCenter.default.removeObserver(responder,
+                                                  name: NSNotification.Name.UITextFieldTextDidChange,
+                                                  object: self)
+        NotificationCenter.default.removeObserver(responder,
+                                                  name: NSNotification.Name.UITextFieldTextDidEndEditing,
+                                                  object: self)
     }
     
     
@@ -87,25 +70,14 @@ open class ValidatorTextField: TextField, ValidatorControl {
         validatorControlResponder = responder
         super.delegate = responder
         
-        #if os(iOS) || os(tvOS)
-            NotificationCenter.default.addObserver(responder,
-                                                   selector: #selector(ValidatorTextFieldResponder.textFieldDidChange(_:)),
-                                                   name: NSNotification.Name.UITextFieldTextDidChange,
-                                                   object: self)
-            NotificationCenter.default.addObserver(responder,
-                                                   selector: #selector(ValidatorTextFieldResponder.textFieldDidEndEditing(_:)),
-                                                   name: NSNotification.Name.UITextFieldTextDidEndEditing,
-                                                   object: self)
-        #elseif os(macOS)
-            NotificationCenter.default.addObserver(responder,
-                                                   selector: #selector(ValidatorTextFieldResponder.textFieldDidChange(_:)),
-                                                   name: NSNotification.Name.NSControlTextDidChange,
-                                                   object: self)
-            NotificationCenter.default.addObserver(responder,
-                                                   selector: #selector(ValidatorTextFieldResponder.textFieldDidEndEditing(_:)),
-                                                   name: NSNotification.Name.NSControlTextDidEndEditing,
-                                                   object: self)
-        #endif
+        NotificationCenter.default.addObserver(responder,
+                                               selector: #selector(ValidatorTextFieldResponder.textFieldDidChange(_:)),
+                                               name: NSNotification.Name.UITextFieldTextDidChange,
+                                               object: self)
+        NotificationCenter.default.addObserver(responder,
+                                               selector: #selector(ValidatorTextFieldResponder.textFieldDidEndEditing(_:)),
+                                               name: NSNotification.Name.UITextFieldTextDidEndEditing,
+                                               object: self)
     }
     
     
@@ -114,7 +86,7 @@ open class ValidatorTextField: TextField, ValidatorControl {
     /// Sets the `validatorDelegate` for the text field. This allows custom responses to both `UITextFieldDelegate` callbacks as well as those from `ValidatorControlDelegate`.
     ///
     /// - Parameter newDelegate: The delegate for `ValidatorTextField` callbacks.
-    open func setValidatorDelegate(_ newDelegate: ValidatorControlDelegate & TextFieldDelegate) {
+    open func setValidatorDelegate(_ newDelegate: ValidatorControlDelegate & UITextFieldDelegate) {
         validatorControlResponder?.delegate = newDelegate
     }
     
@@ -127,15 +99,13 @@ open class ValidatorTextField: TextField, ValidatorControl {
     
 }
 
-
-internal class ValidatorTextFieldResponder: NSObject, TextFieldDelegate {
-    
+internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     
     // MARK: - Properties
     
     var validatorTextField: ValidatorTextField
     
-    weak var delegate: (ValidatorControlDelegate & TextFieldDelegate)?
+    weak var delegate: (ValidatorControlDelegate & UITextFieldDelegate)?
     
     fileprivate var didEndEditing       = false
     fileprivate var lastIsValid: Bool?  = nil
@@ -145,13 +115,6 @@ internal class ValidatorTextFieldResponder: NSObject, TextFieldDelegate {
     
     init(validatorTextField: ValidatorTextField) {
         self.validatorTextField = validatorTextField
-        
-        #if os(macOS)
-            let formatter = ValidityFormatter()
-            formatter.validatorTextField = validatorTextField
-        
-            validatorTextField.formatter = formatter
-        #endif
     }
     
     
@@ -170,11 +133,7 @@ internal class ValidatorTextFieldResponder: NSObject, TextFieldDelegate {
             return
         }
         
-        #if os(iOS) || os(tvOS)
-            let inputText = validatorTextField.text
-        #elseif os(macOS)
-            let inputText = validatorTextField.stringValue
-        #endif
+        let inputText = validatorTextField.text
         
         let conditions = validatorTextField.validator.checkConditions(inputText)
         let isValid = conditions == nil
@@ -197,8 +156,6 @@ internal class ValidatorTextFieldResponder: NSObject, TextFieldDelegate {
             }
         }
     }
-    
-    #if os(iOS) || os(tvOS)
     
     // MARK: - UITextFieldDelegate
     
@@ -260,76 +217,4 @@ internal class ValidatorTextFieldResponder: NSObject, TextFieldDelegate {
         return delegate?.textFieldShouldReturn?(validatorTextField) ?? true
     }
     
-    #elseif os(macOS)
-    
-    // MARK: - NSTextFieldDelegate
-    
-    @objc func control(_ control: NSControl, textShouldBeginEditing fieldEditor: NSText) -> Bool {
-        return delegate?.control?(control, textShouldBeginEditing: fieldEditor) ?? true
-    }
-    
-    @objc func control(_ control: NSControl, textShouldEndEditing fieldEditor: NSText) -> Bool {
-        return delegate?.control?(control, textShouldEndEditing: fieldEditor) ?? true
-    }
-    
-    @objc func textFieldDidEndEditing(_ notification: Notification?) {
-        didEndEditing = true
-        
-        textFieldDidChange(nil)
-    }
-    
-    #endif
-    
 }
-
-
-#if os(macOS)
-
-final class ValidityFormatter: Formatter {
-    
-    
-    // MARK: - Properties
-    
-    weak var validatorTextField: ValidatorTextField?
-    
-    
-    // MARK: - Formatter
-    
-    override func isPartialStringValid(_ partialStringPtr: AutoreleasingUnsafeMutablePointer<NSString>, proposedSelectedRange proposedSelRangePtr: NSRangePointer?, originalString origString: String, originalSelectedRange origSelRange: NSRange, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool {
-        
-        guard let validatorTextField = validatorTextField else {
-            return true
-        }
-        
-        let conditions = validatorTextField.validator.checkConditions(partialStringPtr.pointee as String)
-        
-        if let conditions = conditions {
-            validatorTextField.validatorTextFieldViolatedConditions(conditions)
-        } else {
-            validatorTextField.validatorTextFieldSuccededConditions()
-        }
-        
-        if !validatorTextField.validateOnFocusLossOnly && origSelRange.location != 0,
-            let conditions = conditions,
-            (!validatorTextField.shouldAllowViolation || conditions[0].shouldAllowViolation) {
-            
-            return false
-        }
-        
-        return true
-    }
-    
-    override func string(for obj: Any?) -> String? {
-        return obj as? String
-    }
-    
-    override func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool {
-        
-        obj?.pointee = string as AnyObject
-        
-        return true
-    }
-    
-}
-
-#endif

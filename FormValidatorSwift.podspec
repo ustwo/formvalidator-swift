@@ -10,12 +10,19 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.3'
   s.tvos.deployment_target = '9.0'
+  s.osx.deployment_target = '10.12'
 
   s.source_files = 'Sources/**/*.swift'
+  s.ios.exclude_files = '**/*AppKit.swift'
+  s.tvos.exclude_files = '**/*AppKit.swift'
+  s.osx.exclude_files = '**/*UIKit.swift'
 
   s.resource_bundles = { 'FormValidatorSwift' => 'Sources/Resources/**/*.strings' }
 
-  s.frameworks = 'Foundation', 'UIKit'
+  s.frameworks = 'Foundation'
+  s.ios.frameworks = 'UIKit'
+  s.tvos.frameworks = 'UIKit'
+  s.osx.frameworks = 'AppKit'
 
   s.requires_arc = true
 end
