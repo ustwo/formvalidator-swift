@@ -1,7 +1,9 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/ustwo/formvalidator-swift/blob/master/LICENSE.md)
 [![Build Status](https://travis-ci.org/ustwo/formvalidator-swift.svg?branch=master)](https://travis-ci.org/ustwo/formvalidator-swift)
 [![codecov.io](https://codecov.io/github/ustwo/formvalidator-swift/coverage.svg?branch=master)](https://codecov.io/github/ustwo/formvalidator-swift?branch=master)
+[![Platform](https://img.shields.io/cocoapods/p/FormValidatorSwift.svg?style=flat)](http://cocoadocs.org/docsets/FormValidatorSwift)
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
+[![Twitter](https://img.shields.io/badge/twitter-@ustwo-blue.svg?style=flat)](http://twitter.com/ustwo)
 
 # FormValidatorSwift
 
@@ -9,11 +11,11 @@ The FormValidatorSwift framework allows you to validate inputs of text fields an
 
 ## Features
 
-- [x] Simply use `ValidatorTextField` instead of `UITextField` (`ValidatorTextView` instead of `UITextView`)
+- [x] Simply use `ValidatorTextField` instead of `UITextField` or `NSTextField` (`ValidatorTextView` instead of `UITextView` or `NSTextView`)
 - [x] Know what went wrong and where
 - [x] Create own conditions using regular expressions for example
 - [x] Create own validators which contain a collection of conditions
-- [x] Support iOS and tvOS
+- [x] Support iOS, macOS, and tvOS
 
 ## Dependencies
 
@@ -75,9 +77,9 @@ $ git submodule add https://github.com/ustwo/formvalidator-swift.git
 
     > It does not matter which `Products` folder you choose from, but it does matter whether you choose the top or bottom `FormValidatorSwift.framework`.
 
-- Select the top `FormValidatorSwift.framework` for iOS and the bottom one for tvOS.
+- Select the top `FormValidatorSwift.framework` for iOS, the middle one for tvOS, or the bottom one for macOS.
 
-    > You can verify which one you selected by inspecting the build log for your project. The build target for `FormValidatorSwift` will be listed as either `FormValidatorSwift iOS` or `FormValidatorSwift tvOS`.
+    > You can verify which one you selected by inspecting the build log for your project. The build target for `FormValidatorSwift` will be listed as `FormValidatorSwift iOS`, `FormValidatorSwift macOS`, or `FormValidatorSwift tvOS`.
 
 - And that's it!
 
@@ -121,7 +123,7 @@ let invalidResult = validator.checkConditions("Foo?!@")
 
 ### ValidatorTextField
 
-To provide a user interface, you can use `ValidatorTextField` or `ValidatorTextView`. These are subclasses of `UITextField` and `UITextView` respectively. They both conform to the `ValidatorControl` protocol, which has the additional capability of using a `Validator` to check the text.
+To provide a user interface, you can use `ValidatorTextField` or `ValidatorTextView`. These are subclasses of `UITextField` and `UITextView` respectively (or `NSTextField` and `NSTextView` on macOS). They both conform to the `ValidatorControl` protocol, which has the additional capability of using a `Validator` to check the text.
 
 Here is an example of a text field that would only allow alphanumeric text.
 
@@ -150,7 +152,7 @@ func validatorControl(validatorControl: ValidatorControl, changedValidState vali
         controlView.layer.borderWidth = 0.0
         errorLabel.hidden = true
     } else {
-        controlView.layer.borderColor = UIColor.redColor().CGColor
+        controlView.layer.borderColor = UIColor.red.CGColor
         controlView.layer.borderWidth = 2.0
     }
 }
@@ -191,7 +193,7 @@ if form.isValid {
 
 ### Example
 
-A more detailed example can be found in the `iOS Example` app in this repository.
+More detailed examples can be found in the `iOS Example` and `macOS Example` apps in this repository.
 
 ## Collaborate
 
