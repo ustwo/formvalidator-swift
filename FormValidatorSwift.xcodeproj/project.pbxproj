@@ -134,9 +134,6 @@
 		007244591E1FB9D60050DFE9 /* URLValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C61C47C7A700471F53 /* URLValidatorTests.swift */; };
 		0072445A1E1FB9D60050DFE9 /* URLShorthandValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C81C47C7E500471F53 /* URLShorthandValidatorTests.swift */; };
 		0072445B1E1FB9D60050DFE9 /* CreditCardValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF88F2F1DCA566C001845D1 /* CreditCardValidatorTests.swift */; };
-		007244661E1FC0010050DFE9 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007244651E1FC0010050DFE9 /* TypeAliases.swift */; };
-		007244671E1FC0010050DFE9 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007244651E1FC0010050DFE9 /* TypeAliases.swift */; };
-		007244681E1FC0010050DFE9 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007244651E1FC0010050DFE9 /* TypeAliases.swift */; };
 		0094D6741C46931800145F5C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
 		0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
 		0094D6791C46979300145F5C /* EmailConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6771C46976500145F5C /* EmailConditionTests.swift */; };
@@ -339,7 +336,6 @@
 		005F7F221E251FC30062AEB4 /* ValidatorTextView-AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValidatorTextView-AppKit.swift"; sourceTree = "<group>"; };
 		0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		007244651E1FC0010050DFE9 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		0094D6731C46931800145F5C /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		0094D6751C4696F400145F5C /* EmailCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCondition.swift; sourceTree = "<group>"; };
 		0094D6771C46976500145F5C /* EmailConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailConditionTests.swift; sourceTree = "<group>"; };
@@ -489,7 +485,6 @@
 				00AC82081E1FB84D00A184BB /* FormValidatorSwift-macOS.h */,
 				002C04241C454AAB005CC374 /* FormValidatorSwift.h */,
 				002C04251C454AAB005CC374 /* Info.plist */,
-				007244651E1FC0010050DFE9 /* TypeAliases.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -982,7 +977,6 @@
 				0056758E1C47EDD1005A43F0 /* AlphanumericValidator.swift in Sources */,
 				005675781C47EDB9005A43F0 /* NotCondition.swift in Sources */,
 				005675791C47EDB9005A43F0 /* OrCondition.swift in Sources */,
-				007244671E1FC0010050DFE9 /* TypeAliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,7 +1066,6 @@
 				00F2E2E21C46C7B500FE0B66 /* PasswordStrengthCondition.swift in Sources */,
 				00F2E2D61C46C42F00FE0B66 /* AndCondition.swift in Sources */,
 				005675571C47E05E005A43F0 /* Form.swift in Sources */,
-				007244661E1FC0010050DFE9 /* TypeAliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1119,7 +1112,6 @@
 				00AC821E1E1FB8A700A184BB /* RangeCondition.swift in Sources */,
 				00AC82071E1FB82200A184BB /* ValidatorControl.swift in Sources */,
 				00AC82011E1FB81400A184BB /* ConfigurableCondition.swift in Sources */,
-				007244681E1FC0010050DFE9 /* TypeAliases.swift in Sources */,
 				00AC82261E1FB8B500A184BB /* CreditCardValidator.swift in Sources */,
 				00AC82271E1FB8B500A184BB /* CompositeValidator.swift in Sources */,
 				00AC82171E1FB8A700A184BB /* AlphanumericCondition.swift in Sources */,

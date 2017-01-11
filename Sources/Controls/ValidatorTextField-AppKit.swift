@@ -9,7 +9,7 @@
 import AppKit
 
 
-open class ValidatorTextField: TextField, ValidatorControl {
+open class ValidatorTextField: NSTextField, ValidatorControl {
     
     
     // MARK: - Properties

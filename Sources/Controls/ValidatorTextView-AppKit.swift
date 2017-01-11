@@ -9,7 +9,7 @@
 import AppKit
 
 
-open class ValidatorTextView: TextView, ValidatorControl {
+open class ValidatorTextView: NSTextView, ValidatorControl {
     
     
     // MARK: - Properties

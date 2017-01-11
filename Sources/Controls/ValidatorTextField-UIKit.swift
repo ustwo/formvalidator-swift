@@ -9,7 +9,7 @@
 import UIKit
 
 
-open class ValidatorTextField: TextField, ValidatorControl {
+open class ValidatorTextField: UITextField, ValidatorControl {
     
     
     // MARK: - Properties
@@ -159,7 +159,7 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     
     // MARK: - UITextFieldDelegate
     
-    @objc func textField(_ textField: TextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    @objc func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let sourceText = textField.text else {
             return false
         }
@@ -189,19 +189,19 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
         return true
     }
     
-    @objc func textFieldShouldBeginEditing(_ textField: TextField) -> Bool {
+    @objc func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return delegate?.textFieldShouldBeginEditing?(validatorTextField) ?? true
     }
     
-    @objc func textFieldDidBeginEditing(_ textField: TextField) {
+    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
         delegate?.textFieldDidBeginEditing?(validatorTextField)
     }
     
-    @objc func textFieldShouldEndEditing(_ textField: TextField) -> Bool {
+    @objc func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return delegate?.textFieldShouldEndEditing?(validatorTextField) ?? true
     }
     
-    @objc func textFieldDidEndEditing(_ textField: TextField) {
+    @objc func textFieldDidEndEditing(_ textField: UITextField) {
         didEndEditing = true
         
         textFieldDidChange(nil)
@@ -209,11 +209,11 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
         delegate?.textFieldDidEndEditing?(validatorTextField)
     }
     
-    @objc func textFieldShouldClear(_ textField: TextField) -> Bool {
+    @objc func textFieldShouldClear(_ textField: UITextField) -> Bool {
         return delegate?.textFieldShouldClear?(validatorTextField) ?? true
     }
     
-    @objc func textFieldShouldReturn(_ textField: TextField) -> Bool {
+    @objc func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return delegate?.textFieldShouldReturn?(validatorTextField) ?? true
     }
     
