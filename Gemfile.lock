@@ -94,7 +94,7 @@ GEM
       xcpretty-travis-formatter (>= 0.0.3)
     fourflusher (2.0.1)
     fuzzy_match (2.0.4)
-    gh_inspector (1.0.2)
+    gh_inspector (1.0.3)
     google-api-client (0.9.20)
       addressable (~> 2.3)
       googleauth (~> 0.5)
@@ -183,4 +183,4 @@ DEPENDENCIES
   fastlane
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
