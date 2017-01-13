@@ -14,7 +14,7 @@ open class ValidatorTextView: UITextView, ValidatorControl {
     
     // MARK: - Properties
     
-    open var shouldAllowViolation = true
+    open var shouldAllowViolation = false
     open var validateOnFocusLossOnly = false
     open let validator: Validator
     /// Validator delegate for the text view.
