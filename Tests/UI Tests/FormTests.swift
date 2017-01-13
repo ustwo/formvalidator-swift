@@ -66,12 +66,17 @@ class FormTests: XCTestCase {
     func testForm_Valid() {
         let app = XCUIApplication()
         
+        let title = "Developer"
         let name = "Foo"
         let email = "Bar@Baz.com"
         
+        let titleTextField = app.textFields[FormAccessibility.Identifiers.TitleTextField]
         let nameTextField = app.textFields[FormAccessibility.Identifiers.NameTextField]
         let emailTextField = app.textFields[FormAccessibility.Identifiers.EmailTextField]
         let submitButton = app.buttons[FormAccessibility.Identifiers.SubmitButton]
+        
+        titleTextField.tap()
+        titleTextField.typeText(title)
         
         nameTextField.tap()
         nameTextField.typeText(name)
@@ -91,12 +96,17 @@ class FormTests: XCTestCase {
     func testForm_Invalid() {
         let app = XCUIApplication()
         
+        let title = "Developer"
         let name = "Foo"
         let email = "Bar"
         
+        let titleTextField = app.textFields[FormAccessibility.Identifiers.TitleTextField]
         let nameTextField = app.textFields[FormAccessibility.Identifiers.NameTextField]
         let emailTextField = app.textFields[FormAccessibility.Identifiers.EmailTextField]
         let submitButton = app.buttons[FormAccessibility.Identifiers.SubmitButton]
+        
+        titleTextField.tap()
+        titleTextField.typeText(title)
         
         nameTextField.tap()
         nameTextField.typeText(name)
