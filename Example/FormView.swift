@@ -46,7 +46,7 @@ final class FormView: UIView {
         addSubview(stackView)
         
         titleEntry.textLabel.text = NSLocalizedString("Title", comment: "")
-        emailEntry.textField.shouldAllowViolation = true
+        titleEntry.textField.shouldAllowViolation = true
         stackView.addArrangedSubview(titleEntry)
         
         nameEntry.textLabel.text = NSLocalizedString("Surname", comment: "")
