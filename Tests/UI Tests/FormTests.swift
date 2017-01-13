@@ -39,6 +39,19 @@ class FormTests: XCTestCase {
     
     func testTextField_AllowedViolations() {
         let app = XCUIApplication()
+        let expectedResult = "Foo12"
+        
+        let titleTextField = app.textFields[FormAccessibility.Identifiers.TitleTextField]
+        titleTextField.tap()
+        titleTextField.typeText(expectedResult)
+        
+        let actualResult = titleTextField.value as? String
+        
+        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult) but received \(actualResult).")
+    }
+    
+    func testTextField_AllowedViolations_and_validateOnFocusLossOnly() {
+        let app = XCUIApplication()
         let expectedResult = "Foo12 ?"
         
         let emailTextField = app.textFields[FormAccessibility.Identifiers.EmailTextField]
