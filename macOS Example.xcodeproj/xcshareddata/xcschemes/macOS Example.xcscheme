@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
-               BuildableName = "FormValidatorSwift.framework"
-               BlueprintName = "FormValidatorSwift iOS"
-               ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
+               BlueprintIdentifier = "007244721E1FDB2D0050DFE9"
+               BuildableName = "macOS Example.app"
+               BlueprintName = "macOS Example"
+               ReferencedContainer = "container:macOS Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,20 +33,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0062E9D91C45493E00021C0A"
-               BuildableName = "FormValidatorSwiftTests iOS.xctest"
-               BlueprintName = "FormValidatorSwiftTests iOS"
-               ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
+               BlueprintIdentifier = "007244811E1FDB2D0050DFE9"
+               BuildableName = "macOS ExampleUITests.xctest"
+               BlueprintName = "macOS ExampleUITests"
+               ReferencedContainer = "container:macOS Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
-            BuildableName = "FormValidatorSwift.framework"
-            BlueprintName = "FormValidatorSwift iOS"
-            ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
+            BlueprintIdentifier = "007244721E1FDB2D0050DFE9"
+            BuildableName = "macOS Example.app"
+            BlueprintName = "macOS Example"
+            ReferencedContainer = "container:macOS Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -62,15 +62,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
-            BuildableName = "FormValidatorSwift.framework"
-            BlueprintName = "FormValidatorSwift iOS"
-            ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
+            BlueprintIdentifier = "007244721E1FDB2D0050DFE9"
+            BuildableName = "macOS Example.app"
+            BlueprintName = "macOS Example"
+            ReferencedContainer = "container:macOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,15 +81,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
-            BuildableName = "FormValidatorSwift.framework"
-            BlueprintName = "FormValidatorSwift iOS"
-            ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
+            BlueprintIdentifier = "007244721E1FDB2D0050DFE9"
+            BuildableName = "macOS Example.app"
+            BlueprintName = "macOS Example"
+            ReferencedContainer = "container:macOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

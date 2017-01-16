@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
+               BlueprintIdentifier = "00AC81E71E1FB69200A184BB"
                BuildableName = "FormValidatorSwift.framework"
-               BlueprintName = "FormValidatorSwift iOS"
+               BlueprintName = "FormValidatorSwift macOS"
                ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0062E9D91C45493E00021C0A"
-               BuildableName = "FormValidatorSwiftTests iOS.xctest"
-               BlueprintName = "FormValidatorSwiftTests iOS"
+               BlueprintIdentifier = "00AC81EF1E1FB69200A184BB"
+               BuildableName = "FormValidatorSwiftTests macOS.xctest"
+               BlueprintName = "FormValidatorSwiftTests macOS"
                ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
+            BlueprintIdentifier = "00AC81E71E1FB69200A184BB"
             BuildableName = "FormValidatorSwift.framework"
-            BlueprintName = "FormValidatorSwift iOS"
+            BlueprintName = "FormValidatorSwift macOS"
             ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
+            BlueprintIdentifier = "00AC81E71E1FB69200A184BB"
             BuildableName = "FormValidatorSwift.framework"
-            BlueprintName = "FormValidatorSwift iOS"
+            BlueprintName = "FormValidatorSwift macOS"
             ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0062E9CF1C45493E00021C0A"
+            BlueprintIdentifier = "00AC81E71E1FB69200A184BB"
             BuildableName = "FormValidatorSwift.framework"
-            BlueprintName = "FormValidatorSwift iOS"
+            BlueprintName = "FormValidatorSwift macOS"
             ReferencedContainer = "container:FormValidatorSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

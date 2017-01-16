@@ -6,11 +6,29 @@ lane :test do
     verify(
         scheme: "FormValidatorSwift tvOS"
     )
-    verify_demo
+    verify(
+        scheme: "FormValidatorSwift macOS",
+        destination: "platform=macOS"
+    )
+    verify(
+        scheme: "iOS Example"
+    )
+    if is_ci?
+        # Unable to run macOS UI Tests on Travis CI. See https://github.com/travis-ci/travis-ci/issues/7075
+        build(
+            scheme: "macOS Example",
+            destination: "platform=macOS"
+        )
+    else
+        verify(
+            scheme: "macOS Example",
+            destination: "platform=macOS"
+        )
+    end
     pod_lib_lint
 end
 
-desc "Runs unit tests"
+desc "Runs tests"
 lane :verify do |options|
     scheme = options[:scheme]
     destination = options[:destination]
@@ -30,19 +48,20 @@ lane :verify do |options|
     upload_cov
 end
 
-desc "Runs UI tests"
-lane :verify_demo do
-    scheme = "iOS Example"
-    output_directory = "fastlane/test_output/" + scheme + "/"
-    scan(
-        workspace: "FormValidatorSwift.xcworkspace",
+desc "Builds scheme"
+lane :build do |options|
+    scheme = options[:scheme]
+    destination = options[:destination]
+    sdk = options[:sdk]
+    xcodebuild(
+        workspace: 'FormValidatorSwift.xcworkspace',
         scheme: scheme,
-        code_coverage: true,
-        xcargs: "ONLY_ACTIVE_ARCH=YES",
-        output_directory: output_directory,
+        destination: destination,
+        sdk: sdk,
+        xcargs: 'ONLY_ACTIVE_ARCH=YES',
+        build: true,
         clean: true
     )
-    upload_cov
 end
 
 desc "Upload code coverage reports (if running on CI)"

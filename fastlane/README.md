@@ -14,12 +14,12 @@ Runs tests on the primary platforms and configurations
 ```
 fastlane verify
 ```
-Runs unit tests
-### verify_demo
+Runs tests
+### build
 ```
-fastlane verify_demo
+fastlane build
 ```
-Runs UI tests
+Builds scheme
 ### upload_cov
 ```
 fastlane upload_cov

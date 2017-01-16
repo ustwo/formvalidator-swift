@@ -17,7 +17,7 @@
 The current version I am using is:
 
 - Xcode:
-- iOS/tvOS:
+- iOS/macOS/tvOS:
 - FormValidator:
 
 ### Other Information

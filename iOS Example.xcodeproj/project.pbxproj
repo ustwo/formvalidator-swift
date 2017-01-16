@@ -49,6 +49,20 @@
 			remoteGlobalIDString = 0062E9CF1C45493E00021C0A;
 			remoteInfo = FormValidatorSwift;
 		};
+		008E72DF1E1FDC0A0013E24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00AC81E81E1FB69200A184BB;
+			remoteInfo = "FormValidatorSwift macOS";
+		};
+		008E72E11E1FDC0A0013E24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00AC81F01E1FB69200A184BB;
+			remoteInfo = "FormValidatorSwiftTests macOS";
+		};
 		009BFD601C48FA9000B1E370 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 004913871C479B1000471F53 /* FormValidatorSwift.xcodeproj */;
@@ -145,7 +159,7 @@
 				009BFD641C48FA9B00B1E370 /* FormEntryView.swift */,
 			);
 			name = Sources;
-			path = Example;
+			path = Example/iOS;
 			sourceTree = "<group>";
 		};
 		003698731C47898D004D1692 /* Tests */ = {
@@ -155,7 +169,7 @@
 				004913951C47A7F000471F53 /* FormTests.swift */,
 			);
 			name = Tests;
-			path = "Tests/UI Tests";
+			path = "Tests/UI Tests/iOS";
 			sourceTree = "<group>";
 		};
 		0036987C1C478ABF004D1692 /* Supporting Files */ = {
@@ -174,6 +188,8 @@
 				0049138F1C479B1000471F53 /* FormValidatorSwiftTests iOS.xctest */,
 				009BFD611C48FA9000B1E370 /* FormValidatorSwift.framework */,
 				009BFD631C48FA9000B1E370 /* FormValidatorSwiftTests tvOS.xctest */,
+				008E72E01E1FDC0A0013E24E /* FormValidatorSwift.framework */,
+				008E72E21E1FDC0A0013E24E /* FormValidatorSwiftTests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,6 +294,20 @@
 			fileType = wrapper.cfbundle;
 			path = "FormValidatorSwiftTests iOS.xctest";
 			remoteRef = 0049138E1C479B1000471F53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		008E72E01E1FDC0A0013E24E /* FormValidatorSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FormValidatorSwift.framework;
+			remoteRef = 008E72DF1E1FDC0A0013E24E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		008E72E21E1FDC0A0013E24E /* FormValidatorSwiftTests macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FormValidatorSwiftTests macOS.xctest";
+			remoteRef = 008E72E11E1FDC0A0013E24E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		009BFD611C48FA9000B1E370 /* FormValidatorSwift.framework */ = {
@@ -466,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,7 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "Tests/UI Tests/Info.plist";
+				INFOPLIST_FILE = "Tests/UI Tests/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,7 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "Tests/UI Tests/Info.plist";
+				INFOPLIST_FILE = "Tests/UI Tests/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
