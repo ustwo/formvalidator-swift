@@ -14,7 +14,7 @@ open class ValidatorTextView: NSTextView, ValidatorControl {
     
     // MARK: - Properties
     
-    open var shouldAllowViolation = true
+    open var shouldAllowViolation = false
     open var validateOnFocusLossOnly = false
     open let validator: Validator
     open weak var validatorDelegate: ValidatorControlDelegate?
@@ -66,7 +66,7 @@ open class ValidatorTextView: NSTextView, ValidatorControl {
         
         if !validateOnFocusLossOnly && affectedCharRange.location != 0,
             let conditions = conditions,
-            (!shouldAllowViolation || conditions[0].shouldAllowViolation) {
+            (!shouldAllowViolation || !conditions[0].shouldAllowViolation) {
             
             return false
         }

@@ -16,6 +16,7 @@ final class FormView: NSView {
     
     // MARK: - Properties
     
+    let titleEntry      = FormEntryView<AlphabeticValidator>()
     let nameEntry       = FormEntryView<AlphabeticValidator>()
     let emailEntry      = FormEntryView<EmailValidator>()
     
@@ -44,6 +45,10 @@ final class FormView: NSView {
         stackView.distribution = .fill
         addSubview(stackView)
         
+        titleEntry.textLabel.stringValue = NSLocalizedString("Title", comment: "")
+        titleEntry.textField.shouldAllowViolation = true
+        stackView.addArrangedSubview(titleEntry)
+        
         nameEntry.textLabel.stringValue = NSLocalizedString("Surname", comment: "")
         stackView.addArrangedSubview(nameEntry)
         
@@ -60,6 +65,9 @@ final class FormView: NSView {
         
         // Accessibility
         
+        titleEntry.textLabel.setAccessibilityIdentifier(FormAccessibility.Identifiers.TitleLabel)
+        titleEntry.textField.setAccessibilityIdentifier(FormAccessibility.Identifiers.TitleTextField)
+        
         nameEntry.textLabel.setAccessibilityIdentifier(FormAccessibility.Identifiers.NameLabel)
         nameEntry.textField.setAccessibilityIdentifier(FormAccessibility.Identifiers.NameTextField)
         
@@ -75,6 +83,7 @@ final class FormView: NSView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
+            titleEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: 300.0),
             nameEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: 300.0),
             emailEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: 300.0),
             

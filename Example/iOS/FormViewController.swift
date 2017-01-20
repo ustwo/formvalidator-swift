@@ -39,6 +39,7 @@ final class FormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        form.addEntry(underlyingView.titleEntry.textField)
         form.addEntry(underlyingView.nameEntry.textField)
         form.addEntry(underlyingView.emailEntry.textField)
         

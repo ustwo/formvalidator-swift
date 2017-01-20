@@ -14,7 +14,7 @@ open class ValidatorTextField: NSTextField, ValidatorControl {
     
     // MARK: - Properties
     
-    open var shouldAllowViolation = true
+    open var shouldAllowViolation = false
     open var validateOnFocusLossOnly = false
     open let validator: Validator
     /// Validator delegate for the text field.
@@ -197,7 +197,7 @@ fileprivate final class ValidityFormatter: Formatter {
         
         if !validatorTextField.validateOnFocusLossOnly && origSelRange.location != 0,
             let conditions = conditions,
-            (!validatorTextField.shouldAllowViolation || conditions[0].shouldAllowViolation) {
+            (!validatorTextField.shouldAllowViolation || !conditions[0].shouldAllowViolation) {
             
             return false
         }

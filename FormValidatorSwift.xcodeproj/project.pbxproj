@@ -25,6 +25,10 @@
 		000A5B6E1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
 		000D64E91E1F91FD0067B14E /* NumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */; };
 		000D64EA1E1F91FD0067B14E /* NumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */; };
+		00169CDE1E32016400DB3193 /* ValidatorTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA61E2967F7006B0150 /* ValidatorTextFieldTests.swift */; };
+		00169CDF1E32016500DB3193 /* ValidatorTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA61E2967F7006B0150 /* ValidatorTextFieldTests.swift */; };
+		00169CE01E32016900DB3193 /* ValidatorTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA81E296AEC006B0150 /* ValidatorTextViewTests.swift */; };
+		00169CE11E32016A00DB3193 /* ValidatorTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA81E296AEC006B0150 /* ValidatorTextViewTests.swift */; };
 		002C04261C454AAB005CC374 /* FormValidatorSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 002C04241C454AAB005CC374 /* FormValidatorSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		002DDD091E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
 		002DDD0A1E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
@@ -998,6 +1002,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00169CDE1E32016400DB3193 /* ValidatorTextFieldTests.swift in Sources */,
 				00BB68421C47FDCE00714F34 /* AlphabeticValidatorTests.swift in Sources */,
 				00BB683C1C47FDC400714F34 /* PostcodeConditionTests.swift in Sources */,
 				BAF88F311DCA566C001845D1 /* CreditCardValidatorTests.swift in Sources */,
@@ -1020,6 +1025,7 @@
 				00BB68461C47FDCE00714F34 /* NumericValidatorTests.swift in Sources */,
 				00BB68341C47FDC400714F34 /* AndConditionTests.swift in Sources */,
 				00BB68431C47FDCE00714F34 /* AlphanumericValidatorTests.swift in Sources */,
+				00169CE01E32016900DB3193 /* ValidatorTextViewTests.swift in Sources */,
 				00BB683F1C47FDC400714F34 /* URLConditionTests.swift in Sources */,
 				00BB684C1C47FDCE00714F34 /* URLShorthandValidatorTests.swift in Sources */,
 				00BB68391C47FDC400714F34 /* EmailConditionTests.swift in Sources */,
@@ -1178,6 +1184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00169CDF1E32016500DB3193 /* ValidatorTextFieldTests.swift in Sources */,
 				007244451E1FB9CD0050DFE9 /* EmailConditionTests.swift in Sources */,
 				007244441E1FB9CD0050DFE9 /* CreditCardConditionTests.swift in Sources */,
 				007244571E1FB9D60050DFE9 /* PresentValidatorTests.swift in Sources */,
@@ -1200,6 +1207,7 @@
 				007244531E1FB9D60050DFE9 /* EmailValidatorTests.swift in Sources */,
 				007244561E1FB9D60050DFE9 /* PostcodeValidatorTests.swift in Sources */,
 				0072445A1E1FB9D60050DFE9 /* URLShorthandValidatorTests.swift in Sources */,
+				00169CE11E32016A00DB3193 /* ValidatorTextViewTests.swift in Sources */,
 				007244431E1FB9CD0050DFE9 /* CreditCardTypeTests.swift in Sources */,
 				007244591E1FB9D60050DFE9 /* URLValidatorTests.swift in Sources */,
 				007244521E1FB9D60050DFE9 /* CompositeValidatorTests.swift in Sources */,
