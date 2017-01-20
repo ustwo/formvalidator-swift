@@ -39,6 +39,19 @@ class FormTests: XCTestCase {
     
     func testTextField_AllowedViolations() {
         let app = XCUIApplication()
+        let expectedResult = "Foo12"
+        
+        let titleTextField = app.textFields[FormAccessibility.Identifiers.TitleTextField]
+        titleTextField.tap()
+        titleTextField.typeText(expectedResult)
+        
+        let actualResult = titleTextField.value as? String
+        
+        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult) but received \(actualResult).")
+    }
+    
+    func testTextField_AllowedViolations_and_validateOnFocusLossOnly() {
+        let app = XCUIApplication()
         let expectedResult = "Foo12 ?"
         
         let emailTextField = app.textFields[FormAccessibility.Identifiers.EmailTextField]
@@ -53,12 +66,17 @@ class FormTests: XCTestCase {
     func testForm_Valid() {
         let app = XCUIApplication()
         
+        let title = "Developer"
         let name = "Foo"
         let email = "Bar@Baz.com"
         
+        let titleTextField = app.textFields[FormAccessibility.Identifiers.TitleTextField]
         let nameTextField = app.textFields[FormAccessibility.Identifiers.NameTextField]
         let emailTextField = app.textFields[FormAccessibility.Identifiers.EmailTextField]
         let submitButton = app.buttons[FormAccessibility.Identifiers.SubmitButton]
+        
+        titleTextField.tap()
+        titleTextField.typeText(title)
         
         nameTextField.tap()
         nameTextField.typeText(name)
@@ -78,12 +96,17 @@ class FormTests: XCTestCase {
     func testForm_Invalid() {
         let app = XCUIApplication()
         
+        let title = "Developer"
         let name = "Foo"
         let email = "Bar"
         
+        let titleTextField = app.textFields[FormAccessibility.Identifiers.TitleTextField]
         let nameTextField = app.textFields[FormAccessibility.Identifiers.NameTextField]
         let emailTextField = app.textFields[FormAccessibility.Identifiers.EmailTextField]
         let submitButton = app.buttons[FormAccessibility.Identifiers.SubmitButton]
+        
+        titleTextField.tap()
+        titleTextField.typeText(title)
         
         nameTextField.tap()
         nameTextField.typeText(name)
