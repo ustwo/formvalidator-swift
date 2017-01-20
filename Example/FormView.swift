@@ -16,6 +16,7 @@ final class FormView: UIView {
     
     // MARK: - Properties
     
+    let titleEntry      = FormEntryView<AlphabeticValidator>()
     let nameEntry       = FormEntryView<AlphabeticValidator>()
     let emailEntry      = FormEntryView<EmailValidator>()
     
@@ -44,6 +45,10 @@ final class FormView: UIView {
         stackView.alignment = .fill
         addSubview(stackView)
         
+        titleEntry.textLabel.text = NSLocalizedString("Title", comment: "")
+        titleEntry.textField.shouldAllowViolation = true
+        stackView.addArrangedSubview(titleEntry)
+        
         nameEntry.textLabel.text = NSLocalizedString("Surname", comment: "")
         stackView.addArrangedSubview(nameEntry)
         
@@ -62,6 +67,9 @@ final class FormView: UIView {
         
         
         // Accessibility
+        
+        titleEntry.textLabel.accessibilityIdentifier = FormAccessibility.Identifiers.TitleLabel
+        titleEntry.textField.accessibilityIdentifier = FormAccessibility.Identifiers.TitleTextField
         
         nameEntry.textLabel.accessibilityIdentifier = FormAccessibility.Identifiers.NameLabel
         nameEntry.textField.accessibilityIdentifier = FormAccessibility.Identifiers.NameTextField
