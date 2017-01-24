@@ -14,6 +14,15 @@ import FormValidatorSwift
 final class FormView: NSView {
     
     
+    // MARK: - Types
+    
+    private struct Constants {
+        
+        static let minimumTextFieldWidth: CGFloat   = 300.0
+        
+    }
+    
+    
     // MARK: - Properties
     
     let titleEntry      = FormEntryView<AlphabeticValidator>()
@@ -83,9 +92,9 @@ final class FormView: NSView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            titleEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: 300.0),
-            nameEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: 300.0),
-            emailEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: 300.0),
+            titleEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: Constants.minimumTextFieldWidth),
+            nameEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: Constants.minimumTextFieldWidth),
+            emailEntry.widthAnchor.constraint(greaterThanOrEqualToConstant: Constants.minimumTextFieldWidth),
             
             stackView.topAnchor.constraint(equalTo: topAnchor, constant: stackViewMargin),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -stackViewMargin),
