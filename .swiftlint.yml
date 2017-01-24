@@ -54,3 +54,34 @@ variable_name_min_length:
   - 2 # error
 vertical_whitespace:
   max_empty_lines: 2
+
+custom_rules:
+  # pragma mark style
+  marks_empty_space:
+    name: "Marks"
+    regex: "(//MARK)"
+    message: "There should be an empty space between // and the MARK."
+    severity: warning
+
+  marks_style:
+    name: "Marks"
+    regex: "(// MARK: -?[a-zA-Z0-9])"
+    message: "Marks should follow the following structure: // MARK: - Comment."
+    severity: warning
+
+  # comments style
+  comments_empty_space:
+    name: "Comments"
+    regex: "(//[a-zA-Z0-9])"
+    match_kinds:
+      - comment
+    message: "There should be an empty space between // and the comment."
+    severity: warning
+
+  comments_empty_line_after:
+    name: "Comments"
+    regex: "([^\n]\n^ *[a-zA-Z0-9{])"
+    match_kinds:
+      - comment
+    message: "There should be an empty line after a comment."
+    severity: warning
