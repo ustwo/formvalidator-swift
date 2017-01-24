@@ -1,15 +1,17 @@
 disabled_rules:
   - line_length
   - nesting
-  - trailing_whitespace
-  - vertical_whitespace
 opt_in_rules:
   - attributes
+  - closure_end_indentation
   - closure_spacing
   - conditional_returns_on_newline
   - empty_count
   - explicit_init
+  - file_header
+  - first_where
   - number_separator
+  - object_literal
   - overridden_super_call
   - private_outlet
   - prohibited_super_call
@@ -26,7 +28,21 @@ attributes:
     - '@NSManaged'
     - '@nonobjc'
     - '@objc'
+
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/  .*?\.swift
+                    \/\/  FormValidatorSwift
+                    \/\/
+                    \/\/  Created by .*? on \d{1,2}\/\d{1,2}\/\d{4}\.
+                    \/\/  Copyright © \d{4} ustwo Fampany Ltd\. All rights reserved\.
+                    \/\/
+
 line_length: 110
+trailing_whitespace:
+  ignores_empty_lines: true
+  ignores_comments: true
 type_body_length:
   - 300 # warning
   - 400 # error
@@ -36,3 +52,36 @@ variable_name_max_length:
 variable_name_min_length:
   - 3 # warning
   - 2 # error
+vertical_whitespace:
+  max_empty_lines: 2
+
+custom_rules:
+  # pragma mark style
+  marks_empty_space:
+    name: "Marks"
+    regex: "(//MARK)"
+    message: "There should be an empty space between // and the MARK."
+    severity: warning
+
+  marks_style:
+    name: "Marks"
+    regex: "(// MARK: -?[a-zA-Z0-9])"
+    message: "Marks should follow the following structure: // MARK: - Comment."
+    severity: warning
+
+  # comments style
+  comments_empty_space:
+    name: "Comments"
+    regex: "(//[a-zA-Z0-9])"
+    match_kinds:
+      - comment
+    message: "There should be an empty space between // and the comment."
+    severity: warning
+
+  comments_empty_line_after:
+    name: "Comments"
+    regex: "([^\n]\n^ *[a-zA-Z0-9{])"
+    match_kinds:
+      - comment
+    message: "There should be an empty line after a comment."
+    severity: warning

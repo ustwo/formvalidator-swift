@@ -3,7 +3,7 @@
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 04/01/2017.
-//  Copyright © 2017 ustwo. All rights reserved.
+//  Copyright © 2017 ustwo Fampany Ltd. All rights reserved.
 //
 
 import Foundation

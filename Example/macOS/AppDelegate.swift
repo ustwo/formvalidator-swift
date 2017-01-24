@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  macOS Example
+//  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 06/01/2017.
-//  Copyright © 2017 Ustwo Fampany Ltd. All rights reserved.
+//  Copyright © 2017 ustwo Fampany Ltd. All rights reserved.
 //
 
 import Cocoa

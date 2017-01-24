@@ -3,7 +3,7 @@
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 10/01/2017.
-//  Copyright © 2017 ustwo. All rights reserved.
+//  Copyright © 2017 ustwo Fampany Ltd. All rights reserved.
 //
 
 import AppKit
@@ -108,7 +108,7 @@ internal class ValidatorTextFieldResponder: NSObject {
     weak var delegate: ValidatorControlDelegate?
     
     fileprivate var didEndEditing       = false
-    fileprivate var lastIsValid: Bool?  = nil
+    fileprivate var lastIsValid: Bool?
     
     
     // MARK: - Initializers

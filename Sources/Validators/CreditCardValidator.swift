@@ -2,8 +2,8 @@
 //  CreditCardValidator.swift
 //  FormValidatorSwift
 //
-//  Created by Onur Ersel on 2016-11-02.
-//  Copyright © 2016 ustwo. All rights reserved.
+//  Created by Onur Ersel on 02/11/2016.
+//  Copyright © 2016 ustwo Fampany Ltd. All rights reserved.
 //
 
 import Foundation
