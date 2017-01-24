@@ -177,7 +177,7 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     
         if !validatorTextField.validateOnFocusLossOnly && range.location != 0,
             let conditions = conditions,
-            (!validatorTextField.shouldAllowViolation || !conditions[0].shouldAllowViolation) {
+            (!validatorTextField.shouldAllowViolation || !(conditions.isEmpty || conditions[0].shouldAllowViolation)) {
             return false
         }
     

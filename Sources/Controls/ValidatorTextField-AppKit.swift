@@ -197,7 +197,7 @@ fileprivate final class ValidityFormatter: Formatter {
         
         if !validatorTextField.validateOnFocusLossOnly && origSelRange.location != 0,
             let conditions = conditions,
-            (!validatorTextField.shouldAllowViolation || !conditions[0].shouldAllowViolation) {
+            (!validatorTextField.shouldAllowViolation || !(conditions.isEmpty || conditions[0].shouldAllowViolation)) {
             
             return false
         }

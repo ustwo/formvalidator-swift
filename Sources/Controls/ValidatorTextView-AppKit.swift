@@ -66,7 +66,7 @@ open class ValidatorTextView: NSTextView, ValidatorControl {
         
         if !validateOnFocusLossOnly && affectedCharRange.location != 0,
             let conditions = conditions,
-            (!shouldAllowViolation || !conditions[0].shouldAllowViolation) {
+            (!shouldAllowViolation || !(conditions.isEmpty || conditions[0].shouldAllowViolation)) {
             
             return false
         }
