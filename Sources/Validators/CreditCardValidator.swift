@@ -2,8 +2,8 @@
 //  CreditCardValidator.swift
 //  FormValidatorSwift
 //
-//  Created by Onur Ersel on 2016-11-02.
-//  Copyright © 2016 ustwo. All rights reserved.
+//  Created by Onur Ersel on 02/11/2016.
+//  Copyright © 2016 ustwo Fampany Ltd. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ import Foundation
  *  The `CreditCardValidator` contains an `CreditCardCondition`. A valid string is a credit card number.
  *  - seealso: `CreditCardCondition`
  */
-public struct CreditCardValidator: Validator {
+public struct CreditCardValidator: ConfigurableValidator {
     
     
     // MARK: - Properties
@@ -22,21 +22,12 @@ public struct CreditCardValidator: Validator {
     
     // MARK: - Initializers
     
-    /**
-     Initializes a `CreditCardValidator` with all card types.
-     */
-    public init() {
-        self.init(cardType: .all)
+    public init(configuration: CreditCardConfiguration) {
+        conditions = [CreditCardCondition(configuration: configuration)]
     }
     
-    /**
-     Initializes a `CreditCardValidator`.
-     - parameter cardType: Credit card type.
-     */
-    public init(cardType: CreditCardType) {
-        conditions = [CreditCardCondition(cardType: cardType)]
-    }
     
+    // MARK: - Validity
     
     /**
      Returns valid card types for a credit card number asynchronously.
@@ -56,7 +47,7 @@ public struct CreditCardValidator: Validator {
                 }
             }
             
-            let creditCardCondition = CreditCardCondition(cardType: .all)
+            let creditCardCondition = CreditCardCondition()
             let trimmedCardNumber = String(creditCardNumber.characters.filter { $0 != " " })
             
             for cardType in CreditCardType.allArray {

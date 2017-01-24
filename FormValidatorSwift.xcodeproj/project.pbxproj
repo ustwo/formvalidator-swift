@@ -7,14 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000A5B511E1B8ACD001DC2FF /* AlphabeticConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B501E1B8ACD001DC2FF /* AlphabeticConfiguration.swift */; };
+		000A5B521E1B8ACD001DC2FF /* AlphabeticConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B501E1B8ACD001DC2FF /* AlphabeticConfiguration.swift */; };
+		000A5B541E1B8D67001DC2FF /* AlphanumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B531E1B8D67001DC2FF /* AlphanumericConfiguration.swift */; };
+		000A5B551E1B8D67001DC2FF /* AlphanumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B531E1B8D67001DC2FF /* AlphanumericConfiguration.swift */; };
+		000A5B571E1B8EB4001DC2FF /* ConfigurableCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B561E1B8EB4001DC2FF /* ConfigurableCondition.swift */; };
+		000A5B581E1B8EB4001DC2FF /* ConfigurableCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B561E1B8EB4001DC2FF /* ConfigurableCondition.swift */; };
+		000A5B5D1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B5C1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift */; };
+		000A5B5E1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B5C1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift */; };
+		000A5B601E1B9243001DC2FF /* RangeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B5F1E1B9243001DC2FF /* RangeConfiguration.swift */; };
+		000A5B611E1B9243001DC2FF /* RangeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B5F1E1B9243001DC2FF /* RangeConfiguration.swift */; };
+		000A5B631E1B9522001DC2FF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B621E1B9522001DC2FF /* Configuration.swift */; };
+		000A5B641E1B9522001DC2FF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B621E1B9522001DC2FF /* Configuration.swift */; };
+		000A5B661E1B986D001DC2FF /* ConfigurableValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B651E1B986D001DC2FF /* ConfigurableValidator.swift */; };
+		000A5B671E1B986D001DC2FF /* ConfigurableValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B651E1B986D001DC2FF /* ConfigurableValidator.swift */; };
+		000A5B6D1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
+		000A5B6E1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
+		000D64E91E1F91FD0067B14E /* NumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */; };
+		000D64EA1E1F91FD0067B14E /* NumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */; };
+		00169CDE1E32016400DB3193 /* ValidatorTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA61E2967F7006B0150 /* ValidatorTextFieldTests.swift */; };
+		00169CDF1E32016500DB3193 /* ValidatorTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA61E2967F7006B0150 /* ValidatorTextFieldTests.swift */; };
+		00169CE01E32016900DB3193 /* ValidatorTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA81E296AEC006B0150 /* ValidatorTextViewTests.swift */; };
+		00169CE11E32016A00DB3193 /* ValidatorTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88644DA81E296AEC006B0150 /* ValidatorTextViewTests.swift */; };
 		002C04261C454AAB005CC374 /* FormValidatorSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 002C04241C454AAB005CC374 /* FormValidatorSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		002DDD091E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
+		002DDD0A1E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
 		0032C0F31C454D8F0023DB19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0032C0F51C454D8F0023DB19 /* Localizable.strings */; };
 		0032C1071C454F4E0023DB19 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1061C454F4E0023DB19 /* Condition.swift */; };
 		0032C10A1C4555200023DB19 /* AlphabeticCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1091C4555200023DB19 /* AlphabeticCondition.swift */; };
 		0032C10D1C45594E0023DB19 /* AlphabeticConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C10C1C45594E0023DB19 /* AlphabeticConditionTests.swift */; };
 		003698321C46DE1E004D1692 /* AlphabeticValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698311C46DE1E004D1692 /* AlphabeticValidatorTests.swift */; };
 		003698351C46E24C004D1692 /* ValidatorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698341C46E24C004D1692 /* ValidatorControl.swift */; };
-		003698371C46E3BE004D1692 /* ValidatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698361C46E3BE004D1692 /* ValidatorTextField.swift */; };
+		003698371C46E3BE004D1692 /* ValidatorTextField-UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698361C46E3BE004D1692 /* ValidatorTextField-UIKit.swift */; };
 		003E061F1C463CEB008D47F2 /* AlphanumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */; };
 		003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */; };
 		003E06251C463E84008D47F2 /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06241C463E84008D47F2 /* XCTestCase+Additions.swift */; };
@@ -32,7 +56,7 @@
 		004913B01C47B1B400471F53 /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AF1C47B1B400471F53 /* CompositeValidator.swift */; };
 		004913B41C47B3EA00471F53 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B31C47B3EA00471F53 /* Validatable.swift */; };
 		004913B71C47BB9800471F53 /* FormEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B61C47BB9800471F53 /* FormEntry.swift */; };
-		004913B91C47BEEC00471F53 /* ValidatorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B81C47BEEC00471F53 /* ValidatorTextView.swift */; };
+		004913B91C47BEEC00471F53 /* ValidatorTextView-UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B81C47BEEC00471F53 /* ValidatorTextView-UIKit.swift */; };
 		004913BB1C47C4A600471F53 /* AlphanumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */; };
 		004913BD1C47C56900471F53 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BC1C47C56900471F53 /* EmailValidatorTests.swift */; };
 		004913BF1C47C62200471F53 /* PostcodeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BE1C47C62200471F53 /* PostcodeValidatorTests.swift */; };
@@ -59,8 +83,8 @@
 		005675811C47EDB9005A43F0 /* RangeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6981C46B37900145F5C /* RangeCondition.swift */; };
 		005675821C47EDB9005A43F0 /* URLCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6831C469BA500145F5C /* URLCondition.swift */; };
 		005675831C47EDB9005A43F0 /* URLShorthandCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */; };
-		005675841C47EDC0005A43F0 /* ValidatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698361C46E3BE004D1692 /* ValidatorTextField.swift */; };
-		005675851C47EDC0005A43F0 /* ValidatorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B81C47BEEC00471F53 /* ValidatorTextView.swift */; };
+		005675841C47EDC0005A43F0 /* ValidatorTextField-UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698361C46E3BE004D1692 /* ValidatorTextField-UIKit.swift */; };
+		005675851C47EDC0005A43F0 /* ValidatorTextView-UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B81C47BEEC00471F53 /* ValidatorTextView-UIKit.swift */; };
 		005675861C47EDC7005A43F0 /* ControlForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675581C47E493005A43F0 /* ControlForm.swift */; };
 		005675871C47EDC7005A43F0 /* FormEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B61C47BB9800471F53 /* FormEntry.swift */; };
 		005675881C47EDCC005A43F0 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1061C454F4E0023DB19 /* Condition.swift */; };
@@ -82,7 +106,38 @@
 		005675981C47EDD9005A43F0 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
 		005675991C47EDDE005A43F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0032C0F51C454D8F0023DB19 /* Localizable.strings */; };
 		0056759A1C47EDE5005A43F0 /* FormValidatorSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 002C04241C454AAB005CC374 /* FormValidatorSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		005F7F211E24F1440062AEB4 /* ValidatorTextField-AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F7F201E24F1440062AEB4 /* ValidatorTextField-AppKit.swift */; };
+		005F7F231E251FC30062AEB4 /* ValidatorTextView-AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F7F221E251FC30062AEB4 /* ValidatorTextView-AppKit.swift */; };
 		0062E9DB1C45493E00021C0A /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */; };
+		0072443F1E1FB9C40050DFE9 /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06241C463E84008D47F2 /* XCTestCase+Additions.swift */; };
+		007244401E1FB9C90050DFE9 /* ConfigurationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */; };
+		007244411E1FB9CD0050DFE9 /* AlphabeticConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C10C1C45594E0023DB19 /* AlphabeticConditionTests.swift */; };
+		007244421E1FB9CD0050DFE9 /* AlphanumericConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */; };
+		007244431E1FB9CD0050DFE9 /* CreditCardTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D174701E0A8EE400EE8BEF /* CreditCardTypeTests.swift */; };
+		007244441E1FB9CD0050DFE9 /* CreditCardConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF88F2A1DCA4201001845D1 /* CreditCardConditionTests.swift */; };
+		007244451E1FB9CD0050DFE9 /* EmailConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6771C46976500145F5C /* EmailConditionTests.swift */; };
+		007244461E1FB9CD0050DFE9 /* NumericConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67C1C46992C00145F5C /* NumericConditionTests.swift */; };
+		007244471E1FB9CD0050DFE9 /* PasswordStrengthConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */; };
+		007244481E1FB9CD0050DFE9 /* PostcodeConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6801C469A7900145F5C /* PostcodeConditionTests.swift */; };
+		007244491E1FB9CD0050DFE9 /* PresentConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */; };
+		0072444A1E1FB9CD0050DFE9 /* RangeConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */; };
+		0072444B1E1FB9CD0050DFE9 /* URLConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6871C469C8D00145F5C /* URLConditionTests.swift */; };
+		0072444C1E1FB9CD0050DFE9 /* URLShorthandConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6891C469D5200145F5C /* URLShorthandConditionTests.swift */; };
+		0072444D1E1FB9D10050DFE9 /* AndConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D71C46C47700FE0B66 /* AndConditionTests.swift */; };
+		0072444E1E1FB9D10050DFE9 /* NotConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DB1C46C57800FE0B66 /* NotConditionTests.swift */; };
+		0072444F1E1FB9D10050DFE9 /* OrConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69E1C46B39800145F5C /* OrConditionTests.swift */; };
+		007244501E1FB9D60050DFE9 /* AlphabeticValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698311C46DE1E004D1692 /* AlphabeticValidatorTests.swift */; };
+		007244511E1FB9D60050DFE9 /* AlphanumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */; };
+		007244521E1FB9D60050DFE9 /* CompositeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675541C47DD48005A43F0 /* CompositeValidatorTests.swift */; };
+		007244531E1FB9D60050DFE9 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BC1C47C56900471F53 /* EmailValidatorTests.swift */; };
+		007244541E1FB9D60050DFE9 /* NumericValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913CA1C47C85400471F53 /* NumericValidatorTests.swift */; };
+		007244551E1FB9D60050DFE9 /* PasswordStrengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C21C47C6F900471F53 /* PasswordStrengthValidatorTests.swift */; };
+		007244561E1FB9D60050DFE9 /* PostcodeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913BE1C47C62200471F53 /* PostcodeValidatorTests.swift */; };
+		007244571E1FB9D60050DFE9 /* PresentValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C41C47C74400471F53 /* PresentValidatorTests.swift */; };
+		007244581E1FB9D60050DFE9 /* RangeValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C01C47C68400471F53 /* RangeValidatorTests.swift */; };
+		007244591E1FB9D60050DFE9 /* URLValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C61C47C7A700471F53 /* URLValidatorTests.swift */; };
+		0072445A1E1FB9D60050DFE9 /* URLShorthandValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913C81C47C7E500471F53 /* URLShorthandValidatorTests.swift */; };
+		0072445B1E1FB9D60050DFE9 /* CreditCardValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF88F2F1DCA566C001845D1 /* CreditCardValidatorTests.swift */; };
 		0094D6741C46931800145F5C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
 		0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
 		0094D6791C46979300145F5C /* EmailConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6771C46976500145F5C /* EmailConditionTests.swift */; };
@@ -98,6 +153,55 @@
 		0094D69B1C46B38200145F5C /* OrCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69A1C46B38200145F5C /* OrCondition.swift */; };
 		0094D69D1C46B38E00145F5C /* RangeConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */; };
 		0094D69F1C46B39800145F5C /* OrConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69E1C46B39800145F5C /* OrConditionTests.swift */; };
+		00A6A0A91E1D023100EDB521 /* CreditCardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6A0A81E1D023100EDB521 /* CreditCardConfiguration.swift */; };
+		00A6A0AA1E1D023100EDB521 /* CreditCardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6A0A81E1D023100EDB521 /* CreditCardConfiguration.swift */; };
+		00AC81F11E1FB69200A184BB /* FormValidatorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AC81E81E1FB69200A184BB /* FormValidatorSwift.framework */; };
+		00AC82001E1FB81200A184BB /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1061C454F4E0023DB19 /* Condition.swift */; };
+		00AC82011E1FB81400A184BB /* ConfigurableCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B561E1B8EB4001DC2FF /* ConfigurableCondition.swift */; };
+		00AC82021E1FB81600A184BB /* ConfigurableValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B651E1B986D001DC2FF /* ConfigurableValidator.swift */; };
+		00AC82031E1FB81900A184BB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B621E1B9522001DC2FF /* Configuration.swift */; };
+		00AC82041E1FB81B00A184BB /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675561C47E05E005A43F0 /* Form.swift */; };
+		00AC82051E1FB81D00A184BB /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B31C47B3EA00471F53 /* Validatable.swift */; };
+		00AC82061E1FB81F00A184BB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06261C46413C008D47F2 /* Validator.swift */; };
+		00AC82071E1FB82200A184BB /* ValidatorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003698341C46E24C004D1692 /* ValidatorControl.swift */; };
+		00AC820A1E1FB85100A184BB /* FormValidatorSwift-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AC82081E1FB84D00A184BB /* FormValidatorSwift-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00AC820B1E1FB87700A184BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0032C0F51C454D8F0023DB19 /* Localizable.strings */; };
+		00AC820C1E1FB88000A184BB /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6731C46931800145F5C /* Localization.swift */; };
+		00AC820D1E1FB88900A184BB /* ControlForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005675581C47E493005A43F0 /* ControlForm.swift */; };
+		00AC820E1E1FB88C00A184BB /* FormEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913B61C47BB9800471F53 /* FormEntry.swift */; };
+		00AC820F1E1FB89A00A184BB /* AlphabeticConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B501E1B8ACD001DC2FF /* AlphabeticConfiguration.swift */; };
+		00AC82101E1FB89A00A184BB /* AlphanumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B531E1B8D67001DC2FF /* AlphanumericConfiguration.swift */; };
+		00AC82111E1FB89A00A184BB /* CreditCardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6A0A81E1D023100EDB521 /* CreditCardConfiguration.swift */; };
+		00AC82121E1FB89A00A184BB /* NumericConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */; };
+		00AC82131E1FB89A00A184BB /* PasswordStrengthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B5C1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift */; };
+		00AC82141E1FB89A00A184BB /* PostcodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */; };
+		00AC82151E1FB89A00A184BB /* RangeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A5B5F1E1B9243001DC2FF /* RangeConfiguration.swift */; };
+		00AC82161E1FB8A700A184BB /* AlphabeticCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0032C1091C4555200023DB19 /* AlphabeticCondition.swift */; };
+		00AC82171E1FB8A700A184BB /* AlphanumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */; };
+		00AC82181E1FB8A700A184BB /* CreditCardCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF88F1F1DCA3BFF001845D1 /* CreditCardCondition.swift */; };
+		00AC82191E1FB8A700A184BB /* EmailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6751C4696F400145F5C /* EmailCondition.swift */; };
+		00AC821A1E1FB8A700A184BB /* NumericCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67A1C4698CE00145F5C /* NumericCondition.swift */; };
+		00AC821B1E1FB8A700A184BB /* PasswordStrengthCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */; };
+		00AC821C1E1FB8A700A184BB /* PostcodeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D67E1C469A0E00145F5C /* PostcodeCondition.swift */; };
+		00AC821D1E1FB8A700A184BB /* PresentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DD1C46C69D00FE0B66 /* PresentCondition.swift */; };
+		00AC821E1E1FB8A700A184BB /* RangeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6981C46B37900145F5C /* RangeCondition.swift */; };
+		00AC821F1E1FB8A700A184BB /* URLCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6831C469BA500145F5C /* URLCondition.swift */; };
+		00AC82201E1FB8A700A184BB /* URLShorthandCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D6851C469C2A00145F5C /* URLShorthandCondition.swift */; };
+		00AC82211E1FB8AB00A184BB /* AndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D51C46C42F00FE0B66 /* AndCondition.swift */; };
+		00AC82221E1FB8AB00A184BB /* NotCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D91C46C53500FE0B66 /* NotCondition.swift */; };
+		00AC82231E1FB8AB00A184BB /* OrCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69A1C46B38200145F5C /* OrCondition.swift */; };
+		00AC82241E1FB8B500A184BB /* AlphabeticValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E06281C4648E5008D47F2 /* AlphabeticValidator.swift */; };
+		00AC82251E1FB8B500A184BB /* AlphanumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139B1C47AC8200471F53 /* AlphanumericValidator.swift */; };
+		00AC82261E1FB8B500A184BB /* CreditCardValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF88F251DCA4166001845D1 /* CreditCardValidator.swift */; };
+		00AC82271E1FB8B500A184BB /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AF1C47B1B400471F53 /* CompositeValidator.swift */; };
+		00AC82281E1FB8B500A184BB /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139D1C47ADCA00471F53 /* EmailValidator.swift */; };
+		00AC82291E1FB8B500A184BB /* NumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049139F1C47AE0700471F53 /* NumericValidator.swift */; };
+		00AC822A1E1FB8B500A184BB /* PasswordStrengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A71C47B08C00471F53 /* PasswordStrengthValidator.swift */; };
+		00AC822B1E1FB8B500A184BB /* PostcodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A11C47AE5D00471F53 /* PostcodeValidator.swift */; };
+		00AC822C1E1FB8B500A184BB /* PresentValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A31C47AE9F00471F53 /* PresentValidator.swift */; };
+		00AC822D1E1FB8B500A184BB /* RangeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913A91C47B0F200471F53 /* RangeValidator.swift */; };
+		00AC822E1E1FB8B500A184BB /* URLValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AB1C47B13000471F53 /* URLValidator.swift */; };
+		00AC822F1E1FB8B500A184BB /* URLShorthandValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004913AD1C47B15D00471F53 /* URLShorthandValidator.swift */; };
 		00BB68341C47FDC400714F34 /* AndConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2D71C46C47700FE0B66 /* AndConditionTests.swift */; };
 		00BB68351C47FDC400714F34 /* NotConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2E2DB1C46C57800FE0B66 /* NotConditionTests.swift */; };
 		00BB68361C47FDC400714F34 /* OrConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094D69E1C46B39800145F5C /* OrConditionTests.swift */; };
@@ -160,12 +264,29 @@
 			remoteGlobalIDString = 0062E9CF1C45493E00021C0A;
 			remoteInfo = FormValidatorSwift;
 		};
+		00AC81F21E1FB69200A184BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0062E9C71C45493E00021C0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00AC81E71E1FB69200A184BB;
+			remoteInfo = FormValidatorSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000A5B501E1B8ACD001DC2FF /* AlphabeticConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticConfiguration.swift; sourceTree = "<group>"; };
+		000A5B531E1B8D67001DC2FF /* AlphanumericConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericConfiguration.swift; sourceTree = "<group>"; };
+		000A5B561E1B8EB4001DC2FF /* ConfigurableCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCondition.swift; sourceTree = "<group>"; };
+		000A5B5C1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthConfiguration.swift; sourceTree = "<group>"; };
+		000A5B5F1E1B9243001DC2FF /* RangeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeConfiguration.swift; sourceTree = "<group>"; };
+		000A5B621E1B9522001DC2FF /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		000A5B651E1B986D001DC2FF /* ConfigurableValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableValidator.swift; sourceTree = "<group>"; };
+		000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationSeeds.swift; sourceTree = "<group>"; };
+		000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericConfiguration.swift; sourceTree = "<group>"; };
 		002C04241C454AAB005CC374 /* FormValidatorSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormValidatorSwift.h; sourceTree = "<group>"; };
 		002C04251C454AAB005CC374 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		002C042A1C454AD9005CC374 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeConfiguration.swift; sourceTree = "<group>"; };
 		0032C0F41C454D8F0023DB19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0032C0F61C454D900023DB19 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0032C0F71C454D910023DB19 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -184,7 +305,7 @@
 		0032C10C1C45594E0023DB19 /* AlphabeticConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticConditionTests.swift; sourceTree = "<group>"; };
 		003698311C46DE1E004D1692 /* AlphabeticValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticValidatorTests.swift; sourceTree = "<group>"; };
 		003698341C46E24C004D1692 /* ValidatorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorControl.swift; sourceTree = "<group>"; };
-		003698361C46E3BE004D1692 /* ValidatorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorTextField.swift; sourceTree = "<group>"; };
+		003698361C46E3BE004D1692 /* ValidatorTextField-UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValidatorTextField-UIKit.swift"; sourceTree = "<group>"; };
 		003E061E1C463CEB008D47F2 /* AlphanumericCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericCondition.swift; sourceTree = "<group>"; };
 		003E06201C463DA1008D47F2 /* AlphanumericConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericConditionTests.swift; sourceTree = "<group>"; };
 		003E06241C463E84008D47F2 /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
@@ -202,7 +323,7 @@
 		004913AF1C47B1B400471F53 /* CompositeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeValidator.swift; sourceTree = "<group>"; };
 		004913B31C47B3EA00471F53 /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		004913B61C47BB9800471F53 /* FormEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormEntry.swift; sourceTree = "<group>"; };
-		004913B81C47BEEC00471F53 /* ValidatorTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorTextView.swift; sourceTree = "<group>"; };
+		004913B81C47BEEC00471F53 /* ValidatorTextView-UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValidatorTextView-UIKit.swift"; sourceTree = "<group>"; };
 		004913BA1C47C4A600471F53 /* AlphanumericValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericValidatorTests.swift; sourceTree = "<group>"; };
 		004913BC1C47C56900471F53 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
 		004913BE1C47C62200471F53 /* PostcodeValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostcodeValidatorTests.swift; sourceTree = "<group>"; };
@@ -217,6 +338,8 @@
 		005675581C47E493005A43F0 /* ControlForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlForm.swift; sourceTree = "<group>"; };
 		0056755F1C47ED32005A43F0 /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		005675681C47ED32005A43F0 /* FormValidatorSwiftTests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		005F7F201E24F1440062AEB4 /* ValidatorTextField-AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValidatorTextField-AppKit.swift"; sourceTree = "<group>"; };
+		005F7F221E251FC30062AEB4 /* ValidatorTextView-AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValidatorTextView-AppKit.swift"; sourceTree = "<group>"; };
 		0062E9D01C45493E00021C0A /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0094D6731C46931800145F5C /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
@@ -234,6 +357,10 @@
 		0094D69A1C46B38200145F5C /* OrCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrCondition.swift; sourceTree = "<group>"; };
 		0094D69C1C46B38E00145F5C /* RangeConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeConditionTests.swift; sourceTree = "<group>"; };
 		0094D69E1C46B39800145F5C /* OrConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrConditionTests.swift; sourceTree = "<group>"; };
+		00A6A0A81E1D023100EDB521 /* CreditCardConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardConfiguration.swift; sourceTree = "<group>"; };
+		00AC81E81E1FB69200A184BB /* FormValidatorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormValidatorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00AC81F01E1FB69200A184BB /* FormValidatorSwiftTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FormValidatorSwiftTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00AC82081E1FB84D00A184BB /* FormValidatorSwift-macOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FormValidatorSwift-macOS.h"; sourceTree = "<group>"; };
 		00D174701E0A8EE400EE8BEF /* CreditCardTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardTypeTests.swift; sourceTree = "<group>"; };
 		00F2E2D51C46C42F00FE0B66 /* AndCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndCondition.swift; sourceTree = "<group>"; };
 		00F2E2D71C46C47700FE0B66 /* AndConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndConditionTests.swift; sourceTree = "<group>"; };
@@ -283,13 +410,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00AC81E41E1FB69200A184BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00AC81ED1E1FB69200A184BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00AC81F11E1FB69200A184BB /* FormValidatorSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000A5B4F1E1B8AB7001DC2FF /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				000A5B501E1B8ACD001DC2FF /* AlphabeticConfiguration.swift */,
+				000A5B531E1B8D67001DC2FF /* AlphanumericConfiguration.swift */,
+				00A6A0A81E1D023100EDB521 /* CreditCardConfiguration.swift */,
+				000D64E81E1F91FD0067B14E /* NumericConfiguration.swift */,
+				000A5B5C1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift */,
+				002DDD081E1D2DFB007796C6 /* PostcodeConfiguration.swift */,
+				000A5B5F1E1B9243001DC2FF /* RangeConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		000A5B6A1E1B9AA3001DC2FF /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				000A5B6C1E1B9AE5001DC2FF /* ConfigurationSeeds.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 		002C04231C454A98005CC374 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				0032C1041C454EDF0023DB19 /* Conditions */,
+				000A5B4F1E1B8AB7001DC2FF /* Configurations */,
 				003698331C46E200004D1692 /* Controls */,
 				004913B51C47BB6200471F53 /* Models */,
 				0032C1031C454ED90023DB19 /* Protocols */,
@@ -304,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				0032C10B1C4559260023DB19 /* Conditions */,
+				000A5B6A1E1B9AA3001DC2FF /* Configurations */,
 				88644DA51E2967B1006B0150 /* Controls */,
 				003E06231C463E5B008D47F2 /* Extensions */,
 				003698301C46DE00004D1692 /* Validators */,
@@ -325,6 +491,7 @@
 		0032C0DA1C454BC50023DB19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00AC82081E1FB84D00A184BB /* FormValidatorSwift-macOS.h */,
 				002C04241C454AAB005CC374 /* FormValidatorSwift.h */,
 				002C04251C454AAB005CC374 /* Info.plist */,
 			);
@@ -335,6 +502,9 @@
 			isa = PBXGroup;
 			children = (
 				0032C1061C454F4E0023DB19 /* Condition.swift */,
+				000A5B561E1B8EB4001DC2FF /* ConfigurableCondition.swift */,
+				000A5B651E1B986D001DC2FF /* ConfigurableValidator.swift */,
+				000A5B621E1B9522001DC2FF /* Configuration.swift */,
 				005675561C47E05E005A43F0 /* Form.swift */,
 				004913B31C47B3EA00471F53 /* Validatable.swift */,
 				003E06261C46413C008D47F2 /* Validator.swift */,
@@ -367,6 +537,7 @@
 			children = (
 				003E06281C4648E5008D47F2 /* AlphabeticValidator.swift */,
 				0049139B1C47AC8200471F53 /* AlphanumericValidator.swift */,
+				BAF88F251DCA4166001845D1 /* CreditCardValidator.swift */,
 				004913AF1C47B1B400471F53 /* CompositeValidator.swift */,
 				0049139D1C47ADCA00471F53 /* EmailValidator.swift */,
 				0049139F1C47AE0700471F53 /* NumericValidator.swift */,
@@ -376,7 +547,6 @@
 				004913A91C47B0F200471F53 /* RangeValidator.swift */,
 				004913AB1C47B13000471F53 /* URLValidator.swift */,
 				004913AD1C47B15D00471F53 /* URLShorthandValidator.swift */,
-				BAF88F251DCA4166001845D1 /* CreditCardValidator.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -423,8 +593,10 @@
 		003698331C46E200004D1692 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				003698361C46E3BE004D1692 /* ValidatorTextField.swift */,
-				004913B81C47BEEC00471F53 /* ValidatorTextView.swift */,
+				003698361C46E3BE004D1692 /* ValidatorTextField-UIKit.swift */,
+				005F7F201E24F1440062AEB4 /* ValidatorTextField-AppKit.swift */,
+				004913B81C47BEEC00471F53 /* ValidatorTextView-UIKit.swift */,
+				005F7F221E251FC30062AEB4 /* ValidatorTextView-AppKit.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -462,6 +634,8 @@
 				0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */,
 				0056755F1C47ED32005A43F0 /* FormValidatorSwift.framework */,
 				005675681C47ED32005A43F0 /* FormValidatorSwiftTests tvOS.xctest */,
+				00AC81E81E1FB69200A184BB /* FormValidatorSwift.framework */,
+				00AC81F01E1FB69200A184BB /* FormValidatorSwiftTests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -514,6 +688,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00AC81E51E1FB69200A184BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00AC820A1E1FB85100A184BB /* FormValidatorSwift-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -525,6 +707,7 @@
 				0056755B1C47ED32005A43F0 /* Frameworks */,
 				0056755C1C47ED32005A43F0 /* Headers */,
 				0056755D1C47ED32005A43F0 /* Resources */,
+				003E91A61E37633100CEC946 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -561,7 +744,7 @@
 				0062E9CC1C45493E00021C0A /* Frameworks */,
 				0062E9CD1C45493E00021C0A /* Headers */,
 				0062E9CE1C45493E00021C0A /* Resources */,
-				0032C1081C4553920023DB19 /* ShellScript */,
+				0032C1081C4553920023DB19 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -590,13 +773,50 @@
 			productReference = 0062E9DA1C45493E00021C0A /* FormValidatorSwiftTests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		00AC81E71E1FB69200A184BB /* FormValidatorSwift macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00AC81FD1E1FB69200A184BB /* Build configuration list for PBXNativeTarget "FormValidatorSwift macOS" */;
+			buildPhases = (
+				00AC81E31E1FB69200A184BB /* Sources */,
+				00AC81E41E1FB69200A184BB /* Frameworks */,
+				00AC81E51E1FB69200A184BB /* Headers */,
+				00AC81E61E1FB69200A184BB /* Resources */,
+				003E91A71E37633E00CEC946 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FormValidatorSwift macOS";
+			productName = FormValidatorSwift;
+			productReference = 00AC81E81E1FB69200A184BB /* FormValidatorSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		00AC81EF1E1FB69200A184BB /* FormValidatorSwiftTests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00AC81FE1E1FB69200A184BB /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests macOS" */;
+			buildPhases = (
+				00AC81EC1E1FB69200A184BB /* Sources */,
+				00AC81ED1E1FB69200A184BB /* Frameworks */,
+				00AC81EE1E1FB69200A184BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00AC81F31E1FB69200A184BB /* PBXTargetDependency */,
+			);
+			name = "FormValidatorSwiftTests macOS";
+			productName = FormValidatorSwiftTests;
+			productReference = 00AC81F01E1FB69200A184BB /* FormValidatorSwiftTests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0062E9C71C45493E00021C0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = ustwo;
 				TargetAttributes = {
@@ -615,6 +835,15 @@
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
+					};
+					00AC81E71E1FB69200A184BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					00AC81EF1E1FB69200A184BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4JC5M8RR29;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -647,6 +876,8 @@
 				0062E9D91C45493E00021C0A /* FormValidatorSwiftTests iOS */,
 				0056755E1C47ED32005A43F0 /* FormValidatorSwift tvOS */,
 				005675671C47ED32005A43F0 /* FormValidatorSwiftTests tvOS */,
+				00AC81E71E1FB69200A184BB /* FormValidatorSwift macOS */,
+				00AC81EF1E1FB69200A184BB /* FormValidatorSwiftTests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -682,16 +913,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00AC81E61E1FB69200A184BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00AC820B1E1FB87700A184BB /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00AC81EE1E1FB69200A184BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0032C1081C4553920023DB19 /* ShellScript */ = {
+		0032C1081C4553920023DB19 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		003E91A61E37633100CEC946 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		003E91A71E37633E00CEC946 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,12 +980,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000D64EA1E1F91FD0067B14E /* NumericConfiguration.swift in Sources */,
 				005675831C47EDB9005A43F0 /* URLShorthandCondition.swift in Sources */,
 				005675881C47EDCC005A43F0 /* Condition.swift in Sources */,
 				005675861C47EDC7005A43F0 /* ControlForm.swift in Sources */,
 				BAF88F221DCA3BFF001845D1 /* CreditCardCondition.swift in Sources */,
 				005675811C47EDB9005A43F0 /* RangeCondition.swift in Sources */,
 				005675971C47EDD1005A43F0 /* URLShorthandValidator.swift in Sources */,
+				000A5B671E1B986D001DC2FF /* ConfigurableValidator.swift in Sources */,
 				0056758B1C47EDCC005A43F0 /* Validator.swift in Sources */,
 				005675901C47EDD1005A43F0 /* EmailValidator.swift in Sources */,
 				005675961C47EDD1005A43F0 /* URLValidator.swift in Sources */,
@@ -718,7 +995,10 @@
 				0056758A1C47EDCC005A43F0 /* Validatable.swift in Sources */,
 				BAF88F281DCA4166001845D1 /* CreditCardValidator.swift in Sources */,
 				005675951C47EDD1005A43F0 /* RangeValidator.swift in Sources */,
+				000A5B521E1B8ACD001DC2FF /* AlphabeticConfiguration.swift in Sources */,
 				0056757F1C47EDB9005A43F0 /* PostcodeCondition.swift in Sources */,
+				000A5B581E1B8EB4001DC2FF /* ConfigurableCondition.swift in Sources */,
+				002DDD0A1E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */,
 				0056758C1C47EDCC005A43F0 /* ValidatorControl.swift in Sources */,
 				0056757A1C47EDB9005A43F0 /* AlphabeticCondition.swift in Sources */,
 				005675931C47EDD1005A43F0 /* PasswordStrengthValidator.swift in Sources */,
@@ -726,14 +1006,19 @@
 				005675821C47EDB9005A43F0 /* URLCondition.swift in Sources */,
 				0056758D1C47EDD1005A43F0 /* AlphabeticValidator.swift in Sources */,
 				005675981C47EDD9005A43F0 /* Localization.swift in Sources */,
-				005675851C47EDC0005A43F0 /* ValidatorTextView.swift in Sources */,
+				005675851C47EDC0005A43F0 /* ValidatorTextView-UIKit.swift in Sources */,
 				005675911C47EDD1005A43F0 /* NumericValidator.swift in Sources */,
 				005675871C47EDC7005A43F0 /* FormEntry.swift in Sources */,
+				000A5B611E1B9243001DC2FF /* RangeConfiguration.swift in Sources */,
 				005675941C47EDD1005A43F0 /* PresentValidator.swift in Sources */,
 				005675771C47EDB9005A43F0 /* AndCondition.swift in Sources */,
+				000A5B551E1B8D67001DC2FF /* AlphanumericConfiguration.swift in Sources */,
+				000A5B641E1B9522001DC2FF /* Configuration.swift in Sources */,
 				005675801C47EDB9005A43F0 /* PresentCondition.swift in Sources */,
+				00A6A0AA1E1D023100EDB521 /* CreditCardConfiguration.swift in Sources */,
 				0056757D1C47EDB9005A43F0 /* NumericCondition.swift in Sources */,
-				005675841C47EDC0005A43F0 /* ValidatorTextField.swift in Sources */,
+				005675841C47EDC0005A43F0 /* ValidatorTextField-UIKit.swift in Sources */,
+				000A5B5E1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift in Sources */,
 				0056757E1C47EDB9005A43F0 /* PasswordStrengthCondition.swift in Sources */,
 				0056757C1C47EDB9005A43F0 /* EmailCondition.swift in Sources */,
 				005675921C47EDD1005A43F0 /* PostcodeValidator.swift in Sources */,
@@ -748,6 +1033,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00169CDE1E32016400DB3193 /* ValidatorTextFieldTests.swift in Sources */,
 				00BB68421C47FDCE00714F34 /* AlphabeticValidatorTests.swift in Sources */,
 				00BB683C1C47FDC400714F34 /* PostcodeConditionTests.swift in Sources */,
 				BAF88F311DCA566C001845D1 /* CreditCardValidatorTests.swift in Sources */,
@@ -756,6 +1042,7 @@
 				00BB68451C47FDCE00714F34 /* EmailValidatorTests.swift in Sources */,
 				00D174741E0A8F0800EE8BEF /* CreditCardTypeTests.swift in Sources */,
 				00BB68481C47FDCE00714F34 /* PostcodeValidatorTests.swift in Sources */,
+				000A5B6E1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */,
 				00BB684B1C47FDCE00714F34 /* URLValidatorTests.swift in Sources */,
 				00BB68401C47FDC400714F34 /* URLShorthandConditionTests.swift in Sources */,
 				BAF88F2E1DCA4201001845D1 /* CreditCardConditionTests.swift in Sources */,
@@ -769,6 +1056,7 @@
 				00BB68461C47FDCE00714F34 /* NumericValidatorTests.swift in Sources */,
 				00BB68341C47FDC400714F34 /* AndConditionTests.swift in Sources */,
 				00BB68431C47FDCE00714F34 /* AlphanumericValidatorTests.swift in Sources */,
+				00169CE01E32016900DB3193 /* ValidatorTextViewTests.swift in Sources */,
 				00BB683F1C47FDC400714F34 /* URLConditionTests.swift in Sources */,
 				00BB684C1C47FDCE00714F34 /* URLShorthandValidatorTests.swift in Sources */,
 				00BB68391C47FDC400714F34 /* EmailConditionTests.swift in Sources */,
@@ -783,20 +1071,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000D64E91E1F91FD0067B14E /* NumericConfiguration.swift in Sources */,
 				004913A41C47AE9F00471F53 /* PresentValidator.swift in Sources */,
 				004913A01C47AE0700471F53 /* NumericValidator.swift in Sources */,
 				0094D69B1C46B38200145F5C /* OrCondition.swift in Sources */,
 				BAF88F201DCA3BFF001845D1 /* CreditCardCondition.swift in Sources */,
 				0094D67F1C469A0E00145F5C /* PostcodeCondition.swift in Sources */,
 				004913B41C47B3EA00471F53 /* Validatable.swift in Sources */,
+				000A5B661E1B986D001DC2FF /* ConfigurableValidator.swift in Sources */,
 				0094D6761C4696F400145F5C /* EmailCondition.swift in Sources */,
 				003E06271C46413C008D47F2 /* Validator.swift in Sources */,
 				0094D6991C46B37900145F5C /* RangeCondition.swift in Sources */,
-				003698371C46E3BE004D1692 /* ValidatorTextField.swift in Sources */,
+				003698371C46E3BE004D1692 /* ValidatorTextField-UIKit.swift in Sources */,
 				003E061F1C463CEB008D47F2 /* AlphanumericCondition.swift in Sources */,
 				BAF88F261DCA4166001845D1 /* CreditCardValidator.swift in Sources */,
 				004913A81C47B08C00471F53 /* PasswordStrengthValidator.swift in Sources */,
+				000A5B511E1B8ACD001DC2FF /* AlphabeticConfiguration.swift in Sources */,
 				0094D67B1C4698CE00145F5C /* NumericCondition.swift in Sources */,
+				000A5B571E1B8EB4001DC2FF /* ConfigurableCondition.swift in Sources */,
+				002DDD091E1D2DFB007796C6 /* PostcodeConfiguration.swift in Sources */,
 				0049139E1C47ADCA00471F53 /* EmailValidator.swift in Sources */,
 				00F2E2DA1C46C53500FE0B66 /* NotCondition.swift in Sources */,
 				0094D6861C469C2A00145F5C /* URLShorthandCondition.swift in Sources */,
@@ -807,11 +1100,16 @@
 				003698351C46E24C004D1692 /* ValidatorControl.swift in Sources */,
 				0094D6741C46931800145F5C /* Localization.swift in Sources */,
 				003E06291C4648E5008D47F2 /* AlphabeticValidator.swift in Sources */,
+				000A5B601E1B9243001DC2FF /* RangeConfiguration.swift in Sources */,
 				004913A21C47AE5D00471F53 /* PostcodeValidator.swift in Sources */,
 				0032C10A1C4555200023DB19 /* AlphabeticCondition.swift in Sources */,
-				004913B91C47BEEC00471F53 /* ValidatorTextView.swift in Sources */,
+				000A5B541E1B8D67001DC2FF /* AlphanumericConfiguration.swift in Sources */,
+				000A5B631E1B9522001DC2FF /* Configuration.swift in Sources */,
+				004913B91C47BEEC00471F53 /* ValidatorTextView-UIKit.swift in Sources */,
+				00A6A0A91E1D023100EDB521 /* CreditCardConfiguration.swift in Sources */,
 				0032C1071C454F4E0023DB19 /* Condition.swift in Sources */,
 				004913AE1C47B15D00471F53 /* URLShorthandValidator.swift in Sources */,
+				000A5B5D1E1B9048001DC2FF /* PasswordStrengthConfiguration.swift in Sources */,
 				0094D6841C469BA500145F5C /* URLCondition.swift in Sources */,
 				004913AA1C47B0F200471F53 /* RangeValidator.swift in Sources */,
 				005675591C47E493005A43F0 /* ControlForm.swift in Sources */,
@@ -834,6 +1132,7 @@
 				00F2E2DC1C46C57800FE0B66 /* NotConditionTests.swift in Sources */,
 				00D174731E0A8F0700EE8BEF /* CreditCardTypeTests.swift in Sources */,
 				003E06221C463DB1008D47F2 /* AlphanumericConditionTests.swift in Sources */,
+				000A5B6D1E1B9AE5001DC2FF /* ConfigurationSeeds.swift in Sources */,
 				00F2E2E01C46C6F400FE0B66 /* PresentConditionTests.swift in Sources */,
 				004913C51C47C74400471F53 /* PresentValidatorTests.swift in Sources */,
 				BAF88F2C1DCA4201001845D1 /* CreditCardConditionTests.swift in Sources */,
@@ -859,6 +1158,97 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00AC81E31E1FB69200A184BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00AC821E1E1FB8A700A184BB /* RangeCondition.swift in Sources */,
+				00AC82071E1FB82200A184BB /* ValidatorControl.swift in Sources */,
+				00AC82011E1FB81400A184BB /* ConfigurableCondition.swift in Sources */,
+				00AC82261E1FB8B500A184BB /* CreditCardValidator.swift in Sources */,
+				00AC82271E1FB8B500A184BB /* CompositeValidator.swift in Sources */,
+				00AC82171E1FB8A700A184BB /* AlphanumericCondition.swift in Sources */,
+				00AC822D1E1FB8B500A184BB /* RangeValidator.swift in Sources */,
+				00AC82281E1FB8B500A184BB /* EmailValidator.swift in Sources */,
+				00AC821C1E1FB8A700A184BB /* PostcodeCondition.swift in Sources */,
+				00AC82181E1FB8A700A184BB /* CreditCardCondition.swift in Sources */,
+				00AC82121E1FB89A00A184BB /* NumericConfiguration.swift in Sources */,
+				00AC82101E1FB89A00A184BB /* AlphanumericConfiguration.swift in Sources */,
+				00AC82051E1FB81D00A184BB /* Validatable.swift in Sources */,
+				00AC82021E1FB81600A184BB /* ConfigurableValidator.swift in Sources */,
+				00AC821D1E1FB8A700A184BB /* PresentCondition.swift in Sources */,
+				00AC82161E1FB8A700A184BB /* AlphabeticCondition.swift in Sources */,
+				005F7F211E24F1440062AEB4 /* ValidatorTextField-AppKit.swift in Sources */,
+				00AC82041E1FB81B00A184BB /* Form.swift in Sources */,
+				00AC82191E1FB8A700A184BB /* EmailCondition.swift in Sources */,
+				00AC820F1E1FB89A00A184BB /* AlphabeticConfiguration.swift in Sources */,
+				00AC82251E1FB8B500A184BB /* AlphanumericValidator.swift in Sources */,
+				00AC82131E1FB89A00A184BB /* PasswordStrengthConfiguration.swift in Sources */,
+				00AC821A1E1FB8A700A184BB /* NumericCondition.swift in Sources */,
+				00AC820E1E1FB88C00A184BB /* FormEntry.swift in Sources */,
+				00AC822E1E1FB8B500A184BB /* URLValidator.swift in Sources */,
+				00AC822A1E1FB8B500A184BB /* PasswordStrengthValidator.swift in Sources */,
+				00AC820C1E1FB88000A184BB /* Localization.swift in Sources */,
+				00AC822F1E1FB8B500A184BB /* URLShorthandValidator.swift in Sources */,
+				00AC82211E1FB8AB00A184BB /* AndCondition.swift in Sources */,
+				00AC82231E1FB8AB00A184BB /* OrCondition.swift in Sources */,
+				00AC821F1E1FB8A700A184BB /* URLCondition.swift in Sources */,
+				00AC82241E1FB8B500A184BB /* AlphabeticValidator.swift in Sources */,
+				00AC82061E1FB81F00A184BB /* Validator.swift in Sources */,
+				00AC82221E1FB8AB00A184BB /* NotCondition.swift in Sources */,
+				00AC82031E1FB81900A184BB /* Configuration.swift in Sources */,
+				00AC82111E1FB89A00A184BB /* CreditCardConfiguration.swift in Sources */,
+				00AC82201E1FB8A700A184BB /* URLShorthandCondition.swift in Sources */,
+				00AC822B1E1FB8B500A184BB /* PostcodeValidator.swift in Sources */,
+				00AC822C1E1FB8B500A184BB /* PresentValidator.swift in Sources */,
+				00AC821B1E1FB8A700A184BB /* PasswordStrengthCondition.swift in Sources */,
+				00AC82141E1FB89A00A184BB /* PostcodeConfiguration.swift in Sources */,
+				00AC82291E1FB8B500A184BB /* NumericValidator.swift in Sources */,
+				00AC82001E1FB81200A184BB /* Condition.swift in Sources */,
+				00AC82151E1FB89A00A184BB /* RangeConfiguration.swift in Sources */,
+				00AC820D1E1FB88900A184BB /* ControlForm.swift in Sources */,
+				005F7F231E251FC30062AEB4 /* ValidatorTextView-AppKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00AC81EC1E1FB69200A184BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00169CDF1E32016500DB3193 /* ValidatorTextFieldTests.swift in Sources */,
+				007244451E1FB9CD0050DFE9 /* EmailConditionTests.swift in Sources */,
+				007244441E1FB9CD0050DFE9 /* CreditCardConditionTests.swift in Sources */,
+				007244571E1FB9D60050DFE9 /* PresentValidatorTests.swift in Sources */,
+				007244421E1FB9CD0050DFE9 /* AlphanumericConditionTests.swift in Sources */,
+				0072444F1E1FB9D10050DFE9 /* OrConditionTests.swift in Sources */,
+				007244471E1FB9CD0050DFE9 /* PasswordStrengthConditionTests.swift in Sources */,
+				007244461E1FB9CD0050DFE9 /* NumericConditionTests.swift in Sources */,
+				007244541E1FB9D60050DFE9 /* NumericValidatorTests.swift in Sources */,
+				0072443F1E1FB9C40050DFE9 /* XCTestCase+Additions.swift in Sources */,
+				0072444C1E1FB9CD0050DFE9 /* URLShorthandConditionTests.swift in Sources */,
+				007244581E1FB9D60050DFE9 /* RangeValidatorTests.swift in Sources */,
+				0072444B1E1FB9CD0050DFE9 /* URLConditionTests.swift in Sources */,
+				007244501E1FB9D60050DFE9 /* AlphabeticValidatorTests.swift in Sources */,
+				0072445B1E1FB9D60050DFE9 /* CreditCardValidatorTests.swift in Sources */,
+				007244491E1FB9CD0050DFE9 /* PresentConditionTests.swift in Sources */,
+				0072444D1E1FB9D10050DFE9 /* AndConditionTests.swift in Sources */,
+				0072444A1E1FB9CD0050DFE9 /* RangeConditionTests.swift in Sources */,
+				007244481E1FB9CD0050DFE9 /* PostcodeConditionTests.swift in Sources */,
+				007244511E1FB9D60050DFE9 /* AlphanumericValidatorTests.swift in Sources */,
+				007244531E1FB9D60050DFE9 /* EmailValidatorTests.swift in Sources */,
+				007244561E1FB9D60050DFE9 /* PostcodeValidatorTests.swift in Sources */,
+				0072445A1E1FB9D60050DFE9 /* URLShorthandValidatorTests.swift in Sources */,
+				00169CE11E32016A00DB3193 /* ValidatorTextViewTests.swift in Sources */,
+				007244431E1FB9CD0050DFE9 /* CreditCardTypeTests.swift in Sources */,
+				007244591E1FB9D60050DFE9 /* URLValidatorTests.swift in Sources */,
+				007244521E1FB9D60050DFE9 /* CompositeValidatorTests.swift in Sources */,
+				0072444E1E1FB9D10050DFE9 /* NotConditionTests.swift in Sources */,
+				007244411E1FB9CD0050DFE9 /* AlphabeticConditionTests.swift in Sources */,
+				007244401E1FB9C90050DFE9 /* ConfigurationSeeds.swift in Sources */,
+				007244551E1FB9D60050DFE9 /* PasswordStrengthValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -871,6 +1261,11 @@
 			isa = PBXTargetDependency;
 			target = 0062E9CF1C45493E00021C0A /* FormValidatorSwift iOS */;
 			targetProxy = 0062E9DC1C45493E00021C0A /* PBXContainerItemProxy */;
+		};
+		00AC81F31E1FB69200A184BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00AC81E71E1FB69200A184BB /* FormValidatorSwift macOS */;
+			targetProxy = 00AC81F21E1FB69200A184BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1138,6 +1533,98 @@
 			};
 			name = Release;
 		};
+		00AC81F91E1FB69200A184BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwift;
+				PRODUCT_NAME = FormValidatorSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		00AC81FA1E1FB69200A184BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwift;
+				PRODUCT_NAME = FormValidatorSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		00AC81FB1E1FB69200A184BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4JC5M8RR29;
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		00AC81FC1E1FB69200A184BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4JC5M8RR29;
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1182,6 +1669,24 @@
 			buildConfigurations = (
 				0062E9E81C45493E00021C0A /* Debug */,
 				0062E9E91C45493E00021C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00AC81FD1E1FB69200A184BB /* Build configuration list for PBXNativeTarget "FormValidatorSwift macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00AC81F91E1FB69200A184BB /* Debug */,
+				00AC81FA1E1FB69200A184BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00AC81FE1E1FB69200A184BB /* Build configuration list for PBXNativeTarget "FormValidatorSwiftTests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00AC81FB1E1FB69200A184BB /* Debug */,
+				00AC81FC1E1FB69200A184BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

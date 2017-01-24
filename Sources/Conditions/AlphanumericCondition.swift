@@ -3,7 +3,7 @@
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 13/01/2016.
-//  Copyright © 2016 ustwo. All rights reserved.
+//  Copyright © 2016 ustwo Fampany Ltd. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ import Foundation
 /**
  *  The `AlphanumericCondition` checks a string for occurrences of letters and/or numbers.
  */
-public struct AlphanumericCondition: Condition {
+public struct AlphanumericCondition: ConfigurableCondition {
     
     
     // MARK: - Properties
@@ -23,29 +23,16 @@ public struct AlphanumericCondition: Condition {
     
     public var shouldAllowViolation = true
     
-    /// Whether or not to allow Unicode letters and numbers. If `false` then only ASCII letters (A-Z, a-z, 0-9) are allowed.
-    public let allowsUnicode: Bool
-    /// Whether or not to allow whitespace.
-    public let allowsWhitespace: Bool
+    public let configuration: AlphanumericConfiguration
     
     
     // MARK: - Initializers
     
-    public init() {
-        self.init(allowsUnicode: false, allowsWhitespace: false)
-    }
-    
-    /// Initializes an `AlphanumericCondition`.
-    ///
-    /// - Parameters:
-    ///   - allowsUnicode: Whether or not to allow Unicode letters and numbers. If `false` then only ASCII letters (A-Z, a-z, 0-9) are allowed. Default is `false`.
-    ///   - allowsWhitespace: Whether or not to allow whitespace. Default is false.
-    public init(allowsUnicode: Bool = false, allowsWhitespace: Bool = false) {
-        self.allowsWhitespace = allowsWhitespace
-        self.allowsUnicode = allowsUnicode
+    public init(configuration: AlphanumericConfiguration) {
+        self.configuration = configuration
         
-        let regexLettersNumbers = allowsUnicode ? "\\p{L}\\p{N}" : "a-zA-Z0-9"
-        let regexWhiteSpace = allowsWhitespace ? "\\s" : ""
+        let regexLettersNumbers = configuration.allowsUnicode ? "\\p{L}\\p{N}" : "a-zA-Z0-9"
+        let regexWhiteSpace = configuration.allowsWhitespace ? "\\s" : ""
         
         regex = "[\(regexLettersNumbers)\(regexWhiteSpace)]"
     }

@@ -3,7 +3,7 @@
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 14/01/2016.
-//  Copyright © 2016 ustwo. All rights reserved.
+//  Copyright © 2016 ustwo Fampany Ltd. All rights reserved.
 //
 
 import Foundation
@@ -13,7 +13,7 @@ import Foundation
  *  The `PostcodeValidator` contains an `PostcodeCondition`. A valid string is a postcode.
  *  - seealso: `PostcodeCondition`
  */
-public struct PostcodeValidator: Validator {
+public struct PostcodeValidator: ConfigurableValidator {
     
     
     // MARK: - Properties
@@ -23,19 +23,8 @@ public struct PostcodeValidator: Validator {
     
     // MARK: - Initializers
     
-    /**
-    Initializes a `PostcodeValidator` with a `UnitedKingdom` country.
-    */
-    public init() {
-        self.init(country: .UnitedKingdom)
-    }
-    
-    /**
-    Initializes a `PostcodeValidator`.
-    - parameter country: Country to use for postcode validation.
-    */
-    public init(country: PostcodeCountries) {
-        conditions = [PostcodeCondition(country: country)]
+    public init(configuration: PostcodeConfiguration) {
+        conditions = [PostcodeCondition(configuration: configuration)]
     }
     
 }

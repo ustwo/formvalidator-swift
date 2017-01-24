@@ -3,7 +3,7 @@
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 14/01/2016.
-//  Copyright © 2016 ustwo. All rights reserved.
+//  Copyright © 2016 ustwo Fampany Ltd. All rights reserved.
 //
 
 import Foundation
@@ -13,7 +13,7 @@ import Foundation
  *  The `NumericValidator` contains an `NumericCondition`. A valid string only contains numbers.
  *  - seealso: `NumericCondition`
  */
-public struct NumericValidator: Validator {
+public struct NumericValidator: ConfigurableValidator {
     
     
     // MARK: - Properties
@@ -23,8 +23,8 @@ public struct NumericValidator: Validator {
     
     // MARK: - Initializers
     
-    public init() {
-        conditions = [NumericCondition()]
+    public init(configuration: NumericConfiguration) {
+        conditions = [NumericCondition(configuration: configuration)]
     }
     
 }

@@ -16,7 +16,7 @@ final class CreditCardValidatorTests: XCTestCase {
     
     // MARK: - Properties
     
-    let validator   = CreditCardValidator(cardType: .all)
+    let validator   = CreditCardValidator()
     
     
     // MARK: - Test Success

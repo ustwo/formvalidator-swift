@@ -16,7 +16,7 @@ final class PasswordStrengthValidatorTests: XCTestCase {
     
     // MARK: - Properties
     
-    let validator   = PasswordStrengthValidator(requiredStrength: .veryStrong)
+    let validator   = PasswordStrengthValidator(configuration: ConfigurationSeeds.PasswordStrengthSeeds.veryStrong)
     
     
     // MARK: - Test Success

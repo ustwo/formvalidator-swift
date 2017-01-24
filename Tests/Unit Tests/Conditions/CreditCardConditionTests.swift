@@ -29,13 +29,13 @@ final class CreditCardConditionTests: XCTestCase {
     
     // Condition - Valid Card Number pairs
     let cardConditionsAndNumbers: [(CreditCardType, CreditCardCondition, String)] = [
-        (CreditCardType.americanExpress,    CreditCardCondition(cardType: .americanExpress),        "376031710126369"),
-        (CreditCardType.dinersClub,         CreditCardCondition(cardType: .dinersClub),             "30085182354725"),
-        (CreditCardType.discover,           CreditCardCondition(cardType: .discover),               "6011359046468736"),
-        (CreditCardType.jcb,                CreditCardCondition(cardType: .jcb),                    "3535983484092395"),
-        (CreditCardType.maestro,            CreditCardCondition(cardType: .maestro),                "6762856858323942"),
-        (CreditCardType.mastercard,         CreditCardCondition(cardType: .mastercard),             "5480785928215247"),
-        (CreditCardType.visa,               CreditCardCondition(cardType: .visa),                   "4024007127428075"),
+        (CreditCardType.americanExpress,    CreditCardCondition(configuration: CreditCardConfiguration(cardType: .americanExpress)),        "376031710126369"),
+        (CreditCardType.dinersClub,         CreditCardCondition(configuration: CreditCardConfiguration(cardType: .dinersClub)),             "30085182354725"),
+        (CreditCardType.discover,           CreditCardCondition(configuration: CreditCardConfiguration(cardType: .discover)),               "6011359046468736"),
+        (CreditCardType.jcb,                CreditCardCondition(configuration: CreditCardConfiguration(cardType: .jcb)),                    "3535983484092395"),
+        (CreditCardType.maestro,            CreditCardCondition(configuration: CreditCardConfiguration(cardType: .maestro)),                "6762856858323942"),
+        (CreditCardType.mastercard,         CreditCardCondition(configuration: CreditCardConfiguration(cardType: .mastercard)),             "5480785928215247"),
+        (CreditCardType.visa,               CreditCardCondition(configuration: CreditCardConfiguration(cardType: .visa)),                   "4024007127428075"),
     ]
     
     

@@ -16,7 +16,7 @@ final class RangeConditionTests: XCTestCase {
     
     // MARK: - Properties
     
-    let condition       = RangeCondition(range: 3..<13)
+    let condition       = RangeCondition(configuration: ConfigurationSeeds.RangeSeeds.threeToThirteen)
     
     
     // MARK: - Test Initializers
@@ -27,7 +27,7 @@ final class RangeConditionTests: XCTestCase {
         let expectedRange = 0..<1
         
         // When
-        let actualRange = condition.range
+        let actualRange = condition.configuration.range
         
         // Test
         XCTAssertEqual(actualRange,
