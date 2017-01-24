@@ -24,10 +24,10 @@ public struct AlphabeticConfiguration: Configuration {
     // MARK: - Initializers
     
     public init() {
-        self.init(allowsUnicode: false, allowsWhitespace: false)
+        self.init(allowsUnicode: true, allowsWhitespace: false)
     }
     
-    public init(allowsUnicode: Bool = false, allowsWhitespace: Bool = false) {
+    public init(allowsUnicode: Bool = true, allowsWhitespace: Bool = false) {
         self.allowsWhitespace = allowsWhitespace
         self.allowsUnicode = allowsUnicode
     }

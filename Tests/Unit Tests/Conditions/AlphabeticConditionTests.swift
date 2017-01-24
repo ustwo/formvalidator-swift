@@ -32,7 +32,7 @@ final class AlphabeticConditionTests: XCTestCase {
     func testAlphabeticCondition_DefaultInit() {
         // Given
         let condition = AlphabeticCondition()
-        let expectedAllowsUnicode = false
+        let expectedAllowsUnicode = true
         let expectedAllowsWhitespace = false
         
         // When
