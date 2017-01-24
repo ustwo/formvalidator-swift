@@ -3,7 +3,7 @@
 //  FormValidatorSwift
 //
 //  Created by Aaron McTavish on 10/01/2017.
-//  Copyright © 2017 ustwo. All rights reserved.
+//  Copyright © 2017 ustwo Fampany Ltd. All rights reserved.
 //
 
 import AppKit
@@ -24,7 +24,7 @@ open class ValidatorTextView: NSTextView, ValidatorControl {
     }
     
     private var didEndEditing       = false
-    private var lastIsValid: Bool?  = nil
+    private var lastIsValid: Bool?
     
     
     // MARK: - Initializers
