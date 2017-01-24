@@ -130,7 +130,7 @@ internal class ValidatorTextViewResponder: NSObject, UITextViewDelegate {
         
         if !validatorTextView.validateOnFocusLossOnly && range.location != 0,
             let conditions = conditions,
-            (!validatorTextView.shouldAllowViolation || conditions[0].shouldAllowViolation) {
+            (!validatorTextView.shouldAllowViolation || !(conditions.isEmpty || conditions[0].shouldAllowViolation)) {
                 return false
         }
         

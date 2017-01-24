@@ -19,6 +19,9 @@ struct FormAccessibility {
         static let NameLabel        = "NAME_LABEL"
         static let NameTextField    = "NAME_TEXTFIELD"
         
+        static let TitleLabel       = "TITLE_LABEL"
+        static let TitleTextField   = "TITLE_TEXTFIELD"
+        
         static let SubmitButton     = "SUBMIT_BUTTON"
     }
     
