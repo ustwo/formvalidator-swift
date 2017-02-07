@@ -11,6 +11,20 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Master
+
+##### Breaking
+
+- None.
+
+##### Added
+
+- None.
+
+##### Updated
+
+- None.
+
 ## [2.0.0](https://github.com/ustwo/formvalidator-swift/releases/tag/v2.0.0)
 
 #### Breaking
