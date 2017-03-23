@@ -47,12 +47,26 @@ bundle exec fastlane test
 
 Alternatively, you can run individual tests or the suite from [within Xcode][xcode-tests].
 
-<!--- Links --->
+## Release
+
+To bump the version numbers, create the git tag, and create a GitHub release, run (replacing `$NEW_VERSION` with the desired new version number): 
+
+```sh
+bundle exec fastlane bump_version version:$NEW_VERSION
+```
+
+Then update the [latest release][latest-release] with notes on GitHub.
+
+Lastly, [submit the updated `podspec`][cocoapods-submission] to CocoaPods for release.
+
+<!-- Links -->
 
 [bundler]: http://bundler.io/
 [changelog]: ../CHANGELOG.md
+[cocoapods-submission]: https://guides.cocoapods.org/making/making-a-cocoapod.html#release
 [code-of-conduct]: ../CODE_OF_CONDUCT.md
 [fastlane]: https://fastlane.tools/
+[latest-release]: https://github.com/ustwo/formvalidator-swift/releases
 [swiftlint]: https://github.com/realm/SwiftLint
 [xcode]: https://itunes.apple.com/gb/app/xcode/id497799835?mt=12#
 [xcode-tests]: https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/05-running_tests.html

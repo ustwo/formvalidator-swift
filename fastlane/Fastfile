@@ -77,3 +77,73 @@ desc "Updates the GitHub Pages documentation"
 lane :update_docs do
     jazzy
 end
+
+desc "Bumps the version number of the project and podspec"
+desc "This action does the following:"
+desc ""
+desc "- Ensures a clean git status"
+desc "- Increment the version number (Project & Podspec)"
+desc "- Lints the CocoaPods Library"
+desc "- Commit and push the version bump"
+desc "- Creates a GitHub Release and git tag"
+desc "- Lints the CocoaPods Spec"
+desc ""
+desc "This action does NOT do the following:"
+desc ""
+desc "- Add the changelog notes to the GitHub release"
+desc "- Submit the updated podspec to CocoaPods"
+lane :bump_version  do |options|
+    version = options[:version]
+    raise "You must specify a version in A.B.X format to deploy." if version.nil? || version.scan(/\d+\.\d+\.\d+/).length == 0
+
+    ensure_git_status_clean
+
+    version_bump_podspec(
+        path: "FormValidatorSwift.podspec",
+        version_number: version
+    )
+    increment_version_number_in_plist(
+        version_number: version,
+        xcodeproj: './FormValidatorSwift.xcodeproj',
+        target: 'FormValidatorSwift iOS'
+    )
+    increment_version_number_in_plist(
+        version_number: version,
+        xcodeproj: './iOS Example.xcodeproj',
+        target: 'iOS Example'
+    )
+    increment_version_number_in_plist(
+        version_number: version,
+        xcodeproj: './macOS Example.xcodeproj',
+        target: 'macOS Example'
+    )
+
+    pod_lib_lint
+
+    git_add(
+        path: ['./Sources/Info.plist', './Example/iOS/Info.plist', './Example/macOS/Info.plist', './FormValidatorSwift.podspec']
+    )
+
+    commit_version_bump(
+        force: true,
+        xcodeproj: './FormValidatorSwift.xcodeproj'
+    )
+
+    update_docs
+
+    sh 'cd ../ && git add ./docs/*'
+
+    sh 'cd ../ && git commit -m \'Update documentation for v' + version + '\''
+
+    push_to_git_remote
+
+    set_github_release(
+        repository_name: "ustwo/formvalidator-swift",
+        api_token: ENV["GITHUB_TOKEN"],
+        description: 'Version Bump to ' + version,
+        name: "Version " + version,
+        tag_name: version
+    )
+
+    sh 'cd ../ && bundle exec pod spec lint'
+end
