@@ -53,6 +53,37 @@ Upload code coverage reports (if running on CI)
 fastlane update_docs
 ```
 Updates the GitHub Pages documentation
+### bump_version
+```
+fastlane bump_version
+```
+Bumps the version number of the project and podspec
+
+This action does the following:
+
+
+
+- Ensures a clean git status
+
+- Increment the version number (Project & Podspec)
+
+- Lints the CocoaPods Library
+
+- Commit and push the version bump
+
+- Creates a GitHub Release and git tag
+
+- Lints the CocoaPods Spec
+
+
+
+This action does NOT do the following:
+
+
+
+- Add the changelog notes to the GitHub release
+
+- Submit the updated podspec to CocoaPods
 
 ----
 
