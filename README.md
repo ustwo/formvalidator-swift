@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/ustwo/formvalidator-swift/blob/master/LICENSE.md)
 [![Build Status](https://travis-ci.org/ustwo/formvalidator-swift.svg?branch=master)](https://travis-ci.org/ustwo/formvalidator-swift)
 [![codecov.io](https://codecov.io/github/ustwo/formvalidator-swift/coverage.svg?branch=master)](https://codecov.io/github/ustwo/formvalidator-swift?branch=master)
-[![Platform](https://img.shields.io/cocoapods/p/FormValidatorSwift.svg?style=flat)](http://cocoadocs.org/docsets/FormValidatorSwift)
+[![Platform](https://img.shields.io/cocoapods/p/FormValidatorSwift.svg?style=flat)](https://ustwo.github.io/formvalidator-swift)
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
 [![Twitter](https://img.shields.io/badge/twitter-@ustwo-blue.svg?style=flat)](http://twitter.com/ustwo)
 

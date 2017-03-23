@@ -72,3 +72,8 @@ lane :upload_cov do
         say "No need to upload code coverage. Not running from CI."
     end
 end
+
+desc "Updates the GitHub Pages documentation"
+lane :update_docs do
+    jazzy
+end

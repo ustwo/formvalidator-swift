@@ -1,0 +1,481 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Conditions/CreditCardCondition.swift",
+      "line": 54,
+      "symbol": "CreditCardCondition.check(_:withRegex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Conditions/Logic/AndCondition.swift",
+      "line": 26,
+      "symbol": "AndCondition.conditions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Conditions/Logic/AndCondition.swift",
+      "line": 35,
+      "symbol": "AndCondition.init(conditions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Conditions/Logic/NotCondition.swift",
+      "line": 26,
+      "symbol": "NotCondition.condition",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Conditions/Logic/NotCondition.swift",
+      "line": 35,
+      "symbol": "NotCondition.init(condition:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Conditions/Logic/OrCondition.swift",
+      "line": 26,
+      "symbol": "OrCondition.conditions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Conditions/Logic/OrCondition.swift",
+      "line": 35,
+      "symbol": "OrCondition.init(conditions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/AlphabeticConfiguration.swift",
+      "line": 30,
+      "symbol": "AlphabeticConfiguration.init(allowsUnicode:allowsWhitespace:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/AlphanumericConfiguration.swift",
+      "line": 30,
+      "symbol": "AlphanumericConfiguration.init(allowsUnicode:allowsWhitespace:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 122,
+      "symbol": "CreditCardConfiguration.cardType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 131,
+      "symbol": "CreditCardConfiguration.init(cardType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/NumericConfiguration.swift",
+      "line": 30,
+      "symbol": "NumericConfiguration.init(allowsUnicode:allowsWhitespace:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PasswordStrengthConfiguration.swift",
+      "line": 14,
+      "symbol": "PasswordStrength.medium",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PasswordStrengthConfiguration.swift",
+      "line": 14,
+      "symbol": "PasswordStrength.strong",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PasswordStrengthConfiguration.swift",
+      "line": 14,
+      "symbol": "PasswordStrength.veryStrong",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PasswordStrengthConfiguration.swift",
+      "line": 14,
+      "symbol": "PasswordStrength.veryWeak",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PasswordStrengthConfiguration.swift",
+      "line": 14,
+      "symbol": "PasswordStrength.weak",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 14,
+      "symbol": "PostcodeCountries.Sweden",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 15,
+      "symbol": "PostcodeCountries.Turkey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 16,
+      "symbol": "PostcodeCountries.UnitedKingdom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 17,
+      "symbol": "PostcodeCountries.UnitedStates",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 33,
+      "symbol": "PostcodeCountries.allValues",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 43,
+      "symbol": "PostcodeConfiguration.country",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 52,
+      "symbol": "PostcodeConfiguration.init(country:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/RangeConfiguration.swift",
+      "line": 18,
+      "symbol": "RangeConfiguration.range",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/RangeConfiguration.swift",
+      "line": 28,
+      "symbol": "RangeConfiguration.init(range:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 12,
+      "symbol": "ValidatorTextField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 17,
+      "symbol": "ValidatorTextField.shouldAllowViolation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 18,
+      "symbol": "ValidatorTextField.validateOnFocusLossOnly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 19,
+      "symbol": "ValidatorTextField.validator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 27,
+      "symbol": "ValidatorTextField.validatableText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 36,
+      "symbol": "ValidatorTextField.init(validator:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 40,
+      "symbol": "ValidatorTextField.init(frame:validator:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 48,
+      "symbol": "ValidatorTextField.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 96,
+      "symbol": "ValidatorTextField.validatorTextFieldSuccededConditions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 98,
+      "symbol": "ValidatorTextField.validatorTextFieldViolatedConditions(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 12,
+      "symbol": "ValidatorTextView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 17,
+      "symbol": "ValidatorTextView.shouldAllowViolation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 18,
+      "symbol": "ValidatorTextView.validateOnFocusLossOnly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 19,
+      "symbol": "ValidatorTextView.validator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 27,
+      "symbol": "ValidatorTextView.validatableText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 36,
+      "symbol": "ValidatorTextView.init(validator:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 40,
+      "symbol": "ValidatorTextView.init(frame:validator:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 44,
+      "symbol": "ValidatorTextView.init(frame:textContainer:validator:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 52,
+      "symbol": "ValidatorTextView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 88,
+      "symbol": "ValidatorTextView.validatorTextViewSuccededConditions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 90,
+      "symbol": "ValidatorTextView.validatorTextViewViolatedConditions(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Condition.swift",
+      "line": 65,
+      "symbol": "Condition.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Form.swift",
+      "line": 49,
+      "symbol": "Form.addEntry(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Form.swift",
+      "line": 51,
+      "symbol": "Form.removeControlAtIndex(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Form.swift",
+      "line": 71,
+      "symbol": "Form.isValid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Form.swift",
+      "line": 100,
+      "symbol": "Form.addEntry(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Form.swift",
+      "line": 104,
+      "symbol": "Form.removeControlAtIndex(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Validatable.swift",
+      "line": 12,
+      "symbol": "Validatable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Validatable.swift",
+      "line": 14,
+      "symbol": "Validatable.validatableText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Validatable.swift",
+      "line": 15,
+      "symbol": "Validatable.validator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": null,
+      "symbol": "ValidatorControl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 12,
+      "symbol": "ValidatorControlDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 14,
+      "symbol": "ValidatorControlDelegate.validatorControlDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 15,
+      "symbol": "ValidatorControlDelegate.validatorControl(_:changedValidState:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 16,
+      "symbol": "ValidatorControlDelegate.validatorControl(_:violatedConditions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 21,
+      "symbol": "ValidatorControl",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 23,
+      "symbol": "ValidatorControl.isValid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 24,
+      "symbol": "ValidatorControl.shouldAllowViolation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 25,
+      "symbol": "ValidatorControl.validateOnFocusLossOnly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 26,
+      "symbol": "ValidatorControl.validatorDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
+      "line": 33,
+      "symbol": "ValidatorControl.isValid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Validators/CompositeValidator.swift",
+      "line": 22,
+      "symbol": "CompositeValidator.validators",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/aamct/Documents/App-Projects/formvalidator-swift"
+}

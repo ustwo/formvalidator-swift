@@ -1,0 +1,7 @@
+author: ustwo Fampany Ltd.
+author_url: https://ustwo.com/
+github_url: https://github.com/ustwo/formvalidator-swift
+module: FormValidatorSwift
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace,'FormValidatorSwift.xcworkspace',-scheme,'FormValidatorSwift iOS']
