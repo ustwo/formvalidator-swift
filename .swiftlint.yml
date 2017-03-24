@@ -8,14 +8,17 @@ opt_in_rules:
   - conditional_returns_on_newline
   - empty_count
   - explicit_init
+  - fatal_error_message
   - file_header
   - first_where
+  - implicitly_unwrapped_optional
   - number_separator
   - object_literal
   - overridden_super_call
   - private_outlet
   - prohibited_super_call
   - redundant_nil_coalescing
+  - sorted_imports
   - switch_case_on_newline
 
 excluded:

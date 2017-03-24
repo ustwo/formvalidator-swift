@@ -11,10 +11,13 @@ import Foundation
 
 /// Countries that are supported by `PostcodeCondition`. Each postcode is an ISO 3166-1 alpha-3 country code. There is a `regex` property that returns the regex for validating that country's postcode.
 public enum PostcodeCountries: String {
+    
+    // swiftlint:disable identifier_name
     case Sweden         = "SWE"
     case Turkey         = "TUR"
     case UnitedKingdom  = "GBR"
     case UnitedStates   = "USA"
+    // swiftlint:enable identifier_name
     
     /// The regex for validating the country's postcode.
     public var regex: String {

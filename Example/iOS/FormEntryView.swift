@@ -6,9 +6,8 @@
 //  Copyright © 2016 ustwo Fampany Ltd. All rights reserved.
 //
 
-import UIKit
-
 import FormValidatorSwift
+import UIKit
 
 
 final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITextFieldDelegate {
