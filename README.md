@@ -210,7 +210,7 @@ We welcome contributors! Whether you're fixing a typo, squashing a bug, or addin
 
 ## License
 
-BaseView is released under the MIT License. See the LICENSE file.
+FormValidatorSwift is released under the MIT License. See the LICENSE file.
 
 <!-- Links -->
 
