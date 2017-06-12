@@ -42,6 +42,7 @@ lane :verify do |options|
         :code_coverage => true,
         :xcargs => "ONLY_ACTIVE_ARCH=YES",
         :output_directory => output_directory,
+        :output_style => 'raw',
         :clean => true
     }
     scan(opts)
