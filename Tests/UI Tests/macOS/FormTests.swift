@@ -35,7 +35,7 @@ class FormTests: XCTestCase {
         
         let actualResult = nameTextField.value as? String
         
-        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult) but received \(actualResult).")
+        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult.debugDescription) but received \(actualResult.debugDescription).")
     }
     
     func testTextField_AllowedViolations() {
@@ -48,7 +48,7 @@ class FormTests: XCTestCase {
         
         let actualResult = titleTextField.value as? String
         
-        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult) but received \(actualResult).")
+        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult.debugDescription) but received \(actualResult.debugDescription).")
     }
     
     func testTextField_AllowedViolations_and_validateOnFocusLossOnly() {
@@ -61,7 +61,7 @@ class FormTests: XCTestCase {
         
         let actualResult = emailTextField.value as? String
         
-        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult) but received \(actualResult).")
+        XCTAssertEqual(actualResult, expectedResult, "The text field should have text \(expectedResult.debugDescription) but received \(actualResult.debugDescription).")
     }
     
     func testForm_Valid() {

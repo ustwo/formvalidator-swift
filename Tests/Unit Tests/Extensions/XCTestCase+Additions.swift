@@ -51,7 +51,7 @@ extension XCTestCase {
                 return
         }
         
-        let message = "The `\(type(of: validator))` should respond with \(expectedResult) and but received \(actualResult)."
+        let message = "The `\(type(of: validator))` should respond with \(expectedResult.debugDescription) and but received \(actualResult.debugDescription)."
         self.recordFailure(withDescription: message, inFile: file, atLine: line, expected: true)
     }
     
