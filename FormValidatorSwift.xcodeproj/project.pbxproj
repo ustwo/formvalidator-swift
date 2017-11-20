@@ -822,9 +822,11 @@
 				TargetAttributes = {
 					0056755E1C47ED32005A43F0 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0910;
 					};
 					005675671C47ED32005A43F0 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Manual;
 					};
 					0062E9CF1C45493E00021C0A = {
@@ -1313,7 +1315,7 @@
 				PRODUCT_NAME = FormValidatorSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1336,7 +1338,7 @@
 				PRODUCT_NAME = FormValidatorSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1351,6 +1353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Debug;
@@ -1364,6 +1367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
