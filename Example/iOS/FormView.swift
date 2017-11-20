@@ -60,8 +60,8 @@ final class FormView: UIView {
         submitButton.setTitle(NSLocalizedString("Submit", comment: ""), for: UIControlState())
         stackView.addArrangedSubview(submitButton)
         
-        bottomBufferView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, for: stackView.axis)
-        bottomBufferView.setContentHuggingPriority(UILayoutPriorityDefaultLow, for: stackView.axis)
+        bottomBufferView.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: stackView.axis)
+        bottomBufferView.setContentHuggingPriority(UILayoutPriority.defaultLow, for: stackView.axis)
         stackView.addArrangedSubview(bottomBufferView)
         
         

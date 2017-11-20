@@ -21,7 +21,7 @@ extension XCTestCase {
         // Test
         if expectedResult != actualResult {
             let message = "The `\(type(of: condition))` should respond with \(expectedResult) but received \(actualResult)."
-            self.recordFailure(withDescription: message, inFile: file, atLine: line, expected: true)
+            self.recordFailure(withDescription: message, inFile: file, atLine: Int(UInt(line)), expected: true)
         }
     }
     
@@ -52,7 +52,7 @@ extension XCTestCase {
         }
         
         let message = "The `\(type(of: validator))` should respond with \(expectedResult.debugDescription) and but received \(actualResult.debugDescription)."
-        self.recordFailure(withDescription: message, inFile: file, atLine: line, expected: true)
+        self.recordFailure(withDescription: message, inFile: file, atLine: Int(UInt(line)), expected: true)
     }
     
 }

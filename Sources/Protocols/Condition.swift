@@ -54,7 +54,7 @@ public extension Condition {
                 return false
         }
         
-        return regExpression.firstMatch(in: sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) != nil
+        return regExpression.firstMatch(in: sourceText, options: [], range: NSRange(location: 0, length: sourceText.count)) != nil
     }
     
 }

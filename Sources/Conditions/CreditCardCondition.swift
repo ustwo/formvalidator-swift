@@ -46,12 +46,12 @@ public struct CreditCardCondition: ConfigurableCondition {
         }
         
         let sourceTextNs = sourceText as NSString
-        let trimmedText = sourceTextNs.replacingOccurrences(of: "\\D", with: "", options: .regularExpression, range: NSRange(location:0, length:sourceTextNs.length)) as String
+        let trimmedText = sourceTextNs.replacingOccurrences(of: "\\D", with: "", options: .regularExpression, range: NSRange(location: 0, length: sourceTextNs.length)) as String
         
         return check(trimmedText, withRegex: regExp)
     }
     
     public func check(_ trimmedText: String, withRegex regExp: NSRegularExpression) -> Bool {
-        return regExp.firstMatch(in: trimmedText, options: [], range: NSRange(location:0, length:trimmedText.characters.count)) != nil
+        return regExp.firstMatch(in: trimmedText, options: [], range: NSRange(location: 0, length: trimmedText.count)) != nil
     }
 }

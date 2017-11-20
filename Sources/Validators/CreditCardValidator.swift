@@ -48,7 +48,7 @@ public struct CreditCardValidator: ConfigurableValidator {
             }
             
             let creditCardCondition = CreditCardCondition()
-            let trimmedCardNumber = String(creditCardNumber.characters.filter { $0 != " " })
+            let trimmedCardNumber = String(creditCardNumber.filter { $0 != " " })
             
             for cardType in CreditCardType.allArray {
                 if let regex = try? NSRegularExpression(pattern: cardType.regex, options: .caseInsensitive),
