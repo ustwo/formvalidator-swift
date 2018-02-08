@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
           FormValidatorSwift Docs
         </a>
-         (75% documented)
+         (72% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -61,7 +61,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Enums.html">Enums</a>
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/PasswordStrength.html">PasswordStrength</a>
@@ -104,7 +104,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Structs.html">Structs</a>
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/AlphabeticCondition.html">AlphabeticCondition</a>
@@ -226,28 +226,28 @@
             <p><a href="https://github.com/ustwo/formvalidator-swift/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat" alt="License"></a>
 <a href="https://travis-ci.org/ustwo/formvalidator-swift"><img src="https://travis-ci.org/ustwo/formvalidator-swift.svg?branch=master" alt="Build Status"></a>
 <a href="https://codecov.io/github/ustwo/formvalidator-swift?branch=master"><img src="https://codecov.io/github/ustwo/formvalidator-swift/coverage.svg?branch=master" alt="codecov.io"></a>
-<a href="http://cocoadocs.org/docsets/FormValidatorSwift"><img src="https://img.shields.io/cocoapods/p/FormValidatorSwift.svg?style=flat" alt="Platform"></a>
+<a href="https://ustwo.github.io/formvalidator-swift"><img src="https://img.shields.io/cocoapods/p/FormValidatorSwift.svg?style=flat" alt="Platform"></a>
 <img src="https://img.shields.io/badge/Swift-3.0-orange.svg" alt="Swift">
 <a href="http://twitter.com/ustwo"><img src="https://img.shields.io/badge/twitter-@ustwo-blue.svg?style=flat" alt="Twitter"></a></p>
-<a href='#formvalidatorswift' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='formvalidatorswift'>FormValidatorSwift</h1>
+<h1 id='formvalidatorswift' class='heading'>FormValidatorSwift</h1>
 
 <p>The FormValidatorSwift framework allows you to validate inputs of text fields and text views in a convenient way. It has been developed and used by iOS developers at <a href="https://ustwo.com/">ustwo</a>.</p>
-<a href='#features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='features'>Features</h2>
+<h2 id='features' class='heading'>Features</h2>
 
 <ul>
-<li>[x] Simply use <code>ValidatorTextField</code> instead of <code>UITextField</code> or <code>NSTextField</code> (<code>ValidatorTextView</code> instead of <code>UITextView</code> or <code>NSTextView</code>)</li>
+<li>[x] Simply use <code><a href="Classes/ValidatorTextField.html">ValidatorTextField</a></code> instead of <code>UITextField</code> or <code>NSTextField</code> (<code><a href="Classes/ValidatorTextView.html">ValidatorTextView</a></code> instead of <code>UITextView</code> or <code>NSTextView</code>)</li>
 <li>[x] Know what went wrong and where</li>
 <li>[x] Create own conditions using regular expressions for example</li>
 <li>[x] Create own validators which contain a collection of conditions</li>
 <li>[x] Support iOS, macOS, and tvOS</li>
 </ul>
-<a href='#dependencies' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='dependencies'>Dependencies</h2>
+<h2 id='dependencies' class='heading'>Dependencies</h2>
 
 <ul>
 <li><a href="https://itunes.apple.com/gb/app/xcode/id497799835?mt=12#">Xcode</a></li>
 </ul>
-<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
-<a href='#cocoapods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='cocoapods'>CocoaPods</h3>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
 <p><a href="http://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. You can install it with the following command:</p>
 <pre class="highlight shell"><code><span class="gp">$ </span>gem install cocoapods
@@ -258,16 +258,16 @@
 <span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'8.3'</span>
 <span class="n">use_frameworks!</span>
 
-<span class="n">pod</span> <span class="s1">'FormValidatorSwift'</span><span class="p">,</span> <span class="s1">'~&gt; 1.0'</span>
+<span class="n">pod</span> <span class="s1">'FormValidatorSwift'</span><span class="p">,</span> <span class="s1">'~&gt; 3.0'</span>
 </code></pre>
 
 <p>Then, run the following command:</p>
 <pre class="highlight shell"><code><span class="gp">$ </span>pod install
 </code></pre>
-<a href='#manually' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='manually'>Manually</h3>
+<h3 id='manually' class='heading'>Manually</h3>
 
 <p>If you prefer not to use either of the aforementioned dependency managers, you can integrate FormValidatorSwift into your project manually.</p>
-<a href='#embedded-framework' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='embedded-framework'>Embedded Framework</h4>
+<h4 id='embedded-framework' class='heading'>Embedded Framework</h4>
 
 <ul>
 <li>Open up Terminal, <code>cd</code> into your top-level project directory, and run the following command <q>if</q> your project is not initialized as a git repository:</li>
@@ -309,16 +309,16 @@
 </blockquote>
 
 <hr>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+<h2 id='usage' class='heading'>Usage</h2>
 
-<p>The two core components of FormValidatorSwift are <code>Condition</code> and <code>Validator</code>. These are both protocols, with many common implementations provided by the framework.</p>
+<p>The two core components of FormValidatorSwift are <code><a href="Protocols/Condition.html">Condition</a></code> and <code><a href="Protocols/Validator.html">Validator</a></code>. These are both protocols, with many common implementations provided by the framework.</p>
 
-<p>A <code>Condition</code> defines a specific requirement for a <code>String</code> to be considered valid and defines a way to check the <code>String</code>. A <code>Validator</code> defines a way to check whether a <code>String</code> is valid based on a set of <code>Condition</code>. These provide the building blocks upon which the other elements of FormValidatorSwift are built.</p>
+<p>A <code><a href="Protocols/Condition.html">Condition</a></code> defines a specific requirement for a <code>String</code> to be considered valid and defines a way to check the <code>String</code>. A <code><a href="Protocols/Validator.html">Validator</a></code> defines a way to check whether a <code>String</code> is valid based on a set of <code><a href="Protocols/Condition.html">Condition</a></code>. These provide the building blocks upon which the other elements of FormValidatorSwift are built.</p>
 
-<p><code>ValidatorTextField</code> and <code>ValidatorTextView</code> provide common UI implementations for a validatable text input method. These controls can then be combined into a <code>Form</code> for quick validation of all text input.</p>
-<a href='#condition' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='condition'>Condition</h3>
+<p><code><a href="Classes/ValidatorTextField.html">ValidatorTextField</a></code> and <code><a href="Classes/ValidatorTextView.html">ValidatorTextView</a></code> provide common UI implementations for a validatable text input method. These controls can then be combined into a <code><a href="Protocols/Form.html">Form</a></code> for quick validation of all text input.</p>
+<h3 id='condition' class='heading'>Condition</h3>
 
-<p>A <code>Condition</code> is typically defined by a regular expression. This is used in the default implementation to check the string. However, you can provide your own implementation of the <code>check(text:)</code> function to do a more complicated validation.</p>
+<p>A <code><a href="Protocols/Condition.html">Condition</a></code> is typically defined by a regular expression. This is used in the default implementation to check the string. However, you can provide your own implementation of the <code>check(text:)</code> function to do a more complicated validation.</p>
 
 <p>Here is an example using one of the built-in conditions. Note that calling <code>check(text:)</code> simply returns a <code>Bool</code> as to whether the text is valid or not.</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">condition</span> <span class="o">=</span> <span class="kt">AlphanumericCondition</span><span class="p">()</span>
@@ -326,9 +326,9 @@
 <span class="k">let</span> <span class="nv">validResult</span> <span class="o">=</span> <span class="n">condition</span><span class="o">.</span><span class="nf">check</span><span class="p">(</span><span class="s">"Foo123"</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">invalidResult</span> <span class="o">=</span> <span class="n">condition</span><span class="o">.</span><span class="nf">check</span><span class="p">(</span><span class="s">"Foo?!@"</span><span class="p">)</span>
 </code></pre>
-<a href='#validator' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='validator'>Validator</h3>
+<h3 id='validator' class='heading'>Validator</h3>
 
-<p>A <code>Validator</code> takes an array of <code>Condition</code> and checks each condition to validate a string. If the validation fails, then <code>checkConditions(text:)</code> will return an array of the violated conditions.</p>
+<p>A <code><a href="Protocols/Validator.html">Validator</a></code> takes an array of <code><a href="Protocols/Condition.html">Condition</a></code> and checks each condition to validate a string. If the validation fails, then <code>checkConditions(text:)</code> will return an array of the violated conditions.</p>
 
 <p>Here is an example using one of the built-in validators. In this example, <code>validResult</code> will be <code>nil</code> and <code>invalidResult</code> will be <code>[AlphanumericCondition]</code>.</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">validator</span> <span class="o">=</span> <span class="kt">AlphanumericValidator</span><span class="p">()</span>
@@ -336,9 +336,9 @@
 <span class="k">let</span> <span class="nv">validResult</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="nf">checkConditions</span><span class="p">(</span><span class="s">"Foo123"</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">invalidResult</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="nf">checkConditions</span><span class="p">(</span><span class="s">"Foo?!@"</span><span class="p">)</span>
 </code></pre>
-<a href='#validatortextfield' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='validatortextfield'>ValidatorTextField</h3>
+<h3 id='validatortextfield' class='heading'>ValidatorTextField</h3>
 
-<p>To provide a user interface, you can use <code>ValidatorTextField</code> or <code>ValidatorTextView</code>. These are subclasses of <code>UITextField</code> and <code>UITextView</code> respectively (or <code>NSTextField</code> and <code>NSTextView</code> on macOS). They both conform to the <code>ValidatorControl</code> protocol, which has the additional capability of using a <code>Validator</code> to check the text.</p>
+<p>To provide a user interface, you can use <code><a href="Classes/ValidatorTextField.html">ValidatorTextField</a></code> or <code><a href="Classes/ValidatorTextView.html">ValidatorTextView</a></code>. These are subclasses of <code>UITextField</code> and <code>UITextView</code> respectively (or <code>NSTextField</code> and <code>NSTextView</code> on macOS). They both conform to the <code><a href="Protocols/ValidatorControl.html">ValidatorControl</a></code> protocol, which has the additional capability of using a <code><a href="Protocols/Validator.html">Validator</a></code> to check the text.</p>
 
 <p>Here is an example of a text field that would only allow alphanumeric text.</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">nameTextField</span> <span class="o">=</span> <span class="kt">ValidatorTextField</span><span class="p">(</span><span class="nv">validator</span><span class="p">:</span> <span class="kt">AlphanumericValidator</span><span class="p">())</span>
@@ -350,7 +350,7 @@
 <span class="n">emailTextField</span><span class="o">.</span><span class="n">validateOnFocusLossOnly</span> <span class="o">=</span> <span class="kc">true</span>
 </code></pre>
 
-<p>We can respond to changes in the validity of <code>ValidatorTextField</code> by implementing the <code>ValidatorControlDelegate</code> and setting ourselves as the validator delegate (using the <code>setValidatorDelegate(_:)</code> method). Below is an example implementation. In the example we highlight the text field with a red border if it is invalid. We also list the error in a label called <code>errorLabel</code> and present it to the user.</p>
+<p>We can respond to changes in the validity of <code><a href="Classes/ValidatorTextField.html">ValidatorTextField</a></code> by implementing the <code><a href="Protocols/ValidatorControlDelegate.html">ValidatorControlDelegate</a></code> and setting ourselves as the validator delegate (using the <code>setValidatorDelegate(_:)</code> method). Below is an example implementation. In the example we highlight the text field with a red border if it is invalid. We also list the error in a label called <code>errorLabel</code> and present it to the user.</p>
 <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">validatorControl</span><span class="p">(</span><span class="nv">validatorControl</span><span class="p">:</span> <span class="kt">ValidatorControl</span><span class="p">,</span> <span class="n">changedValidState</span> <span class="nv">validState</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">guard</span> <span class="k">let</span> <span class="nv">controlView</span> <span class="o">=</span> <span class="n">validatorControl</span> <span class="k">as?</span> <span class="kt">UIView</span> <span class="k">else</span> <span class="p">{</span>
         <span class="k">return</span>
@@ -380,9 +380,9 @@
     <span class="c1">// Not used in this example</span>
 <span class="p">}</span>
 </code></pre>
-<a href='#form' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='form'>Form</h3>
+<h3 id='form' class='heading'>Form</h3>
 
-<p>We can combine a series of <code>ValidatorControl</code> into a <code>Form</code>. We have a convenience implementation call <code>ControlForm</code>. We can then combine our alphanumeric textfield and our email textfield from our previous examples into a form. This provides an easy method for checking if the entire form is valid (say, before submission of the form data to a server). Below is an example:</p>
+<p>We can combine a series of <code><a href="Protocols/ValidatorControl.html">ValidatorControl</a></code> into a <code><a href="Protocols/Form.html">Form</a></code>. We have a convenience implementation call <code><a href="Structs/ControlForm.html">ControlForm</a></code>. We can then combine our alphanumeric textfield and our email textfield from our previous examples into a form. This provides an easy method for checking if the entire form is valid (say, before submission of the form data to a server). Below is an example:</p>
 <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">form</span> <span class="o">=</span> <span class="kt">ControlForm</span><span class="p">()</span>
 
 <span class="n">form</span><span class="o">.</span><span class="nf">addEntry</span><span class="p">(</span><span class="n">nameTextField</span><span class="p">)</span>
@@ -396,26 +396,26 @@
   <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
-<a href='#example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='example'>Example</h3>
+<h3 id='example' class='heading'>Example</h3>
 
 <p>More detailed examples can be found in the <code>iOS Example</code> and <code>macOS Example</code> apps in this repository.</p>
-<a href='#collaborate' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='collaborate'>Collaborate</h2>
+<h2 id='collaborate' class='heading'>Collaborate</h2>
 
 <p>We welcome contributors! Whether you&rsquo;re fixing a typo, squashing a bug, or adding new functionality please join us in making this project better. Read our <a href=".github/CONTRIBUTING.md">contributing guidelines</a> to find out how to add your support.</p>
-<a href='#maintainers' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='maintainers'>Maintainers</h2>
+<h2 id='maintainers' class='heading'>Maintainers</h2>
 
 <ul>
 <li>Shagun Madhikarmi (@madhikarma)</li>
 <li>Aaron McTavish (@aamctustwo)</li>
 </ul>
-<a href='#contact' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contact'>Contact</h2>
+<h2 id='contact' class='heading'>Contact</h2>
 
 <ul>
 <li><a href="mailto:open.source@ustwo.com">open.source@ustwo.com</a></li>
 </ul>
-<a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='license'>License</h2>
+<h2 id='license' class='heading'>License</h2>
 
-<p>BaseView is released under the MIT License. See the LICENSE file.</p>
+<p>FormValidatorSwift is released under the MIT License. See the LICENSE file.</p>
 
 <!-- Links -->
 
@@ -426,8 +426,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://ustwo.com/" target="_blank" rel="external">ustwo Fampany Ltd.</a>. All rights reserved. (Last updated: 2017-03-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://ustwo.com/" target="_blank" rel="external">ustwo Fampany Ltd.</a>. All rights reserved. (Last updated: 2018-02-08)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           FormValidatorSwift Docs
         </a>
-         (75% documented)
+         (72% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -62,7 +62,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordStrength.html">PasswordStrength</a>
@@ -105,7 +105,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AlphabeticCondition.html">AlphabeticCondition</a>
@@ -226,7 +226,7 @@
             <h1>Validator</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Validator</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Validator</span></code></pre>
 
                 </div>
               </div>
@@ -244,9 +244,9 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP18FormValidatorSwift9ValidatorcFT_x"></a>
+                    <a name="/s:18FormValidatorSwift0B0Pxycfc"></a>
                     <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP18FormValidatorSwift9ValidatorcFT_x">init()</a>
+                    <a class="token" href="#/s:18FormValidatorSwift0B0Pxycfc">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -261,7 +261,7 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="nf">init</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -271,9 +271,9 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vP18FormValidatorSwift9Validator10conditionsGSaPS_9Condition__"></a>
+                    <a name="/s:18FormValidatorSwift0B0P10conditionsSayAA9Condition_pGv"></a>
                     <a name="//apple_ref/swift/Property/conditions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vP18FormValidatorSwift9Validator10conditionsGSaPS_9Condition__">conditions</a>
+                    <a class="token" href="#/s:18FormValidatorSwift0B0P10conditionsSayAA9Condition_pGv">conditions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -288,7 +288,7 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">conditions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Condition.html">Condition</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">conditions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Condition.html">Condition</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -298,9 +298,9 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP18FormValidatorSwift9Validator15checkConditionsFGSqSS_GSqGSaPS_9Condition___"></a>
+                    <a name="/s:18FormValidatorSwift0B0P15checkConditionsSayAA9Condition_pGSgSSSgF"></a>
                     <a name="//apple_ref/swift/Method/checkConditions(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP18FormValidatorSwift9Validator15checkConditionsFGSqSS_GSqGSaPS_9Condition___">checkConditions(_:)</a>
+                    <a class="token" href="#/s:18FormValidatorSwift0B0P15checkConditionsSayAA9Condition_pGSgSSSgF">checkConditions(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -311,9 +311,7 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Checks <code>text</code> for violation of each condition.
-- parameter text: <code>String</code> to check.
-- returns: An array of conditions that were violated by <code>text</code>. If no conditions were violated then <code>nil</code> is returned.</p>
+                        <p>Checks <code>text</code> for violation of each condition.</p>
 
                       </div>
                       <h4>Default Implementation</h4>
@@ -324,7 +322,7 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">checkConditions</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Condition.html">Condition</a></span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkConditions</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Condition.html">Condition</a></span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -341,7 +339,6 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                               <td>
                                 <div>
                                   <p><code>String</code> to check.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -351,7 +348,6 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                       <div>
                         <h4>Return Value</h4>
                         <p>An array of conditions that were violated by <code>text</code>. If no conditions were violated then <code>nil</code> is returned.</p>
-
                       </div>
                     </section>
                   </div>
@@ -359,9 +355,9 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP18FormValidatorSwift9Validator22removeConditionOfClassuRd__S_9ConditionrFMqd__T_"></a>
+                    <a name="/s:18FormValidatorSwift0B0P22removeConditionOfClassyqd__mAA0E0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/removeConditionOfClass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP18FormValidatorSwift9Validator22removeConditionOfClassuRd__S_9ConditionrFMqd__T_">removeConditionOfClass(_:)</a>
+                    <a class="token" href="#/s:18FormValidatorSwift0B0P22removeConditionOfClassyqd__mAA0E0Rd__lF">removeConditionOfClass(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -372,8 +368,7 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Removes all conditions of <code>conditionClass</code> type.
-- parameter conditionClass: <code>Type</code> of condition to remove.</p>
+                        <p>Removes all conditions of <code>conditionClass</code> type.</p>
 
                       </div>
                       <h4>Default Implementation</h4>
@@ -384,7 +379,7 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="n">removeConditionOfClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Condition.html">Condition</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">conditionClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="n">removeConditionOfClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Condition.html">Condition</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">conditionClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -401,7 +396,6 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
                               <td>
                                 <div>
                                   <p><code>Type</code> of condition to remove.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -419,8 +413,8 @@ violated conditions or <code>nil</code> if the string to check is correct or no 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://ustwo.com/" target="_blank" rel="external">ustwo Fampany Ltd.</a>. All rights reserved. (Last updated: 2017-03-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://ustwo.com/" target="_blank" rel="external">ustwo Fampany Ltd.</a>. All rights reserved. (Last updated: 2018-02-08)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
