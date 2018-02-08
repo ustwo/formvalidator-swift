@@ -23,17 +23,17 @@ final class PostcodeConditionTests: XCTestCase {
         
         var successInputs: [String] {
             switch country {
-            case .Sweden:
+            case .sweden:
                 return ["112 50",
                         "11434",
                         "SE-111 21",
                         "SE-11637",
                         "se-11637"]
-            case .Turkey:
+            case .turkey:
                 return ["34345"]
-            case .UnitedKingdom:
+            case .unitedKingdom:
                 return ["M1 1BA"]
-            case .UnitedStates:
+            case .unitedStates:
                 return ["20500",
                         "95014-2083"]
             }
@@ -41,23 +41,23 @@ final class PostcodeConditionTests: XCTestCase {
         
         var failureInputs: [String?] {
             switch country {
-            case .Sweden:
+            case .sweden:
                 return ["113 4",
                         "116233",
                         "us-125 41",
                         "us-125e1",
                         nil]
-            case .Turkey:
+            case .turkey:
                 return ["3411",
                         "347001",
                         "34 700",
                         "3470a",
                         nil]
-            case .UnitedKingdom:
+            case .unitedKingdom:
                 return ["M1AA 1BA",
                         "M1 1BAA",
                         nil]
-            case .UnitedStates:
+            case .unitedStates:
                 return ["1234",
                         "12345-1",
                         nil]
@@ -99,11 +99,11 @@ final class PostcodeConditionTests: XCTestCase {
         var condition = PostcodeCondition()
         
         // When
-        condition.configuration.country = .Sweden
+        condition.configuration.country = .sweden
         
         // Then
-        XCTAssertEqual(condition.configuration.country, PostcodeCountries.Sweden)
-        XCTAssertEqual(condition.regex, PostcodeCountries.Sweden.regex)
+        XCTAssertEqual(condition.configuration.country, PostcodeCountries.sweden)
+        XCTAssertEqual(condition.regex, PostcodeCountries.sweden.regex)
     }
     
 }
