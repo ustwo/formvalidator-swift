@@ -47,7 +47,7 @@ final class FormViewController: UIViewController {
     
     // MARK: - Control Actions
     
-    func submitButtonPressed(_ sender: UIButton) {
+    @objc func submitButtonPressed(_ sender: UIButton) {
         let alertTitle: String
         let alertMessage: String
         if form.isValid {

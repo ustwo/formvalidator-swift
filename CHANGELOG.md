@@ -3,8 +3,13 @@
 All notable changes to this project will be documented in this file.
 `FormValidatorSwift` adheres to [Semantic Versioning](http://semver.org/).
 
-#### 1.x Releases
+#### 3.x Releases
+- `3.0.x` Releases - [3.0.0](#300)
+
+#### 2.x Releases
 - `2.0.x` Releases - [2.0.0](#200)
+
+#### 1.x Releases
 - `1.2.x` Releases - [1.2.0](#120)
 - `1.1.x` Releases - [1.1.0](#110)
 - `1.0.x` Releases - [1.0.0](#100)
@@ -16,6 +21,23 @@ All notable changes to this project will be documented in this file.
 ##### Breaking
 
 - None.
+
+##### Added
+
+- None.
+
+##### Updated
+
+- None.
+
+## [3.0.0](https://github.com/ustwo/formvalidator-swift/releases/tag/v3.0.0)
+
+##### Breaking
+
+- Renamed `PostcodeCountries` enum cases to begin with lower case letter.
+    - Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#68](https://github.com/ustwo/formvalidator-swift/pull/68).
+- Updated to Swift 4.1 (and added Xcode 9.x support).
+    - Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#65](https://github.com/ustwo/formvalidator-swift/pull/65) and Pull Request [#67](https://github.com/ustwo/formvalidator-swift/pull/67).
 
 ##### Added
 

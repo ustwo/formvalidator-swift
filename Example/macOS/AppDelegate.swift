@@ -17,9 +17,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     lazy var window: NSWindow = {
         let result = NSWindow(contentRect: NSRect(x: 0,
                                                   y: 0,
-                                                  width: NSScreen.main()!.frame.width / 2.0,
-                                                  height: NSScreen.main()!.frame.height / 2.0),
-                              styleMask: [.titled, .miniaturizable, .resizable, .closable],
+                                                  width: NSScreen.main!.frame.width / 2.0,
+                                                  height: NSScreen.main!.frame.height / 2.0),
+                              styleMask: [NSWindow.StyleMask.titled, NSWindow.StyleMask.miniaturizable, NSWindow.StyleMask.resizable, NSWindow.StyleMask.closable],
                               backing: .buffered,
                               defer: false)
         

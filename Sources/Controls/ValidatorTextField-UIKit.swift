@@ -120,7 +120,7 @@ internal class ValidatorTextFieldResponder: NSObject, UITextFieldDelegate {
     
     // MARK: - Notifications
     
-    func textFieldDidChange(_ notification: Notification?) {
+    @objc func textFieldDidChange(_ notification: Notification?) {
         defer {
             // Inform delegate about changes
             delegate?.validatorControlDidChange(validatorTextField)

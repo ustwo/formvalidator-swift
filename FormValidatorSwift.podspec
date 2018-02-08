@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'FormValidatorSwift'
-  s.version = '2.0.0'
+  s.version = '3.0.0'
   s.license = { :type => "MIT", :file => "License.md" }
   s.summary = 'A framework to validate inputs of text fields and text views in a convenient way.'
   s.homepage = 'https://github.com/ustwo/formvalidator-swift'

@@ -40,8 +40,8 @@ public struct RangeCondition: ConfigurableCondition {
             return false
         }
         
-        return sourceText.characters.count >= configuration.range.lowerBound &&
-               sourceText.characters.count <= configuration.range.lowerBound.distance(to: configuration.range.upperBound)
+        return sourceText.count >= configuration.range.lowerBound &&
+               sourceText.count <= configuration.range.lowerBound.distance(to: configuration.range.upperBound)
     }
     
 }

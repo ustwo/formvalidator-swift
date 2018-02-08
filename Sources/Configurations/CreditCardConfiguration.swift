@@ -17,16 +17,16 @@ public struct CreditCardType: OptionSet, CustomStringConvertible {
         self.rawValue = rawValue
     }
     
-    static let americanExpress    = CreditCardType(rawValue: 1 << 0)
-    static let dinersClub         = CreditCardType(rawValue: 1 << 1)
-    static let discover           = CreditCardType(rawValue: 1 << 2)
-    static let jcb                = CreditCardType(rawValue: 1 << 3)
-    static let maestro            = CreditCardType(rawValue: 1 << 4)
-    static let mastercard         = CreditCardType(rawValue: 1 << 5)
-    static let visa               = CreditCardType(rawValue: 1 << 6)
+    public static let americanExpress    = CreditCardType(rawValue: 1 << 0)
+    public static let dinersClub         = CreditCardType(rawValue: 1 << 1)
+    public static let discover           = CreditCardType(rawValue: 1 << 2)
+    public static let jcb                = CreditCardType(rawValue: 1 << 3)
+    public static let maestro            = CreditCardType(rawValue: 1 << 4)
+    public static let mastercard         = CreditCardType(rawValue: 1 << 5)
+    public static let visa               = CreditCardType(rawValue: 1 << 6)
     
-    static let all: CreditCardType = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
-    static let allArray: [CreditCardType] = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
+    public static let all: CreditCardType = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
+    public static let allArray: [CreditCardType] = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
     
     /**
      Literal description for set of credit cards, separated with commas and single space.
