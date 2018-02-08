@@ -49,7 +49,7 @@ final class FormViewController: NSViewController {
     
     // MARK: - Control Actions
     
-    func submitButtonPressed(_ sender: NSButton) {
+    @objc func submitButtonPressed(_ sender: NSButton) {
         let alertMessage: String
         if form.isValid {
             alertMessage = NSLocalizedString("Success: Your data has been submitted!", comment: "")
@@ -61,7 +61,7 @@ final class FormViewController: NSViewController {
         alert.alertStyle = .critical
         alert.messageText = alertMessage
         
-        alert.beginSheetModal(for: NSApplication.shared().mainWindow!, completionHandler: nil)
+        alert.beginSheetModal(for: NSApplication.shared.mainWindow!, completionHandler: nil)
     }
     
 }

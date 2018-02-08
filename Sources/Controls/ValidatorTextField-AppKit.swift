@@ -55,10 +55,10 @@ open class ValidatorTextField: NSTextField, ValidatorControl {
         }
         
         NotificationCenter.default.removeObserver(responder,
-                                                  name: NSNotification.Name.NSControlTextDidChange,
+                                                  name: NSControl.textDidChangeNotification,
                                                   object: self)
         NotificationCenter.default.removeObserver(responder,
-                                                  name: NSNotification.Name.NSControlTextDidEndEditing,
+                                                  name: NSControl.textDidEndEditingNotification,
                                                   object: self)
     }
     
@@ -71,11 +71,11 @@ open class ValidatorTextField: NSTextField, ValidatorControl {
         
         NotificationCenter.default.addObserver(responder,
                                                selector: #selector(ValidatorTextFieldResponder.textFieldDidChange(_:)),
-                                               name: NSNotification.Name.NSControlTextDidChange,
+                                               name: NSControl.textDidChangeNotification,
                                                object: self)
         NotificationCenter.default.addObserver(responder,
                                                selector: #selector(ValidatorTextFieldResponder.textFieldDidEndEditing(_:)),
-                                               name: NSNotification.Name.NSControlTextDidEndEditing,
+                                               name: NSControl.textDidEndEditingNotification,
                                                object: self)
     }
     
@@ -125,7 +125,7 @@ internal class ValidatorTextFieldResponder: NSObject {
     
     // MARK: - Notifications
     
-    func textFieldDidChange(_ notification: Notification?) {
+    @objc func textFieldDidChange(_ notification: Notification?) {
         defer {
             // Inform delegate about changes
             delegate?.validatorControlDidChange(validatorTextField)
@@ -162,7 +162,7 @@ internal class ValidatorTextFieldResponder: NSObject {
         }
     }
     
-    func textFieldDidEndEditing(_ notification: Notification?) {
+    @objc func textFieldDidEndEditing(_ notification: Notification?) {
         didEndEditing = true
         
         textFieldDidChange(nil)

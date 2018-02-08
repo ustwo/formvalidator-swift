@@ -54,7 +54,7 @@ public struct PasswordStrengthCondition: ConfigurableCondition {
         
         var strength = matches.reduce(0, { $0 + ($1 > 0 ? 1 : 0) })
         
-        if sourceText.characters.count > 8 {
+        if sourceText.count > 8 {
             strength += 1
         } else {
             strength -= 1
@@ -68,7 +68,7 @@ public struct PasswordStrengthCondition: ConfigurableCondition {
             return 0
         }
         
-        return regExpression.numberOfMatches(in: text, options: [], range: NSRange(location: 0, length: text.characters.count))
+        return regExpression.numberOfMatches(in: text, options: [], range: NSRange(location: 0, length: text.count))
     }
     
 }

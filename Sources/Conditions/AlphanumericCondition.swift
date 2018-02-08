@@ -48,7 +48,7 @@ public struct AlphanumericCondition: ConfigurableCondition {
                 return false
         }
         
-        return regExpression.numberOfMatches(in: sourceText, options: [], range: NSRange(location: 0, length: sourceText.characters.count)) == sourceText.characters.count
+        return regExpression.numberOfMatches(in: sourceText, options: [], range: NSRange(location: 0, length: sourceText.count)) == sourceText.count
     }
     
 }
