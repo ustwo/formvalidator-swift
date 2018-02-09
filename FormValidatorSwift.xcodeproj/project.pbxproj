@@ -947,7 +947,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "${SRCROOT}/Scripts/swiftlint_xcode.sh";
 		};
 		003E91A61E37633100CEC946 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -961,7 +961,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "${SRCROOT}/Scripts/swiftlint_xcode.sh";
 		};
 		003E91A71E37633E00CEC946 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -975,7 +975,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "${SRCROOT}/Scripts/swiftlint_xcode.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
