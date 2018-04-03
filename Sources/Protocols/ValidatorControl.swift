@@ -23,7 +23,12 @@ public protocol ValidatorControl: class, Validatable {
     var isValid: Bool { get }
     var shouldAllowViolation: Bool { get set }
     var validateOnFocusLossOnly: Bool { get set }
-    weak var validatorDelegate: ValidatorControlDelegate? { get }
+
+
+    /// Delegate for the `ValidatorControl`.
+    ///
+    /// - Note: We recommend you specify your implementation as `weak`.
+    var validatorDelegate: ValidatorControlDelegate? { get }
     
 }
 
