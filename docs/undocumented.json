@@ -393,10 +393,17 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Condition.swift",
-      "line": 65,
-      "symbol": "Condition.description",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ConfigurableCondition.swift",
+      "line": 15,
+      "symbol": "ConfigurableCondition.ConfigurationType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ConfigurableValidator.swift",
+      "line": 15,
+      "symbol": "ConfigurableValidator.ConfigurationType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
       "warning": "undocumented"
     },
     {
@@ -411,13 +418,6 @@
       "line": 51,
       "symbol": "Form.removeControlAtIndex(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/Form.swift",
-      "line": 71,
-      "symbol": "Form.isValid",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -520,14 +520,7 @@
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
-      "line": 26,
-      "symbol": "ValidatorControl.validatorDelegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Protocols/ValidatorControl.swift",
-      "line": 33,
+      "line": 38,
       "symbol": "ValidatorControl.isValid",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"

@@ -65,6 +65,69 @@
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 20,
+      "symbol": "CreditCardType.americanExpress",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 21,
+      "symbol": "CreditCardType.dinersClub",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 22,
+      "symbol": "CreditCardType.discover",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 23,
+      "symbol": "CreditCardType.jcb",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 24,
+      "symbol": "CreditCardType.maestro",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 25,
+      "symbol": "CreditCardType.mastercard",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 26,
+      "symbol": "CreditCardType.visa",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 28,
+      "symbol": "CreditCardType.all",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
+      "line": 29,
+      "symbol": "CreditCardType.allArray",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/CreditCardConfiguration.swift",
       "line": 122,
       "symbol": "CreditCardConfiguration.cardType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -121,49 +184,49 @@
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
-      "line": 14,
-      "symbol": "PostcodeCountries.Sweden",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
       "line": 15,
-      "symbol": "PostcodeCountries.Turkey",
+      "symbol": "PostcodeCountries.sweden",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
       "line": 16,
-      "symbol": "PostcodeCountries.UnitedKingdom",
+      "symbol": "PostcodeCountries.turkey",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
       "line": 17,
-      "symbol": "PostcodeCountries.UnitedStates",
+      "symbol": "PostcodeCountries.unitedKingdom",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
-      "line": 33,
+      "line": 18,
+      "symbol": "PostcodeCountries.unitedStates",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
+      "line": 34,
       "symbol": "PostcodeCountries.allValues",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
-      "line": 43,
+      "line": 44,
       "symbol": "PostcodeConfiguration.country",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Configurations/PostcodeConfiguration.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "PostcodeConfiguration.init(country:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
