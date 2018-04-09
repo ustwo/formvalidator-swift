@@ -370,6 +370,7 @@
 		00F2E2DF1C46C6F400FE0B66 /* PresentConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentConditionTests.swift; sourceTree = "<group>"; };
 		00F2E2E11C46C7B500FE0B66 /* PasswordStrengthCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthCondition.swift; sourceTree = "<group>"; };
 		00F2E2E31C46CBC200FE0B66 /* PasswordStrengthConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthConditionTests.swift; sourceTree = "<group>"; };
+		0DB147A2207BB01E00E87A8F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		88644DA61E2967F7006B0150 /* ValidatorTextFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidatorTextFieldTests.swift; path = Controls/ValidatorTextFieldTests.swift; sourceTree = "<group>"; };
 		88644DA81E296AEC006B0150 /* ValidatorTextViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidatorTextViewTests.swift; path = Controls/ValidatorTextViewTests.swift; sourceTree = "<group>"; };
 		BA6C8FAD1DC77E2200AFE4C4 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -870,6 +871,7 @@
 				sv,
 				ru,
 				tr,
+				es,
 			);
 			mainGroup = 0062E9C61C45493E00021C0A;
 			productRefGroup = 0062E9D11C45493E00021C0A /* Products */;
@@ -1291,6 +1293,7 @@
 				0032C1001C454D980023DB19 /* ja */,
 				0032C1011C454D990023DB19 /* it */,
 				BA6C8FAD1DC77E2200AFE4C4 /* tr */,
+				0DB147A2207BB01E00E87A8F /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
