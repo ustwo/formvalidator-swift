@@ -43,8 +43,8 @@ All notable changes to this project will be documented in this file.
 
 ##### Added
 
-* Added Xcode 9.3 support.
-  * Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#71](https://github.com/ustwo/formvalidator-swift/pull/71).
+* Added `OptionalValidator`.
+  * Added by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#75](https://github.com/ustwo/formvalidator-swift/pull/75).
 
 ##### Updated
 
