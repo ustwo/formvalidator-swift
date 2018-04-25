@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 
 #### 3.x Releases
 
+* `3.2.x` Releases - [3.2.0](#320)
 * `3.1.x` Releases - [3.1.0](#310)
 * `3.0.x` Releases - [3.0.0](#300)
 
@@ -34,6 +35,21 @@ All notable changes to this project will be documented in this file.
 
 * None.
 
+## [3.2.0](https://github.com/ustwo/formvalidator-swift/releases/tag/3.2.0)
+
+##### Breaking
+
+* None.
+
+##### Added
+
+* Added Xcode 9.3 support.
+  * Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#71](https://github.com/ustwo/formvalidator-swift/pull/71).
+
+##### Updated
+
+* None.
+
 ## [3.1.0](https://github.com/ustwo/formvalidator-swift/releases/tag/3.1.0)
 
 ##### Breaking
@@ -43,12 +59,12 @@ All notable changes to this project will be documented in this file.
 ##### Added
 
 * Added Xcode 9.3 support.
-  * Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#71]
+  * Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#71](https://github.com/ustwo/formvalidator-swift/pull/71).
 
 ##### Updated
 
 * Removes `weak` on property in `ValidatorControl` protocol as it is now deprecated in the latest version of Swift. See: https://github.com/apple/swift-evolution/pull/707
-  * Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#71]
+  * Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#71](https://github.com/ustwo/formvalidator-swift/pull/71).
 
 ## [3.0.0](https://github.com/ustwo/formvalidator-swift/releases/tag/3.0.0)
 
