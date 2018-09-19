@@ -248,13 +248,13 @@
 					007244721E1FDB2D0050DFE9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4JC5M8RR29;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
 					007244811E1FDB2D0050DFE9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4JC5M8RR29;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 007244721E1FDB2D0050DFE9;
 					};
@@ -523,7 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -539,7 +539,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -555,7 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.macOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "macOS Example";
 			};
 			name = Debug;
@@ -571,7 +571,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.macOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "macOS Example";
 			};
 			name = Release;

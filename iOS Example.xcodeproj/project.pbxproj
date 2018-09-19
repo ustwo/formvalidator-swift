@@ -247,11 +247,11 @@
 				TargetAttributes = {
 					003698401C4788B1004D1692 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1000;
 					};
 					003698541C4788B1004D1692 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = "";
 						TestTargetID = 003698401C4788B1004D1692;
 					};
 				};
@@ -518,7 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -533,7 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -546,7 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "iOS Example";
 				USES_XCTRUNNER = YES;
 			};
@@ -560,7 +560,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.iOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "iOS Example";
 				USES_XCTRUNNER = YES;
 			};

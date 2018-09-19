@@ -16,7 +16,7 @@ open class ValidatorTextField: UITextField, ValidatorControl {
     
     open var shouldAllowViolation = false
     open var validateOnFocusLossOnly = false
-    open let validator: Validator
+    public let validator: Validator
     /// Validator delegate for the text field.
     ///
     /// - SeeAlso: `setValidatorDelegate(_:)` to set the validator delegate.
@@ -55,10 +55,10 @@ open class ValidatorTextField: UITextField, ValidatorControl {
         }
         
         NotificationCenter.default.removeObserver(responder,
-                                                  name: NSNotification.Name.UITextFieldTextDidChange,
+                                                  name: UITextField.textDidChangeNotification,
                                                   object: self)
         NotificationCenter.default.removeObserver(responder,
-                                                  name: NSNotification.Name.UITextFieldTextDidEndEditing,
+                                                  name: UITextField.textDidEndEditingNotification,
                                                   object: self)
     }
     
@@ -72,11 +72,11 @@ open class ValidatorTextField: UITextField, ValidatorControl {
         
         NotificationCenter.default.addObserver(responder,
                                                selector: #selector(ValidatorTextFieldResponder.textFieldDidChange(_:)),
-                                               name: NSNotification.Name.UITextFieldTextDidChange,
+                                               name: UITextField.textDidChangeNotification,
                                                object: self)
         NotificationCenter.default.addObserver(responder,
                                                selector: #selector(ValidatorTextFieldResponder.textFieldDidEndEditing(_:)),
-                                               name: NSNotification.Name.UITextFieldTextDidEndEditing,
+                                               name: UITextField.textDidEndEditingNotification,
                                                object: self)
     }
     

@@ -16,7 +16,7 @@ open class ValidatorTextField: NSTextField, ValidatorControl {
     
     open var shouldAllowViolation = false
     open var validateOnFocusLossOnly = false
-    open let validator: Validator
+    public let validator: Validator
     /// Validator delegate for the text field.
     ///
     /// - SeeAlso: `setValidatorDelegate(_:)` to set the validator delegate.

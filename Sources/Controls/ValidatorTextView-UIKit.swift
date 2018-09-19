@@ -16,7 +16,7 @@ open class ValidatorTextView: UITextView, ValidatorControl {
     
     open var shouldAllowViolation = false
     open var validateOnFocusLossOnly = false
-    open let validator: Validator
+    public let validator: Validator
     /// Validator delegate for the text view.
     ///
     /// - SeeAlso: setValidatorDelegate(_:) to set the validator delegate.
@@ -58,7 +58,7 @@ open class ValidatorTextView: UITextView, ValidatorControl {
             return
         }
         
-        NotificationCenter.default.removeObserver(responder, name: NSNotification.Name.UITextViewTextDidEndEditing, object: self)
+        NotificationCenter.default.removeObserver(responder, name: UITextView.textDidEndEditingNotification, object: self)
     }
     
     
@@ -69,7 +69,7 @@ open class ValidatorTextView: UITextView, ValidatorControl {
         validatorControlResponder = responder
         super.delegate = responder
         
-        NotificationCenter.default.addObserver(responder, selector: #selector(UITextViewDelegate.textViewDidEndEditing(_:)), name: NSNotification.Name.UITextViewTextDidEndEditing, object: self)
+        NotificationCenter.default.addObserver(responder, selector: #selector(UITextViewDelegate.textViewDidEndEditing(_:)), name: UITextView.textDidEndEditingNotification, object: self)
     }
     
     
