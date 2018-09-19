@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/ustwo/formvalidator-swift.svg?branch=master)](https://travis-ci.org/ustwo/formvalidator-swift)
 [![codecov.io](https://codecov.io/github/ustwo/formvalidator-swift/coverage.svg?branch=master)](https://codecov.io/github/ustwo/formvalidator-swift?branch=master)
 [![Platform](https://img.shields.io/cocoapods/p/FormValidatorSwift.svg?style=flat)](https://ustwo.github.io/formvalidator-swift)
-![Swift](https://img.shields.io/badge/Swift-4.1-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![Twitter](https://img.shields.io/badge/twitter-@ustwo-blue.svg?style=flat)](http://twitter.com/ustwo)
 
 # FormValidatorSwift
@@ -11,15 +11,15 @@ The FormValidatorSwift framework allows you to validate inputs of text fields an
 
 ## Features
 
-* [x] Simply use `ValidatorTextField` instead of `UITextField` or `NSTextField` (`ValidatorTextView` instead of `UITextView` or `NSTextView`)
-* [x] Know what went wrong and where
-* [x] Create own conditions using regular expressions for example
-* [x] Create own validators which contain a collection of conditions
-* [x] Support iOS, macOS, and tvOS
+- [x] Simply use `ValidatorTextField` instead of `UITextField` or `NSTextField` (`ValidatorTextView` instead of `UITextView` or `NSTextView`)
+- [x] Know what went wrong and where
+- [x] Create own conditions using regular expressions for example
+- [x] Create own validators which contain a collection of conditions
+- [x] Support iOS, macOS, and tvOS
 
 ## Dependencies
 
-* [Xcode](https://itunes.apple.com/gb/app/xcode/id497799835?mt=12#)
+- [Xcode](https://itunes.apple.com/gb/app/xcode/id497799835?mt=12#)
 
 ## Installation
 
@@ -53,35 +53,35 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 #### Embedded Framework
 
-* Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
+- Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
 
 ```bash
 $ git init
 ```
 
-* Add FormValidatorSwift as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
+- Add FormValidatorSwift as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
 
 ```bash
 $ git submodule add https://github.com/ustwo/formvalidator-swift.git
 ```
 
-* Open the new `FormValidatorSwift` folder, and drag the `FormValidatorSwift.xcodeproj` into the Project Navigator of your application's Xcode project.
+- Open the new `FormValidatorSwift` folder, and drag the `FormValidatorSwift.xcodeproj` into the Project Navigator of your application's Xcode project.
 
   > It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
 
-* Select the `FormValidatorSwift.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
-* Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
-* In the tab bar at the top of that window, open the "General" panel.
-* Click on the `+` button under the "Embedded Binaries" section.
-* You will see two different `FormValidatorSwift.xcodeproj` folders each with two different versions of the `FormValidatorSwift.framework` nested inside a `Products` folder.
+- Select the `FormValidatorSwift.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
+- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
+- In the tab bar at the top of that window, open the "General" panel.
+- Click on the `+` button under the "Embedded Binaries" section.
+- You will see two different `FormValidatorSwift.xcodeproj` folders each with two different versions of the `FormValidatorSwift.framework` nested inside a `Products` folder.
 
   > It does not matter which `Products` folder you choose from, but it does matter whether you choose the top or bottom `FormValidatorSwift.framework`.
 
-* Select the top `FormValidatorSwift.framework` for iOS, the middle one for tvOS, or the bottom one for macOS.
+- Select the top `FormValidatorSwift.framework` for iOS, the middle one for tvOS, or the bottom one for macOS.
 
   > You can verify which one you selected by inspecting the build log for your project. The build target for `FormValidatorSwift` will be listed as `FormValidatorSwift iOS`, `FormValidatorSwift macOS`, or `FormValidatorSwift tvOS`.
 
-* And that's it!
+- And that's it!
 
 > The `FormValidatorSwift.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
 
@@ -201,12 +201,12 @@ We welcome contributors! Whether you're fixing a typo, squashing a bug, or addin
 
 ## Maintainers
 
-* Shagun Madhikarmi (@madhikarma)
-* Aaron McTavish (@aamctustwo)
+- Shagun Madhikarmi (@madhikarma)
+- Aaron McTavish (@aamctustwo)
 
 ## Contact
 
-* [open.source@ustwo.com](mailto:open.source@ustwo.com)
+- [open.source@ustwo.com](mailto:open.source@ustwo.com)
 
 ## License
 
