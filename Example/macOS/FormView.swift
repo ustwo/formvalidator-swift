@@ -16,7 +16,7 @@ final class FormView: NSView {
     
     // MARK: - Types
     
-    private struct Constants {
+    private enum Constants {
         
         static let minimumTextFieldWidth: CGFloat   = 300.0
         

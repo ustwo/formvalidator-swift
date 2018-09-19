@@ -9,7 +9,7 @@
 import Foundation
 
 
-public protocol ValidatorControlDelegate: class {
+public protocol ValidatorControlDelegate: AnyObject {
     
     func validatorControlDidChange(_ validatorControl: ValidatorControl)
     func validatorControl(_ validatorControl: ValidatorControl, changedValidState validState: Bool)
@@ -18,7 +18,7 @@ public protocol ValidatorControlDelegate: class {
 }
 
 
-public protocol ValidatorControl: class, Validatable {
+public protocol ValidatorControl: AnyObject, Validatable {
     
     var isValid: Bool { get }
     var shouldAllowViolation: Bool { get set }

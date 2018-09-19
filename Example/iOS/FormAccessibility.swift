@@ -9,9 +9,9 @@
 import Foundation
 
 
-struct FormAccessibility {
+enum FormAccessibility {
     
-    struct Identifiers {
+    enum Identifiers {
         static let EmailLabel       = "EMAIL_LABEL"
         static let EmailTextField   = "EMAIL_TEXTFIELD"
         
