@@ -960,7 +960,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Scripts/swiftlint_xcode.sh";
+			shellScript = "${SRCROOT}/Scripts/swiftlint_xcode.sh\n";
 		};
 		003E91A61E37633100CEC946 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
