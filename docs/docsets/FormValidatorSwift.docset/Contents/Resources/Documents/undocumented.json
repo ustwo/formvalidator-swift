@@ -531,6 +531,20 @@
       "symbol": "CompositeValidator.validators",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Validators/OptionalValidator.swift",
+      "line": 20,
+      "symbol": "OptionalValidator.primaryCondition",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Validators/OptionalValidator.swift",
+      "line": 31,
+      "symbol": "OptionalValidator.init(conditions:primaryCondition:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/aamct/Documents/App-Projects/formvalidator-swift"

@@ -303,6 +303,13 @@
     },
     {
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
+      "line": 52,
+      "symbol": "ValidatorTextField.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextField-UIKit.swift",
       "line": 96,
       "symbol": "ValidatorTextField.validatorTextFieldSuccededConditions()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -375,6 +382,13 @@
       "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
       "line": 52,
       "symbol": "ValidatorTextView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/formvalidator-swift/Sources/Controls/ValidatorTextView-UIKit.swift",
+      "line": 56,
+      "symbol": "ValidatorTextView.deinit",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
