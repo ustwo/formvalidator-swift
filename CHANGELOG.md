@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 `FormValidatorSwift` adheres to [Semantic Versioning](http://semver.org/).
 
+#### 4.x Releases
+
+* `4.0.x` Releases - [4.0.0](#400)
+
 #### 3.x Releases
 
 * `3.2.x` Releases - [3.2.0](#320)
@@ -26,6 +30,21 @@ All notable changes to this project will be documented in this file.
 ##### Breaking
 
 * None.
+
+##### Added
+
+* None.
+
+##### Updated
+
+* None.
+
+## [4.0.0](https://github.com/ustwo/formvalidator-swift/releases/tag/4.0.0)
+
+##### Breaking
+
+* Updated to Swift 5.0 (and added Xcode 10.x support).
+  * Updated by [Aaron McTavish](https://github.com/aamctustwo) in Pull Request [#80](https://github.com/ustwo/formvalidator-swift/pull/80).
 
 ##### Added
 
