@@ -842,29 +842,29 @@
 					};
 					0062E9CF1C45493E00021C0A = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 					};
 					0062E9D91C45493E00021C0A = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					00AC81E71E1FB69200A184BB = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					00AC81EF1E1FB69200A184BB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4JC5M8RR29;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 0062E9CA1C45493E00021C0A /* Build configuration list for PBXProject "FormValidatorSwift" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -882,6 +882,7 @@
 				ru,
 				tr,
 				es,
+				Base,
 			);
 			mainGroup = 0062E9C61C45493E00021C0A;
 			productRefGroup = 0062E9D11C45493E00021C0A /* Products */;
@@ -959,7 +960,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Scripts/swiftlint_xcode.sh";
+			shellScript = "${SRCROOT}/Scripts/swiftlint_xcode.sh\n";
 		};
 		003E91A61E37633100CEC946 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1334,7 +1335,7 @@
 				PRODUCT_NAME = FormValidatorSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1357,7 +1358,7 @@
 				PRODUCT_NAME = FormValidatorSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1372,7 +1373,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Debug;
@@ -1386,7 +1388,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
@@ -1525,7 +1528,7 @@
 				PRODUCT_NAME = FormValidatorSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1546,7 +1549,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwift;
 				PRODUCT_NAME = FormValidatorSwift;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1558,7 +1561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1570,7 +1573,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1597,7 +1600,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1623,7 +1626,7 @@
 				PRODUCT_NAME = FormValidatorSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1643,7 +1646,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1662,7 +1665,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ustwo.FormValidatorSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

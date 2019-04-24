@@ -34,6 +34,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     // MARK: - NSApplicationDelegate
+
+    func applicationWillFinishLaunching(_ notification: Notification) {
+        if #available(macOS 10.14, *) {
+            NSApp.appearance = NSAppearance(named: .aqua)
+        }
+    }
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         let viewController = FormViewController()

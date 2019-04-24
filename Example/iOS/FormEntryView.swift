@@ -40,17 +40,17 @@ final class FormEntryView<V: Validator>: UIView, ValidatorControlDelegate, UITex
         stackView.alignment = .fill
         addSubview(stackView)
         
-        textLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        textLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
         textLabel.textAlignment = .center
         stackView.addArrangedSubview(textLabel)
         
         textField.autocorrectionType = .no
         textField.borderStyle = .line
-        textField.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+        textField.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
         textField.setValidatorDelegate(self)
         stackView.addArrangedSubview(textField)
         
-        errorLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        errorLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
         errorLabel.isHidden = true
         errorLabel.lineBreakMode = .byWordWrapping
         errorLabel.numberOfLines = 0

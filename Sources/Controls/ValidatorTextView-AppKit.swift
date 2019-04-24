@@ -16,7 +16,7 @@ open class ValidatorTextView: NSTextView, ValidatorControl {
     
     open var shouldAllowViolation = false
     open var validateOnFocusLossOnly = false
-    open let validator: Validator
+    public let validator: Validator
     open weak var validatorDelegate: ValidatorControlDelegate?
     
     open var validatableText: String? {

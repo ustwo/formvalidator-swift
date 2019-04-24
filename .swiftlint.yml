@@ -2,12 +2,18 @@ disabled_rules:
   - line_length
   - nesting
 opt_in_rules:
+  - anyobject_protocol
+  - array_init
   - attributes
   - closure_end_indentation
   - closure_spacing
   - conditional_returns_on_newline
+  - contains_over_first_not_nil
+  - convenience_type
   - empty_count
+  - empty_string
   - explicit_init
+  - fallthrough
   - fatal_error_message
   - file_header
   - first_where
@@ -21,6 +27,7 @@ opt_in_rules:
   - redundant_nil_coalescing
   - sorted_imports
   - switch_case_on_newline
+  - unneeded_parentheses_in_closure_argument
   - yoda_condition
 
 excluded:
