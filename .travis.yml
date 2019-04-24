@@ -11,6 +11,7 @@ before_install:
   - rvm install $(cat .ruby-version)
   - brew update
   - brew outdated swiftlint || brew upgrade swiftlint
+  - gem install bundler -v 2.0.1
 
 # Test using Fastlane
 script:
