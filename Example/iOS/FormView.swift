@@ -56,8 +56,8 @@ final class FormView: UIView {
         emailEntry.textField.validateOnFocusLossOnly = true
         stackView.addArrangedSubview(emailEntry)
         
-        submitButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
-        submitButton.setTitle(NSLocalizedString("Submit", comment: ""), for: UIControlState())
+        submitButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
+        submitButton.setTitle(NSLocalizedString("Submit", comment: ""), for: UIControl.State())
         stackView.addArrangedSubview(submitButton)
         
         bottomBufferView.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: stackView.axis)
